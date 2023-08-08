@@ -1,0 +1,15 @@
+{
+  "index.qmd": {
+    "index.html": "c72b7f0f"
+  },
+  "about.qmd": {
+    "about.html": "8743a744"
+  },
+  "syllabus/index.qmd": {
+    "index.html": "d93e04ad",
+    "index.tex": "8fb07384"
+  },
+  "lectures/0821/0821.ipynb": {
+    "0821.html": "bc67bd06"
+  }
+}

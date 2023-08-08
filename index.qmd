@@ -1,0 +1,6 @@
+---
+title: "Geography 385: Spatial Data Analysis"
+---
+
+
+- [Syllabus](syllabus)
