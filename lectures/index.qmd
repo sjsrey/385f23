@@ -1,0 +1,22 @@
+---
+title: "Geography 385 Spatial Data Analysis"
+subtitle: "Fall 2023"
+format:
+  html:
+    theme: cosmo 
+  pdf:
+    colorlinks: true
+---
+
+
+## Lectures
+
+- Week 01
+  - [08-21 Course Introduction](week-01/01-introduction.qmd)
+
+
+- Week 02
+
+
+
+

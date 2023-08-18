@@ -6,9 +6,10 @@ website:
   image: img/logo.png
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - href: syllabus.qmd
+        text: Syllabus
+      - href: lectures
+        text: Lectures
 
 format:
   html:
