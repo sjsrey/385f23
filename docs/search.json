@@ -1,0 +1,401 @@
+[
+  {
+    "objectID": "lectures/0821/0821.html",
+    "href": "lectures/0821/0821.html",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#introduction",
+    "href": "lectures/week-01/01-introduction.html#introduction",
+    "title": "Course Introduction",
+    "section": "Introduction",
+    "text": "Introduction\n\nThis course introduces the fundamental concepts of spatial data analysis. Key fundamentals include spatial sampling, descriptive statistics for areal data, inferential statistics, use of maps in data analysis."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#approach",
+    "href": "lectures/week-01/01-introduction.html#approach",
+    "title": "Course Introduction",
+    "section": "Approach",
+    "text": "Approach\n\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#scope",
+    "href": "lectures/week-01/01-introduction.html#scope",
+    "title": "Course Introduction",
+    "section": "Scope",
+    "text": "Scope\n\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#prerequisites",
+    "href": "lectures/week-01/01-introduction.html#prerequisites",
+    "title": "Course Introduction",
+    "section": "Prerequisites",
+    "text": "Prerequisites"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#schedule-reading-and-content",
+    "href": "lectures/week-01/01-introduction.html#schedule-reading-and-content",
+    "title": "Course Introduction",
+    "section": "Schedule, Reading, and Content",
+    "text": "Schedule, Reading, and Content\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore coming into class prepared means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#readings",
+    "href": "lectures/week-01/01-introduction.html#readings",
+    "title": "Course Introduction",
+    "section": "Readings",
+    "text": "Readings\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#schedule-planned",
+    "href": "lectures/week-01/01-introduction.html#schedule-planned",
+    "title": "Course Introduction",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#schedule-planned-1",
+    "href": "lectures/week-01/01-introduction.html#schedule-planned-1",
+    "title": "Course Introduction",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#grading",
+    "href": "lectures/week-01/01-introduction.html#grading",
+    "title": "Course Introduction",
+    "section": "Grading",
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#specification-grading",
+    "href": "lectures/week-01/01-introduction.html#specification-grading",
+    "title": "Course Introduction",
+    "section": "Specification Grading",
+    "text": "Specification Grading\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes, and exercises your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#base-grade",
+    "href": "lectures/week-01/01-introduction.html#base-grade",
+    "title": "Course Introduction",
+    "section": "Base Grade",
+    "text": "Base Grade\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 13 of 15 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 11 of 15 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 9 of 15 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 7 of 15 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#final-grade",
+    "href": "lectures/week-01/01-introduction.html#final-grade",
+    "title": "Course Introduction",
+    "section": "Final Grade",
+    "text": "Final Grade\n\nIf you earn at least 85% on the final exam, you will obtain a + for your grade. So a B base grade would become becomes a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a - for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#quizzes",
+    "href": "lectures/week-01/01-introduction.html#quizzes",
+    "title": "Course Introduction",
+    "section": "Quizzes",
+    "text": "Quizzes\nQuizzes are graded on a pass/fail basis. Starting in week two, there will be a quiz due before a session that pertains to the background reading that is required before our work in class."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#exercises",
+    "href": "lectures/week-01/01-introduction.html#exercises",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#exercises-1",
+    "href": "lectures/week-01/01-introduction.html#exercises-1",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#exercises-2",
+    "href": "lectures/week-01/01-introduction.html#exercises-2",
+    "title": "Course Introduction",
+    "section": "Exercises",
+    "text": "Exercises\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#final-exam",
+    "href": "lectures/week-01/01-introduction.html#final-exam",
+    "title": "Course Introduction",
+    "section": "Final Exam",
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on December 18 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#tokens",
+    "href": "lectures/week-01/01-introduction.html#tokens",
+    "title": "Course Introduction",
+    "section": "Tokens",
+    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#using-tokens",
+    "href": "lectures/week-01/01-introduction.html#using-tokens",
+    "title": "Course Introduction",
+    "section": "Using Tokens",
+    "text": "Using Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#remaining-tokens",
+    "href": "lectures/week-01/01-introduction.html#remaining-tokens",
+    "title": "Course Introduction",
+    "section": "Remaining Tokens",
+    "text": "Remaining Tokens\nEach token that remains unused after 2023-12-18 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#aministration",
+    "href": "lectures/week-01/01-introduction.html#aministration",
+    "title": "Course Introduction",
+    "section": "Aministration",
+    "text": "Aministration"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#accomodations",
+    "href": "lectures/week-01/01-introduction.html#accomodations",
+    "title": "Course Introduction",
+    "section": "Accomodations",
+    "text": "Accomodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#privacy-and-intellectual-property",
+    "href": "lectures/week-01/01-introduction.html#privacy-and-intellectual-property",
+    "title": "Course Introduction",
+    "section": "Privacy and Intellectual Property",
+    "text": "Privacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use [Canvas / Blackboard] to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#academic-integrity",
+    "href": "lectures/week-01/01-introduction.html#academic-integrity",
+    "title": "Course Introduction",
+    "section": "Academic Integrity",
+    "text": "Academic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: http://www.sa.sdsu.edu/srr/index.html."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#code-of-conduct",
+    "href": "lectures/week-01/01-introduction.html#code-of-conduct",
+    "title": "Course Introduction",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#code-of-conduct-1",
+    "href": "lectures/week-01/01-introduction.html#code-of-conduct-1",
+    "title": "Course Introduction",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#computational-learning",
+    "href": "lectures/week-01/01-introduction.html#computational-learning",
+    "title": "Course Introduction",
+    "section": "Computational Learning",
+    "text": "Computational Learning\n\n\nShow me the code\nimport libpysal.examples\nimport geopandas \n\n# get path to built-in dataset for Mexico\npth = libpysal.examples.get_path(\"mexicojoin.shp\")\n# load the file with geopandas to create a GeoDataframe\ngdf = geopandas.read_file(pth)\n# call the plot method of the GeoDataFrame\ngdf.plot(edgecolor='white');"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#open-source",
+    "href": "lectures/week-01/01-introduction.html#open-source",
+    "title": "Course Introduction",
+    "section": "Open Source",
+    "text": "Open Source"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#server-or-laptop",
+    "href": "lectures/week-01/01-introduction.html#server-or-laptop",
+    "title": "Course Introduction",
+    "section": "Server or Laptop",
+    "text": "Server or Laptop\nYou can choose to either use an account on our course JupyterHub or install the packages on your own laptop.\nEither way, you will be using Jupyter Notebooks for all computation:"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#my-program",
+    "href": "lectures/week-01/01-introduction.html#my-program",
+    "title": "Course Introduction",
+    "section": "My Program",
+    "text": "My Program\n\n\n\nurl"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#why-am-i-here",
+    "href": "lectures/week-01/01-introduction.html#why-am-i-here",
+    "title": "Course Introduction",
+    "section": "Why am I here",
+    "text": "Why am I here"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#why-am-i-here-1",
+    "href": "lectures/week-01/01-introduction.html#why-am-i-here-1",
+    "title": "Course Introduction",
+    "section": "Why am I here",
+    "text": "Why am I here"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
+    "href": "lectures/week-01/01-introduction.html#trump-turned-this-place-into-a-ghost-town",
+    "title": "Course Introduction",
+    "section": "‘Trump turned this place into a ghost town’",
+    "text": "‘Trump turned this place into a ghost town’"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#stockton-and-atlantic-city",
+    "href": "lectures/week-01/01-introduction.html#stockton-and-atlantic-city",
+    "title": "Course Introduction",
+    "section": "Stockton and Atlantic City",
+    "text": "Stockton and Atlantic City"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#stockton-and-atlantic-city-1",
+    "href": "lectures/week-01/01-introduction.html#stockton-and-atlantic-city-1",
+    "title": "Course Introduction",
+    "section": "Stockton and Atlantic City",
+    "text": "Stockton and Atlantic City\n\nSource"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#stockton",
+    "href": "lectures/week-01/01-introduction.html#stockton",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#stockton-1",
+    "href": "lectures/week-01/01-introduction.html#stockton-1",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#stockton-2",
+    "href": "lectures/week-01/01-introduction.html#stockton-2",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#stockton-3",
+    "href": "lectures/week-01/01-introduction.html#stockton-3",
+    "title": "Course Introduction",
+    "section": "Stockton",
+    "text": "Stockton"
+  },
+  {
+    "objectID": "lectures/week-01/01-introduction.html#you",
+    "href": "lectures/week-01/01-introduction.html#you",
+    "title": "Course Introduction",
+    "section": "You",
+    "text": "You\nTake a few minutes and let us know a bit about yourself\n\nName\nProgram/Concentration\nWhy you are here"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "syllabus.html#class-meetings",
+    "href": "syllabus.html#class-meetings",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Class meetings",
+    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nLSN 111\nMon & Wed 3:30 - 4:45pm"
+  },
+  {
+    "objectID": "syllabus.html#teaching-team",
+    "href": "syllabus.html#teaching-team",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nThu 3:30 - 4:30pm (by appointment)\nPSFA 361G\n\n\nTBA\nTBA\nPSFA 361F"
+  },
+  {
+    "objectID": "syllabus.html#introduction",
+    "href": "syllabus.html#introduction",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Introduction",
+    "text": "Introduction\nWelcome to 385: Spatial Data Analysis!\nThe purpose of this course is to introduce you to methods of spatial data analysis. The focus is on both the conceptual and applied aspects of spatial statistical methods. We will place particular emphasis on the computational aspects of Exploratory Spatial Data Analysis (ESDA) methods for diﬀerent types of spatial data including point processes, lattice data, geostatistical data, network data, and spatial interaction. Throughout the course you will gain valuable hands-on experience with several specialized software packages for spatial data analysis. The overriding goal of the course is for you to acquire familiarity with the fundamental methodological and operational issues in the statistical analysis of geographic information and the ability to extend these methods in your own research.\nThe course takes an explicitly computational thinking approach to its pedagogy. Students are introduced to computational concepts and tools that are increasingly important to research that engages with geospatial data. By adopting these tools, students acquire a deeper engagement with, and mastery of, the substantive concepts. Put differently, students will learn to code. But this is a means to the end goal: students will code to learn spatial data analysis.\nIn the scope of a 15-week semester course we can only introduce a handful of the key concepts and methods relevant to the field of spatial data analysis. As such, the course is not intended as an exhaustive treatment. Instead, the goal is that students will acquire an understanding of the more common and useful methods and practices, and use the course as an entry point for further engagement with the field."
+  },
+  {
+    "objectID": "syllabus.html#prerequisites",
+    "href": "syllabus.html#prerequisites",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nGEOG 101 or GEOG 102\nSTAT 250 or comparable course in statistics.\n\nAll students are required to complete the prerequisite assessment quiz before 2023-08-23 3:00pm."
+  },
+  {
+    "objectID": "syllabus.html#computational-learning",
+    "href": "syllabus.html#computational-learning",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Computational Learning",
+    "text": "Computational Learning\nWe will using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through JupyterHub a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required."
+  },
+  {
+    "objectID": "syllabus.html#readings",
+    "href": "syllabus.html#readings",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Readings",
+    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore coming into class prepared means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press."
+  },
+  {
+    "objectID": "syllabus.html#schedule-planned",
+    "href": "syllabus.html#schedule-planned",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Schedule (Planned)",
+    "text": "Schedule (Planned)\n\n\n\n\n\n\n\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nAug-21\nCourse Introduction\n\n\n\n\n\nAug-23\nJupyter Hub\nGDA 1 GDS 2\n\n\n\n2\nAug-28\nPython: Programming Concepts\nGDA 2\nQuiz 1\n\n\n\nAug-30\nPython: Data Analysis\nGDA 3\n\n\n\n3\nSep-04\nLabor Day Holiday\n\n\n\n\n\nSep-06\nPython: Visualization\nGDA 4\n\n\n\n4\nSep-11\nPython: Geographic Data\nGDA 5\nQuiz 2\n\n\n\nSep-13\nGeopandas and PySAL\nGDA 6\nExercise 1\n\n\n5\nSep-18\nSpatial Data Overview\nGDS 3\nQuiz 3\n\n\n\nSep-20\nGeoVisualization\nGDS 5\n\n\n\n6\nSep-25\nSpatial Weights\nGDS 4\nQuiz 4\n\n\n\nSep-27\nSpatial Dependence\nGDS 6\n\n\n\n7\nOct-02\nGlobal Autocorrelation\nGDS 6\nQuiz 5\n\n\n\nOct-04\nGlobal Autocorrelation Tests\nGDS 6\n\n\n\n8\nOct-09\nLocal Autocorrelation\nGDS 7\nQuiz 6\n\n\n\nOct-11\nLocal Autocorrelation Tests\nGDS 7\nExercise 2\n\n\n9\nOct-16\nPoint Pattern Data\nGDS 8\nQuiz 7\n\n\n\nOct-18\nCentrography\nGDS 8\n\n\n\n10\nOct-23\nPoint Processes\nGDS 8\nQuiz 8\n\n\n\nOct-25\nQuadrat Statistics\nGDS 8\n\n\n\n11\nOct-30\nNearest Neighbor Statistics\nGDS 8\nQuiz 9\n\n\n\nNov-01\nDistance Based Statistics\nGDS 8\n\n\n\n12\nNov-06\nGeostatistical Data\nTBA\nQuiz 10\n\n\n\nNov-08\nSpatial Interpolation\nTBA\nExercise 3\n\n\n13\nNov-13\nKriging\nTBA\nQuiz 11\n\n\n\nNov-15\nNetwork Data\nTBA\n\n\n\n14\nNov-20\nSpatial Interaction Data\nTBA\nQuiz 12\n\n\n\nNov-22\nGravity Models\nTBA\n\n\n\n15\nNov-27\nMeasuring Spatial Disparities\nTBA\nQuiz 13\n\n\n\nNov-29\nSpatial Segregation\nTBA\n\n\n\n16\nDec-04\nChange of Support Problems\nTBA\nQuiz 14\n\n\n\nDec-06\nNext Steps in SDA\n\nExercise 4\n\n\n17\nDec-11\nFinal Review\n\nQuiz 15\n\n\n18\nDec-18\nFinal Exam (13:00-15:00)"
+  },
+  {
+    "objectID": "syllabus.html#grading",
+    "href": "syllabus.html#grading",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Grading",
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes and exercises your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 13 of 15 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 11 of 15 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 9 of 15 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 7 of 15 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a + for your grade. So a B base grade would become becomes a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a - for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+  },
+  {
+    "objectID": "syllabus.html#quizzes",
+    "href": "syllabus.html#quizzes",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Quizzes",
+    "text": "Quizzes\nQuizzes are graded on a pass/fail basis. Starting in week two, there will be a quiz due before a session that pertains to the background reading that is required before our work in class."
+  },
+  {
+    "objectID": "syllabus.html#exercises",
+    "href": "syllabus.html#exercises",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Exercises",
+    "text": "Exercises\nFour exercises will be introduced in class and are to be completed outside of class meetings.\nEach exercise is graded using a CRN rubric that classifies work with marks of C (\"Demonstrates Competence\"), R (\"Needs Revision\"), or N (\"Not assessable\"):\nOf each exercise the following questions will be asked: Does the work demonstrate that the student understands the concepts? Does the work demonstrate competence and meet the expectations outlined in the exercise?\nIf the answer is \"yes\" to both of the questions, a student passes the hurdle for that exercise.\nIf the initial submission does not clear the hurdle, then a second question is asked: Is there evidence of partial understanding of the concepts? If the answer to this question is \"Yes\" the student can exchange one token to attempt a revision of their work. If the answer is \"No\", the student does not clear the hurdle for this exercise and will not have the opportunity to revise their work."
+  },
+  {
+    "objectID": "syllabus.html#final-exam",
+    "href": "syllabus.html#final-exam",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Final Exam",
+    "text": "Final Exam\nA closed book, closed note, timed final exam will be given on December 18 (13:00-15:00). The exam will be based on a blend of previous quiz questions and additional questions that pertain to material covered in class."
+  },
+  {
+    "objectID": "syllabus.html#tokens",
+    "href": "syllabus.html#tokens",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Tokens",
+    "text": "Tokens\nEach student is provided with three tokens at the beginning of the semester.\nUsing Tokens\n\nOne token can be used for a one-day extension for an exercise.\nOne token can be used to revise an exercise that was submitted on-time but evaluated as \"Needing Revision\".\nTwo tokens can be used to request a make-up date for the final exam. (Requests required by 2023-11-18 17:00.)\n\nRemaining Tokens\nEach token that remains unused after 2023-12-18 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
+  },
+  {
+    "objectID": "syllabus.html#policies",
+    "href": "syllabus.html#policies",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "Policies",
+    "text": "Policies\n\nAccomodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+  },
+  {
+    "objectID": "lectures/index.html",
+    "href": "lectures/index.html",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "",
+    "text": "Week 01\n\n08-21 Course Introduction\n\nWeek 02"
+  },
+  {
+    "objectID": "lectures/index.html#lectures",
+    "href": "lectures/index.html#lectures",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "",
+    "text": "Week 01\n\n08-21 Course Introduction\n\nWeek 02"
+  }
+]
