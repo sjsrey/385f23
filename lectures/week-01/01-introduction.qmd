@@ -58,117 +58,22 @@ completed the readings.
 
 ## Readings
 
-| Abbrevation | Source                                                                                      |
-|-------------|---------------------------------------------------------------------------------------------|
-| GDS         | Rey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press. |
-| GSA         | de Smith, M., M.F. Goodchild, P.A. Longly (2021) Geospatial Analysis. Winchelsea Press.     |
-| SAH         | de Smith, M. (2021) Statistical Analysis Handbook. Drumlin Security Ltd.                    |
+| Abbrevation   | Source                                                                                        |
+| ------------- | --------------------------------------------------------------------------------------------- |
+| [GDA][gda]         | Tenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press. |
+| [GDS][gds]           | Rey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press.   |
 
+
+[gda]: https://pythongis.org/index.html
+[gds]: https://geographicdata.science/book/intro.html 
 
 ## Schedule (Planned)
 
-| Week |    Dates | Topic                                 |           Reading | Activities     |
-|-----:|---------:|:--------------------------------------|------------------:|----------------|
-|    1 |   Jan-19 | Introduction                          |                   |                |
-|    2 |   Jan-24 | Spatial Analysis                      |     [GDS 1][gds1] | Quiz 1         |
-|      |   Jan-26 | Spatial Analysis Software             |     [GDS 2][gds2] | Exercise 1 Out |
-|    3 |   Jan-31 | Spatial Data                          |     [GDS 3][gds3] |                |
-|      |   Feb-02 | Point Pattern Basics                  | [GDS 8.1][gds8.1] |                |
+![](images/sched1.png)
 
-[gds1]: https://geographicdata.science/book/notebooks/01_geo_thinking.html
-[gds2]: https://geographicdata.science/book/notebooks/02_geospatial_computational_environment.html
-[gds3]: https://geographicdata.science/book/notebooks/03_spatial_data.html
-[gds8.1]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html
+## Schedule (Planned)
 
-
-## 
-
-| Week |    Dates | Topic                                 |           Reading | Activities     |
-|-----:|---------:|:--------------------------------------|------------------:|----------------|
-|    4 |   Feb-07 | Centrography                          | [GDS 8.2][gds8.2] | Quiz 3         |
-|      |   Feb-09 | Point Processes                       |                   | Exericse 1 Due |
-|    5 |   Feb-14 | Nearest Neighbor Methods              | [GDS 8.3][gds8.3] | Quiz 4         |
-|      |   Feb-16 | Distance Distributions                |                   | Exercise 2 Out |
-|    6 |   Feb-21 | Area Data                             |   [GDS II][gdsii] | Quiz 5         |
-|      |   Feb-23 | Visualization of Area Data            |     [GDS 5][gds5] |                |
-
-
-[gds8.2]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#centrography
-[gds8.3]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#randomness-clustering
-[gds9]: https://geographicdata.science/book/notebooks/09_spatial_inequality.html
-[gds11]: https://geographicdata.science/book/notebooks/11_regression.html 
-[gdsii]: https://geographicdata.science/book/intro_part_ii.html
-[gds5]:  https://geographicdata.science/book/notebooks/05_choropleth.html
-[gds6.1]:  https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#understanding-spatial-autocorrelation
-[gds4]: https://geographicdata.science/book/notebooks/04_spatial_weights.html
-
-
-## 
-
-| Week |    Dates | Topic                                 |           Reading | Activities     |
-|-----:|---------:|:--------------------------------------|------------------:|----------------|
-|    7 |   Feb-28 | Spatial Autocorrelation Concepts      | [GDS 6.1][gds6.1] | Quiz 6         |
-|      |   Mar-02 | Spatial Weights                       |     [GDS 4][gds4] | Exercise 2 Due |
-|    8 |   Mar-07 | Join Count Tests                      | [GDS 5.1][gds5.1] | Quiz 7         |
-|      |   Mar-09 | Global Autocorrelation Tests          | [GDS 5.2][gds5.2] |                |
-|    9 |   Mar-14 | Local Autocorrelation                 |     [GDS 6][gds6] | Quiz 8         |
-|      |   Mar-16 | Geostatistical Data                   |   [GSA gs][gsags] | Exercise 3 Out |
-
-[gds5.1]:  https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#binary-case-join-counts
-[gds5.2]: https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#continuous-case-moran-plot-and-moran-s-i
-[gds6]: https://geographicdata.science/book/notebooks/07_local_autocorrelation.html
-[gsags]: https://www.spatialanalysisonline.com/HTML/geostatistical_interpolation_m.htm?zoom_highlightsub=geostatistical
-[gsakrg]: https://www.spatialanalysisonline.com/HTML/kriging_interpolation.htm 
-[gsaint]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
-
-
-## 
-
-| Week |    Dates | Topic                                 |           Reading | Activities     |
-|-----:|---------:|:--------------------------------------|------------------:|----------------|
-|   10 |   Mar-21 | Spatial Interpolation                 | [GSA int][gsaint] | Quiz 9         |
-|      |   Mar-23 | Kriging                               | [GSA krg][gsakrg] |                |
-|   11 |   Apr-04 | Introduction to Multivariate Analysis |   [SAH mv][sahmv] | Quiz 10        |
-|      |   Apr-06 | Correlation and Spatial Correlation   | [SAH cor][sahcor] | Exercise 3 Due |
-|   12 |   Apr-11 | Introduction to Regression            | [GSA reg][gsareg] | Exercise 4 Out |
-|      |   Apr-13 | Inference in Regression               | [SAH inf][sahinf] |                |
-
-[gds1]: https://geographicdata.science/book/notebooks/01_geo_thinking.html
-[gds2]: https://geographicdata.science/book/notebooks/02_geospatial_computational_environment.html
-[gds3]: https://geographicdata.science/book/notebooks/03_spatial_data.html
-[gds8.1]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html
-[gds8.2]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#centrography
-[gds8.3]: https://geographicdata.science/book/notebooks/08_point_pattern_analysis.html#randomness-clustering
-[gds9]: https://geographicdata.science/book/notebooks/09_spatial_inequality.html
-[gds11]: https://geographicdata.science/book/notebooks/11_regression.html 
-[gdsii]: https://geographicdata.science/book/intro_part_ii.html
-[gds5]:  https://geographicdata.science/book/notebooks/05_choropleth.html
-[gds6.1]:  https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#understanding-spatial-autocorrelation
-[gds4]: https://geographicdata.science/book/notebooks/04_spatial_weights.html
-[gds5.1]:  https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#binary-case-join-counts
-[gds5.2]: https://geographicdata.science/book/notebooks/06_spatial_autocorrelation.html#continuous-case-moran-plot-and-moran-s-i
-[gds6]: https://geographicdata.science/book/notebooks/07_local_autocorrelation.html
-[gsags]: https://www.spatialanalysisonline.com/HTML/geostatistical_interpolation_m.htm?zoom_highlightsub=geostatistical
-[gsakrg]: https://www.spatialanalysisonline.com/HTML/kriging_interpolation.htm 
-[gsaint]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
-[gsareg]: https://www.spatialanalysisonline.com/HTML/regression_overview.htm?zoom_highlightsub=regression
-[sahmv]: https://www.statsref.com/HTML/multivariate_distributions.html?zoom_highlightsub=multivariate
-[sahcor]: https://www.statsref.com/HTML/correlation.html
-[sahinf]: https://www.statsref.com/HTML/simple_regression.html
-[python]: http://python.org
-
-##
-
-| Week |    Dates | Topic                                 |           Reading | Activities     |
-|-----:|---------:|:--------------------------------------|------------------:|----------------|
-|   13 |   Apr-18 | Regression with Spatial Data          |   [GDS 11][gds11] |                |
-|      |   Apr-20 | Diagnostics for Spatial Effects       |                   |                |
-|   14 |   Apr-25 | Spatial Dynamics                      |     [GDS 9][gds9] | Exercise 4 Due |
-|      |   Apr-27 | Next Steps With Spatial Data Analysis |                   |                |
-|   15 |   May-02 | Presentations                         |                   |                |
-|      |   May-04 | Presentations                         |                   |                |
-
-
+![](images/sched2.png)
 
 
 
@@ -183,28 +88,38 @@ that you submit that is evaluated to be of an acceptable level of
 quality. The acceptable level of quality demonstrates competency in the
 concepts and methods covered in the course.
 
+## Specification Grading
+
+There is a two-step process for determination of your final course grade
+at the end of the quarter:
+
+1.  Using your quizzes, and exercises your **base grade** is
+    determined.
+2.  Using your final exam results, determine if your base grade includes
+    a \"plus\", \"minus\", or level drop to form the course grade.
+
+
 ## Base Grade
 
   Level   Hurdles
   ------- -------------------------------------------------------------------------------------
-  A       Pass at least 8 of 10 quizzes, earn \"Demonstrates Competency\" on 4 of 4 exercises,
-          **and** submit an project that earns \"Demonstrates Competency\"
-  B       Pass at least 7 of 10 quizzes, earn \"Demonstrates Competency\" on 3 of 4 exercises
-  C       Pass at least 6 of 10 quizzes, earn \"Demonstrates Competency\" on 2 of 4 exercises
-  D       Pass at least 5 of 10 quizzes, earn \"Demonstrates Competency\" on 1 of 4 exercises
+  A        Pass at least 13 of 15 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,
+  B       Pass at least 11 of 15 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises
+  C       Pass at least 9 of 15 quizzes and  earn \"Demonstrates Competency\" on 2 of 4 exercises
+  D       Pass at least 7 of 15 quizzes and  earn \"Demonstrates Competency\" on 1 of 4 exercises
   F       Fail to clear D-level hurdles
-  
+
 ## Final Grade
 
 
--   If you earn at least 85% on the final exam, you will obtain a + for
-    your grade. So an A base grade becomes a final A+ course grade, a B
-    becomes a B+, and so on.
+-   If you earn at least 85% on the final exam, you will obtain a + for your
+    grade. So  a B base grade would become becomes a B+ course grade, and so on
+    (**Note: SDSU does not record A+ grades**).
 -   If you score between 70-85% on the final exam, your base grade
     becomes your course grade.
 -   If you score between 50% and 69% on the final exam, you will obtain
-    a - for your grade. So an A becomes and A-, a B becomes a B-, and so
-    on.
+    a - for your grade. So an A base grade becomes an A-  course grade, a B
+    base grade becomes a B- course grade, and so on.
 -   If you score less than 50% on the final exam, your course grade will
     drop one level: An A base grade becomes a final B course grade.
 
@@ -212,12 +127,13 @@ concepts and methods covered in the course.
 ## Quizzes
 
 Quizzes are graded on a pass/fail basis. Starting in week two, there
-will be a quiz due before each Tuesday session that pertains to the
+will be a quiz due before a session that pertains to the
 background reading that is required before our work in class.
 
 ## Exercises
 
-Four exercises will be introduced in class and are due in two weeks.
+Four exercises will be introduced in class and are to be completed outside of
+class meetings.
 
 Each exercise is graded using a **CRN** rubric that classifies work with
 marks of **C** (\"Demonstrates Competence\"), **R** (\"Needs
@@ -245,29 +161,12 @@ not have the opportunity to revise their work.
 
 
 
-## Project
-
-The project is a required hurdle to earn a level A grade. In order to
-clear this hurdle, the project must obtain a \"Demonstrates Competence\"
-evaluation. There will be opportunities for feedback along the way, but
-the final submission will be evaluated. There will be no opportunity for
-revising this final submission.
-
-
-## Project
-
-Students need to commit to the project by specifying their team (maximum
-of 4 members on a team) by **2-09**. Once the commitment is made, the team
-composition is final. Any student who does not submit a team definition
-by this date will not be able to pursue the project.
-
-Details on the project rubric will be given out on **3-02**.
-
 ## Final Exam
 
-A closed book, closed note, timed final exam will be given on May 10 (13:00-15:00). The
-exam will be based on a blend of previous quiz questions and additional
-questions that pertain to material covered in class.
+A closed book, closed note, timed final exam will be given on **December 18
+(13:00-15:00)**. The exam will be based on a blend of previous quiz questions
+and additional questions that pertain to material covered in class.
+
 
 ## Tokens
 
@@ -283,24 +182,14 @@ semester.
 
 3.  Two tokens can be used to request a make-up date for the final exam.
 
-## Earning Tokens
-
-1.  Handing in an exercise at least 24 hours before its due date.
-
-2.  Submitting all four exercises on time (or early).
-
-3.  Attempting all 10 quizzes.
 
 ## Remaining Tokens
 
-Each token that remains unused after **4-27** will be counted as a passed
+Each token that remains unused after **2023-12-18** will be counted as a passed
 quiz. *Tokens cannot be exchanged with other students*.
 
 
 ## Aministration
-
-
-
 
 
 ## Accomodations
@@ -481,7 +370,6 @@ Either way, you will be using Jupyter Notebooks for all computation:
 
 
 
-
 ## You
 
 Take a few minutes and let us know a bit about yourself
@@ -493,7 +381,7 @@ Take a few minutes and let us know a bit about yourself
 
 # Next Up
 </br>
-**Introduction to Spatial Analysis**
+**Introduction to Jupyter**
 
 
 <!-- # An Include Follows -->
