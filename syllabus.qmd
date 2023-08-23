@@ -11,18 +11,18 @@ format:
 <hr>
 
 
-## Class meetings
+## Class Meetings
 
 | Meeting | Location | Time                   |
 |---------|----------|------------------------|
 | Lecture | [LSN 111](https://map.concept3d.com/?id=801#!ct/62917,40419,15205,54894,71456?m/617937) | Mon & Wed 3:30 - 4:45pm |
 
-## Teaching team 
+## Teaching Team 
 
-| Name                                                     | Office hours      | Location                                                                                                                      |
-|----------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [Sergio Rey](https://geography.sdsu.edu/people/bios/rey) | [Thu 3:30 - 4:30pm (by appointment)](https://calendly.com/sjsrey/office-hours) | [PSFA 361G](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
-| TBA                                              | TBA   | [PSFA 361F](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/) |
+| Name                                                       | Office hours                                                                   | Location                                                                                                                        |
+| ---------------------------------------------------------- | -------------------                                                            | ------------------------------------------------------------------------------------------------------------------------------- |
+| [Sergio Rey](https://geography.sdsu.edu/people/bios/rey)   | [Thu 3:30 - 4:30pm (by appointment)](https://calendly.com/sjsrey/office-hours) | [PSFA 361G](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/)  |
+| Jin Huang                                                  | Fri 10:30am                                                                    | [PSFA 361F](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/)  |
 
 
 
@@ -70,7 +70,7 @@ All students are required to complete the [prerequisite assessment quiz](https:/
 
 ## Computational Learning
 
-We will using [open
+We will be using [open
 source](https://en.wikipedia.org/wiki/Open-source_software) geospatial
 software throughout the course together with [Jupyter
 Notebooks](https://jupyter.org), and [Python](https://python.org) as our
@@ -87,8 +87,8 @@ instructions to do so, **but this is not required**.
 All required readings are available through the links listed
 below. Assigned readings should be completed before the date listed in
 the schedule (see below). Readings are a critical part of the
-discussions we will hold in class, and therefore coming into class
-prepared means having completed the readings and thought about the
+discussions we will hold in class, and therefore being prepared for class
+means having completed the readings and thought about the
 content. It will be difficult to do well in this course without having
 completed the readings.
 
@@ -182,7 +182,7 @@ concepts and methods covered in the course.
 There is a two-step process for determination of your final course grade
 at the end of the quarter:
 
-1.  Using your quizzes and  exercises your **base grade** is
+1.  Using your quizzes and  exercises, your **base grade** is
     determined.
 2.  Using your final exam results, determine if your base grade includes
     a \"plus\", \"minus\", or level drop to form the course grade.
@@ -200,13 +200,13 @@ specification:
 
 For Step 2, your final course grade is determined as follows:
 
--   If you earn at least 85% on the final exam, you will obtain a + for your
-    grade. So  a B base grade would become becomes a B+ course grade, and so on
+-   If you earn at least 85% on the final exam, you will obtain a "+" for your
+    grade. So  a B base grade would become a B+ course grade, and so on
     (**Note: SDSU does not record A+ grades**).
 -   If you score between 70-85% on the final exam, your base grade
     becomes your course grade.
 -   If you score between 50% and 69% on the final exam, you will obtain
-    a - for your grade. So an A base grade becomes an A-  course grade, a B
+    a "-" for your grade. So an A base grade becomes an A-  course grade, a B
     base grade becomes a B- course grade, and so on.
 -   If you score less than 50% on the final exam, your course grade will
     drop one level: An A base grade becomes a final B course grade.
@@ -270,7 +270,7 @@ Each token that remains unused after **2023-12-18** will be counted as a passed
 quiz. *Tokens cannot be exchanged with other students*.
 
 ## Policies
-### Accomodations
+### Accommodations
 If you are a student with a disability and are in need of
 accommodations for this class, please contact Student Ability
 Success Center at (619) 594-6473 as soon as possible.  Please know

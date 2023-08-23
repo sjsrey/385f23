@@ -11,5 +11,16 @@
   },
   "lectures/0821/0821.ipynb": {
     "0821.html": "bc67bd06"
+  },
+  "syllabus.qmd": {
+    "syllabus.html": "00e0501e",
+    "syllabus.tex": "8ed6ea21"
+  },
+  "lectures/week-01/01-introduction.qmd": {
+    "01-introduction.html": "602ce458"
+  },
+  "lectures/index.qmd": {
+    "index.html": "cc7fc5dc",
+    "index.tex": "70661b5e"
   }
 }

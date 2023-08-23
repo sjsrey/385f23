@@ -74,7 +74,7 @@
     "href": "lectures/week-01/01-introduction.html#specification-grading",
     "title": "Course Introduction",
     "section": "Specification Grading",
-    "text": "Specification Grading\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes, and exercises your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade."
+    "text": "Specification Grading\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes, and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade."
   },
   {
     "objectID": "lectures/week-01/01-introduction.html#base-grade",
@@ -88,7 +88,7 @@
     "href": "lectures/week-01/01-introduction.html#final-grade",
     "title": "Course Introduction",
     "section": "Final Grade",
-    "text": "Final Grade\n\nIf you earn at least 85% on the final exam, you will obtain a + for your grade. So a B base grade would become becomes a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a - for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+    "text": "Final Grade\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
   },
   {
     "objectID": "lectures/week-01/01-introduction.html#quizzes",
@@ -147,18 +147,18 @@
     "text": "Remaining Tokens\nEach token that remains unused after 2023-12-18 will be counted as a passed quiz. Tokens cannot be exchanged with other students."
   },
   {
-    "objectID": "lectures/week-01/01-introduction.html#aministration",
-    "href": "lectures/week-01/01-introduction.html#aministration",
+    "objectID": "lectures/week-01/01-introduction.html#administration",
+    "href": "lectures/week-01/01-introduction.html#administration",
     "title": "Course Introduction",
-    "section": "Aministration",
-    "text": "Aministration"
+    "section": "Administration",
+    "text": "Administration"
   },
   {
-    "objectID": "lectures/week-01/01-introduction.html#accomodations",
-    "href": "lectures/week-01/01-introduction.html#accomodations",
+    "objectID": "lectures/week-01/01-introduction.html#accommodations",
+    "href": "lectures/week-01/01-introduction.html#accommodations",
     "title": "Course Introduction",
-    "section": "Accomodations",
-    "text": "Accomodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center."
+    "section": "Accommodations",
+    "text": "Accommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center."
   },
   {
     "objectID": "lectures/week-01/01-introduction.html#privacy-and-intellectual-property",
@@ -297,15 +297,15 @@
     "objectID": "syllabus.html#class-meetings",
     "href": "syllabus.html#class-meetings",
     "title": "Geography 385 Spatial Data Analysis",
-    "section": "Class meetings",
-    "text": "Class meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nLSN 111\nMon & Wed 3:30 - 4:45pm"
+    "section": "Class Meetings",
+    "text": "Class Meetings\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nLecture\nLSN 111\nMon & Wed 3:30 - 4:45pm"
   },
   {
     "objectID": "syllabus.html#teaching-team",
     "href": "syllabus.html#teaching-team",
     "title": "Geography 385 Spatial Data Analysis",
-    "section": "Teaching team",
-    "text": "Teaching team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nThu 3:30 - 4:30pm (by appointment)\nPSFA 361G\n\n\nTBA\nTBA\nPSFA 361F"
+    "section": "Teaching Team",
+    "text": "Teaching Team\n\n\n\nName\nOffice hours\nLocation\n\n\n\n\nSergio Rey\nThu 3:30 - 4:30pm (by appointment)\nPSFA 361G\n\n\nJin Huang\nFri 10:30am\nPSFA 361F"
   },
   {
     "objectID": "syllabus.html#introduction",
@@ -326,14 +326,14 @@
     "href": "syllabus.html#computational-learning",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Computational Learning",
-    "text": "Computational Learning\nWe will using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through JupyterHub a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required."
+    "text": "Computational Learning\nWe will be using open source geospatial software throughout the course together with Jupyter Notebooks, and Python as our scripting language.\nAll software for the course will be made available through JupyterHub a web-based framework. Students wishing to install these materials on their own machines will be given instructions to do so, but this is not required."
   },
   {
     "objectID": "syllabus.html#readings",
     "href": "syllabus.html#readings",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Readings",
-    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore coming into class prepared means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press."
+    "text": "Readings\nAll required readings are available through the links listed below. Assigned readings should be completed before the date listed in the schedule (see below). Readings are a critical part of the discussions we will hold in class, and therefore being prepared for class means having completed the readings and thought about the content. It will be difficult to do well in this course without having completed the readings.\n\n\n\nAbbrevation\nSource\n\n\n\n\nGDA\nTenkanen, H., V. Heikinheimo, D. Whipp (2023) Python for Geographic Data Analysis. CRC Press.\n\n\nGDS\nRey, S.J., D. Arribas-Bel, L.J. Wolf (2023) Geographic Data Science with Python. CRC Press."
   },
   {
     "objectID": "syllabus.html#schedule-planned",
@@ -347,7 +347,7 @@
     "href": "syllabus.html#grading",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Grading",
-    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes and exercises your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 13 of 15 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 11 of 15 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 9 of 15 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 7 of 15 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a + for your grade. So a B base grade would become becomes a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a - for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
+    "text": "Grading\nGEOG385 uses specification grading in evaluating student work and in determining your final course grade. Your course grade will be based on the quality and quantity of the work that you submit that is evaluated to be of an acceptable level of quality. The acceptable level of quality demonstrates competency in the concepts and methods covered in the course.\nThere is a two-step process for determination of your final course grade at the end of the quarter:\n\nUsing your quizzes and exercises, your base grade is determined.\nUsing your final exam results, determine if your base grade includes a \"plus\", \"minus\", or level drop to form the course grade.\n\nFor Step 1, the base grade is determined using the following specification:\n\n\n\nLevel\nHurdles\n\n\n\n\nA\nPass at least 13 of 15 quizzes and earn \"Demonstrates Competency\" on 4 of 4 exercises,\n\n\nB\nPass at least 11 of 15 quizzes and earn \"Demonstrates Competency\" on 3 of 4 exercises\n\n\nC\nPass at least 9 of 15 quizzes and earn \"Demonstrates Competency\" on 2 of 4 exercises\n\n\nD\nPass at least 7 of 15 quizzes and earn \"Demonstrates Competency\" on 1 of 4 exercises\n\n\nF\nFail to clear D-level hurdles\n\n\n\nFor Step 2, your final course grade is determined as follows:\n\nIf you earn at least 85% on the final exam, you will obtain a “+” for your grade. So a B base grade would become a B+ course grade, and so on (Note: SDSU does not record A+ grades).\nIf you score between 70-85% on the final exam, your base grade becomes your course grade.\nIf you score between 50% and 69% on the final exam, you will obtain a “-” for your grade. So an A base grade becomes an A- course grade, a B base grade becomes a B- course grade, and so on.\nIf you score less than 50% on the final exam, your course grade will drop one level: An A base grade becomes a final B course grade."
   },
   {
     "objectID": "syllabus.html#quizzes",
@@ -382,7 +382,7 @@
     "href": "syllabus.html#policies",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Policies",
-    "text": "Policies\n\nAccomodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+    "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
   },
   {
     "objectID": "lectures/index.html",

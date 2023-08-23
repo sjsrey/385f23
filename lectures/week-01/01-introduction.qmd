@@ -93,7 +93,7 @@ concepts and methods covered in the course.
 There is a two-step process for determination of your final course grade
 at the end of the quarter:
 
-1.  Using your quizzes, and exercises your **base grade** is
+1.  Using your quizzes, and exercises, your **base grade** is
     determined.
 2.  Using your final exam results, determine if your base grade includes
     a \"plus\", \"minus\", or level drop to form the course grade.
@@ -112,13 +112,13 @@ at the end of the quarter:
 ## Final Grade
 
 
--   If you earn at least 85% on the final exam, you will obtain a + for your
-    grade. So  a B base grade would become becomes a B+ course grade, and so on
+-   If you earn at least 85% on the final exam, you will obtain a "+" for your
+    grade. So  a B base grade would become  a B+ course grade, and so on
     (**Note: SDSU does not record A+ grades**).
 -   If you score between 70-85% on the final exam, your base grade
     becomes your course grade.
 -   If you score between 50% and 69% on the final exam, you will obtain
-    a - for your grade. So an A base grade becomes an A-  course grade, a B
+    a "-"  for your grade. So an A base grade becomes an A-  course grade, a B
     base grade becomes a B- course grade, and so on.
 -   If you score less than 50% on the final exam, your course grade will
     drop one level: An A base grade becomes a final B course grade.
@@ -189,10 +189,10 @@ Each token that remains unused after **2023-12-18** will be counted as a passed
 quiz. *Tokens cannot be exchanged with other students*.
 
 
-## Aministration
+## Administration
 
 
-## Accomodations
+## Accommodations
 If you are a student with a disability and are in need of
 accommodations for this class, please contact Student Ability
 Success Center at (619) 594-6473 as soon as possible.  Please know
