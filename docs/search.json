@@ -287,13 +287,6 @@
     "text": "You\nTake a few minutes and let us know a bit about yourself\n\nName\nProgram/Concentration\nWhy you are here"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "syllabus.html#class-meetings",
     "href": "syllabus.html#class-meetings",
     "title": "Geography 385 Spatial Data Analysis",
@@ -385,17 +378,73 @@
     "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html",
+    "href": "lectures/week-01/2023-08-23.html",
+    "title": "Markdown",
+    "section": "",
+    "text": "3 + 7\n\n10\nprint(\"hello world\")\n\nhello world\nx = 3 + 7\nx\n\n10\nprint(x)\n\n10\nprint(\"hello world\")\n\nhello world\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#math",
+    "href": "lectures/week-01/2023-08-23.html#math",
+    "title": "Markdown",
+    "section": "Math",
+    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = \\sum_{i=1}^n x_i\n\\]"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#markdown",
+    "href": "lectures/week-01/2023-08-23.html#markdown",
+    "title": "Markdown",
+    "section": "Markdown",
+    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#math-1",
+    "href": "lectures/week-01/2023-08-23.html#math-1",
+    "title": "Markdown",
+    "section": "Math",
+    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#links",
+    "href": "lectures/week-01/2023-08-23.html#links",
+    "title": "Markdown",
+    "section": "Links",
+    "text": "Links\nThe big search engine in the sky is google"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#markdown-1",
+    "href": "lectures/week-01/2023-08-23.html#markdown-1",
+    "title": "Markdown",
+    "section": "Markdown",
+    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#math-2",
+    "href": "lectures/week-01/2023-08-23.html#math-2",
+    "title": "Markdown",
+    "section": "Math",
+    "text": "Math\n\n10 * 4\n\n40"
+  },
+  {
     "objectID": "lectures/index.html",
     "href": "lectures/index.html",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n\nWeek 02"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction\n\nWeek 02"
   },
   {
     "objectID": "lectures/index.html#lectures",
     "href": "lectures/index.html#lectures",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n\nWeek 02"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction\n\nWeek 02"
   }
 ]

@@ -22,5 +22,8 @@
   "lectures/index.qmd": {
     "index.html": "cc7fc5dc",
     "index.tex": "70661b5e"
+  },
+  "lectures/week-01/2023-08-23.ipynb": {
+    "2023-08-23.html": "32038eca"
   }
 }
