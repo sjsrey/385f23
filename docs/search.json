@@ -396,7 +396,7 @@
     "href": "lectures/week-01/2023-08-23.html#math",
     "title": "Markdown",
     "section": "Math",
-    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = \\sum_{i=1}^n x_i\n\\]"
+    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
   },
   {
     "objectID": "lectures/week-01/2023-08-23.html#markdown",
@@ -438,13 +438,13 @@
     "href": "lectures/index.html",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction\n\nWeek 02"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02"
   },
   {
     "objectID": "lectures/index.html#lectures",
     "href": "lectures/index.html#lectures",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction\n\nWeek 02"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02"
   }
 ]

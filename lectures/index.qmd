@@ -13,7 +13,7 @@ format:
 
 - Week 01
   - [08-21 Course Introduction](week-01/01-introduction.qmd)
-  - [08-23 Jupyter Introduction](week-01/2023-08-23.ipynb)
+  - [08-23 Jupyter Introduction](week-01/2023-08-23.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-01/2023-08-23.ipynb)
 
 
 - Week 02
