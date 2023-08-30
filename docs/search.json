@@ -1,82 +1,5 @@
 [
   {
-    "objectID": "lectures/0821/0821.html",
-    "href": "lectures/0821/0821.html",
-    "title": "Course Introduction",
-    "section": "",
-    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()"
-  },
-  {
-    "objectID": "lectures/index.html",
-    "href": "lectures/index.html",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)"
-  },
-  {
-    "objectID": "lectures/index.html#lectures",
-    "href": "lectures/index.html#lectures",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html",
-    "href": "lectures/week-01/2023-08-23.html",
-    "title": "Markdown",
-    "section": "",
-    "text": "3 + 7\n\n10\nprint(\"hello world\")\n\nhello world\nx = 3 + 7\nx\n\n10\nprint(x)\n\n10\nprint(\"hello world\")\n\nhello world\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#math",
-    "href": "lectures/week-01/2023-08-23.html#math",
-    "title": "Markdown",
-    "section": "Math",
-    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#markdown",
-    "href": "lectures/week-01/2023-08-23.html#markdown",
-    "title": "Markdown",
-    "section": "Markdown",
-    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#math-1",
-    "href": "lectures/week-01/2023-08-23.html#math-1",
-    "title": "Markdown",
-    "section": "Math",
-    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#links",
-    "href": "lectures/week-01/2023-08-23.html#links",
-    "title": "Markdown",
-    "section": "Links",
-    "text": "Links\nThe big search engine in the sky is google"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#markdown-1",
-    "href": "lectures/week-01/2023-08-23.html#markdown-1",
-    "title": "Markdown",
-    "section": "Markdown",
-    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#math-2",
-    "href": "lectures/week-01/2023-08-23.html#math-2",
-    "title": "Markdown",
-    "section": "Math",
-    "text": "Math\n\n10 * 4\n\n40"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "syllabus.html#class-meetings",
     "href": "syllabus.html#class-meetings",
     "title": "Geography 385 Spatial Data Analysis",
@@ -123,7 +46,7 @@
     "href": "syllabus.html#schedule-planned",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)\n\n\n\n\n\n\n\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nAug-21\nCourse Introduction\n\n\n\n\n\nAug-23\nJupyter Hub\nGDA 1 GDS 2\n\n\n\n2\nAug-28\nPython: Programming Concepts\nGDA 2\nQuiz 1\n\n\n\nAug-30\nPython: Data Analysis\nGDA 3\n\n\n\n3\nSep-04\nLabor Day Holiday\n\n\n\n\n\nSep-06\nPython: Visualization\nGDA 4\n\n\n\n4\nSep-11\nPython: Geographic Data\nGDA 5\nQuiz 2\n\n\n\nSep-13\nGeopandas and PySAL\nGDA 6\nExercise 1\n\n\n5\nSep-18\nSpatial Data Overview\nGDS 3\nQuiz 3\n\n\n\nSep-20\nGeoVisualization\nGDS 5\n\n\n\n6\nSep-25\nSpatial Weights\nGDS 4\nQuiz 4\n\n\n\nSep-27\nSpatial Dependence\nGDS 6\n\n\n\n7\nOct-02\nGlobal Autocorrelation\nGDS 6\nQuiz 5\n\n\n\nOct-04\nGlobal Autocorrelation Tests\nGDS 6\n\n\n\n8\nOct-09\nLocal Autocorrelation\nGDS 7\nQuiz 6\n\n\n\nOct-11\nLocal Autocorrelation Tests\nGDS 7\nExercise 2\n\n\n9\nOct-16\nPoint Pattern Data\nGDS 8\nQuiz 7\n\n\n\nOct-18\nCentrography\nGDS 8\n\n\n\n10\nOct-23\nPoint Processes\nGDS 8\nQuiz 8\n\n\n\nOct-25\nQuadrat Statistics\nGDS 8\n\n\n\n11\nOct-30\nNearest Neighbor Statistics\nGDS 8\nQuiz 9\n\n\n\nNov-01\nDistance Based Statistics\nGDS 8\n\n\n\n12\nNov-06\nGeostatistical Data\nTBA\nQuiz 10\n\n\n\nNov-08\nSpatial Interpolation\nTBA\nExercise 3\n\n\n13\nNov-13\nKriging\nTBA\nQuiz 11\n\n\n\nNov-15\nNetwork Data\nTBA\n\n\n\n14\nNov-20\nSpatial Interaction Data\nTBA\nQuiz 12\n\n\n\nNov-22\nGravity Models\nTBA\n\n\n\n15\nNov-27\nMeasuring Spatial Disparities\nTBA\nQuiz 13\n\n\n\nNov-29\nSpatial Segregation\nTBA\n\n\n\n16\nDec-04\nChange of Support Problems\nTBA\nQuiz 14\n\n\n\nDec-06\nNext Steps in SDA\n\nExercise 4\n\n\n17\nDec-11\nFinal Review\n\nQuiz 15\n\n\n18\nDec-18\nFinal Exam (13:00-15:00)"
+    "text": "Schedule (Planned)\n\n\n\n\n\n\n\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nAug-21\nCourse Introduction\n\n\n\n\n\nAug-23\nJupyter Hub\nGDA 1 GDS 2\n\n\n\n2\nAug-28\nPython: Programming Concepts\nGDA 2\nQuiz 1\n\n\n\nAug-30\nPython: Scripting\nGDA 2\n\n\n\n3\nSep-04\nLabor Day Holiday\n\n\n\n\n\nSep-06\nPython: Data Analysis/Visualization\nGDA 3,4\n\n\n\n4\nSep-11\nPython: Geographic Data\nGDA 5\nQuiz 2\n\n\n\nSep-13\nGeopandas and PySAL\nGDA 6\nExercise 1\n\n\n5\nSep-18\nSpatial Data Overview\nGDS 3\nQuiz 3\n\n\n\nSep-20\nGeoVisualization\nGDS 5\n\n\n\n6\nSep-25\nSpatial Weights\nGDS 4\nQuiz 4\n\n\n\nSep-27\nSpatial Dependence\nGDS 6\n\n\n\n7\nOct-02\nGlobal Autocorrelation\nGDS 6\nQuiz 5\n\n\n\nOct-04\nGlobal Autocorrelation Tests\nGDS 6\n\n\n\n8\nOct-09\nLocal Autocorrelation\nGDS 7\nQuiz 6\n\n\n\nOct-11\nLocal Autocorrelation Tests\nGDS 7\nExercise 2\n\n\n9\nOct-16\nPoint Pattern Data\nGDS 8\nQuiz 7\n\n\n\nOct-18\nCentrography\nGDS 8\n\n\n\n10\nOct-23\nPoint Processes\nGDS 8\nQuiz 8\n\n\n\nOct-25\nQuadrat Statistics\nGDS 8\n\n\n\n11\nOct-30\nNearest Neighbor Statistics\nGDS 8\nQuiz 9\n\n\n\nNov-01\nDistance Based Statistics\nGDS 8\n\n\n\n12\nNov-06\nGeostatistical Data\nTBA\nQuiz 10\n\n\n\nNov-08\nSpatial Interpolation\nTBA\nExercise 3\n\n\n13\nNov-13\nKriging\nTBA\nQuiz 11\n\n\n\nNov-15\nNetwork Data\nTBA\n\n\n\n14\nNov-20\nSpatial Interaction Data\nTBA\nQuiz 12\n\n\n\nNov-22\nGravity Models\nTBA\n\n\n\n15\nNov-27\nMeasuring Spatial Disparities\nTBA\nQuiz 13\n\n\n\nNov-29\nSpatial Segregation\nTBA\n\n\n\n16\nDec-04\nChange of Support Problems\nTBA\nQuiz 14\n\n\n\nDec-06\nNext Steps in SDA\n\nExercise 4\n\n\n17\nDec-11\nFinal Review\n\nQuiz 15\n\n\n18\nDec-18\nFinal Exam (13:00-15:00)"
   },
   {
     "objectID": "syllabus.html#grading",
@@ -166,6 +89,13 @@
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Policies",
     "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
+  },
+  {
+    "objectID": "lectures/index.html",
+    "href": "lectures/index.html",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "",
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)"
   },
   {
     "objectID": "lectures/week-01/01-introduction.html#introduction",
@@ -448,31 +378,80 @@
     "text": "You\nTake a few minutes and let us know a bit about yourself\n\nName\nProgram/Concentration\nWhy you are here"
   },
   {
+    "objectID": "lectures/week-01/2023-08-23.html",
+    "href": "lectures/week-01/2023-08-23.html",
+    "title": "Geog385F23",
+    "section": "",
+    "text": "3 + 7\n\n10"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#markdown",
+    "href": "lectures/week-01/2023-08-23.html#markdown",
+    "title": "Geog385F23",
+    "section": "Markdown",
+    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#math",
+    "href": "lectures/week-01/2023-08-23.html#math",
+    "title": "Geog385F23",
+    "section": "Math",
+    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#markdown-1",
+    "href": "lectures/week-01/2023-08-23.html#markdown-1",
+    "title": "Geog385F23",
+    "section": "Markdown",
+    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#math-1",
+    "href": "lectures/week-01/2023-08-23.html#math-1",
+    "title": "Geog385F23",
+    "section": "Math",
+    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#links",
+    "href": "lectures/week-01/2023-08-23.html#links",
+    "title": "Geog385F23",
+    "section": "Links",
+    "text": "Links\nThe big search engine in the sky is google"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#markdown-2",
+    "href": "lectures/week-01/2023-08-23.html#markdown-2",
+    "title": "Geog385F23",
+    "section": "Markdown",
+    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#math-2",
+    "href": "lectures/week-01/2023-08-23.html#math-2",
+    "title": "Geog385F23",
+    "section": "Math",
+    "text": "Math\n\n10 * 4\n\n40"
+  },
+  {
+    "objectID": "lectures/0821/0821.html",
+    "href": "lectures/0821/0821.html",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()"
+  },
+  {
     "objectID": "lectures/week-02/2023-08-28-python-introduction.html",
     "href": "lectures/week-02/2023-08-28-python-introduction.html",
-    "title": "Introduction to Python",
+    "title": "Geog385F23",
     "section": "",
-    "text": "high level language\nlow learning curve\nopen source\nwidespread use\nfun"
+    "text": "high level language\nlow learning curve\nopen source\nwidespread use\nfun\n\n\n\n\n\n2 + 3\n\n5\n\n\n\n5 * 7\n\n35\n\n\n\n2**4\n\n16\n\n\n\n7 / 4\n\n1.75\n\n\n\nx = 8/3\n\n\nx\n\n2.6666666666666665\n\n\n\nimport math\n\n\nmath.pi\n\n3.141592653589793\n\n\n\nmath.sqrt(4)\n\n2.0\n\n\n\ntemp_celsius = 10.0\n\n\ntemp_celsius\n\n10.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", 9/5 * temp_celsius + 32)\n\nTemperature in Fahrenheit:  50.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  50.0\n\n\n\ntemp_celsius\n\n10.0\n\n\n\ntemp_celsius = 40.0\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  104.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  104.0\n\n\n\n\n\n\nint\nfloat\nstr\nbool\n\n\nweatherForecast = \"Hot\"\n\n\ntype(weatherForecast)\n\nstr\n\n\n\nx = 10.1\ntype(x)\n\nfloat\n\n\n\ny = 7\ntype(y)\n\nint\n\n\n\ndir(weatherForecast)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nweatherForecast.upper()\n\n'HOT'\n\n\n\nweatherForecast.startswith('f')\n\nFalse\n\n\n\ntitle = \"This is the title of my book\"\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle.upper()\n\n'THIS IS THE TITLE OF MY BOOK'\n\n\n\ntitle.title()\n\n'This Is The Title Of My Book'\n\n\n\ntitle.split()\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\ndir(title)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle.center(40)\n\n'      This is the title of my book      '\n\n\n\nwords = title.split()\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\ntype(words)\n\nlist\n\n\n\ndir(words)\n\n['__add__',\n '__class__',\n '__class_getitem__',\n '__contains__',\n '__delattr__',\n '__delitem__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__gt__',\n '__hash__',\n '__iadd__',\n '__imul__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__reversed__',\n '__rmul__',\n '__setattr__',\n '__setitem__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'append',\n 'clear',\n 'copy',\n 'count',\n 'extend',\n 'index',\n 'insert',\n 'pop',\n 'remove',\n 'reverse',\n 'sort']\n\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\nlen(words)\n\n7\n\n\n\nlen(title)\n\n28\n\n\n\nwords[0]\n\n'This'\n\n\n\nwords[1]\n\n'is'\n\n\n\nwords[7]\n\nIndexError: list index out of range\n\n\n\nwords[6]\n\n'book'\n\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle[0]\n\n'T'\n\n\n\nlen(title)\n\n28\n\n\n\ntitle[-1]\n\n'k'\n\n\n\ntitle[-2]\n\n'o'\n\n\n\ntitle[0:-4]\n\n'This is the title of my '\n\n\n\ntitle[5:10]\n\n'is th'\n\n\n\ntitle[10]\n\n'e'\n\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\nwords[1:-2]\n\n['is', 'the', 'title', 'of']\n\n\n\ntype(words)\n\nlist\n\n\n\ntype(words[0])\n\nstr\n\n\n\nfor word in words:\n    print(word)\n\nThis\nis\nthe\ntitle\nof\nmy\nbook\n\n\n\nfor i, word in enumerate(words):\n    print(i, word)\n\n0 This\n1 is\n2 the\n3 title\n4 of\n5 my\n6 book\n\n\n\nfor i, word in enumerate(words):\n    print(i, word, type(word))\n\n0 This <class 'str'>\n1 is <class 'str'>\n2 the <class 'str'>\n3 title <class 'str'>\n4 of <class 'str'>\n5 my <class 'str'>\n6 book <class 'str'>\n\n\n\nlen(words)\n\n7\n\n\n\nif len(words) > 7:\n    print('no its not longer than 7')\n\n\nif len(words) == 7:\n    print('it is of length 7')\n\nit is of length 7\n\n\n\nif len(words) > 7:\n    print('no its not longer than 7')\nelse:\n    print('It must be 7 or less in length')\n\nIt must be 7 or less in length\n\n\n\nif len(words) > 7:\n    print('no its not longer than 7')\nelif len(words)==7:\n    print('its 7')\nelse:\n    print('It is less than 7 in length')\n\nits 7"
   },
   {
-    "objectID": "lectures/week-02/2023-08-28-python-introduction.html#why-python",
-    "href": "lectures/week-02/2023-08-28-python-introduction.html#why-python",
-    "title": "Introduction to Python",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "high level language\nlow learning curve\nopen source\nwidespread use\nfun"
-  },
-  {
-    "objectID": "lectures/week-02/2023-08-28-python-introduction.html#python-concepts",
-    "href": "lectures/week-02/2023-08-28-python-introduction.html#python-concepts",
-    "title": "Introduction to Python",
-    "section": "Python Concepts",
-    "text": "Python Concepts\n\n2 + 3\n\n5\n\n\n\n5 * 7\n\n35\n\n\n\n2**4\n\n16\n\n\n\n7 / 4\n\n1.75\n\n\n\nx = 8/3\n\n\nx\n\n2.6666666666666665\n\n\n\nimport math\n\n\nmath.pi\n\n3.141592653589793\n\n\n\nmath.sqrt(4)\n\n2.0\n\n\n\ntemp_celsius = 10.0\n\n\ntemp_celsius\n\n10.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", 9/5 * temp_celsius + 32)\n\nTemperature in Fahrenheit:  50.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  50.0\n\n\n\ntemp_celsius\n\n10.0\n\n\n\ntemp_celsius = 40.0\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  104.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  104.0"
-  },
-  {
-    "objectID": "lectures/week-02/2023-08-28-python-introduction.html#data-types",
-    "href": "lectures/week-02/2023-08-28-python-introduction.html#data-types",
-    "title": "Introduction to Python",
-    "section": "Data Types",
-    "text": "Data Types\n\nint\nfloat\nstr\nbool\n\n\nweatherForecast = \"Hot\"\n\n\ntype(weatherForecast)\n\nstr\n\n\n\nx = 10.1\ntype(x)\n\nfloat\n\n\n\ny = 7\ntype(y)\n\nint\n\n\n\ndir(weatherForecast)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nweatherForecast.upper()\n\n'HOT'\n\n\n\nweatherForecast.startswith('f')\n\nFalse\n\n\n\ntitle = \"This is the title of my book\"\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle.upper()\n\n'THIS IS THE TITLE OF MY BOOK'\n\n\n\ntitle.title()\n\n'This Is The Title Of My Book'\n\n\n\ntitle.split()\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\ndir(title)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle.center(40)\n\n'      This is the title of my book      '\n\n\n\nwords = title.split()\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\ntype(words)\n\nlist\n\n\n\ndir(words)\n\n['__add__',\n '__class__',\n '__class_getitem__',\n '__contains__',\n '__delattr__',\n '__delitem__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__gt__',\n '__hash__',\n '__iadd__',\n '__imul__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__reversed__',\n '__rmul__',\n '__setattr__',\n '__setitem__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'append',\n 'clear',\n 'copy',\n 'count',\n 'extend',\n 'index',\n 'insert',\n 'pop',\n 'remove',\n 'reverse',\n 'sort']\n\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\nlen(words)\n\n7\n\n\n\nlen(title)\n\n28\n\n\n\nwords[0]\n\n'This'\n\n\n\nwords[1]\n\n'is'\n\n\n\nwords[7]\n\nIndexError: list index out of range\n\n\n\nwords[6]\n\n'book'\n\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle[0]\n\n'T'\n\n\n\nlen(title)\n\n28\n\n\n\ntitle[-1]\n\n'k'\n\n\n\ntitle[-2]\n\n'o'\n\n\n\ntitle[0:-4]\n\n'This is the title of my '\n\n\n\ntitle[5:10]\n\n'is th'\n\n\n\ntitle[10]\n\n'e'\n\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\nwords[1:-2]\n\n['is', 'the', 'title', 'of']\n\n\n\ntype(words)\n\nlist\n\n\n\ntype(words[0])\n\nstr\n\n\n\nfor word in words:\n    print(word)\n\nThis\nis\nthe\ntitle\nof\nmy\nbook\n\n\n\nfor i, word in enumerate(words):\n    print(i, word)\n\n0 This\n1 is\n2 the\n3 title\n4 of\n5 my\n6 book\n\n\n\nfor i, word in enumerate(words):\n    print(i, word, type(word))\n\n0 This &lt;class 'str'&gt;\n1 is &lt;class 'str'&gt;\n2 the &lt;class 'str'&gt;\n3 title &lt;class 'str'&gt;\n4 of &lt;class 'str'&gt;\n5 my &lt;class 'str'&gt;\n6 book &lt;class 'str'&gt;\n\n\n\nlen(words)\n\n7\n\n\n\nif len(words) &gt; 7:\n    print('no its not longer than 7')\n\n\nif len(words) == 7:\n    print('it is of length 7')\n\nit is of length 7\n\n\n\nif len(words) &gt; 7:\n    print('no its not longer than 7')\nelse:\n    print('It must be 7 or less in length')\n\nIt must be 7 or less in length\n\n\n\nif len(words) &gt; 7:\n    print('no its not longer than 7')\nelif len(words)==7:\n    print('its 7')\nelse:\n    print('It is less than 7 in length')\n\nits 7"
+    "text": "About this site"
   }
 ]
