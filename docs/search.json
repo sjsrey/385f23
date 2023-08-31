@@ -95,7 +95,7 @@
     "href": "lectures/index.html",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)"
   },
   {
     "objectID": "lectures/week-01/01-introduction.html#introduction",
@@ -439,6 +439,20 @@
     "title": "Course Introduction",
     "section": "",
     "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "lectures/week-02/2023-08-30-functions-scripts.html",
+    "href": "lectures/week-02/2023-08-30-functions-scripts.html",
+    "title": "Geog385F23",
+    "section": "",
+    "text": "def celsius_to_fahr(temp):\n    return 9 / 5 * temp + 32 \n\n\ncelsius_to_fahr(40)\n\n104.0\n\n\n\ncelsius_to_fahr(0)\n\n32.0\n\n\n\ndef how_long(a_string):\n    print(len(a_string))\n\n\nhow_long('abcd')\n\n4\n\n\n\ndef how_long(a_string):\n    len(a_string)\n\n\nhow_long('abcde')\n\n\ndef kelvins_to_celsius(temp_kelvins):\n    return temp_kelvins - 273.15\n\n\nkelvins_to_celsius(temp_kelvins=0)\n\n-273.15\n\n\n\nprint(\"Absolute zero in Celsius is:\", kelvins_to_celsius(0))\n\nAbsolute zero in Celsius is: -273.15\n\n\n\ndef kelvins_to_fahr(temp_kelvins):\n    temp_celsius = kelvins_to_celsius(temp_kelvins)\n    temp_fahr = celsius_to_fahr(temp_celsius)\n    return temp_fahr\n\n\nkelvins_to_fahr(0)\n\n-459.66999999999996\n\n\n\ndef kelvins_to_celsius(temp_kelvins):\n    \"\"\"Convers temperature in Kelvins to degrees celsius.\"\"\"\n    return temp_kelvins - 273.15\n\n\nkelvins_to_celsius?\n\n\nSignature: kelvins_to_celsius(temp_kelvins)\nDocstring: Convers temperature in Kelvins to degrees celsius.\nFile:      /tmp/ipykernel_1023841/522041369.py\nType:      function\n\n\n\n\nkelvins_to_celsius??\n\n\nSignature: kelvins_to_celsius(temp_kelvins)\nSource:   \ndef kelvins_to_celsius(temp_kelvins):\n    \"\"\"Convers temperature in Kelvins to degrees celsius.\"\"\"\n    return temp_kelvins - 273.15\nFile:      /tmp/ipykernel_1023841/522041369.py\nType:      function\n\n\n\n\ndef kelvins_to_celsius(temp_kelvins):\n    \"\"\"Convers temperature in Kelvins to degrees celsius.\n    \n    Parameters\n    ----------\n    temp_kelvins: <numerical>\n        Temperature in Kelvins\n        \n    Returns\n    -------\n    <float>\n       Converted temperature\n    \n    \"\"\"\n    return temp_kelvins - 273.15\n\n\nkelvins_to_celsius?\n\n\nSignature: kelvins_to_celsius(temp_kelvins)\nDocstring:\nConvers temperature in Kelvins to degrees celsius.\nParameters\n----------\ntemp_kelvins: <numerical>\n    Temperature in Kelvins\n    \nReturns\n-------\n<float>\n   Converted temperature\nFile:      /tmp/ipykernel_1023841/1189373821.py\nType:      function"
+  },
+  {
+    "objectID": "lectures/week-02/2023-08-30-functions-scripts.html#using-modules-and-scripts",
+    "href": "lectures/week-02/2023-08-30-functions-scripts.html#using-modules-and-scripts",
+    "title": "Geog385F23",
+    "section": "Using modules and scripts",
+    "text": "Using modules and scripts\n\n%ls\n\n2023-08-23.ipynb                      2023-08-30-functions-scripts.ipynb\n2023-08-28-python-introduction.ipynb  temp_converter.py\n\n\n\n%pwd\n\n'/home/jupyter-serge/sessions'\n\n\n\nfrom temp_converter import celsius_to_fahr\n\n\ncelsius_to_fahr(100)\n\nFrom our cool function\n\n\n212.0\n\n\n\nimport math"
   },
   {
     "objectID": "lectures/week-02/2023-08-28-python-introduction.html",

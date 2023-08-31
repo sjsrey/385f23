@@ -19,6 +19,10 @@ format:
 - Week 02
 
   - [08-28 Python Introduction](week-02/2023-08-28-python-introduction.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-02/2023-08-28-python-introduction.ipynb)
+  - [08-30 Functions and Scripts](week-02/2023-08-30-functions-scripts.ipynb)
+    [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-02/2023-08-30-functions-scripts.ipynb)
+    [(temp_converter.py)](https://github.com/sjsrey/385f23/blob/main/lectures/week-02/temp_converter.py)
+
 
 
 
