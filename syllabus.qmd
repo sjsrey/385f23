@@ -109,8 +109,8 @@ completed the readings.
 | 3    | Sep-04 | *Labor Day Holiday*           |              |            |
 |      | Sep-06 | Python: Data Analysis/Visualization         | GDA 3,4        |            |
 | 4    | Sep-11 | Python: Geographic Data       | GDA 5        | Quiz 2     |
-|      | Sep-13 | Geopandas and PySAL           | GDA 6        | Exercise 1 |
-| 5    | Sep-18 | Spatial Data Overview         | GDS 3        | Quiz 3     |
+|      | Sep-13 | Geopandas           | GDA 6        | Exercise 1 |
+| 5    | Sep-18 | PySAL         | GDS 3        | Quiz 3     |
 |      | Sep-20 | GeoVisualization              | GDS 5        |            |
 | 6    | Sep-25 | Spatial Weights               | GDS 4        | Quiz 4     |
 |      | Sep-27 | Spatial Dependence            | GDS 6        |            |

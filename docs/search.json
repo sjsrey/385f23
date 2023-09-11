@@ -46,7 +46,7 @@
     "href": "syllabus.html#schedule-planned",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Schedule (Planned)",
-    "text": "Schedule (Planned)\n\n\n\n\n\n\n\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nAug-21\nCourse Introduction\n\n\n\n\n\nAug-23\nJupyter Hub\nGDA 1 GDS 2\n\n\n\n2\nAug-28\nPython: Programming Concepts\nGDA 2\nQuiz 1\n\n\n\nAug-30\nPython: Scripting\nGDA 2\n\n\n\n3\nSep-04\nLabor Day Holiday\n\n\n\n\n\nSep-06\nPython: Data Analysis/Visualization\nGDA 3,4\n\n\n\n4\nSep-11\nPython: Geographic Data\nGDA 5\nQuiz 2\n\n\n\nSep-13\nGeopandas and PySAL\nGDA 6\nExercise 1\n\n\n5\nSep-18\nSpatial Data Overview\nGDS 3\nQuiz 3\n\n\n\nSep-20\nGeoVisualization\nGDS 5\n\n\n\n6\nSep-25\nSpatial Weights\nGDS 4\nQuiz 4\n\n\n\nSep-27\nSpatial Dependence\nGDS 6\n\n\n\n7\nOct-02\nGlobal Autocorrelation\nGDS 6\nQuiz 5\n\n\n\nOct-04\nGlobal Autocorrelation Tests\nGDS 6\n\n\n\n8\nOct-09\nLocal Autocorrelation\nGDS 7\nQuiz 6\n\n\n\nOct-11\nLocal Autocorrelation Tests\nGDS 7\nExercise 2\n\n\n9\nOct-16\nPoint Pattern Data\nGDS 8\nQuiz 7\n\n\n\nOct-18\nCentrography\nGDS 8\n\n\n\n10\nOct-23\nPoint Processes\nGDS 8\nQuiz 8\n\n\n\nOct-25\nQuadrat Statistics\nGDS 8\n\n\n\n11\nOct-30\nNearest Neighbor Statistics\nGDS 8\nQuiz 9\n\n\n\nNov-01\nDistance Based Statistics\nGDS 8\n\n\n\n12\nNov-06\nGeostatistical Data\nTBA\nQuiz 10\n\n\n\nNov-08\nSpatial Interpolation\nTBA\nExercise 3\n\n\n13\nNov-13\nKriging\nTBA\nQuiz 11\n\n\n\nNov-15\nNetwork Data\nTBA\n\n\n\n14\nNov-20\nSpatial Interaction Data\nTBA\nQuiz 12\n\n\n\nNov-22\nGravity Models\nTBA\n\n\n\n15\nNov-27\nMeasuring Spatial Disparities\nTBA\nQuiz 13\n\n\n\nNov-29\nSpatial Segregation\nTBA\n\n\n\n16\nDec-04\nChange of Support Problems\nTBA\nQuiz 14\n\n\n\nDec-06\nNext Steps in SDA\n\nExercise 4\n\n\n17\nDec-11\nFinal Review\n\nQuiz 15\n\n\n18\nDec-18\nFinal Exam (13:00-15:00)"
+    "text": "Schedule (Planned)\n\n\n\n\n\n\n\n\n\n\nWeek\nDates\nTopic\nReading\nDue\n\n\n\n\n1\nAug-21\nCourse Introduction\n\n\n\n\n\nAug-23\nJupyter Hub\nGDA 1 GDS 2\n\n\n\n2\nAug-28\nPython: Programming Concepts\nGDA 2\nQuiz 1\n\n\n\nAug-30\nPython: Scripting\nGDA 2\n\n\n\n3\nSep-04\nLabor Day Holiday\n\n\n\n\n\nSep-06\nPython: Data Analysis/Visualization\nGDA 3,4\n\n\n\n4\nSep-11\nPython: Geographic Data\nGDA 5\nQuiz 2\n\n\n\nSep-13\nGeopandas\nGDA 6\nExercise 1\n\n\n5\nSep-18\nPySAL\nGDS 3\nQuiz 3\n\n\n\nSep-20\nGeoVisualization\nGDS 5\n\n\n\n6\nSep-25\nSpatial Weights\nGDS 4\nQuiz 4\n\n\n\nSep-27\nSpatial Dependence\nGDS 6\n\n\n\n7\nOct-02\nGlobal Autocorrelation\nGDS 6\nQuiz 5\n\n\n\nOct-04\nGlobal Autocorrelation Tests\nGDS 6\n\n\n\n8\nOct-09\nLocal Autocorrelation\nGDS 7\nQuiz 6\n\n\n\nOct-11\nLocal Autocorrelation Tests\nGDS 7\nExercise 2\n\n\n9\nOct-16\nPoint Pattern Data\nGDS 8\nQuiz 7\n\n\n\nOct-18\nCentrography\nGDS 8\n\n\n\n10\nOct-23\nPoint Processes\nGDS 8\nQuiz 8\n\n\n\nOct-25\nQuadrat Statistics\nGDS 8\n\n\n\n11\nOct-30\nNearest Neighbor Statistics\nGDS 8\nQuiz 9\n\n\n\nNov-01\nDistance Based Statistics\nGDS 8\n\n\n\n12\nNov-06\nGeostatistical Data\nTBA\nQuiz 10\n\n\n\nNov-08\nSpatial Interpolation\nTBA\nExercise 3\n\n\n13\nNov-13\nKriging\nTBA\nQuiz 11\n\n\n\nNov-15\nNetwork Data\nTBA\n\n\n\n14\nNov-20\nSpatial Interaction Data\nTBA\nQuiz 12\n\n\n\nNov-22\nGravity Models\nTBA\n\n\n\n15\nNov-27\nMeasuring Spatial Disparities\nTBA\nQuiz 13\n\n\n\nNov-29\nSpatial Segregation\nTBA\n\n\n\n16\nDec-04\nChange of Support Problems\nTBA\nQuiz 14\n\n\n\nDec-06\nNext Steps in SDA\n\nExercise 4\n\n\n17\nDec-11\nFinal Review\n\nQuiz 15\n\n\n18\nDec-18\nFinal Exam (13:00-15:00)"
   },
   {
     "objectID": "syllabus.html#grading",
@@ -95,7 +95,7 @@
     "href": "lectures/index.html",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data"
   },
   {
     "objectID": "lectures/week-01/01-introduction.html#introduction",
@@ -464,9 +464,9 @@
   {
     "objectID": "lectures/week-03/2023-09-06.html",
     "href": "lectures/week-03/2023-09-06.html",
-    "title": "Geog385F23",
+    "title": "Unique Values",
     "section": "",
-    "text": "import pandas as pd"
+    "text": "import pandas as pd\ndata = pd.read_csv(\"data/shared/weather/Kumpula-June-2016-w-metadata.txt\")\ndata.head(10)\n\n\n\n\n\n\n\n\n# Data file contents: Daily temperatures (mean\nmin\nmax) for Kumpula\nHelsinki\n\n\n\n\n0\n# for June 1-30\n2016\nNaN\nNaN\n\n\n1\n# Data source: https://www.ncdc.noaa.gov/cdo-w...\nNaN\nNaN\nNaN\n\n\n2\n# Data processing: Extracted temperatures from...\nconverted to\nNaN\nNaN\n\n\n3\n# comma-separated format\nNaN\nNaN\nNaN\n\n\n4\n#\nNaN\nNaN\nNaN\n\n\n5\n# David Whipp - 02.10.2017\nNaN\nNaN\nNaN\n\n\n6\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n7\n20160601\n65.5\n73.6\n54.7\n\n\n8\n20160602\n65.8\n80.8\n55.0\n\n\n9\n20160603\n68.4\n77.9\n55.6\ndata.tail()\n\n\n\n\n\n\n\n\n# Data file contents: Daily temperatures (mean\nmin\nmax) for Kumpula\nHelsinki\n\n\n\n\n32\n20160626\n69.6\n77.7\n60.3\n\n\n33\n20160627\n60.7\n70.0\n57.6\n\n\n34\n20160628\n65.4\n73.0\n55.8\n\n\n35\n20160629\n65.8\n73.2\n59.7\n\n\n36\n20160630\n65.7\n72.7\n59.2\ndata = pd.read_csv(\"data/shared/weather/Kumpula-June-2016-w-metadata.txt\", skiprows=8)\ntype(data)\n\npandas.core.frame.DataFrame\ndata.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n\n\n1\n20160602\n65.8\n80.8\n55.0\n\n\n2\n20160603\n68.4\n77.9\n55.6\n\n\n3\n20160604\n57.5\n70.9\n47.3\n\n\n4\n20160605\n51.4\n58.3\n43.2\ndata.tail()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\n25\n20160626\n69.6\n77.7\n60.3\n\n\n26\n20160627\n60.7\n70.0\n57.6\n\n\n27\n20160628\n65.4\n73.0\n55.8\n\n\n28\n20160629\n65.8\n73.2\n59.7\n\n\n29\n20160630\n65.7\n72.7\n59.2\ntemp_data = pd.read_csv(\n    \"data/shared/weather/Kumpula-June-2016-w-metadata.txt\", \n    skiprows=8, usecols=[\"YEARMODA\", \"TEMP\"]\n)\n\ntemp_data.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\n\n\n\n\n0\n20160601\n65.5\n\n\n1\n20160602\n65.8\n\n\n2\n20160603\n68.4\n\n\n3\n20160604\n57.5\n\n\n4\n20160605\n51.4\noutput_fp = \"Kumpula_temps_June_2016.csv\"\ndata.to_csv(output_fp, sep=\",\")\noutput_fp = \"Kumpula_temps_June_2016.csv\"\ndata.to_csv(output_fp, sep=\",\", index=False, float_format=\"%.0f\")\ntype(data)\n\npandas.core.frame.DataFrame\nlen(data)\n\n30\ndata.shape\n\n(30, 4)\ndata.columns\n\nIndex(['YEARMODA', 'TEMP', 'MAX', 'MIN'], dtype='object')\ndata.columns.values\n\narray(['YEARMODA', 'TEMP', 'MAX', 'MIN'], dtype=object)\ndata.index\n\nRangeIndex(start=0, stop=30, step=1)\ndata.dtypes\n\nYEARMODA      int64\nTEMP        float64\nMAX         float64\nMIN         float64\ndtype: object\nselection = data[[\"YEARMODA\", \"TEMP\"]]\nselection.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\n\n\n\n\n0\n20160601\n65.5\n\n\n1\n20160602\n65.8\n\n\n2\n20160603\n68.4\n\n\n3\n20160604\n57.5\n\n\n4\n20160605\n51.4\nselection.shape\n\n(30, 2)\ndata[\"TEMP\"].mean()\n\n59.730000000000004\ndata.TEMP.mean()\n\n59.730000000000004\ndata.mean()\n\nYEARMODA    20160615.50\nTEMP              59.73\nMAX               67.94\nMIN               51.75\ndtype: float64\ndata.describe()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\ncount\n3.000000e+01\n30.000000\n30.000000\n30.000000\n\n\nmean\n2.016062e+07\n59.730000\n67.940000\n51.750000\n\n\nstd\n8.803408e+00\n5.475472\n6.651761\n5.634484\n\n\nmin\n2.016060e+07\n49.400000\n54.100000\n41.700000\n\n\n25%\n2.016061e+07\n56.450000\n63.150000\n47.300000\n\n\n50%\n2.016062e+07\n60.050000\n69.000000\n54.050000\n\n\n75%\n2.016062e+07\n64.900000\n72.375000\n55.750000\n\n\nmax\n2.016063e+07\n69.600000\n80.800000\n60.300000\ndata['MIN'].hasnans\n\nFalse\ndata.head(30)\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n\n\n1\n20160602\n65.8\n80.8\n55.0\n\n\n2\n20160603\n68.4\n77.9\n55.6\n\n\n3\n20160604\n57.5\n70.9\n47.3\n\n\n4\n20160605\n51.4\n58.3\n43.2\n\n\n5\n20160606\n52.2\n59.7\n42.8\n\n\n6\n20160607\n56.9\n65.1\n45.9\n\n\n7\n20160608\n54.2\n60.4\n47.5\n\n\n8\n20160609\n49.4\n54.1\n45.7\n\n\n9\n20160610\n49.5\n55.9\n43.0\n\n\n10\n20160611\n54.0\n62.1\n41.7\n\n\n11\n20160612\n55.4\n64.2\n46.0\n\n\n12\n20160613\n58.3\n68.2\n47.3\n\n\n13\n20160614\n59.7\n67.8\n47.8\n\n\n14\n20160615\n63.4\n70.3\n49.3\n\n\n15\n20160616\n57.8\n67.5\n55.6\n\n\n16\n20160617\n60.4\n70.7\n55.9\n\n\n17\n20160618\n57.3\n62.8\n54.0\n\n\n18\n20160619\n56.3\n59.2\n54.1\n\n\n19\n20160620\n59.3\n69.1\n52.2\n\n\n20\n20160621\n62.6\n71.4\n50.4\n\n\n21\n20160622\n61.7\n70.2\n55.4\n\n\n22\n20160623\n60.9\n67.1\n54.9\n\n\n23\n20160624\n61.1\n68.9\n56.7\n\n\n24\n20160625\n65.7\n75.4\n57.9\n\n\n25\n20160626\n69.6\n77.7\n60.3\n\n\n26\n20160627\n60.7\n70.0\n57.6\n\n\n27\n20160628\n65.4\n73.0\n55.8\n\n\n28\n20160629\n65.8\n73.2\n59.7\n\n\n29\n20160630\n65.7\n72.7\n59.2\ndata['TEMP'].unique()\n\narray([65.5, 65.8, 68.4, 57.5, 51.4, 52.2, 56.9, 54.2, 49.4, 49.5, 54. ,\n       55.4, 58.3, 59.7, 63.4, 57.8, 60.4, 57.3, 56.3, 59.3, 62.6, 61.7,\n       60.9, 61.1, 65.7, 69.6, 60.7, 65.4])\nprint(\n    \"There were\",\n    data[\"TEMP\"].nunique(),\n    \"days with unique mean temperatures in June 2016.\",\n)\n\nThere were 28 days with unique mean temperatures in June 2016.\ndata.TEMP.mean()\n\n59.730000000000004\ndata.mean()\n\nYEARMODA    20160615.50\nTEMP              59.73\nMAX               67.94\nMIN               51.75\ndtype: float64\ndata.describe()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\ncount\n3.000000e+01\n30.000000\n30.000000\n30.000000\n\n\nmean\n2.016062e+07\n59.730000\n67.940000\n51.750000\n\n\nstd\n8.803408e+00\n5.475472\n6.651761\n5.634484\n\n\nmin\n2.016060e+07\n49.400000\n54.100000\n41.700000\n\n\n25%\n2.016061e+07\n56.450000\n63.150000\n47.300000\n\n\n50%\n2.016062e+07\n60.050000\n69.000000\n54.050000\n\n\n75%\n2.016062e+07\n64.900000\n72.375000\n55.750000\n\n\nmax\n2.016063e+07\n69.600000\n80.800000\n60.300000"
   },
   {
     "objectID": "lectures/week-03/2023-09-06.html#unique-values",
@@ -478,51 +478,51 @@
   {
     "objectID": "lectures/week-03/2023-09-06.html#constructing-pandas-objects",
     "href": "lectures/week-03/2023-09-06.html#constructing-pandas-objects",
-    "title": "Geog385F23",
+    "title": "Unique Values",
     "section": "Constructing Pandas objects",
-    "text": "Constructing Pandas objects\n\nnumber_series = pd.Series([4, 5, 6, 7.0])\nprint(number_series)\n\n0    4.0\n1    5.0\n2    6.0\n3    7.0\ndtype: float64\n\n\n\nnumber_series = pd.Series([4, 5, 6, 7.0], index=[\"a\", \"b\", \"c\", \"d\"])\nprint(number_series)\n\na    4.0\nb    5.0\nc    6.0\nd    7.0\ndtype: float64\n\n\n\nstations = [\"Hanko\", \"Heinola\", \"Kaisaniemi\", \"Malmi\"]\nlatitudes = [59.77, 61.2, 60.18, 60.25]\nlongitudes = [22.95, 26.05, 24.94, 25.05]\n\n\nnew_data = pd.DataFrame(data={\"station\": stations, \"lat\": latitudes, \"lon\": longitudes})\nnew_data\n\n\n\n\n\n  \n    \n      \n      station\n      lat\n      lon\n    \n  \n  \n    \n      0\n      Hanko\n      59.77\n      22.95\n    \n    \n      1\n      Heinola\n      61.20\n      26.05\n    \n    \n      2\n      Kaisaniemi\n      60.18\n      24.94\n    \n    \n      3\n      Malmi\n      60.25\n      25.05\n    \n  \n\n\n\n\n\ndictionaries = [\n    {\"station\": \"Hanko\", \"lat\": 59.77, \"lon\": 22.95},\n    {\"station\": \"Heinola\", \"lat\": 61.2, \"lon\": 26.05},\n    {\"station\": \"Kaisaniemi\", \"lat\": 60.18, \"lon\": 24.94},\n    {\"station\": \"Malmi\", \"lat\": 60.25, \"lon\": 25.05},\n]\n\n# Pass the list into the DataFrame constructor\nnew_data_2 = pd.DataFrame(dictionaries)\nnew_data_2\n\n\n\n\n\n  \n    \n      \n      station\n      lat\n      lon\n    \n  \n  \n    \n      0\n      Hanko\n      59.77\n      22.95\n    \n    \n      1\n      Heinola\n      61.20\n      26.05\n    \n    \n      2\n      Kaisaniemi\n      60.18\n      24.94\n    \n    \n      3\n      Malmi\n      60.25\n      25.05\n    \n  \n\n\n\n\n\ndf = pd.DataFrame()\nprint(df)\n\nEmpty DataFrame\nColumns: []\nIndex: []\n\n\n\ndf[\"lon\"] = longitudes\ndf[\"lat\"] = latitudes\ndf\n\n\n\n\n\n  \n    \n      \n      lon\n      lat\n    \n  \n  \n    \n      0\n      22.95\n      59.77\n    \n    \n      1\n      26.05\n      61.20\n    \n    \n      2\n      24.94\n      60.18\n    \n    \n      3\n      25.05\n      60.25"
+    "text": "Constructing Pandas objects\n\nnumber_series = pd.Series([4, 5, 6, 7.0])\nprint(number_series)\n\n0    4.0\n1    5.0\n2    6.0\n3    7.0\ndtype: float64\n\n\n\nnumber_series = pd.Series([4, 5, 6, 7.0], index=[\"a\", \"b\", \"c\", \"d\"])\nprint(number_series)\n\na    4.0\nb    5.0\nc    6.0\nd    7.0\ndtype: float64\n\n\n\nstations = [\"Hanko\", \"Heinola\", \"Kaisaniemi\", \"Malmi\"]\nlatitudes = [59.77, 61.2, 60.18, 60.25]\nlongitudes = [22.95, 26.05, 24.94, 25.05]\n\n\nnew_data = pd.DataFrame(data={\"station\": stations, \"lat\": latitudes, \"lon\": longitudes})\nnew_data\n\n\n\n\n\n\n\n\nstation\nlat\nlon\n\n\n\n\n0\nHanko\n59.77\n22.95\n\n\n1\nHeinola\n61.20\n26.05\n\n\n2\nKaisaniemi\n60.18\n24.94\n\n\n3\nMalmi\n60.25\n25.05\n\n\n\n\n\n\n\n\ndictionaries = [\n    {\"station\": \"Hanko\", \"lat\": 59.77, \"lon\": 22.95},\n    {\"station\": \"Heinola\", \"lat\": 61.2, \"lon\": 26.05},\n    {\"station\": \"Kaisaniemi\", \"lat\": 60.18, \"lon\": 24.94},\n    {\"station\": \"Malmi\", \"lat\": 60.25, \"lon\": 25.05},\n]\n\n# Pass the list into the DataFrame constructor\nnew_data_2 = pd.DataFrame(dictionaries)\nnew_data_2\n\n\n\n\n\n\n\n\nstation\nlat\nlon\n\n\n\n\n0\nHanko\n59.77\n22.95\n\n\n1\nHeinola\n61.20\n26.05\n\n\n2\nKaisaniemi\n60.18\n24.94\n\n\n3\nMalmi\n60.25\n25.05\n\n\n\n\n\n\n\n\ndf = pd.DataFrame()\nprint(df)\n\nEmpty DataFrame\nColumns: []\nIndex: []\n\n\n\ndf[\"lon\"] = longitudes\ndf[\"lat\"] = latitudes\ndf\n\n\n\n\n\n\n\n\nlon\nlat\n\n\n\n\n0\n22.95\n59.77\n\n\n1\n26.05\n61.20\n\n\n2\n24.94\n60.18\n\n\n3\n25.05\n60.25"
   },
   {
     "objectID": "lectures/week-03/2023-09-06.html#common-tabular-operations",
     "href": "lectures/week-03/2023-09-06.html#common-tabular-operations",
-    "title": "Geog385F23",
+    "title": "Unique Values",
     "section": "Common tabular operations",
-    "text": "Common tabular operations\n\ndata.head()\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n    \n  \n  \n    \n      0\n      20160601\n      65.5\n      73.6\n      54.7\n    \n    \n      1\n      20160602\n      65.8\n      80.8\n      55.0\n    \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n    \n    \n      3\n      20160604\n      57.5\n      70.9\n      47.3\n    \n    \n      4\n      20160605\n      51.4\n      58.3\n      43.2\n    \n  \n\n\n\n\n\ndata['DIFF'] = 0.0\ndata.head()\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n    \n  \n  \n    \n      0\n      20160601\n      65.5\n      73.6\n      54.7\n      0.0\n    \n    \n      1\n      20160602\n      65.8\n      80.8\n      55.0\n      0.0\n    \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n      0.0\n    \n    \n      3\n      20160604\n      57.5\n      70.9\n      47.3\n      0.0\n    \n    \n      4\n      20160605\n      51.4\n      58.3\n      43.2\n      0.0\n    \n  \n\n\n\n\n\ndata['DIFF'].dtypes\n\ndtype('float64')\n\n\n\ndata['DIFF'] = data['MAX'] - data['MIN']\ndata.head()\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n    \n  \n  \n    \n      0\n      20160601\n      65.5\n      73.6\n      54.7\n      18.9\n    \n    \n      1\n      20160602\n      65.8\n      80.8\n      55.0\n      25.8\n    \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n      22.3\n    \n    \n      3\n      20160604\n      57.5\n      70.9\n      47.3\n      23.6\n    \n    \n      4\n      20160605\n      51.4\n      58.3\n      43.2\n      15.1\n    \n  \n\n\n\n\n\ndata[\"TEMP_CELSIUS\"] = (data[\"TEMP\"] - 32) / (9 / 5)\ndata.head()\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n    \n  \n  \n    \n      0\n      20160601\n      65.5\n      73.6\n      54.7\n      18.9\n      18.611111\n    \n    \n      1\n      20160602\n      65.8\n      80.8\n      55.0\n      25.8\n      18.777778\n    \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n      22.3\n      20.222222\n    \n    \n      3\n      20160604\n      57.5\n      70.9\n      47.3\n      23.6\n      14.166667\n    \n    \n      4\n      20160605\n      51.4\n      58.3\n      43.2\n      15.1\n      10.777778"
+    "text": "Common tabular operations\n\ndata.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n\n\n1\n20160602\n65.8\n80.8\n55.0\n\n\n2\n20160603\n68.4\n77.9\n55.6\n\n\n3\n20160604\n57.5\n70.9\n47.3\n\n\n4\n20160605\n51.4\n58.3\n43.2\n\n\n\n\n\n\n\n\ndata['DIFF'] = 0.0\ndata.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n0.0\n\n\n1\n20160602\n65.8\n80.8\n55.0\n0.0\n\n\n2\n20160603\n68.4\n77.9\n55.6\n0.0\n\n\n3\n20160604\n57.5\n70.9\n47.3\n0.0\n\n\n4\n20160605\n51.4\n58.3\n43.2\n0.0\n\n\n\n\n\n\n\n\ndata['DIFF'].dtypes\n\ndtype('float64')\n\n\n\ndata['DIFF'] = data['MAX'] - data['MIN']\ndata.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n18.9\n\n\n1\n20160602\n65.8\n80.8\n55.0\n25.8\n\n\n2\n20160603\n68.4\n77.9\n55.6\n22.3\n\n\n3\n20160604\n57.5\n70.9\n47.3\n23.6\n\n\n4\n20160605\n51.4\n58.3\n43.2\n15.1\n\n\n\n\n\n\n\n\ndata[\"TEMP_CELSIUS\"] = (data[\"TEMP\"] - 32) / (9 / 5)\ndata.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n18.9\n18.611111\n\n\n1\n20160602\n65.8\n80.8\n55.0\n25.8\n18.777778\n\n\n2\n20160603\n68.4\n77.9\n55.6\n22.3\n20.222222\n\n\n3\n20160604\n57.5\n70.9\n47.3\n23.6\n14.166667\n\n\n4\n20160605\n51.4\n58.3\n43.2\n15.1\n10.777778"
   },
   {
     "objectID": "lectures/week-03/2023-09-06.html#selecting-and-updating-data",
     "href": "lectures/week-03/2023-09-06.html#selecting-and-updating-data",
-    "title": "Geog385F23",
+    "title": "Unique Values",
     "section": "Selecting and updating data",
-    "text": "Selecting and updating data\n\nselection = data[0:5]\nselection\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n    \n  \n  \n    \n      0\n      20160601\n      65.5\n      73.6\n      54.7\n      18.9\n      18.611111\n    \n    \n      1\n      20160602\n      65.8\n      80.8\n      55.0\n      25.8\n      18.777778\n    \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n      22.3\n      20.222222\n    \n    \n      3\n      20160604\n      57.5\n      70.9\n      47.3\n      23.6\n      14.166667\n    \n    \n      4\n      20160605\n      51.4\n      58.3\n      43.2\n      15.1\n      10.777778\n    \n  \n\n\n\n\n\n# Select temp column values on rows 0-5\nselection = data.loc[0:5, \"TEMP\"]\nselection\n\n0    65.5\n1    65.8\n2    68.4\n3    57.5\n4    51.4\n5    52.2\nName: TEMP, dtype: float64\n\n\n\nSelecting a single row\n\nrow = data.loc[4]\nrow\n\nYEARMODA        2.016060e+07\nTEMP            5.140000e+01\nMAX             5.830000e+01\nMIN             4.320000e+01\nDIFF            1.510000e+01\nTEMP_CELSIUS    1.077778e+01\nName: 4, dtype: float64\n\n\n\nrow[\"TEMP\"]\n\n51.4\n\n\n\n\nselection = data.loc[0:5, [\"TEMP\", \"TEMP_CELSIUS\"]]\nselection\n\n\n\n\n\n  \n    \n      \n      TEMP\n      TEMP_CELSIUS\n    \n  \n  \n    \n      0\n      65.5\n      18.611111\n    \n    \n      1\n      65.8\n      18.777778\n    \n    \n      2\n      68.4\n      20.222222\n    \n    \n      3\n      57.5\n      14.166667\n    \n    \n      4\n      51.4\n      10.777778\n    \n    \n      5\n      52.2\n      11.222222\n    \n  \n\n\n\n\n\nselection.at[0, \"TEMP\"]\n\n65.5\n\n\n\nselection.loc[0, \"TEMP\"]\n\n65.5\n\n\n\n\nSelection by position\n\n# Check the first rows\nprint(data.head())\nprint()\nprint(\"Value at position (0,0) is\", data.iloc[0, 0])\n\n   YEARMODA  TEMP   MAX   MIN  DIFF  TEMP_CELSIUS\n0  20160601  65.5  73.6  54.7  18.9     18.611111\n1  20160602  65.8  80.8  55.0  25.8     18.777778\n2  20160603  68.4  77.9  55.6  22.3     20.222222\n3  20160604  57.5  70.9  47.3  23.6     14.166667\n4  20160605  51.4  58.3  43.2  15.1     10.777778\n\nValue at position (0,0) is 20160601\n\n\n\ndata.iloc[-1, -1]\n\n18.722222222222225\n\n\n\ndata.tail()\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n    \n  \n  \n    \n      25\n      20160626\n      69.6\n      77.7\n      60.3\n      17.4\n      20.888889\n    \n    \n      26\n      20160627\n      60.7\n      70.0\n      57.6\n      12.4\n      15.944444\n    \n    \n      27\n      20160628\n      65.4\n      73.0\n      55.8\n      17.2\n      18.555556\n    \n    \n      28\n      20160629\n      65.8\n      73.2\n      59.7\n      13.5\n      18.777778\n    \n    \n      29\n      20160630\n      65.7\n      72.7\n      59.2\n      13.5\n      18.722222\n    \n  \n\n\n\n\n\ndata.iloc[-1, -2]\n\n13.5"
+    "text": "Selecting and updating data\n\nselection = data[0:5]\nselection\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n18.9\n18.611111\n\n\n1\n20160602\n65.8\n80.8\n55.0\n25.8\n18.777778\n\n\n2\n20160603\n68.4\n77.9\n55.6\n22.3\n20.222222\n\n\n3\n20160604\n57.5\n70.9\n47.3\n23.6\n14.166667\n\n\n4\n20160605\n51.4\n58.3\n43.2\n15.1\n10.777778\n\n\n\n\n\n\n\n\n# Select temp column values on rows 0-5\nselection = data.loc[0:5, \"TEMP\"]\nselection\n\n0    65.5\n1    65.8\n2    68.4\n3    57.5\n4    51.4\n5    52.2\nName: TEMP, dtype: float64\n\n\n\nSelecting a single row\n\nrow = data.loc[4]\nrow\n\nYEARMODA        2.016060e+07\nTEMP            5.140000e+01\nMAX             5.830000e+01\nMIN             4.320000e+01\nDIFF            1.510000e+01\nTEMP_CELSIUS    1.077778e+01\nName: 4, dtype: float64\n\n\n\nrow[\"TEMP\"]\n\n51.4\n\n\n\n\nselection = data.loc[0:5, [\"TEMP\", \"TEMP_CELSIUS\"]]\nselection\n\n\n\n\n\n\n\n\nTEMP\nTEMP_CELSIUS\n\n\n\n\n0\n65.5\n18.611111\n\n\n1\n65.8\n18.777778\n\n\n2\n68.4\n20.222222\n\n\n3\n57.5\n14.166667\n\n\n4\n51.4\n10.777778\n\n\n5\n52.2\n11.222222\n\n\n\n\n\n\n\n\nselection.at[0, \"TEMP\"]\n\n65.5\n\n\n\nselection.loc[0, \"TEMP\"]\n\n65.5\n\n\n\n\nSelection by position\n\n# Check the first rows\nprint(data.head())\nprint()\nprint(\"Value at position (0,0) is\", data.iloc[0, 0])\n\n   YEARMODA  TEMP   MAX   MIN  DIFF  TEMP_CELSIUS\n0  20160601  65.5  73.6  54.7  18.9     18.611111\n1  20160602  65.8  80.8  55.0  25.8     18.777778\n2  20160603  68.4  77.9  55.6  22.3     20.222222\n3  20160604  57.5  70.9  47.3  23.6     14.166667\n4  20160605  51.4  58.3  43.2  15.1     10.777778\n\nValue at position (0,0) is 20160601\n\n\n\ndata.iloc[-1, -1]\n\n18.722222222222225\n\n\n\ndata.tail()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\n\n\n\n\n25\n20160626\n69.6\n77.7\n60.3\n17.4\n20.888889\n\n\n26\n20160627\n60.7\n70.0\n57.6\n12.4\n15.944444\n\n\n27\n20160628\n65.4\n73.0\n55.8\n17.2\n18.555556\n\n\n28\n20160629\n65.8\n73.2\n59.7\n13.5\n18.777778\n\n\n29\n20160630\n65.7\n72.7\n59.2\n13.5\n18.722222\n\n\n\n\n\n\n\n\ndata.iloc[-1, -2]\n\n13.5"
   },
   {
     "objectID": "lectures/week-03/2023-09-06.html#selections-using-listed-criteria",
     "href": "lectures/week-03/2023-09-06.html#selections-using-listed-criteria",
-    "title": "Geog385F23",
+    "title": "Unique Values",
     "section": "Selections using listed criteria",
-    "text": "Selections using listed criteria\n\n# List of values that will be used as basis for selecting the rows\nselection_criteria = [20160601, 20160608, 20160609]\n\n# Do the selection based on criteria applied to YEARMODA column\ndata.loc[data[\"YEARMODA\"].isin(selection_criteria)]\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n    \n  \n  \n    \n      0\n      20160601\n      65.5\n      73.6\n      54.7\n      18.9\n      18.611111\n    \n    \n      7\n      20160608\n      54.2\n      60.4\n      47.5\n      12.9\n      12.333333\n    \n    \n      8\n      20160609\n      49.4\n      54.1\n      45.7\n      8.4\n      9.666667"
+    "text": "Selections using listed criteria\n\n# List of values that will be used as basis for selecting the rows\nselection_criteria = [20160601, 20160608, 20160609]\n\n# Do the selection based on criteria applied to YEARMODA column\ndata.loc[data[\"YEARMODA\"].isin(selection_criteria)]\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n18.9\n18.611111\n\n\n7\n20160608\n54.2\n60.4\n47.5\n12.9\n12.333333\n\n\n8\n20160609\n49.4\n54.1\n45.7\n8.4\n9.666667"
   },
   {
     "objectID": "lectures/week-03/2023-09-06.html#conditional-selection",
     "href": "lectures/week-03/2023-09-06.html#conditional-selection",
-    "title": "Geog385F23",
+    "title": "Unique Values",
     "section": "Conditional selection",
-    "text": "Conditional selection\n\ndata.TEMP_CELSIUS > 15\n\n0      True\n1      True\n2      True\n3     False\n4     False\n5     False\n6     False\n7     False\n8     False\n9     False\n10    False\n11    False\n12    False\n13     True\n14     True\n15    False\n16     True\n17    False\n18    False\n19     True\n20     True\n21     True\n22     True\n23     True\n24     True\n25     True\n26     True\n27     True\n28     True\n29     True\nName: TEMP_CELSIUS, dtype: bool\n\n\n\nwarm_temps = data[data.TEMP_CELSIUS > 15]\nwarm_temps\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n    \n  \n  \n    \n      0\n      20160601\n      65.5\n      73.6\n      54.7\n      18.9\n      18.611111\n    \n    \n      1\n      20160602\n      65.8\n      80.8\n      55.0\n      25.8\n      18.777778\n    \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n      22.3\n      20.222222\n    \n    \n      13\n      20160614\n      59.7\n      67.8\n      47.8\n      20.0\n      15.388889\n    \n    \n      14\n      20160615\n      63.4\n      70.3\n      49.3\n      21.0\n      17.444444\n    \n    \n      16\n      20160617\n      60.4\n      70.7\n      55.9\n      14.8\n      15.777778\n    \n    \n      19\n      20160620\n      59.3\n      69.1\n      52.2\n      16.9\n      15.166667\n    \n    \n      20\n      20160621\n      62.6\n      71.4\n      50.4\n      21.0\n      17.000000\n    \n    \n      21\n      20160622\n      61.7\n      70.2\n      55.4\n      14.8\n      16.500000\n    \n    \n      22\n      20160623\n      60.9\n      67.1\n      54.9\n      12.2\n      16.055556\n    \n    \n      23\n      20160624\n      61.1\n      68.9\n      56.7\n      12.2\n      16.166667\n    \n    \n      24\n      20160625\n      65.7\n      75.4\n      57.9\n      17.5\n      18.722222\n    \n    \n      25\n      20160626\n      69.6\n      77.7\n      60.3\n      17.4\n      20.888889\n    \n    \n      26\n      20160627\n      60.7\n      70.0\n      57.6\n      12.4\n      15.944444\n    \n    \n      27\n      20160628\n      65.4\n      73.0\n      55.8\n      17.2\n      18.555556\n    \n    \n      28\n      20160629\n      65.8\n      73.2\n      59.7\n      13.5\n      18.777778\n    \n    \n      29\n      20160630\n      65.7\n      72.7\n      59.2\n      13.5\n      18.722222\n    \n  \n\n\n\n\n\nwarm_temps = data[(data[\"TEMP_CELSIUS\"] > 15) & (data[\"YEARMODA\"] >= 20160615)]\nwarm_temps\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n    \n  \n  \n    \n      14\n      20160615\n      63.4\n      70.3\n      49.3\n      21.0\n      17.444444\n    \n    \n      16\n      20160617\n      60.4\n      70.7\n      55.9\n      14.8\n      15.777778\n    \n    \n      19\n      20160620\n      59.3\n      69.1\n      52.2\n      16.9\n      15.166667\n    \n    \n      20\n      20160621\n      62.6\n      71.4\n      50.4\n      21.0\n      17.000000\n    \n    \n      21\n      20160622\n      61.7\n      70.2\n      55.4\n      14.8\n      16.500000\n    \n    \n      22\n      20160623\n      60.9\n      67.1\n      54.9\n      12.2\n      16.055556\n    \n    \n      23\n      20160624\n      61.1\n      68.9\n      56.7\n      12.2\n      16.166667\n    \n    \n      24\n      20160625\n      65.7\n      75.4\n      57.9\n      17.5\n      18.722222\n    \n    \n      25\n      20160626\n      69.6\n      77.7\n      60.3\n      17.4\n      20.888889\n    \n    \n      26\n      20160627\n      60.7\n      70.0\n      57.6\n      12.4\n      15.944444\n    \n    \n      27\n      20160628\n      65.4\n      73.0\n      55.8\n      17.2\n      18.555556\n    \n    \n      28\n      20160629\n      65.8\n      73.2\n      59.7\n      13.5\n      18.777778\n    \n    \n      29\n      20160630\n      65.7\n      72.7\n      59.2\n      13.5\n      18.722222\n    \n  \n\n\n\n\nSelectoins### Reset index\n\nwarm_temps = warm_temps.reset_index(drop=True)\nwarm_temps\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n    \n  \n  \n    \n      0\n      20160615\n      63.4\n      70.3\n      49.3\n      21.0\n      17.444444\n    \n    \n      1\n      20160617\n      60.4\n      70.7\n      55.9\n      14.8\n      15.777778\n    \n    \n      2\n      20160620\n      59.3\n      69.1\n      52.2\n      16.9\n      15.166667\n    \n    \n      3\n      20160621\n      62.6\n      71.4\n      50.4\n      21.0\n      17.000000\n    \n    \n      4\n      20160622\n      61.7\n      70.2\n      55.4\n      14.8\n      16.500000\n    \n    \n      5\n      20160623\n      60.9\n      67.1\n      54.9\n      12.2\n      16.055556\n    \n    \n      6\n      20160624\n      61.1\n      68.9\n      56.7\n      12.2\n      16.166667\n    \n    \n      7\n      20160625\n      65.7\n      75.4\n      57.9\n      17.5\n      18.722222\n    \n    \n      8\n      20160626\n      69.6\n      77.7\n      60.3\n      17.4\n      20.888889\n    \n    \n      9\n      20160627\n      60.7\n      70.0\n      57.6\n      12.4\n      15.944444\n    \n    \n      10\n      20160628\n      65.4\n      73.0\n      55.8\n      17.2\n      18.555556\n    \n    \n      11\n      20160629\n      65.8\n      73.2\n      59.7\n      13.5\n      18.777778\n    \n    \n      12\n      20160630\n      65.7\n      72.7\n      59.2\n      13.5\n      18.722222\n    \n  \n\n\n\n\n\nwarm_temps[\"MIN\"].hasnans\n\nFalse"
+    "text": "Conditional selection\n\ndata.TEMP_CELSIUS &gt; 15\n\n0      True\n1      True\n2      True\n3     False\n4     False\n5     False\n6     False\n7     False\n8     False\n9     False\n10    False\n11    False\n12    False\n13     True\n14     True\n15    False\n16     True\n17    False\n18    False\n19     True\n20     True\n21     True\n22     True\n23     True\n24     True\n25     True\n26     True\n27     True\n28     True\n29     True\nName: TEMP_CELSIUS, dtype: bool\n\n\n\nwarm_temps = data[data.TEMP_CELSIUS &gt; 15]\nwarm_temps\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n18.9\n18.611111\n\n\n1\n20160602\n65.8\n80.8\n55.0\n25.8\n18.777778\n\n\n2\n20160603\n68.4\n77.9\n55.6\n22.3\n20.222222\n\n\n13\n20160614\n59.7\n67.8\n47.8\n20.0\n15.388889\n\n\n14\n20160615\n63.4\n70.3\n49.3\n21.0\n17.444444\n\n\n16\n20160617\n60.4\n70.7\n55.9\n14.8\n15.777778\n\n\n19\n20160620\n59.3\n69.1\n52.2\n16.9\n15.166667\n\n\n20\n20160621\n62.6\n71.4\n50.4\n21.0\n17.000000\n\n\n21\n20160622\n61.7\n70.2\n55.4\n14.8\n16.500000\n\n\n22\n20160623\n60.9\n67.1\n54.9\n12.2\n16.055556\n\n\n23\n20160624\n61.1\n68.9\n56.7\n12.2\n16.166667\n\n\n24\n20160625\n65.7\n75.4\n57.9\n17.5\n18.722222\n\n\n25\n20160626\n69.6\n77.7\n60.3\n17.4\n20.888889\n\n\n26\n20160627\n60.7\n70.0\n57.6\n12.4\n15.944444\n\n\n27\n20160628\n65.4\n73.0\n55.8\n17.2\n18.555556\n\n\n28\n20160629\n65.8\n73.2\n59.7\n13.5\n18.777778\n\n\n29\n20160630\n65.7\n72.7\n59.2\n13.5\n18.722222\n\n\n\n\n\n\n\n\nwarm_temps = data[(data[\"TEMP_CELSIUS\"] &gt; 15) & (data[\"YEARMODA\"] &gt;= 20160615)]\nwarm_temps\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\n\n\n\n\n14\n20160615\n63.4\n70.3\n49.3\n21.0\n17.444444\n\n\n16\n20160617\n60.4\n70.7\n55.9\n14.8\n15.777778\n\n\n19\n20160620\n59.3\n69.1\n52.2\n16.9\n15.166667\n\n\n20\n20160621\n62.6\n71.4\n50.4\n21.0\n17.000000\n\n\n21\n20160622\n61.7\n70.2\n55.4\n14.8\n16.500000\n\n\n22\n20160623\n60.9\n67.1\n54.9\n12.2\n16.055556\n\n\n23\n20160624\n61.1\n68.9\n56.7\n12.2\n16.166667\n\n\n24\n20160625\n65.7\n75.4\n57.9\n17.5\n18.722222\n\n\n25\n20160626\n69.6\n77.7\n60.3\n17.4\n20.888889\n\n\n26\n20160627\n60.7\n70.0\n57.6\n12.4\n15.944444\n\n\n27\n20160628\n65.4\n73.0\n55.8\n17.2\n18.555556\n\n\n28\n20160629\n65.8\n73.2\n59.7\n13.5\n18.777778\n\n\n29\n20160630\n65.7\n72.7\n59.2\n13.5\n18.722222\n\n\n\n\n\n\n\nSelectoins### Reset index\n\nwarm_temps = warm_temps.reset_index(drop=True)\nwarm_temps\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\n\n\n\n\n0\n20160615\n63.4\n70.3\n49.3\n21.0\n17.444444\n\n\n1\n20160617\n60.4\n70.7\n55.9\n14.8\n15.777778\n\n\n2\n20160620\n59.3\n69.1\n52.2\n16.9\n15.166667\n\n\n3\n20160621\n62.6\n71.4\n50.4\n21.0\n17.000000\n\n\n4\n20160622\n61.7\n70.2\n55.4\n14.8\n16.500000\n\n\n5\n20160623\n60.9\n67.1\n54.9\n12.2\n16.055556\n\n\n6\n20160624\n61.1\n68.9\n56.7\n12.2\n16.166667\n\n\n7\n20160625\n65.7\n75.4\n57.9\n17.5\n18.722222\n\n\n8\n20160626\n69.6\n77.7\n60.3\n17.4\n20.888889\n\n\n9\n20160627\n60.7\n70.0\n57.6\n12.4\n15.944444\n\n\n10\n20160628\n65.4\n73.0\n55.8\n17.2\n18.555556\n\n\n11\n20160629\n65.8\n73.2\n59.7\n13.5\n18.777778\n\n\n12\n20160630\n65.7\n72.7\n59.2\n13.5\n18.722222\n\n\n\n\n\n\n\n\nwarm_temps[\"MIN\"].hasnans\n\nFalse"
   },
   {
     "objectID": "lectures/week-03/2023-09-06.html#sorting-data",
     "href": "lectures/week-03/2023-09-06.html#sorting-data",
-    "title": "Geog385F23",
+    "title": "Unique Values",
     "section": "Sorting Data",
-    "text": "Sorting Data\n\ndata.sort_values(by=\"TEMP\").head()\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n    \n  \n  \n    \n      8\n      20160609\n      49.4\n      54.1\n      45.7\n      8.4\n      9.666667\n    \n    \n      9\n      20160610\n      49.5\n      55.9\n      43.0\n      12.9\n      9.722222\n    \n    \n      4\n      20160605\n      51.4\n      58.3\n      43.2\n      15.1\n      10.777778\n    \n    \n      5\n      20160606\n      52.2\n      59.7\n      42.8\n      16.9\n      11.222222\n    \n    \n      10\n      20160611\n      54.0\n      62.1\n      41.7\n      20.4\n      12.222222\n    \n  \n\n\n\n\n\ndata.sort_values(by=\"TEMP\", ascending=False).head()\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n    \n  \n  \n    \n      25\n      20160626\n      69.6\n      77.7\n      60.3\n      17.4\n      20.888889\n    \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n      22.3\n      20.222222\n    \n    \n      1\n      20160602\n      65.8\n      80.8\n      55.0\n      25.8\n      18.777778\n    \n    \n      28\n      20160629\n      65.8\n      73.2\n      59.7\n      13.5\n      18.777778\n    \n    \n      29\n      20160630\n      65.7\n      72.7\n      59.2\n      13.5\n      18.722222\n    \n  \n\n\n\n\n\n# Create a list of weekdays that matches with our data\n# The data covers 4 weeks + 2 days (i.e. altogether 30 days)\nweek_days = [\"Wed\", \"Thu\", \"Fri\", \"Sat\", \"Sun\", \"Mon\", \"Tue\"]\nday_list = week_days * 4 + week_days[:2]\n\n# Add the weekdays to our DataFrame\ndata[\"WEEKDAY\"] = day_list\ndata.head(10)\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n      WEEKDAY\n    \n  \n  \n    \n      0\n      20160601\n      65.5\n      73.6\n      54.7\n      18.9\n      18.611111\n      Wed\n    \n    \n      1\n      20160602\n      65.8\n      80.8\n      55.0\n      25.8\n      18.777778\n      Thu\n    \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n      22.3\n      20.222222\n      Fri\n    \n    \n      3\n      20160604\n      57.5\n      70.9\n      47.3\n      23.6\n      14.166667\n      Sat\n    \n    \n      4\n      20160605\n      51.4\n      58.3\n      43.2\n      15.1\n      10.777778\n      Sun\n    \n    \n      5\n      20160606\n      52.2\n      59.7\n      42.8\n      16.9\n      11.222222\n      Mon\n    \n    \n      6\n      20160607\n      56.9\n      65.1\n      45.9\n      19.2\n      13.833333\n      Tue\n    \n    \n      7\n      20160608\n      54.2\n      60.4\n      47.5\n      12.9\n      12.333333\n      Wed\n    \n    \n      8\n      20160609\n      49.4\n      54.1\n      45.7\n      8.4\n      9.666667\n      Thu\n    \n    \n      9\n      20160610\n      49.5\n      55.9\n      43.0\n      12.9\n      9.722222\n      Fri\n    \n  \n\n\n\n\n\ndata.sort_values(by=[\"WEEKDAY\", \"TEMP_CELSIUS\"], ascending=[True, False]).head(10)\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n      WEEKDAY\n    \n  \n  \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n      22.3\n      20.222222\n      Fri\n    \n    \n      23\n      20160624\n      61.1\n      68.9\n      56.7\n      12.2\n      16.166667\n      Fri\n    \n    \n      16\n      20160617\n      60.4\n      70.7\n      55.9\n      14.8\n      15.777778\n      Fri\n    \n    \n      9\n      20160610\n      49.5\n      55.9\n      43.0\n      12.9\n      9.722222\n      Fri\n    \n    \n      26\n      20160627\n      60.7\n      70.0\n      57.6\n      12.4\n      15.944444\n      Mon\n    \n    \n      19\n      20160620\n      59.3\n      69.1\n      52.2\n      16.9\n      15.166667\n      Mon\n    \n    \n      12\n      20160613\n      58.3\n      68.2\n      47.3\n      20.9\n      14.611111\n      Mon\n    \n    \n      5\n      20160606\n      52.2\n      59.7\n      42.8\n      16.9\n      11.222222\n      Mon\n    \n    \n      24\n      20160625\n      65.7\n      75.4\n      57.9\n      17.5\n      18.722222\n      Sat\n    \n    \n      3\n      20160604\n      57.5\n      70.9\n      47.3\n      23.6\n      14.166667\n      Sat\n    \n  \n\n\n\n\n\ndata.sort_values(by=[\"WEEKDAY\"], ascending=[True]).head(10)\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n      DIFF\n      TEMP_CELSIUS\n      WEEKDAY\n    \n  \n  \n    \n      2\n      20160603\n      68.4\n      77.9\n      55.6\n      22.3\n      20.222222\n      Fri\n    \n    \n      16\n      20160617\n      60.4\n      70.7\n      55.9\n      14.8\n      15.777778\n      Fri\n    \n    \n      23\n      20160624\n      61.1\n      68.9\n      56.7\n      12.2\n      16.166667\n      Fri\n    \n    \n      9\n      20160610\n      49.5\n      55.9\n      43.0\n      12.9\n      9.722222\n      Fri\n    \n    \n      12\n      20160613\n      58.3\n      68.2\n      47.3\n      20.9\n      14.611111\n      Mon\n    \n    \n      19\n      20160620\n      59.3\n      69.1\n      52.2\n      16.9\n      15.166667\n      Mon\n    \n    \n      5\n      20160606\n      52.2\n      59.7\n      42.8\n      16.9\n      11.222222\n      Mon\n    \n    \n      26\n      20160627\n      60.7\n      70.0\n      57.6\n      12.4\n      15.944444\n      Mon\n    \n    \n      17\n      20160618\n      57.3\n      62.8\n      54.0\n      8.8\n      14.055556\n      Sat\n    \n    \n      10\n      20160611\n      54.0\n      62.1\n      41.7\n      20.4\n      12.222222\n      Sat"
+    "text": "Sorting Data\n\ndata.sort_values(by=\"TEMP\").head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\n\n\n\n\n8\n20160609\n49.4\n54.1\n45.7\n8.4\n9.666667\n\n\n9\n20160610\n49.5\n55.9\n43.0\n12.9\n9.722222\n\n\n4\n20160605\n51.4\n58.3\n43.2\n15.1\n10.777778\n\n\n5\n20160606\n52.2\n59.7\n42.8\n16.9\n11.222222\n\n\n10\n20160611\n54.0\n62.1\n41.7\n20.4\n12.222222\n\n\n\n\n\n\n\n\ndata.sort_values(by=\"TEMP\", ascending=False).head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\n\n\n\n\n25\n20160626\n69.6\n77.7\n60.3\n17.4\n20.888889\n\n\n2\n20160603\n68.4\n77.9\n55.6\n22.3\n20.222222\n\n\n1\n20160602\n65.8\n80.8\n55.0\n25.8\n18.777778\n\n\n28\n20160629\n65.8\n73.2\n59.7\n13.5\n18.777778\n\n\n29\n20160630\n65.7\n72.7\n59.2\n13.5\n18.722222\n\n\n\n\n\n\n\n\n# Create a list of weekdays that matches with our data\n# The data covers 4 weeks + 2 days (i.e. altogether 30 days)\nweek_days = [\"Wed\", \"Thu\", \"Fri\", \"Sat\", \"Sun\", \"Mon\", \"Tue\"]\nday_list = week_days * 4 + week_days[:2]\n\n# Add the weekdays to our DataFrame\ndata[\"WEEKDAY\"] = day_list\ndata.head(10)\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\nWEEKDAY\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n18.9\n18.611111\nWed\n\n\n1\n20160602\n65.8\n80.8\n55.0\n25.8\n18.777778\nThu\n\n\n2\n20160603\n68.4\n77.9\n55.6\n22.3\n20.222222\nFri\n\n\n3\n20160604\n57.5\n70.9\n47.3\n23.6\n14.166667\nSat\n\n\n4\n20160605\n51.4\n58.3\n43.2\n15.1\n10.777778\nSun\n\n\n5\n20160606\n52.2\n59.7\n42.8\n16.9\n11.222222\nMon\n\n\n6\n20160607\n56.9\n65.1\n45.9\n19.2\n13.833333\nTue\n\n\n7\n20160608\n54.2\n60.4\n47.5\n12.9\n12.333333\nWed\n\n\n8\n20160609\n49.4\n54.1\n45.7\n8.4\n9.666667\nThu\n\n\n9\n20160610\n49.5\n55.9\n43.0\n12.9\n9.722222\nFri\n\n\n\n\n\n\n\n\ndata.sort_values(by=[\"WEEKDAY\", \"TEMP_CELSIUS\"], ascending=[True, False]).head(10)\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\nWEEKDAY\n\n\n\n\n2\n20160603\n68.4\n77.9\n55.6\n22.3\n20.222222\nFri\n\n\n23\n20160624\n61.1\n68.9\n56.7\n12.2\n16.166667\nFri\n\n\n16\n20160617\n60.4\n70.7\n55.9\n14.8\n15.777778\nFri\n\n\n9\n20160610\n49.5\n55.9\n43.0\n12.9\n9.722222\nFri\n\n\n26\n20160627\n60.7\n70.0\n57.6\n12.4\n15.944444\nMon\n\n\n19\n20160620\n59.3\n69.1\n52.2\n16.9\n15.166667\nMon\n\n\n12\n20160613\n58.3\n68.2\n47.3\n20.9\n14.611111\nMon\n\n\n5\n20160606\n52.2\n59.7\n42.8\n16.9\n11.222222\nMon\n\n\n24\n20160625\n65.7\n75.4\n57.9\n17.5\n18.722222\nSat\n\n\n3\n20160604\n57.5\n70.9\n47.3\n23.6\n14.166667\nSat\n\n\n\n\n\n\n\n\ndata.sort_values(by=[\"WEEKDAY\"], ascending=[True]).head(10)\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\nDIFF\nTEMP_CELSIUS\nWEEKDAY\n\n\n\n\n2\n20160603\n68.4\n77.9\n55.6\n22.3\n20.222222\nFri\n\n\n16\n20160617\n60.4\n70.7\n55.9\n14.8\n15.777778\nFri\n\n\n23\n20160624\n61.1\n68.9\n56.7\n12.2\n16.166667\nFri\n\n\n9\n20160610\n49.5\n55.9\n43.0\n12.9\n9.722222\nFri\n\n\n12\n20160613\n58.3\n68.2\n47.3\n20.9\n14.611111\nMon\n\n\n19\n20160620\n59.3\n69.1\n52.2\n16.9\n15.166667\nMon\n\n\n5\n20160606\n52.2\n59.7\n42.8\n16.9\n11.222222\nMon\n\n\n26\n20160627\n60.7\n70.0\n57.6\n12.4\n15.944444\nMon\n\n\n17\n20160618\n57.3\n62.8\n54.0\n8.8\n14.055556\nSat\n\n\n10\n20160611\n54.0\n62.1\n41.7\n20.4\n12.222222\nSat"
   },
   {
     "objectID": "lectures/week-03/2023-09-06.html#visualization",
     "href": "lectures/week-03/2023-09-06.html#visualization",
-    "title": "Geog385F23",
+    "title": "Unique Values",
     "section": "Visualization",
-    "text": "Visualization\n\nimport seaborn as sns\nsns.set()\n\n\nimport pandas\n\n\ndf = pandas.read_csv(\"data/shared/covid/covid_combined.csv\",\n                     index_col='date', parse_dates=True)\n\n\ndf.head()\n\n\n\n\n\n  \n    \n      \n      state\n      fips\n      cases\n      deaths\n      dtc100\n      population\n      deaths100k\n    \n    \n      date\n      \n      \n      \n      \n      \n      \n      \n    \n  \n  \n    \n      2020-01-21\n      Washington\n      53\n      1\n      0\n      0.0\n      7614893\n      0.0\n    \n    \n      2020-01-22\n      Washington\n      53\n      1\n      0\n      0.0\n      7614893\n      0.0\n    \n    \n      2020-01-23\n      Washington\n      53\n      1\n      0\n      0.0\n      7614893\n      0.0\n    \n    \n      2020-01-24\n      Washington\n      53\n      1\n      0\n      0.0\n      7614893\n      0.0\n    \n    \n      2020-01-25\n      Washington\n      53\n      1\n      0\n      0.0\n      7614893\n      0.0\n    \n  \n\n\n\n\n\ndf.tail()\n\n\n\n\n\n  \n    \n      \n      state\n      fips\n      cases\n      deaths\n      dtc100\n      population\n      deaths100k\n    \n    \n      date\n      \n      \n      \n      \n      \n      \n      \n    \n  \n  \n    \n      2020-07-29\n      Northern Mariana Islands\n      69\n      40\n      2\n      5.000000\n      55194\n      3.623582\n    \n    \n      2020-07-30\n      Northern Mariana Islands\n      69\n      42\n      2\n      4.761905\n      55194\n      3.623582\n    \n    \n      2020-07-31\n      Northern Mariana Islands\n      69\n      42\n      2\n      4.761905\n      55194\n      3.623582\n    \n    \n      2020-08-01\n      Northern Mariana Islands\n      69\n      44\n      2\n      4.545455\n      55194\n      3.623582\n    \n    \n      2020-08-02\n      Northern Mariana Islands\n      69\n      45\n      2\n      4.444444\n      55194\n      3.623582\n    \n  \n\n\n\n\n\ndf.shape\n\n(8287, 7)\n\n\n\ndf.index\n\nDatetimeIndex(['2020-01-21', '2020-01-22', '2020-01-23', '2020-01-24',\n               '2020-01-25', '2020-01-26', '2020-01-27', '2020-01-28',\n               '2020-01-29', '2020-01-30',\n               ...\n               '2020-07-24', '2020-07-25', '2020-07-26', '2020-07-27',\n               '2020-07-28', '2020-07-29', '2020-07-30', '2020-07-31',\n               '2020-08-01', '2020-08-02'],\n              dtype='datetime64[ns]', name='date', length=8287, freq=None)\n\n\n\nlast_df = df.loc['2020-08-02']\n\n\nlast_df.shape\n\n(54, 7)\n\n\n\nlast_df.reset_index(inplace=True)\nlast_df\n\n\n\n\n\n  \n    \n      \n      date\n      state\n      fips\n      cases\n      deaths\n      dtc100\n      population\n      deaths100k\n    \n  \n  \n    \n      0\n      2020-08-02\n      Washington\n      53\n      60161\n      1680\n      2.792507\n      7614893\n      22.062030\n    \n    \n      1\n      2020-08-02\n      Illinois\n      17\n      183662\n      7718\n      4.202285\n      12671821\n      60.906795\n    \n    \n      2\n      2020-08-02\n      California\n      6\n      515937\n      9399\n      1.821734\n      39512223\n      23.787576\n    \n    \n      3\n      2020-08-02\n      Arizona\n      4\n      178473\n      3769\n      2.111804\n      7278717\n      51.781104\n    \n    \n      4\n      2020-08-02\n      Massachusetts\n      25\n      118458\n      8638\n      7.292036\n      6949503\n      124.296658\n    \n    \n      5\n      2020-08-02\n      Wisconsin\n      55\n      58990\n      956\n      1.620614\n      5822434\n      16.419250\n    \n    \n      6\n      2020-08-02\n      Texas\n      48\n      452826\n      7515\n      1.659578\n      28995881\n      25.917474\n    \n    \n      7\n      2020-08-02\n      Nebraska\n      31\n      26702\n      338\n      1.265823\n      1934408\n      17.473046\n    \n    \n      8\n      2020-08-02\n      Utah\n      49\n      41175\n      313\n      0.760170\n      3205958\n      9.763072\n    \n    \n      9\n      2020-08-02\n      Oregon\n      41\n      19097\n      331\n      1.733257\n      4217737\n      7.847810\n    \n    \n      10\n      2020-08-02\n      Florida\n      12\n      487124\n      7083\n      1.454045\n      21477737\n      32.978335\n    \n    \n      11\n      2020-08-02\n      New York\n      36\n      421008\n      32401\n      7.696053\n      19453561\n      166.555624\n    \n    \n      12\n      2020-08-02\n      Rhode Island\n      44\n      19022\n      1007\n      5.293870\n      1059361\n      95.057303\n    \n    \n      13\n      2020-08-02\n      Georgia\n      13\n      177556\n      3758\n      2.116515\n      10617423\n      35.394653\n    \n    \n      14\n      2020-08-02\n      New Hampshire\n      33\n      6634\n      417\n      6.285800\n      1359711\n      30.668282\n    \n    \n      15\n      2020-08-02\n      North Carolina\n      37\n      125339\n      1996\n      1.592481\n      10488084\n      19.031121\n    \n    \n      16\n      2020-08-02\n      New Jersey\n      34\n      184225\n      15836\n      8.596010\n      8882190\n      178.289363\n    \n    \n      17\n      2020-08-02\n      Colorado\n      8\n      47799\n      1846\n      3.862005\n      5758736\n      32.055646\n    \n    \n      18\n      2020-08-02\n      Maryland\n      24\n      90835\n      3515\n      3.869654\n      6045680\n      58.140689\n    \n    \n      19\n      2020-08-02\n      Nevada\n      32\n      50270\n      833\n      1.657052\n      3080156\n      27.044085\n    \n    \n      20\n      2020-08-02\n      Tennessee\n      47\n      106804\n      1062\n      0.994345\n      6833174\n      15.541826\n    \n    \n      21\n      2020-08-02\n      Hawaii\n      15\n      2219\n      25\n      1.126634\n      1415872\n      1.765696\n    \n    \n      22\n      2020-08-02\n      Indiana\n      18\n      69531\n      2975\n      4.278667\n      6732219\n      44.190482\n    \n    \n      23\n      2020-08-02\n      Kentucky\n      21\n      31966\n      759\n      2.374398\n      4467673\n      16.988710\n    \n    \n      24\n      2020-08-02\n      Minnesota\n      27\n      55987\n      1654\n      2.954257\n      5639632\n      29.328155\n    \n    \n      25\n      2020-08-02\n      Oklahoma\n      40\n      38201\n      550\n      1.439753\n      3956971\n      13.899521\n    \n    \n      26\n      2020-08-02\n      Pennsylvania\n      42\n      118038\n      7274\n      6.162422\n      12801989\n      56.819296\n    \n    \n      27\n      2020-08-02\n      South Carolina\n      45\n      91788\n      1777\n      1.935983\n      5148714\n      34.513473\n    \n    \n      28\n      2020-08-02\n      District of Columbia\n      11\n      12274\n      586\n      4.774320\n      705749\n      83.032353\n    \n    \n      29\n      2020-08-02\n      Kansas\n      20\n      28341\n      361\n      1.273773\n      2913314\n      12.391387\n    \n    \n      30\n      2020-08-02\n      Missouri\n      29\n      52550\n      1311\n      2.494767\n      6137428\n      21.360739\n    \n    \n      31\n      2020-08-02\n      Vermont\n      50\n      1426\n      57\n      3.997195\n      623989\n      9.134776\n    \n    \n      32\n      2020-08-02\n      Virginia\n      51\n      91782\n      2218\n      2.416596\n      8535519\n      25.985532\n    \n    \n      33\n      2020-08-02\n      Connecticut\n      9\n      49810\n      4432\n      8.897812\n      3565287\n      124.309768\n    \n    \n      34\n      2020-08-02\n      Iowa\n      19\n      45723\n      878\n      1.920259\n      3155070\n      27.828226\n    \n    \n      35\n      2020-08-02\n      Louisiana\n      22\n      119861\n      4007\n      3.343039\n      4648794\n      86.194398\n    \n    \n      36\n      2020-08-02\n      Ohio\n      39\n      93031\n      3529\n      3.793359\n      11689100\n      30.190519\n    \n    \n      37\n      2020-08-02\n      Michigan\n      26\n      91857\n      6460\n      7.032670\n      9986857\n      64.685016\n    \n    \n      38\n      2020-08-02\n      South Dakota\n      46\n      8955\n      135\n      1.507538\n      884659\n      15.260117\n    \n    \n      39\n      2020-08-02\n      Arkansas\n      5\n      43810\n      464\n      1.059119\n      3017825\n      15.375312\n    \n    \n      40\n      2020-08-02\n      Delaware\n      10\n      14949\n      585\n      3.913305\n      973764\n      60.076158\n    \n    \n      41\n      2020-08-02\n      Mississippi\n      28\n      60553\n      1703\n      2.812412\n      2976149\n      57.221597\n    \n    \n      42\n      2020-08-02\n      New Mexico\n      35\n      21016\n      654\n      3.111915\n      2096829\n      31.189954\n    \n    \n      43\n      2020-08-02\n      North Dakota\n      38\n      6664\n      109\n      1.635654\n      762062\n      14.303298\n    \n    \n      44\n      2020-08-02\n      Wyoming\n      56\n      2808\n      26\n      0.925926\n      578759\n      4.492371\n    \n    \n      45\n      2020-08-02\n      Alaska\n      2\n      3982\n      22\n      0.552486\n      731545\n      3.007334\n    \n    \n      46\n      2020-08-02\n      Maine\n      23\n      3958\n      123\n      3.107630\n      1344212\n      9.150342\n    \n    \n      47\n      2020-08-02\n      Alabama\n      1\n      91444\n      1627\n      1.779231\n      4903185\n      33.182513\n    \n    \n      48\n      2020-08-02\n      Idaho\n      16\n      21465\n      197\n      0.917773\n      1787065\n      11.023662\n    \n    \n      49\n      2020-08-02\n      Montana\n      30\n      4193\n      61\n      1.454806\n      1068778\n      5.707453\n    \n    \n      50\n      2020-08-02\n      Puerto Rico\n      72\n      18411\n      230\n      1.249253\n      3193694\n      7.201692\n    \n    \n      51\n      2020-08-02\n      Guam\n      66\n      1328\n      6\n      0.451807\n      165718\n      3.620609\n    \n    \n      52\n      2020-08-02\n      West Virginia\n      54\n      6854\n      117\n      1.707032\n      1792147\n      6.528482\n    \n    \n      53\n      2020-08-02\n      Northern Mariana Islands\n      69\n      45\n      2\n      4.444444\n      55194\n      3.623582\n    \n  \n\n\n\n\n\n_ = sns.displot(last_df.deaths100k)\n\n\n\n\n\n_ = sns.displot(last_df.deaths100k, rug=True)"
+    "text": "Visualization\n\nimport seaborn as sns\nsns.set()\n\n\nimport pandas\n\n\ndf = pandas.read_csv(\"data/shared/covid/covid_combined.csv\",\n                     index_col='date', parse_dates=True)\n\n\ndf.head()\n\n\n\n\n\n\n\n\nstate\nfips\ncases\ndeaths\ndtc100\npopulation\ndeaths100k\n\n\ndate\n\n\n\n\n\n\n\n\n\n\n\n2020-01-21\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n2020-01-22\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n2020-01-23\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n2020-01-24\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n2020-01-25\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n\n\n\n\n\n\ndf.tail()\n\n\n\n\n\n\n\n\nstate\nfips\ncases\ndeaths\ndtc100\npopulation\ndeaths100k\n\n\ndate\n\n\n\n\n\n\n\n\n\n\n\n2020-07-29\nNorthern Mariana Islands\n69\n40\n2\n5.000000\n55194\n3.623582\n\n\n2020-07-30\nNorthern Mariana Islands\n69\n42\n2\n4.761905\n55194\n3.623582\n\n\n2020-07-31\nNorthern Mariana Islands\n69\n42\n2\n4.761905\n55194\n3.623582\n\n\n2020-08-01\nNorthern Mariana Islands\n69\n44\n2\n4.545455\n55194\n3.623582\n\n\n2020-08-02\nNorthern Mariana Islands\n69\n45\n2\n4.444444\n55194\n3.623582\n\n\n\n\n\n\n\n\ndf.shape\n\n(8287, 7)\n\n\n\ndf.index\n\nDatetimeIndex(['2020-01-21', '2020-01-22', '2020-01-23', '2020-01-24',\n               '2020-01-25', '2020-01-26', '2020-01-27', '2020-01-28',\n               '2020-01-29', '2020-01-30',\n               ...\n               '2020-07-24', '2020-07-25', '2020-07-26', '2020-07-27',\n               '2020-07-28', '2020-07-29', '2020-07-30', '2020-07-31',\n               '2020-08-01', '2020-08-02'],\n              dtype='datetime64[ns]', name='date', length=8287, freq=None)\n\n\n\nlast_df = df.loc['2020-08-02']\n\n\nlast_df.shape\n\n(54, 7)\n\n\n\nlast_df.reset_index(inplace=True)\nlast_df\n\n\n\n\n\n\n\n\ndate\nstate\nfips\ncases\ndeaths\ndtc100\npopulation\ndeaths100k\n\n\n\n\n0\n2020-08-02\nWashington\n53\n60161\n1680\n2.792507\n7614893\n22.062030\n\n\n1\n2020-08-02\nIllinois\n17\n183662\n7718\n4.202285\n12671821\n60.906795\n\n\n2\n2020-08-02\nCalifornia\n6\n515937\n9399\n1.821734\n39512223\n23.787576\n\n\n3\n2020-08-02\nArizona\n4\n178473\n3769\n2.111804\n7278717\n51.781104\n\n\n4\n2020-08-02\nMassachusetts\n25\n118458\n8638\n7.292036\n6949503\n124.296658\n\n\n5\n2020-08-02\nWisconsin\n55\n58990\n956\n1.620614\n5822434\n16.419250\n\n\n6\n2020-08-02\nTexas\n48\n452826\n7515\n1.659578\n28995881\n25.917474\n\n\n7\n2020-08-02\nNebraska\n31\n26702\n338\n1.265823\n1934408\n17.473046\n\n\n8\n2020-08-02\nUtah\n49\n41175\n313\n0.760170\n3205958\n9.763072\n\n\n9\n2020-08-02\nOregon\n41\n19097\n331\n1.733257\n4217737\n7.847810\n\n\n10\n2020-08-02\nFlorida\n12\n487124\n7083\n1.454045\n21477737\n32.978335\n\n\n11\n2020-08-02\nNew York\n36\n421008\n32401\n7.696053\n19453561\n166.555624\n\n\n12\n2020-08-02\nRhode Island\n44\n19022\n1007\n5.293870\n1059361\n95.057303\n\n\n13\n2020-08-02\nGeorgia\n13\n177556\n3758\n2.116515\n10617423\n35.394653\n\n\n14\n2020-08-02\nNew Hampshire\n33\n6634\n417\n6.285800\n1359711\n30.668282\n\n\n15\n2020-08-02\nNorth Carolina\n37\n125339\n1996\n1.592481\n10488084\n19.031121\n\n\n16\n2020-08-02\nNew Jersey\n34\n184225\n15836\n8.596010\n8882190\n178.289363\n\n\n17\n2020-08-02\nColorado\n8\n47799\n1846\n3.862005\n5758736\n32.055646\n\n\n18\n2020-08-02\nMaryland\n24\n90835\n3515\n3.869654\n6045680\n58.140689\n\n\n19\n2020-08-02\nNevada\n32\n50270\n833\n1.657052\n3080156\n27.044085\n\n\n20\n2020-08-02\nTennessee\n47\n106804\n1062\n0.994345\n6833174\n15.541826\n\n\n21\n2020-08-02\nHawaii\n15\n2219\n25\n1.126634\n1415872\n1.765696\n\n\n22\n2020-08-02\nIndiana\n18\n69531\n2975\n4.278667\n6732219\n44.190482\n\n\n23\n2020-08-02\nKentucky\n21\n31966\n759\n2.374398\n4467673\n16.988710\n\n\n24\n2020-08-02\nMinnesota\n27\n55987\n1654\n2.954257\n5639632\n29.328155\n\n\n25\n2020-08-02\nOklahoma\n40\n38201\n550\n1.439753\n3956971\n13.899521\n\n\n26\n2020-08-02\nPennsylvania\n42\n118038\n7274\n6.162422\n12801989\n56.819296\n\n\n27\n2020-08-02\nSouth Carolina\n45\n91788\n1777\n1.935983\n5148714\n34.513473\n\n\n28\n2020-08-02\nDistrict of Columbia\n11\n12274\n586\n4.774320\n705749\n83.032353\n\n\n29\n2020-08-02\nKansas\n20\n28341\n361\n1.273773\n2913314\n12.391387\n\n\n30\n2020-08-02\nMissouri\n29\n52550\n1311\n2.494767\n6137428\n21.360739\n\n\n31\n2020-08-02\nVermont\n50\n1426\n57\n3.997195\n623989\n9.134776\n\n\n32\n2020-08-02\nVirginia\n51\n91782\n2218\n2.416596\n8535519\n25.985532\n\n\n33\n2020-08-02\nConnecticut\n9\n49810\n4432\n8.897812\n3565287\n124.309768\n\n\n34\n2020-08-02\nIowa\n19\n45723\n878\n1.920259\n3155070\n27.828226\n\n\n35\n2020-08-02\nLouisiana\n22\n119861\n4007\n3.343039\n4648794\n86.194398\n\n\n36\n2020-08-02\nOhio\n39\n93031\n3529\n3.793359\n11689100\n30.190519\n\n\n37\n2020-08-02\nMichigan\n26\n91857\n6460\n7.032670\n9986857\n64.685016\n\n\n38\n2020-08-02\nSouth Dakota\n46\n8955\n135\n1.507538\n884659\n15.260117\n\n\n39\n2020-08-02\nArkansas\n5\n43810\n464\n1.059119\n3017825\n15.375312\n\n\n40\n2020-08-02\nDelaware\n10\n14949\n585\n3.913305\n973764\n60.076158\n\n\n41\n2020-08-02\nMississippi\n28\n60553\n1703\n2.812412\n2976149\n57.221597\n\n\n42\n2020-08-02\nNew Mexico\n35\n21016\n654\n3.111915\n2096829\n31.189954\n\n\n43\n2020-08-02\nNorth Dakota\n38\n6664\n109\n1.635654\n762062\n14.303298\n\n\n44\n2020-08-02\nWyoming\n56\n2808\n26\n0.925926\n578759\n4.492371\n\n\n45\n2020-08-02\nAlaska\n2\n3982\n22\n0.552486\n731545\n3.007334\n\n\n46\n2020-08-02\nMaine\n23\n3958\n123\n3.107630\n1344212\n9.150342\n\n\n47\n2020-08-02\nAlabama\n1\n91444\n1627\n1.779231\n4903185\n33.182513\n\n\n48\n2020-08-02\nIdaho\n16\n21465\n197\n0.917773\n1787065\n11.023662\n\n\n49\n2020-08-02\nMontana\n30\n4193\n61\n1.454806\n1068778\n5.707453\n\n\n50\n2020-08-02\nPuerto Rico\n72\n18411\n230\n1.249253\n3193694\n7.201692\n\n\n51\n2020-08-02\nGuam\n66\n1328\n6\n0.451807\n165718\n3.620609\n\n\n52\n2020-08-02\nWest Virginia\n54\n6854\n117\n1.707032\n1792147\n6.528482\n\n\n53\n2020-08-02\nNorthern Mariana Islands\n69\n45\n2\n4.444444\n55194\n3.623582\n\n\n\n\n\n\n\n\n_ = sns.displot(last_df.deaths100k)\n\n\n\n\n\n_ = sns.displot(last_df.deaths100k, rug=True)"
   },
   {
     "objectID": "about.html",
@@ -530,5 +530,530 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "lectures/index.html#lectures",
+    "href": "lectures/index.html#lectures",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "",
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#data-definitions",
+    "href": "lectures/week-03/2023-09-11.html#data-definitions",
+    "title": "Spatial Data",
+    "section": "Data Definitions",
+    "text": "Data Definitions\n\nfacts and statistics collected together for reference or analysis\n\n\nthe quantities, characters, or symbols on which operations are performed by a computer, being stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media.\n\n\nthings known or assumed as facts, making the basis of reasoning or calculate\n\nSource: Oxford languages"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#datas-place",
+    "href": "lectures/week-03/2023-09-11.html#datas-place",
+    "title": "Spatial Data",
+    "section": "Data’s Place",
+    "text": "Data’s Place\n\n\n\n\n\nDIKW Pyramid\n\n\n\n\ndata: discrete facts, unorganized and lacking context or information\ninformation: data imbued with meaning - what is in the data\nknowledge: perception of the world seen through information synthesis\nwisdom: “knowing the right things to do”"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#data-sets",
+    "href": "lectures/week-03/2023-09-11.html#data-sets",
+    "title": "Spatial Data",
+    "section": "Data Sets",
+    "text": "Data Sets\nA data set is a collection of observations recorded for individual units on a set of variables.\nVariables are sometimes referred to as attributes or features (in machine learning parlance)."
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#measurement-scales",
+    "href": "lectures/week-03/2023-09-11.html#measurement-scales",
+    "title": "Spatial Data",
+    "section": "Measurement Scales",
+    "text": "Measurement Scales\n\n\n\nScale\nOperations\nExample\n\n\n\n\nnominal\nmode, frequencies\nZip Code\n\n\nordinal\nA &gt; B\nRanks, Primary, Intermediate\n\n\ninterval\n+ -\nTime\n\n\nratio\n+ - * /\nWeight, Kelvin"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#spatial-data-is-special",
+    "href": "lectures/week-03/2023-09-11.html#spatial-data-is-special",
+    "title": "Spatial Data",
+    "section": "Spatial Data is Special",
+    "text": "Spatial Data is Special\n\nSpatial data comes in many varieties and it is not easy to arrive at a system of classification that is simultaneously exclusive, exhaustive, imaginative, and satisfying.\n\n– G. Upton & B. Fingleton"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#what-is-special-about-spatial-data-1",
+    "href": "lectures/week-03/2023-09-11.html#what-is-special-about-spatial-data-1",
+    "title": "Spatial Data",
+    "section": "What is special about spatial data?",
+    "text": "What is special about spatial data?\nLocation, Location, Location\nwhere matters\nDependence is the rule, not the exception\n\nspatial interaction, contagion, spill-overs\nspatial externalities\n\nSpatial Scale\n\nInference can change with scale"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#nature-of-spatial-data",
+    "href": "lectures/week-03/2023-09-11.html#nature-of-spatial-data",
+    "title": "Spatial Data",
+    "section": "Nature of Spatial Data",
+    "text": "Nature of Spatial Data\nGeoreferences\nattribute data together with location\nGeocoding\n\nassociate observations with location\npoint: latitude-longtitude (GPS)\nareal unit: spatial reference"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#geocoding-on-line",
+    "href": "lectures/week-03/2023-09-11.html#geocoding-on-line",
+    "title": "Spatial Data",
+    "section": "Geocoding on-line",
+    "text": "Geocoding on-line\n\nGeocode Input"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#geocoding-on-line-1",
+    "href": "lectures/week-03/2023-09-11.html#geocoding-on-line-1",
+    "title": "Spatial Data",
+    "section": "Geocoding on-line",
+    "text": "Geocoding on-line\n\nGeocode Output"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#on-the-map",
+    "href": "lectures/week-03/2023-09-11.html#on-the-map",
+    "title": "Spatial Data",
+    "section": "On the Map?",
+    "text": "On the Map?\n\nMap of Geocode Output"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#on-the-map-1",
+    "href": "lectures/week-03/2023-09-11.html#on-the-map-1",
+    "title": "Spatial Data",
+    "section": "On the Map?",
+    "text": "On the Map?\n\nErrors in Geocode Output"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#location",
+    "href": "lectures/week-03/2023-09-11.html#location",
+    "title": "Spatial Data",
+    "section": "Location",
+    "text": "Location\n\nGiven: in most spatial data analysis, no choice in location\nNo sampling in the usual sense\nData = attributes augmented with locational information"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#spatial-effects",
+    "href": "lectures/week-03/2023-09-11.html#spatial-effects",
+    "title": "Spatial Data",
+    "section": "Spatial Effects",
+    "text": "Spatial Effects\nThe Trilogy\n\nSpatial Dependence\nSpatial Heterogeneity\nSpatial Scale"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#spatial-dependence",
+    "href": "lectures/week-03/2023-09-11.html#spatial-dependence",
+    "title": "Spatial Data",
+    "section": "Spatial Dependence",
+    "text": "Spatial Dependence\nTobler’s First Law of Geography\n\n“everything depends on everything else, but closer things more so”\n\n\nStructure of spatial dependence\nDistance Decay\nCloseness = Similarity"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#spatial-heterogenety",
+    "href": "lectures/week-03/2023-09-11.html#spatial-heterogenety",
+    "title": "Spatial Data",
+    "section": "Spatial Heterogenety",
+    "text": "Spatial Heterogenety\nSpatial Instability\n\nProcess varies in some way over spatial units\nMultiple forms\n\nDiscrete = regimes\nContinuous = expansion method, GWR\n\nTrade-off\n\nSpatial homogeneity = stationary process\nUniqueness = extreme heterogeneity"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#spatial-scale-1",
+    "href": "lectures/week-03/2023-09-11.html#spatial-scale-1",
+    "title": "Spatial Data",
+    "section": "Spatial Scale",
+    "text": "Spatial Scale\nMismatch\n\nSpatial scale of the process\nSpatial scale of our measurement\n\nIssues\n\npoints too far apart = miss small distance variation\narea aggregates cannot provide information on individual behavior\nEcological Fallacy"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#modifiable-areal-unit-problem-maup",
+    "href": "lectures/week-03/2023-09-11.html#modifiable-areal-unit-problem-maup",
+    "title": "Spatial Data",
+    "section": "Modifiable Areal Unit Problem (MAUP)",
+    "text": "Modifiable Areal Unit Problem (MAUP)\nAggregation Problem\n\nspecial case of ecological fallacy\na million correlation coefficients\n\nZonation Problem\n\nsize\narangement\nHow many ways could you partition the coterminous US land area into 48 polygons?"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#maup-zonation-problem",
+    "href": "lectures/week-03/2023-09-11.html#maup-zonation-problem",
+    "title": "Spatial Data",
+    "section": "MAUP Zonation Problem",
+    "text": "MAUP Zonation Problem\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#maup-aggregation-problem",
+    "href": "lectures/week-03/2023-09-11.html#maup-aggregation-problem",
+    "title": "Spatial Data",
+    "section": "MAUP Aggregation Problem",
+    "text": "MAUP Aggregation Problem\n\n\n\n\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem\n\n\n\n\nTrue rate = 1/3 = 33%\nA’s rate = (0 +1/2) /2 = 25%\nA’s weighted rate = 1/3 * 0 + 2/3 * 50 = 33%\nB’s rate = (0 + 100) /2 = 50%\nB’s weighted rate = 2/3 * 0 + 1/3 * 100 = 33%"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#spatial-process",
+    "href": "lectures/week-03/2023-09-11.html#spatial-process",
+    "title": "Spatial Data",
+    "section": "Spatial Process",
+    "text": "Spatial Process\nSpatial Random Field\na mathemtical construct to capture randomness of values distributed over space\n\\[\\{Z(s):s \\in D \\} \\]\n\n\\(s \\in R^d:\\) location (e.g., lat-lon)\n\\(D \\in R^d:\\) index set = possible locations\n\\(Z(s):\\) random variable at location \\(s\\)"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#types-of-spatial-data-1",
+    "href": "lectures/week-03/2023-09-11.html#types-of-spatial-data-1",
+    "title": "Spatial Data",
+    "section": "Types of Spatial Data",
+    "text": "Types of Spatial Data\n\nEvents\n\naddresses of crimes\n\nDiscrete Spatial Objects\n\ncounty crime rates\n\nContinuous surfaces\n\nair quality\nrainfall"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#point-pattern-analysis",
+    "href": "lectures/week-03/2023-09-11.html#point-pattern-analysis",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis",
+    "text": "Point Pattern Analysis\nData\n\nmapped pattern = all the values\nnot a sample in the usual sense\n\nSpatial Process\n\nobservations as a realization of a random point process\npoints occur in space according to a mathematical model"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#point-patterns",
+    "href": "lectures/week-03/2023-09-11.html#point-patterns",
+    "title": "Spatial Data",
+    "section": "Point Patterns",
+    "text": "Point Patterns\nUnmarked Point Pattern\n\nonly location is recorded\nno other attribute information\n\nMarked Point Pattern\n\nLocation is recorded\nStochastic attributes are also recorded\ne.g., sales price at address, DBH of a tree"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#point-pattern-analysis-quadrat-methods",
+    "href": "lectures/week-03/2023-09-11.html#point-pattern-analysis-quadrat-methods",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis: Quadrat Methods",
+    "text": "Point Pattern Analysis: Quadrat Methods\n\nQuadrat Analysis"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#point-pattern-analysis-distance-based-methods",
+    "href": "lectures/week-03/2023-09-11.html#point-pattern-analysis-distance-based-methods",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis: Distance Based Methods",
+    "text": "Point Pattern Analysis: Distance Based Methods\n\nDistance Distributions"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#areal-unit-data-lattice",
+    "href": "lectures/week-03/2023-09-11.html#areal-unit-data-lattice",
+    "title": "Spatial Data",
+    "section": "Areal Unit Data (Lattice)",
+    "text": "Areal Unit Data (Lattice)\n\nSpatial Domain: \\(D\\)\n\nDiscrete and fixed\nLocations nonrandom\nLocations countable\n\n\n\nExamples of lattice data\n\nAttributes collected by ZIP code\ncensus tract"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#lattice-data-indexing",
+    "href": "lectures/week-03/2023-09-11.html#lattice-data-indexing",
+    "title": "Spatial Data",
+    "section": "Lattice Data: Indexing",
+    "text": "Lattice Data: Indexing\n\nSite\n\nEach location is now an area or site\nOne observation on \\(Z\\) for each site\nNeed a spatial index: \\(Z(s_i)\\)\n\n\n\n\\(Z(s_i)\\)\n\n\\(s_i\\) is a representative location within the site\ne.g., centroid, largest city\nAllows for measuring distances between sites"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#lattice-data-county-per-capita-incomes",
+    "href": "lectures/week-03/2023-09-11.html#lattice-data-county-per-capita-incomes",
+    "title": "Spatial Data",
+    "section": "Lattice Data: County Per Capita Incomes",
+    "text": "Lattice Data: County Per Capita Incomes\n\n1969"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-analysis",
+    "href": "lectures/week-03/2023-09-11.html#geostatistical-analysis",
+    "title": "Spatial Data",
+    "section": "Geostatistical Analysis",
+    "text": "Geostatistical Analysis\n\nSpatial Domain: \\(D\\)\n\nA continuous and fixed set.\nMeaning \\(Z(s)\\) can be observed everywhere within \\(D\\).\nBetween any two sample locations \\(s_i\\) and \\(s_j\\) you can theoretically place an infinite number of other samples.\nBy fixed: the points in \\(D\\) are non-stochastic"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data",
+    "href": "lectures/week-03/2023-09-11.html#geostatistical-data",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data",
+    "text": "Geostatistical Data\n\nContinuous Variation\n\nBecause of the continuity of \\(D\\)\nGeostatistical data is referred to as “spatial data with continuous variation.”\nContinuity is associated with \\(D\\).\nAttribute \\(Z\\) may, or may not, be continuous."
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data-monitoring-sites",
+    "href": "lectures/week-03/2023-09-11.html#geostatistical-data-monitoring-sites",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Monitoring Sites",
+    "text": "Geostatistical Data: Monitoring Sites\n\nSites"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction",
+    "href": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nTessellation"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction-1",
+    "href": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction-1",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nInterpolation"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction-2",
+    "href": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction-2",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nKriging"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#network-data",
+    "href": "lectures/week-03/2023-09-11.html#network-data",
+    "title": "Spatial Data",
+    "section": "Network Data",
+    "text": "Network Data\n\n\nA network is a system of linear features connected at intersections and interchanges.\nThese intersections and interchanges are called nodes.\nThe linear feature connecting any given pair of nodes is called an arc.\nFormally, a network is defined as a directed graph \\(G = (N,  A)\\) consisting of an indexed set of nodes \\(N\\) with \\(n = |N|\\) and a spanning set of directed arcs \\(A\\) with \\(m = |A|\\), where \\(n\\) is the number of nodes and \\(m\\) is the number of arcs.\nEach arc on a network is represented as an ordered pair of nodes, in the form from node \\(i\\) to node \\(j\\), denoted by \\((i, j)\\)."
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#network-data-1",
+    "href": "lectures/week-03/2023-09-11.html#network-data-1",
+    "title": "Spatial Data",
+    "section": "Network Data",
+    "text": "Network Data\n\nStreet Network"
+  },
+  {
+    "objectID": "lectures/week-03/2023-09-11.html#flow-data",
+    "href": "lectures/week-03/2023-09-11.html#flow-data",
+    "title": "Spatial Data",
+    "section": "Flow Data",
+    "text": "Flow Data\n\nFlows"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#data-definitions",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#data-definitions",
+    "title": "Spatial Data",
+    "section": "Data Definitions",
+    "text": "Data Definitions\n\nfacts and statistics collected together for reference or analysis\n\n\nthe quantities, characters, or symbols on which operations are performed by a computer, being stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media.\n\n\nthings known or assumed as facts, making the basis of reasoning or calculate\n\nSource: Oxford languages"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#datas-place",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#datas-place",
+    "title": "Spatial Data",
+    "section": "Data’s Place",
+    "text": "Data’s Place\n\n\n\n\n\nDIKW Pyramid\n\n\n\n\ndata: discrete facts, unorganized and lacking context or information\ninformation: data imbued with meaning - what is in the data\nknowledge: perception of the world seen through information synthesis\nwisdom: “knowing the right things to do”"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#data-sets",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#data-sets",
+    "title": "Spatial Data",
+    "section": "Data Sets",
+    "text": "Data Sets\nA data set is a collection of observations recorded for individual units on a set of variables.\nVariables are sometimes referred to as attributes or features (in machine learning parlance)."
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#measurement-scales",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#measurement-scales",
+    "title": "Spatial Data",
+    "section": "Measurement Scales",
+    "text": "Measurement Scales\n\n\n\nScale\nOperations\nExample\n\n\n\n\nnominal\nmode, frequencies\nZip Code\n\n\nordinal\nA &gt; B\nRanks, Primary, Intermediate\n\n\ninterval\n+ -\nTime\n\n\nratio\n+ - * /\nWeight, Kelvin"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#spatial-data-is-special",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#spatial-data-is-special",
+    "title": "Spatial Data",
+    "section": "Spatial Data is Special",
+    "text": "Spatial Data is Special\n\nSpatial data comes in many varieties and it is not easy to arrive at a system of classification that is simultaneously exclusive, exhaustive, imaginative, and satisfying.\n\n– G. Upton & B. Fingleton"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#what-is-special-about-spatial-data-1",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#what-is-special-about-spatial-data-1",
+    "title": "Spatial Data",
+    "section": "What is special about spatial data?",
+    "text": "What is special about spatial data?\nLocation, Location, Location\nwhere matters\nDependence is the rule, not the exception\n\nspatial interaction, contagion, spill-overs\nspatial externalities\n\nSpatial Scale\n\nInference can change with scale"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#nature-of-spatial-data",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#nature-of-spatial-data",
+    "title": "Spatial Data",
+    "section": "Nature of Spatial Data",
+    "text": "Nature of Spatial Data\nGeoreferences\nattribute data together with location\nGeocoding\n\nassociate observations with location\npoint: latitude-longtitude (GPS)\nareal unit: spatial reference"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#geocoding-on-line",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#geocoding-on-line",
+    "title": "Spatial Data",
+    "section": "Geocoding on-line",
+    "text": "Geocoding on-line\n\nGeocode Input"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#geocoding-on-line-1",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#geocoding-on-line-1",
+    "title": "Spatial Data",
+    "section": "Geocoding on-line",
+    "text": "Geocoding on-line\n\nGeocode Output"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#on-the-map",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#on-the-map",
+    "title": "Spatial Data",
+    "section": "On the Map?",
+    "text": "On the Map?\n\nMap of Geocode Output"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#on-the-map-1",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#on-the-map-1",
+    "title": "Spatial Data",
+    "section": "On the Map?",
+    "text": "On the Map?\n\nErrors in Geocode Output"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#location",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#location",
+    "title": "Spatial Data",
+    "section": "Location",
+    "text": "Location\n\nGiven: in most spatial data analysis, no choice in location\nNo sampling in the usual sense\nData = attributes augmented with locational information"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#spatial-effects",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#spatial-effects",
+    "title": "Spatial Data",
+    "section": "Spatial Effects",
+    "text": "Spatial Effects\nThe Trilogy\n\nSpatial Dependence\nSpatial Heterogeneity\nSpatial Scale"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#spatial-dependence",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#spatial-dependence",
+    "title": "Spatial Data",
+    "section": "Spatial Dependence",
+    "text": "Spatial Dependence\nTobler’s First Law of Geography\n\n“everything depends on everything else, but closer things more so”\n\n\nStructure of spatial dependence\nDistance Decay\nCloseness = Similarity"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#spatial-heterogenety",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#spatial-heterogenety",
+    "title": "Spatial Data",
+    "section": "Spatial Heterogenety",
+    "text": "Spatial Heterogenety\nSpatial Instability\n\nProcess varies in some way over spatial units\nMultiple forms\n\nDiscrete = regimes\nContinuous = expansion method, GWR\n\nTrade-off\n\nSpatial homogeneity = stationary process\nUniqueness = extreme heterogeneity"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#spatial-scale-1",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#spatial-scale-1",
+    "title": "Spatial Data",
+    "section": "Spatial Scale",
+    "text": "Spatial Scale\nMismatch\n\nSpatial scale of the process\nSpatial scale of our measurement\n\nIssues\n\npoints too far apart = miss small distance variation\narea aggregates cannot provide information on individual behavior\nEcological Fallacy"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#modifiable-areal-unit-problem-maup",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#modifiable-areal-unit-problem-maup",
+    "title": "Spatial Data",
+    "section": "Modifiable Areal Unit Problem (MAUP)",
+    "text": "Modifiable Areal Unit Problem (MAUP)\nAggregation Problem\n\nspecial case of ecological fallacy\na million correlation coefficients\n\nZonation Problem\n\nsize\narangement\nHow many ways could you partition the coterminous US land area into 48 polygons?"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#maup-zonation-problem",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#maup-zonation-problem",
+    "title": "Spatial Data",
+    "section": "MAUP Zonation Problem",
+    "text": "MAUP Zonation Problem\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#maup-aggregation-problem",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#maup-aggregation-problem",
+    "title": "Spatial Data",
+    "section": "MAUP Aggregation Problem",
+    "text": "MAUP Aggregation Problem\n\n\n\n\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem\n\n\n\n\nTrue rate = 1/3 = 33%\nA’s rate = (0 +1/2) /2 = 25%\nA’s weighted rate = 1/3 * 0 + 2/3 * 50 = 33%\nB’s rate = (0 + 100) /2 = 50%\nB’s weighted rate = 2/3 * 0 + 1/3 * 100 = 33%"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#spatial-process",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#spatial-process",
+    "title": "Spatial Data",
+    "section": "Spatial Process",
+    "text": "Spatial Process\nSpatial Random Field\na mathemtical construct to capture randomness of values distributed over space\n\\[\\{Z(s):s \\in D \\} \\]\n\n\\(s \\in R^d:\\) location (e.g., lat-lon)\n\\(D \\in R^d:\\) index set = possible locations\n\\(Z(s):\\) random variable at location \\(s\\)"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#types-of-spatial-data-1",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#types-of-spatial-data-1",
+    "title": "Spatial Data",
+    "section": "Types of Spatial Data",
+    "text": "Types of Spatial Data\n\nEvents\n\naddresses of crimes\n\nDiscrete Spatial Objects\n\ncounty crime rates\n\nContinuous surfaces\n\nair quality\nrainfall"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#point-pattern-analysis",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#point-pattern-analysis",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis",
+    "text": "Point Pattern Analysis\nData\n\nmapped pattern = all the values\nnot a sample in the usual sense\n\nSpatial Process\n\nobservations as a realization of a random point process\npoints occur in space according to a mathematical model"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#point-patterns",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#point-patterns",
+    "title": "Spatial Data",
+    "section": "Point Patterns",
+    "text": "Point Patterns\nUnmarked Point Pattern\n\nonly location is recorded\nno other attribute information\n\nMarked Point Pattern\n\nLocation is recorded\nStochastic attributes are also recorded\ne.g., sales price at address, DBH of a tree"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#point-pattern-analysis-quadrat-methods",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#point-pattern-analysis-quadrat-methods",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis: Quadrat Methods",
+    "text": "Point Pattern Analysis: Quadrat Methods\n\nQuadrat Analysis"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#point-pattern-analysis-distance-based-methods",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#point-pattern-analysis-distance-based-methods",
+    "title": "Spatial Data",
+    "section": "Point Pattern Analysis: Distance Based Methods",
+    "text": "Point Pattern Analysis: Distance Based Methods\n\nDistance Distributions"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#areal-unit-data-lattice",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#areal-unit-data-lattice",
+    "title": "Spatial Data",
+    "section": "Areal Unit Data (Lattice)",
+    "text": "Areal Unit Data (Lattice)\n\nSpatial Domain: \\(D\\)\n\nDiscrete and fixed\nLocations nonrandom\nLocations countable\n\n\n\nExamples of lattice data\n\nAttributes collected by ZIP code\ncensus tract"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#lattice-data-indexing",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#lattice-data-indexing",
+    "title": "Spatial Data",
+    "section": "Lattice Data: Indexing",
+    "text": "Lattice Data: Indexing\n\nSite\n\nEach location is now an area or site\nOne observation on \\(Z\\) for each site\nNeed a spatial index: \\(Z(s_i)\\)\n\n\n\n\\(Z(s_i)\\)\n\n\\(s_i\\) is a representative location within the site\ne.g., centroid, largest city\nAllows for measuring distances between sites"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#lattice-data-county-per-capita-incomes",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#lattice-data-county-per-capita-incomes",
+    "title": "Spatial Data",
+    "section": "Lattice Data: County Per Capita Incomes",
+    "text": "Lattice Data: County Per Capita Incomes\n\n1969"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-analysis",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-analysis",
+    "title": "Spatial Data",
+    "section": "Geostatistical Analysis",
+    "text": "Geostatistical Analysis\n\nSpatial Domain: \\(D\\)\n\nA continuous and fixed set.\nMeaning \\(Z(s)\\) can be observed everywhere within \\(D\\).\nBetween any two sample locations \\(s_i\\) and \\(s_j\\) you can theoretically place an infinite number of other samples.\nBy fixed: the points in \\(D\\) are non-stochastic"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data",
+    "text": "Geostatistical Data\n\nContinuous Variation\n\nBecause of the continuity of \\(D\\)\nGeostatistical data is referred to as “spatial data with continuous variation.”\nContinuity is associated with \\(D\\).\nAttribute \\(Z\\) may, or may not, be continuous."
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data-monitoring-sites",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data-monitoring-sites",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Monitoring Sites",
+    "text": "Geostatistical Data: Monitoring Sites\n\nSites"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data-surface-reconstruction",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data-surface-reconstruction",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nTessellation"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data-surface-reconstruction-1",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data-surface-reconstruction-1",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nInterpolation"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data-surface-reconstruction-2",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#geostatistical-data-surface-reconstruction-2",
+    "title": "Spatial Data",
+    "section": "Geostatistical Data: Surface Reconstruction",
+    "text": "Geostatistical Data: Surface Reconstruction\n\nKriging"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#network-data",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#network-data",
+    "title": "Spatial Data",
+    "section": "Network Data",
+    "text": "Network Data\n\n\nA network is a system of linear features connected at intersections and interchanges.\nThese intersections and interchanges are called nodes.\nThe linear feature connecting any given pair of nodes is called an arc.\nFormally, a network is defined as a directed graph \\(G = (N,  A)\\) consisting of an indexed set of nodes \\(N\\) with \\(n = |N|\\) and a spanning set of directed arcs \\(A\\) with \\(m = |A|\\), where \\(n\\) is the number of nodes and \\(m\\) is the number of arcs.\nEach arc on a network is represented as an ordered pair of nodes, in the form from node \\(i\\) to node \\(j\\), denoted by \\((i, j)\\)."
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#network-data-1",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#network-data-1",
+    "title": "Spatial Data",
+    "section": "Network Data",
+    "text": "Network Data\n\nStreet Network"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-11-spatial-data.html#flow-data",
+    "href": "lectures/week-04/2023-09-11-spatial-data.html#flow-data",
+    "title": "Spatial Data",
+    "section": "Flow Data",
+    "text": "Flow Data\n\n\n\n\nFlows"
   }
 ]

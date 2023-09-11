@@ -27,4 +27,9 @@ format:
 - Week 03
 
   - [09-06 Python Introduction to Data Analysis](week-03/2023-09-06.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-03/2023-09-06.ipynb)
+
+- Week 04
+
+  - [09-11 Spatial Data](week-04/2023-09-11-spatial-data.qmd)
+
  
