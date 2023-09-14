@@ -31,5 +31,8 @@ format:
 - Week 04
 
   - [09-11 Spatial Data](week-04/2023-09-11-spatial-data.qmd)
+  - [09-13 GeoPandas](week-04/2023-09-13.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-04/2023-09-13.ipynb)
+
+  
 
  
