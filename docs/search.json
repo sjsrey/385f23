@@ -1,5 +1,131 @@
 [
   {
+    "objectID": "lectures/0821/0821.html",
+    "href": "lectures/0821/0821.html",
+    "title": "Course Introduction",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-13.html",
+    "href": "lectures/week-04/2023-09-13.html",
+    "title": "GeoPandas",
+    "section": "",
+    "text": "GeoPandas Structure\nWorking with GeoDataFrames and GeoSeriesf\nCarrying out project\nBasic spatial queries and attribute construction\nimport geopandas\n\n/tmp/ipykernel_2579345/1616829109.py:1: DeprecationWarning: Shapely 2.0 is installed, but because PyGEOS is also installed, GeoPandas still uses PyGEOS by default. However, starting with version 0.14, the default will switch to Shapely. To force to use Shapely 2.0 now, you can either uninstall PyGEOS or set the environment variable USE_PYGEOS=0. You can do this before starting the Python process, or in your code before importing geopandas:\n\nimport os\nos.environ['USE_PYGEOS'] = '0'\nimport geopandas\n\nIn the next release, GeoPandas will switch to using Shapely by default, even if PyGEOS is installed. If you only have PyGEOS installed to get speed-ups, this switch should be smooth. However, if you are using PyGEOS directly (calling PyGEOS functions on geometries from GeoPandas), this will then stop working and you are encouraged to migrate from PyGEOS to Shapely 2.0 (https://shapely.readthedocs.io/en/latest/migration_pygeos.html).\n  import geopandas\ngdf = geopandas.read_file(\"./data/shared/covid/gz_2010_us_040_00_500k.json\")\n\nERROR 1: PROJ: proj_create_from_database: Open of /opt/tljh/user/share/proj failed\ngdf.head()\n\n\n\n\n\n\n\n\nGEO_ID\nSTATE\nNAME\nLSAD\nCENSUSAREA\ngeometry\n\n\n\n\n0\n0400000US23\n23\nMaine\n\n30842.923\nMULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...\n\n\n1\n0400000US25\n25\nMassachusetts\n\n7800.058\nMULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...\n\n\n2\n0400000US26\n26\nMichigan\n\n56538.901\nMULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...\n\n\n3\n0400000US30\n30\nMontana\n\n145545.801\nPOLYGON ((-104.05770 44.99743, -104.25015 44.9...\n\n\n4\n0400000US32\n32\nNevada\n\n109781.180\nPOLYGON ((-114.05060 37.00040, -114.04999 36.9...\ngdf.columns.values\n\narray(['GEO_ID', 'STATE', 'NAME', 'LSAD', 'CENSUSAREA', 'geometry'],\n      dtype=object)\ngdf.plot()\n\n&lt;AxesSubplot:&gt;\ntype(gdf)\n\ngeopandas.geodataframe.GeoDataFrame"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-13.html#geometry",
+    "href": "lectures/week-04/2023-09-13.html#geometry",
+    "title": "GeoPandas",
+    "section": "Geometry",
+    "text": "Geometry\n\ngdf.geometry\n\n0     MULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...\n1     MULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...\n2     MULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...\n3     POLYGON ((-104.05770 44.99743, -104.25015 44.9...\n4     POLYGON ((-114.05060 37.00040, -114.04999 36.9...\n5     POLYGON ((-75.52684 39.65571, -75.52634 39.656...\n6     MULTIPOLYGON (((-71.94356 41.28668, -71.92680 ...\n7     MULTIPOLYGON (((-82.60288 36.03983, -82.60074 ...\n8     MULTIPOLYGON (((-82.81349 41.72347, -82.81049 ...\n9     POLYGON ((-75.41504 39.80179, -75.42804 39.809...\n10    MULTIPOLYGON (((-71.28157 41.64821, -71.27817 ...\n11    POLYGON ((-81.67754 36.58812, -81.68014 36.585...\n12    MULTIPOLYGON (((-97.13436 27.89633, -97.13360 ...\n13    POLYGON ((-114.05060 37.00040, -114.05175 37.0...\n14    MULTIPOLYGON (((-123.09055 49.00198, -123.0353...\n15    MULTIPOLYGON (((-90.45525 47.02400, -90.45713 ...\n16    MULTIPOLYGON (((-65.58733 18.38199, -65.59122 ...\n17    MULTIPOLYGON (((-76.07147 38.20350, -76.04879 ...\n18    MULTIPOLYGON (((-85.00237 31.00068, -85.02411 ...\n19    MULTIPOLYGON (((-164.97620 54.13459, -164.9377...\n20    POLYGON ((-109.04522 36.99908, -109.04524 36.9...\n21    POLYGON ((-94.55929 36.49950, -94.51948 36.499...\n22    MULTIPOLYGON (((-122.44632 37.86105, -122.4385...\n23    POLYGON ((-102.04224 36.99308, -102.05450 36.9...\n24    MULTIPOLYGON (((-71.85957 41.32240, -71.86823 ...\n25    MULTIPOLYGON (((-75.55945 39.62981, -75.55910 ...\n26    POLYGON ((-77.03860 38.79151, -77.03890 38.800...\n27    MULTIPOLYGON (((-85.15641 29.67963, -85.13740 ...\n28    POLYGON ((-81.44412 30.70971, -81.44872 30.709...\n29    MULTIPOLYGON (((-171.73761 25.79210, -171.7223...\n30    POLYGON ((-111.04669 42.00157, -111.41587 42.0...\n31    POLYGON ((-87.53233 39.99778, -87.53254 39.987...\n32    POLYGON ((-88.02803 37.79922, -88.02938 37.803...\n33    POLYGON ((-95.76565 40.58521, -95.75889 40.588...\n34    POLYGON ((-94.61808 36.99813, -94.62522 36.998...\n35    MULTIPOLYGON (((-83.67541 36.60081, -83.67561 ...\n36    MULTIPOLYGON (((-88.86507 29.75271, -88.88975 ...\n37    POLYGON ((-91.37161 43.50095, -91.37695 43.500...\n38    MULTIPOLYGON (((-88.71072 30.25080, -88.65680 ...\n39    POLYGON ((-89.53910 36.49820, -89.53452 36.491...\n40    POLYGON ((-95.76565 40.58521, -95.76853 40.583...\n41    MULTIPOLYGON (((-72.45852 42.72685, -72.45849 ...\n42    POLYGON ((-109.05004 31.33250, -109.05017 31.4...\n43    POLYGON ((-96.56328 45.93524, -96.57690 45.935...\n44    POLYGON ((-94.61792 36.49941, -94.61531 36.484...\n45    POLYGON ((-117.22007 44.30138, -117.22245 44.2...\n46    POLYGON ((-78.54109 33.85111, -78.55394 33.847...\n47    POLYGON ((-96.44341 42.48949, -96.45971 42.486...\n48    POLYGON ((-72.04008 44.15575, -72.04271 44.152...\n49    MULTIPOLYGON (((-76.04653 37.95359, -76.04169 ...\n50    POLYGON ((-81.96830 37.53780, -81.96540 37.541...\n51    POLYGON ((-109.05008 41.00066, -109.17368 41.0...\nName: geometry, dtype: geometry\n\n\n\ngdf.iloc[0].geometry\n\n\n\n\n\ngdf.shape\n\n(52, 6)\n\n\n\ngdf.head(52)\n\n\n\n\n\n\n\n\nGEO_ID\nSTATE\nNAME\nLSAD\nCENSUSAREA\ngeometry\n\n\n\n\n0\n0400000US23\n23\nMaine\n\n30842.923\nMULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...\n\n\n1\n0400000US25\n25\nMassachusetts\n\n7800.058\nMULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...\n\n\n2\n0400000US26\n26\nMichigan\n\n56538.901\nMULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...\n\n\n3\n0400000US30\n30\nMontana\n\n145545.801\nPOLYGON ((-104.05770 44.99743, -104.25015 44.9...\n\n\n4\n0400000US32\n32\nNevada\n\n109781.180\nPOLYGON ((-114.05060 37.00040, -114.04999 36.9...\n\n\n5\n0400000US34\n34\nNew Jersey\n\n7354.220\nPOLYGON ((-75.52684 39.65571, -75.52634 39.656...\n\n\n6\n0400000US36\n36\nNew York\n\n47126.399\nMULTIPOLYGON (((-71.94356 41.28668, -71.92680 ...\n\n\n7\n0400000US37\n37\nNorth Carolina\n\n48617.905\nMULTIPOLYGON (((-82.60288 36.03983, -82.60074 ...\n\n\n8\n0400000US39\n39\nOhio\n\n40860.694\nMULTIPOLYGON (((-82.81349 41.72347, -82.81049 ...\n\n\n9\n0400000US42\n42\nPennsylvania\n\n44742.703\nPOLYGON ((-75.41504 39.80179, -75.42804 39.809...\n\n\n10\n0400000US44\n44\nRhode Island\n\n1033.814\nMULTIPOLYGON (((-71.28157 41.64821, -71.27817 ...\n\n\n11\n0400000US47\n47\nTennessee\n\n41234.896\nPOLYGON ((-81.67754 36.58812, -81.68014 36.585...\n\n\n12\n0400000US48\n48\nTexas\n\n261231.711\nMULTIPOLYGON (((-97.13436 27.89633, -97.13360 ...\n\n\n13\n0400000US49\n49\nUtah\n\n82169.620\nPOLYGON ((-114.05060 37.00040, -114.05175 37.0...\n\n\n14\n0400000US53\n53\nWashington\n\n66455.521\nMULTIPOLYGON (((-123.09055 49.00198, -123.0353...\n\n\n15\n0400000US55\n55\nWisconsin\n\n54157.805\nMULTIPOLYGON (((-90.45525 47.02400, -90.45713 ...\n\n\n16\n0400000US72\n72\nPuerto Rico\n\n3423.775\nMULTIPOLYGON (((-65.58733 18.38199, -65.59122 ...\n\n\n17\n0400000US24\n24\nMaryland\n\n9707.241\nMULTIPOLYGON (((-76.07147 38.20350, -76.04879 ...\n\n\n18\n0400000US01\n01\nAlabama\n\n50645.326\nMULTIPOLYGON (((-85.00237 31.00068, -85.02411 ...\n\n\n19\n0400000US02\n02\nAlaska\n\n570640.950\nMULTIPOLYGON (((-164.97620 54.13459, -164.9377...\n\n\n20\n0400000US04\n04\nArizona\n\n113594.084\nPOLYGON ((-109.04522 36.99908, -109.04524 36.9...\n\n\n21\n0400000US05\n05\nArkansas\n\n52035.477\nPOLYGON ((-94.55929 36.49950, -94.51948 36.499...\n\n\n22\n0400000US06\n06\nCalifornia\n\n155779.220\nMULTIPOLYGON (((-122.44632 37.86105, -122.4385...\n\n\n23\n0400000US08\n08\nColorado\n\n103641.888\nPOLYGON ((-102.04224 36.99308, -102.05450 36.9...\n\n\n24\n0400000US09\n09\nConnecticut\n\n4842.355\nMULTIPOLYGON (((-71.85957 41.32240, -71.86823 ...\n\n\n25\n0400000US10\n10\nDelaware\n\n1948.543\nMULTIPOLYGON (((-75.55945 39.62981, -75.55910 ...\n\n\n26\n0400000US11\n11\nDistrict of Columbia\n\n61.048\nPOLYGON ((-77.03860 38.79151, -77.03890 38.800...\n\n\n27\n0400000US12\n12\nFlorida\n\n53624.759\nMULTIPOLYGON (((-85.15641 29.67963, -85.13740 ...\n\n\n28\n0400000US13\n13\nGeorgia\n\n57513.485\nPOLYGON ((-81.44412 30.70971, -81.44872 30.709...\n\n\n29\n0400000US15\n15\nHawaii\n\n6422.628\nMULTIPOLYGON (((-171.73761 25.79210, -171.7223...\n\n\n30\n0400000US16\n16\nIdaho\n\n82643.117\nPOLYGON ((-111.04669 42.00157, -111.41587 42.0...\n\n\n31\n0400000US17\n17\nIllinois\n\n55518.930\nPOLYGON ((-87.53233 39.99778, -87.53254 39.987...\n\n\n32\n0400000US18\n18\nIndiana\n\n35826.109\nPOLYGON ((-88.02803 37.79922, -88.02938 37.803...\n\n\n33\n0400000US19\n19\nIowa\n\n55857.130\nPOLYGON ((-95.76565 40.58521, -95.75889 40.588...\n\n\n34\n0400000US20\n20\nKansas\n\n81758.717\nPOLYGON ((-94.61808 36.99813, -94.62522 36.998...\n\n\n35\n0400000US21\n21\nKentucky\n\n39486.338\nMULTIPOLYGON (((-83.67541 36.60081, -83.67561 ...\n\n\n36\n0400000US22\n22\nLouisiana\n\n43203.905\nMULTIPOLYGON (((-88.86507 29.75271, -88.88975 ...\n\n\n37\n0400000US27\n27\nMinnesota\n\n79626.743\nPOLYGON ((-91.37161 43.50095, -91.37695 43.500...\n\n\n38\n0400000US28\n28\nMississippi\n\n46923.274\nMULTIPOLYGON (((-88.71072 30.25080, -88.65680 ...\n\n\n39\n0400000US29\n29\nMissouri\n\n68741.522\nPOLYGON ((-89.53910 36.49820, -89.53452 36.491...\n\n\n40\n0400000US31\n31\nNebraska\n\n76824.171\nPOLYGON ((-95.76565 40.58521, -95.76853 40.583...\n\n\n41\n0400000US33\n33\nNew Hampshire\n\n8952.651\nMULTIPOLYGON (((-72.45852 42.72685, -72.45849 ...\n\n\n42\n0400000US35\n35\nNew Mexico\n\n121298.148\nPOLYGON ((-109.05004 31.33250, -109.05017 31.4...\n\n\n43\n0400000US38\n38\nNorth Dakota\n\n69000.798\nPOLYGON ((-96.56328 45.93524, -96.57690 45.935...\n\n\n44\n0400000US40\n40\nOklahoma\n\n68594.921\nPOLYGON ((-94.61792 36.49941, -94.61531 36.484...\n\n\n45\n0400000US41\n41\nOregon\n\n95988.013\nPOLYGON ((-117.22007 44.30138, -117.22245 44.2...\n\n\n46\n0400000US45\n45\nSouth Carolina\n\n30060.696\nPOLYGON ((-78.54109 33.85111, -78.55394 33.847...\n\n\n47\n0400000US46\n46\nSouth Dakota\n\n75811.000\nPOLYGON ((-96.44341 42.48949, -96.45971 42.486...\n\n\n48\n0400000US50\n50\nVermont\n\n9216.657\nPOLYGON ((-72.04008 44.15575, -72.04271 44.152...\n\n\n49\n0400000US51\n51\nVirginia\n\n39490.086\nMULTIPOLYGON (((-76.04653 37.95359, -76.04169 ...\n\n\n50\n0400000US54\n54\nWest Virginia\n\n24038.210\nPOLYGON ((-81.96830 37.53780, -81.96540 37.541...\n\n\n51\n0400000US56\n56\nWyoming\n\n97093.141\nPOLYGON ((-109.05008 41.00066, -109.17368 41.0...\n\n\n\n\n\n\n\n\ndrop_states = ['15', '02', '72'] # HA, AK, PR\n\n\ngdf[gdf.STATE.isin(drop_states)].plot()\n\n&lt;AxesSubplot:&gt;\n\n\n\n\n\n\ngdf[~gdf.STATE.isin(drop_states)].plot()\n\n&lt;AxesSubplot:&gt;\n\n\n\n\n\n\ngdf = gdf[~gdf.STATE.isin(drop_states)]\n\n\ngdf.shape\n\n(49, 6)"
+  },
+  {
+    "objectID": "lectures/week-04/2023-09-13.html#centroids-and-geometry",
+    "href": "lectures/week-04/2023-09-13.html#centroids-and-geometry",
+    "title": "GeoPandas",
+    "section": "Centroids and geometry",
+    "text": "Centroids and geometry\n\ngdf.centroid\n\n/tmp/ipykernel_2579345/2017122361.py:1: UserWarning: Geometry is in a geographic CRS. Results from 'centroid' are likely incorrect. Use 'GeoSeries.to_crs()' to re-project geometries to a projected CRS before this operation.\n\n  gdf.centroid\n\n\n0      POINT (-69.22532 45.36948)\n1      POINT (-71.79546 42.25229)\n2      POINT (-85.43751 44.35323)\n3     POINT (-109.64507 47.03355)\n4     POINT (-116.65540 39.35646)\n5      POINT (-74.66099 40.18393)\n6      POINT (-75.50198 42.93930)\n7      POINT (-79.35542 35.53980)\n8      POINT (-82.79018 40.29333)\n9      POINT (-77.79953 40.87382)\n10     POINT (-71.55250 41.67619)\n11     POINT (-86.34329 35.84299)\n12     POINT (-99.35528 31.49051)\n13    POINT (-111.67820 39.32379)\n14    POINT (-120.45017 47.38108)\n15     POINT (-90.01113 44.63829)\n17     POINT (-76.76446 39.03041)\n18     POINT (-86.82843 32.78969)\n20    POINT (-111.66458 34.29326)\n21     POINT (-92.43928 34.89974)\n22    POINT (-119.61077 37.24612)\n23    POINT (-105.54782 38.99855)\n24     POINT (-72.72576 41.62055)\n25     POINT (-75.50018 38.99178)\n26     POINT (-77.01630 38.90473)\n27     POINT (-82.50162 28.64096)\n28     POINT (-83.44606 32.64908)\n30    POINT (-114.65933 44.38912)\n31     POINT (-89.19828 40.06474)\n32     POINT (-86.27529 39.90853)\n33     POINT (-93.50004 42.07462)\n34     POINT (-98.38022 38.48470)\n35     POINT (-85.29049 37.52666)\n36     POINT (-91.98048 31.05264)\n37     POINT (-94.30870 46.31645)\n38     POINT (-89.66510 32.75040)\n39     POINT (-92.47742 38.36762)\n40     POINT (-99.81080 41.52715)\n41     POINT (-71.57760 43.68569)\n42    POINT (-106.10838 34.42137)\n43    POINT (-100.46931 47.44634)\n44     POINT (-97.50844 35.58350)\n45    POINT (-120.55529 43.93673)\n46     POINT (-80.89550 33.90710)\n47    POINT (-100.23049 44.43615)\n48     POINT (-72.66272 44.07518)\n49     POINT (-78.80562 37.51539)\n50     POINT (-80.61385 38.64251)\n51    POINT (-107.55145 42.99964)\ndtype: geometry\n\n\n\ngdf.crs\n\n&lt;Geographic 2D CRS: EPSG:4326&gt;\nName: WGS 84\nAxis Info [ellipsoidal]:\n- Lat[north]: Geodetic latitude (degree)\n- Lon[east]: Geodetic longitude (degree)\nArea of Use:\n- name: World.\n- bounds: (-180.0, -90.0, 180.0, 90.0)\nDatum: World Geodetic System 1984 ensemble\n- Ellipsoid: WGS 84\n- Prime Meridian: Greenwich\n\n\n\ngdf.to_crs(gdf.estimate_utm_crs()).plot()\n\n&lt;AxesSubplot:&gt;\n\n\n\n\n\n\ngdf = gdf.to_crs(gdf.estimate_utm_crs())\n\n\ngdf.centroid\n\n0      POINT (2359392.452 5305169.775)\n1      POINT (2253174.905 4901469.336)\n2      POINT (1108124.800 4935453.192)\n3      POINT (-765955.563 5348067.290)\n4     POINT (-1548246.254 4630302.336)\n5      POINT (2065285.016 4612318.097)\n6      POINT (1930049.196 4904992.641)\n7      POINT (1742974.165 4021487.098)\n8      POINT (1368634.294 4510266.503)\n9      POINT (1784134.621 4638257.315)\n10     POINT (2289313.142 4842131.086)\n11     POINT (1102080.849 3988935.477)\n12     POINT (-103892.519 3500028.226)\n13    POINT (-1115997.209 4520861.031)\n14    POINT (-1565541.918 5625943.989)\n15      POINT (738620.228 4945674.977)\n17     POINT (1910429.070 4447760.368)\n18     POINT (1078425.172 3643488.570)\n20    POINT (-1230212.721 3954699.221)\n21      POINT (550933.347 3861451.888)\n22    POINT (-1870826.275 4466915.330)\n23     POINT (-590190.342 4392344.096)\n24     POINT (2192677.610 4811150.640)\n25     POINT (2020359.310 4464239.060)\n26     POINT (1889584.643 4429716.358)\n27     POINT (1535090.511 3210901.406)\n28     POINT (1399285.825 3651528.582)\n30    POINT (-1223231.299 5144300.473)\n31      POINT (824539.285 4439350.669)\n32     POINT (1074696.801 4437810.568)\n33      POINT (458939.639 4658274.632)\n34       POINT (29865.949 4274404.492)\n35     POINT (1181577.693 4182456.487)\n36      POINT (598555.176 3435096.661)\n37      POINT (399444.786 5126179.145)\n38      POINT (812334.714 3626923.994)\n39      POINT (547395.056 4245527.933)\n40      POINT (-68074.613 4621136.163)\n41     POINT (2227578.113 5064712.956)\n42     POINT (-710483.211 3886170.809)\n43      POINT (-63437.281 5282398.408)\n44       POINT (91977.904 3947894.482)\n45    POINT (-1716081.976 5249621.330)\n46     POINT (1623336.735 3818285.055)\n47      POINT (-76107.494 4946849.414)\n48     POINT (2128860.270 5085004.659)\n49     POINT (1758189.886 4249101.361)\n50     POINT (1579306.753 4350654.685)\n51     POINT (-688676.799 4864507.482)\ndtype: geometry\n\n\n\ngdf.crs\n\n&lt;Projected CRS: EPSG:32615&gt;\nName: WGS 84 / UTM zone 15N\nAxis Info [cartesian]:\n- E[east]: Easting (metre)\n- N[north]: Northing (metre)\nArea of Use:\n- name: Between 96°W and 90°W, northern hemisphere between equator and 84°N, onshore and offshore. Canada - Manitoba; Nunavut; Ontario. Ecuador -Galapagos. Guatemala. Mexico. United States (USA).\n- bounds: (-96.0, 0.0, -90.0, 84.0)\nCoordinate Operation:\n- name: UTM zone 15N\n- method: Transverse Mercator\nDatum: World Geodetic System 1984 ensemble\n- Ellipsoid: WGS 84\n- Prime Meridian: Greenwich\n\n\n\ngdf['centroid'] = gdf.centroid\n\n\nbase = gdf.plot()\ngdf.centroid.plot(ax=base, color='r')\n\n&lt;AxesSubplot:&gt;"
+  },
+  {
+    "objectID": "lectures/week-02/2023-08-28-python-introduction.html",
+    "href": "lectures/week-02/2023-08-28-python-introduction.html",
+    "title": "Introduction to Python",
+    "section": "",
+    "text": "high level language\nlow learning curve\nopen source\nwidespread use\nfun"
+  },
+  {
+    "objectID": "lectures/week-02/2023-08-28-python-introduction.html#why-python",
+    "href": "lectures/week-02/2023-08-28-python-introduction.html#why-python",
+    "title": "Introduction to Python",
+    "section": "",
+    "text": "high level language\nlow learning curve\nopen source\nwidespread use\nfun"
+  },
+  {
+    "objectID": "lectures/week-02/2023-08-28-python-introduction.html#python-concepts",
+    "href": "lectures/week-02/2023-08-28-python-introduction.html#python-concepts",
+    "title": "Introduction to Python",
+    "section": "Python Concepts",
+    "text": "Python Concepts\n\n2 + 3\n\n5\n\n\n\n5 * 7\n\n35\n\n\n\n2**4\n\n16\n\n\n\n7 / 4\n\n1.75\n\n\n\nx = 8/3\n\n\nx\n\n2.6666666666666665\n\n\n\nimport math\n\n\nmath.pi\n\n3.141592653589793\n\n\n\nmath.sqrt(4)\n\n2.0\n\n\n\ntemp_celsius = 10.0\n\n\ntemp_celsius\n\n10.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", 9/5 * temp_celsius + 32)\n\nTemperature in Fahrenheit:  50.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  50.0\n\n\n\ntemp_celsius\n\n10.0\n\n\n\ntemp_celsius = 40.0\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  104.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  104.0"
+  },
+  {
+    "objectID": "lectures/week-02/2023-08-28-python-introduction.html#data-types",
+    "href": "lectures/week-02/2023-08-28-python-introduction.html#data-types",
+    "title": "Introduction to Python",
+    "section": "Data Types",
+    "text": "Data Types\n\nint\nfloat\nstr\nbool\n\n\nweatherForecast = \"Hot\"\n\n\ntype(weatherForecast)\n\nstr\n\n\n\nx = 10.1\ntype(x)\n\nfloat\n\n\n\ny = 7\ntype(y)\n\nint\n\n\n\ndir(weatherForecast)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nweatherForecast.upper()\n\n'HOT'\n\n\n\nweatherForecast.startswith('f')\n\nFalse\n\n\n\ntitle = \"This is the title of my book\"\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle.upper()\n\n'THIS IS THE TITLE OF MY BOOK'\n\n\n\ntitle.title()\n\n'This Is The Title Of My Book'\n\n\n\ntitle.split()\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\ndir(title)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle.center(40)\n\n'      This is the title of my book      '\n\n\n\nwords = title.split()\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\ntype(words)\n\nlist\n\n\n\ndir(words)\n\n['__add__',\n '__class__',\n '__class_getitem__',\n '__contains__',\n '__delattr__',\n '__delitem__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__gt__',\n '__hash__',\n '__iadd__',\n '__imul__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__reversed__',\n '__rmul__',\n '__setattr__',\n '__setitem__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'append',\n 'clear',\n 'copy',\n 'count',\n 'extend',\n 'index',\n 'insert',\n 'pop',\n 'remove',\n 'reverse',\n 'sort']\n\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\nlen(words)\n\n7\n\n\n\nlen(title)\n\n28\n\n\n\nwords[0]\n\n'This'\n\n\n\nwords[1]\n\n'is'\n\n\n\nwords[7]\n\nIndexError: list index out of range\n\n\n\nwords[6]\n\n'book'\n\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle[0]\n\n'T'\n\n\n\nlen(title)\n\n28\n\n\n\ntitle[-1]\n\n'k'\n\n\n\ntitle[-2]\n\n'o'\n\n\n\ntitle[0:-4]\n\n'This is the title of my '\n\n\n\ntitle[5:10]\n\n'is th'\n\n\n\ntitle[10]\n\n'e'\n\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\nwords[1:-2]\n\n['is', 'the', 'title', 'of']\n\n\n\ntype(words)\n\nlist\n\n\n\ntype(words[0])\n\nstr\n\n\n\nfor word in words:\n    print(word)\n\nThis\nis\nthe\ntitle\nof\nmy\nbook\n\n\n\nfor i, word in enumerate(words):\n    print(i, word)\n\n0 This\n1 is\n2 the\n3 title\n4 of\n5 my\n6 book\n\n\n\nfor i, word in enumerate(words):\n    print(i, word, type(word))\n\n0 This &lt;class 'str'&gt;\n1 is &lt;class 'str'&gt;\n2 the &lt;class 'str'&gt;\n3 title &lt;class 'str'&gt;\n4 of &lt;class 'str'&gt;\n5 my &lt;class 'str'&gt;\n6 book &lt;class 'str'&gt;\n\n\n\nlen(words)\n\n7\n\n\n\nif len(words) &gt; 7:\n    print('no its not longer than 7')\n\n\nif len(words) == 7:\n    print('it is of length 7')\n\nit is of length 7\n\n\n\nif len(words) &gt; 7:\n    print('no its not longer than 7')\nelse:\n    print('It must be 7 or less in length')\n\nIt must be 7 or less in length\n\n\n\nif len(words) &gt; 7:\n    print('no its not longer than 7')\nelif len(words)==7:\n    print('its 7')\nelse:\n    print('It is less than 7 in length')\n\nits 7"
+  },
+  {
+    "objectID": "lectures/index.html",
+    "href": "lectures/index.html",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "",
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)"
+  },
+  {
+    "objectID": "lectures/index.html#lectures",
+    "href": "lectures/index.html#lectures",
+    "title": "Geography 385 Spatial Data Analysis",
+    "section": "",
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html",
+    "href": "lectures/week-01/2023-08-23.html",
+    "title": "Markdown",
+    "section": "",
+    "text": "3 + 7\n\n10\nprint(\"hello world\")\n\nhello world\nx = 3 + 7\nx\n\n10\nprint(x)\n\n10\nprint(\"hello world\")\n\nhello world\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#math",
+    "href": "lectures/week-01/2023-08-23.html#math",
+    "title": "Markdown",
+    "section": "Math",
+    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#markdown",
+    "href": "lectures/week-01/2023-08-23.html#markdown",
+    "title": "Markdown",
+    "section": "Markdown",
+    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#math-1",
+    "href": "lectures/week-01/2023-08-23.html#math-1",
+    "title": "Markdown",
+    "section": "Math",
+    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#links",
+    "href": "lectures/week-01/2023-08-23.html#links",
+    "title": "Markdown",
+    "section": "Links",
+    "text": "Links\nThe big search engine in the sky is google"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#markdown-1",
+    "href": "lectures/week-01/2023-08-23.html#markdown-1",
+    "title": "Markdown",
+    "section": "Markdown",
+    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
+  },
+  {
+    "objectID": "lectures/week-01/2023-08-23.html#math-2",
+    "href": "lectures/week-01/2023-08-23.html#math-2",
+    "title": "Markdown",
+    "section": "Math",
+    "text": "Math\n\n10 * 4\n\n40"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "syllabus.html#class-meetings",
     "href": "syllabus.html#class-meetings",
     "title": "Geography 385 Spatial Data Analysis",
@@ -89,13 +215,6 @@
     "title": "Geography 385 Spatial Data Analysis",
     "section": "Policies",
     "text": "Policies\n\nAccommodations\nIf you are a student with a disability and are in need of accommodations for this class, please contact Student Ability Success Center at (619) 594-6473 as soon as possible. Please know accommodations are not retroactive, and I cannot provide accommodations based upon disability until I have received an accommodation letter from Student Ability Success Center.\n\n\nPrivacy and Intellectual Property\nStudent Privacy and Intellectual Property: The Family Educational Rights and Privacy Act (FERPA) mandates the protection of student information, including contact information, grades, and graded assignments. I will use Canvas to communicate with you, and I will not post grades or leave graded assignments in public places. Students will be notified at the time of an assignment if copies of student work will be retained beyond the end of the semester or used as examples for future students or the wider public. Students maintain intellectual property rights to work products they create as part of this course unless they are formally notified otherwise.\n\n\nAcademic Integrity\nThe SDSU student academic integrity policy lists violations in detail. These violations fall into eight broad areas that include but are not limited to: cheating, fabrication, plagiarism, facilitating academic misconduct, unauthorized collaboration, interference or sabotage, non-compliance with research regulations and retaliation. For more information about the SDSU student academic integrity policy, please see the following: https://sacd.sdsu.edu/student-rights/academic-dishonesty.\n\n\nCode of Conduct\nAs course instructor, I am dedicated to providing a harassment-free learning experience for all students, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of operating system. All course participants are expected to show respect and courtesy to other students throughout the semester. As a learning community we do not tolerate harassment of participants in any form.\n\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate in this course.\nBe kind to others. Do not insult or put down other students. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for this course.\nStudents violating these rules may be asked to leave the course, and their violations will be reported to the SDSU administration.\n\nThis code of conduct is an adaptation of the SciPy 2018 Code of Conduct."
-  },
-  {
-    "objectID": "lectures/index.html",
-    "href": "lectures/index.html",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)"
   },
   {
     "objectID": "lectures/week-01/01-introduction.html#introduction",
@@ -378,88 +497,18 @@
     "text": "You\nTake a few minutes and let us know a bit about yourself\n\nName\nProgram/Concentration\nWhy you are here"
   },
   {
-    "objectID": "lectures/week-01/2023-08-23.html",
-    "href": "lectures/week-01/2023-08-23.html",
-    "title": "Geog385F23",
-    "section": "",
-    "text": "3 + 7\n\n10"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#markdown",
-    "href": "lectures/week-01/2023-08-23.html#markdown",
-    "title": "Geog385F23",
-    "section": "Markdown",
-    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#math",
-    "href": "lectures/week-01/2023-08-23.html#math",
-    "title": "Geog385F23",
-    "section": "Math",
-    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#markdown-1",
-    "href": "lectures/week-01/2023-08-23.html#markdown-1",
-    "title": "Geog385F23",
-    "section": "Markdown",
-    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#math-1",
-    "href": "lectures/week-01/2023-08-23.html#math-1",
-    "title": "Geog385F23",
-    "section": "Math",
-    "text": "Math\nThe formulae for the sample mean is:\n\\[\n\\bar{x} = 1/n \\sum_{i=1}^n x_i\n\\]"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#links",
-    "href": "lectures/week-01/2023-08-23.html#links",
-    "title": "Geog385F23",
-    "section": "Links",
-    "text": "Links\nThe big search engine in the sky is google"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#markdown-2",
-    "href": "lectures/week-01/2023-08-23.html#markdown-2",
-    "title": "Geog385F23",
-    "section": "Markdown",
-    "text": "Markdown\nThis is a markdown cell.\nSo what?\nWell we can do things like bold or italics.\nHow about bold and italics\n\nSubsection\nNow we are in a subsection.\n\n\nLists\nHere is stuff .\nWe can do unordered lists:\n\nfirst\nsecond\nthird\n\nOr numbered lists\n\nfirst\nsecond\nthird"
-  },
-  {
-    "objectID": "lectures/week-01/2023-08-23.html#math-2",
-    "href": "lectures/week-01/2023-08-23.html#math-2",
-    "title": "Geog385F23",
-    "section": "Math",
-    "text": "Math\n\n10 * 4\n\n40"
-  },
-  {
-    "objectID": "lectures/0821/0821.html",
-    "href": "lectures/0821/0821.html",
-    "title": "Course Introduction",
-    "section": "",
-    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()"
-  },
-  {
     "objectID": "lectures/week-02/2023-08-30-functions-scripts.html",
     "href": "lectures/week-02/2023-08-30-functions-scripts.html",
-    "title": "Geog385F23",
+    "title": "Functions",
     "section": "",
-    "text": "def celsius_to_fahr(temp):\n    return 9 / 5 * temp + 32 \n\n\ncelsius_to_fahr(40)\n\n104.0\n\n\n\ncelsius_to_fahr(0)\n\n32.0\n\n\n\ndef how_long(a_string):\n    print(len(a_string))\n\n\nhow_long('abcd')\n\n4\n\n\n\ndef how_long(a_string):\n    len(a_string)\n\n\nhow_long('abcde')\n\n\ndef kelvins_to_celsius(temp_kelvins):\n    return temp_kelvins - 273.15\n\n\nkelvins_to_celsius(temp_kelvins=0)\n\n-273.15\n\n\n\nprint(\"Absolute zero in Celsius is:\", kelvins_to_celsius(0))\n\nAbsolute zero in Celsius is: -273.15\n\n\n\ndef kelvins_to_fahr(temp_kelvins):\n    temp_celsius = kelvins_to_celsius(temp_kelvins)\n    temp_fahr = celsius_to_fahr(temp_celsius)\n    return temp_fahr\n\n\nkelvins_to_fahr(0)\n\n-459.66999999999996\n\n\n\ndef kelvins_to_celsius(temp_kelvins):\n    \"\"\"Convers temperature in Kelvins to degrees celsius.\"\"\"\n    return temp_kelvins - 273.15\n\n\nkelvins_to_celsius?\n\n\nSignature: kelvins_to_celsius(temp_kelvins)\nDocstring: Convers temperature in Kelvins to degrees celsius.\nFile:      /tmp/ipykernel_1023841/522041369.py\nType:      function\n\n\n\n\nkelvins_to_celsius??\n\n\nSignature: kelvins_to_celsius(temp_kelvins)\nSource:   \ndef kelvins_to_celsius(temp_kelvins):\n    \"\"\"Convers temperature in Kelvins to degrees celsius.\"\"\"\n    return temp_kelvins - 273.15\nFile:      /tmp/ipykernel_1023841/522041369.py\nType:      function\n\n\n\n\ndef kelvins_to_celsius(temp_kelvins):\n    \"\"\"Convers temperature in Kelvins to degrees celsius.\n    \n    Parameters\n    ----------\n    temp_kelvins: <numerical>\n        Temperature in Kelvins\n        \n    Returns\n    -------\n    <float>\n       Converted temperature\n    \n    \"\"\"\n    return temp_kelvins - 273.15\n\n\nkelvins_to_celsius?\n\n\nSignature: kelvins_to_celsius(temp_kelvins)\nDocstring:\nConvers temperature in Kelvins to degrees celsius.\nParameters\n----------\ntemp_kelvins: <numerical>\n    Temperature in Kelvins\n    \nReturns\n-------\n<float>\n   Converted temperature\nFile:      /tmp/ipykernel_1023841/1189373821.py\nType:      function"
+    "text": "def celsius_to_fahr(temp):\n    return 9 / 5 * temp + 32\ncelsius_to_fahr(40)\n\n104.0\ncelsius_to_fahr(0)\n\n32.0\ndef how_long(a_string):\n    print(len(a_string))\nhow_long('abcd')\n\n4\ndef how_long(a_string):\n    len(a_string)\nhow_long('abcde')\ndef kelvins_to_celsius(temp_kelvins):\n    return temp_kelvins - 273.15\nkelvins_to_celsius(temp_kelvins=0)\n\n-273.15\nprint(\"Absolute zero in Celsius is:\", kelvins_to_celsius(0))\n\nAbsolute zero in Celsius is: -273.15\ndef kelvins_to_fahr(temp_kelvins):\n    temp_celsius = kelvins_to_celsius(temp_kelvins)\n    temp_fahr = celsius_to_fahr(temp_celsius)\n    return temp_fahr\nkelvins_to_fahr(0)\n\n-459.66999999999996\ndef kelvins_to_celsius(temp_kelvins):\n    \"\"\"Convers temperature in Kelvins to degrees celsius.\"\"\"\n    return temp_kelvins - 273.15\nkelvins_to_celsius?\n\n\nSignature: kelvins_to_celsius(temp_kelvins)\nDocstring: Convers temperature in Kelvins to degrees celsius.\nFile:      /tmp/ipykernel_1023841/522041369.py\nType:      function\nkelvins_to_celsius??\n\n\nSignature: kelvins_to_celsius(temp_kelvins)\nSource:   \ndef kelvins_to_celsius(temp_kelvins):\n    \"\"\"Convers temperature in Kelvins to degrees celsius.\"\"\"\n    return temp_kelvins - 273.15\nFile:      /tmp/ipykernel_1023841/522041369.py\nType:      function\ndef kelvins_to_celsius(temp_kelvins):\n    \"\"\"Convers temperature in Kelvins to degrees celsius.\n    \n    Parameters\n    ----------\n    temp_kelvins: &lt;numerical&gt;\n        Temperature in Kelvins\n        \n    Returns\n    -------\n    &lt;float&gt;\n       Converted temperature\n    \n    \"\"\"\n    return temp_kelvins - 273.15\nkelvins_to_celsius?\n\n\nSignature: kelvins_to_celsius(temp_kelvins)\nDocstring:\nConvers temperature in Kelvins to degrees celsius.\nParameters\n----------\ntemp_kelvins: &lt;numerical&gt;\n    Temperature in Kelvins\n    \nReturns\n-------\n&lt;float&gt;\n   Converted temperature\nFile:      /tmp/ipykernel_1023841/1189373821.py\nType:      function"
   },
   {
     "objectID": "lectures/week-02/2023-08-30-functions-scripts.html#using-modules-and-scripts",
     "href": "lectures/week-02/2023-08-30-functions-scripts.html#using-modules-and-scripts",
-    "title": "Geog385F23",
+    "title": "Functions",
     "section": "Using modules and scripts",
     "text": "Using modules and scripts\n\n%ls\n\n2023-08-23.ipynb                      2023-08-30-functions-scripts.ipynb\n2023-08-28-python-introduction.ipynb  temp_converter.py\n\n\n\n%pwd\n\n'/home/jupyter-serge/sessions'\n\n\n\nfrom temp_converter import celsius_to_fahr\n\n\ncelsius_to_fahr(100)\n\nFrom our cool function\n\n\n212.0\n\n\n\nimport math"
-  },
-  {
-    "objectID": "lectures/week-02/2023-08-28-python-introduction.html",
-    "href": "lectures/week-02/2023-08-28-python-introduction.html",
-    "title": "Geog385F23",
-    "section": "",
-    "text": "high level language\nlow learning curve\nopen source\nwidespread use\nfun\n\n\n\n\n\n2 + 3\n\n5\n\n\n\n5 * 7\n\n35\n\n\n\n2**4\n\n16\n\n\n\n7 / 4\n\n1.75\n\n\n\nx = 8/3\n\n\nx\n\n2.6666666666666665\n\n\n\nimport math\n\n\nmath.pi\n\n3.141592653589793\n\n\n\nmath.sqrt(4)\n\n2.0\n\n\n\ntemp_celsius = 10.0\n\n\ntemp_celsius\n\n10.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", 9/5 * temp_celsius + 32)\n\nTemperature in Fahrenheit:  50.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  50.0\n\n\n\ntemp_celsius\n\n10.0\n\n\n\ntemp_celsius = 40.0\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  104.0\n\n\n\nprint(\"Temperature in Fahrenheit: \", (9/5 * temp_celsius) + 32)\n\nTemperature in Fahrenheit:  104.0\n\n\n\n\n\n\nint\nfloat\nstr\nbool\n\n\nweatherForecast = \"Hot\"\n\n\ntype(weatherForecast)\n\nstr\n\n\n\nx = 10.1\ntype(x)\n\nfloat\n\n\n\ny = 7\ntype(y)\n\nint\n\n\n\ndir(weatherForecast)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\nweatherForecast.upper()\n\n'HOT'\n\n\n\nweatherForecast.startswith('f')\n\nFalse\n\n\n\ntitle = \"This is the title of my book\"\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle.upper()\n\n'THIS IS THE TITLE OF MY BOOK'\n\n\n\ntitle.title()\n\n'This Is The Title Of My Book'\n\n\n\ntitle.split()\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\ndir(title)\n\n['__add__',\n '__class__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mod__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmod__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'capitalize',\n 'casefold',\n 'center',\n 'count',\n 'encode',\n 'endswith',\n 'expandtabs',\n 'find',\n 'format',\n 'format_map',\n 'index',\n 'isalnum',\n 'isalpha',\n 'isascii',\n 'isdecimal',\n 'isdigit',\n 'isidentifier',\n 'islower',\n 'isnumeric',\n 'isprintable',\n 'isspace',\n 'istitle',\n 'isupper',\n 'join',\n 'ljust',\n 'lower',\n 'lstrip',\n 'maketrans',\n 'partition',\n 'removeprefix',\n 'removesuffix',\n 'replace',\n 'rfind',\n 'rindex',\n 'rjust',\n 'rpartition',\n 'rsplit',\n 'rstrip',\n 'split',\n 'splitlines',\n 'startswith',\n 'strip',\n 'swapcase',\n 'title',\n 'translate',\n 'upper',\n 'zfill']\n\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle.center(40)\n\n'      This is the title of my book      '\n\n\n\nwords = title.split()\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\ntype(words)\n\nlist\n\n\n\ndir(words)\n\n['__add__',\n '__class__',\n '__class_getitem__',\n '__contains__',\n '__delattr__',\n '__delitem__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__gt__',\n '__hash__',\n '__iadd__',\n '__imul__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__reversed__',\n '__rmul__',\n '__setattr__',\n '__setitem__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'append',\n 'clear',\n 'copy',\n 'count',\n 'extend',\n 'index',\n 'insert',\n 'pop',\n 'remove',\n 'reverse',\n 'sort']\n\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\nlen(words)\n\n7\n\n\n\nlen(title)\n\n28\n\n\n\nwords[0]\n\n'This'\n\n\n\nwords[1]\n\n'is'\n\n\n\nwords[7]\n\nIndexError: list index out of range\n\n\n\nwords[6]\n\n'book'\n\n\n\ntitle\n\n'This is the title of my book'\n\n\n\ntitle[0]\n\n'T'\n\n\n\nlen(title)\n\n28\n\n\n\ntitle[-1]\n\n'k'\n\n\n\ntitle[-2]\n\n'o'\n\n\n\ntitle[0:-4]\n\n'This is the title of my '\n\n\n\ntitle[5:10]\n\n'is th'\n\n\n\ntitle[10]\n\n'e'\n\n\n\nwords\n\n['This', 'is', 'the', 'title', 'of', 'my', 'book']\n\n\n\nwords[1:-2]\n\n['is', 'the', 'title', 'of']\n\n\n\ntype(words)\n\nlist\n\n\n\ntype(words[0])\n\nstr\n\n\n\nfor word in words:\n    print(word)\n\nThis\nis\nthe\ntitle\nof\nmy\nbook\n\n\n\nfor i, word in enumerate(words):\n    print(i, word)\n\n0 This\n1 is\n2 the\n3 title\n4 of\n5 my\n6 book\n\n\n\nfor i, word in enumerate(words):\n    print(i, word, type(word))\n\n0 This <class 'str'>\n1 is <class 'str'>\n2 the <class 'str'>\n3 title <class 'str'>\n4 of <class 'str'>\n5 my <class 'str'>\n6 book <class 'str'>\n\n\n\nlen(words)\n\n7\n\n\n\nif len(words) > 7:\n    print('no its not longer than 7')\n\n\nif len(words) == 7:\n    print('it is of length 7')\n\nit is of length 7\n\n\n\nif len(words) > 7:\n    print('no its not longer than 7')\nelse:\n    print('It must be 7 or less in length')\n\nIt must be 7 or less in length\n\n\n\nif len(words) > 7:\n    print('no its not longer than 7')\nelif len(words)==7:\n    print('its 7')\nelse:\n    print('It is less than 7 in length')\n\nits 7"
   },
   {
     "objectID": "lectures/week-03/2023-09-06.html",
@@ -467,13 +516,6 @@
     "title": "Unique Values",
     "section": "",
     "text": "import pandas as pd\ndata = pd.read_csv(\"data/shared/weather/Kumpula-June-2016-w-metadata.txt\")\ndata.head(10)\n\n\n\n\n\n\n\n\n# Data file contents: Daily temperatures (mean\nmin\nmax) for Kumpula\nHelsinki\n\n\n\n\n0\n# for June 1-30\n2016\nNaN\nNaN\n\n\n1\n# Data source: https://www.ncdc.noaa.gov/cdo-w...\nNaN\nNaN\nNaN\n\n\n2\n# Data processing: Extracted temperatures from...\nconverted to\nNaN\nNaN\n\n\n3\n# comma-separated format\nNaN\nNaN\nNaN\n\n\n4\n#\nNaN\nNaN\nNaN\n\n\n5\n# David Whipp - 02.10.2017\nNaN\nNaN\nNaN\n\n\n6\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n7\n20160601\n65.5\n73.6\n54.7\n\n\n8\n20160602\n65.8\n80.8\n55.0\n\n\n9\n20160603\n68.4\n77.9\n55.6\ndata.tail()\n\n\n\n\n\n\n\n\n# Data file contents: Daily temperatures (mean\nmin\nmax) for Kumpula\nHelsinki\n\n\n\n\n32\n20160626\n69.6\n77.7\n60.3\n\n\n33\n20160627\n60.7\n70.0\n57.6\n\n\n34\n20160628\n65.4\n73.0\n55.8\n\n\n35\n20160629\n65.8\n73.2\n59.7\n\n\n36\n20160630\n65.7\n72.7\n59.2\ndata = pd.read_csv(\"data/shared/weather/Kumpula-June-2016-w-metadata.txt\", skiprows=8)\ntype(data)\n\npandas.core.frame.DataFrame\ndata.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n\n\n1\n20160602\n65.8\n80.8\n55.0\n\n\n2\n20160603\n68.4\n77.9\n55.6\n\n\n3\n20160604\n57.5\n70.9\n47.3\n\n\n4\n20160605\n51.4\n58.3\n43.2\ndata.tail()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\n25\n20160626\n69.6\n77.7\n60.3\n\n\n26\n20160627\n60.7\n70.0\n57.6\n\n\n27\n20160628\n65.4\n73.0\n55.8\n\n\n28\n20160629\n65.8\n73.2\n59.7\n\n\n29\n20160630\n65.7\n72.7\n59.2\ntemp_data = pd.read_csv(\n    \"data/shared/weather/Kumpula-June-2016-w-metadata.txt\", \n    skiprows=8, usecols=[\"YEARMODA\", \"TEMP\"]\n)\n\ntemp_data.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\n\n\n\n\n0\n20160601\n65.5\n\n\n1\n20160602\n65.8\n\n\n2\n20160603\n68.4\n\n\n3\n20160604\n57.5\n\n\n4\n20160605\n51.4\noutput_fp = \"Kumpula_temps_June_2016.csv\"\ndata.to_csv(output_fp, sep=\",\")\noutput_fp = \"Kumpula_temps_June_2016.csv\"\ndata.to_csv(output_fp, sep=\",\", index=False, float_format=\"%.0f\")\ntype(data)\n\npandas.core.frame.DataFrame\nlen(data)\n\n30\ndata.shape\n\n(30, 4)\ndata.columns\n\nIndex(['YEARMODA', 'TEMP', 'MAX', 'MIN'], dtype='object')\ndata.columns.values\n\narray(['YEARMODA', 'TEMP', 'MAX', 'MIN'], dtype=object)\ndata.index\n\nRangeIndex(start=0, stop=30, step=1)\ndata.dtypes\n\nYEARMODA      int64\nTEMP        float64\nMAX         float64\nMIN         float64\ndtype: object\nselection = data[[\"YEARMODA\", \"TEMP\"]]\nselection.head()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\n\n\n\n\n0\n20160601\n65.5\n\n\n1\n20160602\n65.8\n\n\n2\n20160603\n68.4\n\n\n3\n20160604\n57.5\n\n\n4\n20160605\n51.4\nselection.shape\n\n(30, 2)\ndata[\"TEMP\"].mean()\n\n59.730000000000004\ndata.TEMP.mean()\n\n59.730000000000004\ndata.mean()\n\nYEARMODA    20160615.50\nTEMP              59.73\nMAX               67.94\nMIN               51.75\ndtype: float64\ndata.describe()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\ncount\n3.000000e+01\n30.000000\n30.000000\n30.000000\n\n\nmean\n2.016062e+07\n59.730000\n67.940000\n51.750000\n\n\nstd\n8.803408e+00\n5.475472\n6.651761\n5.634484\n\n\nmin\n2.016060e+07\n49.400000\n54.100000\n41.700000\n\n\n25%\n2.016061e+07\n56.450000\n63.150000\n47.300000\n\n\n50%\n2.016062e+07\n60.050000\n69.000000\n54.050000\n\n\n75%\n2.016062e+07\n64.900000\n72.375000\n55.750000\n\n\nmax\n2.016063e+07\n69.600000\n80.800000\n60.300000\ndata['MIN'].hasnans\n\nFalse\ndata.head(30)\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\n0\n20160601\n65.5\n73.6\n54.7\n\n\n1\n20160602\n65.8\n80.8\n55.0\n\n\n2\n20160603\n68.4\n77.9\n55.6\n\n\n3\n20160604\n57.5\n70.9\n47.3\n\n\n4\n20160605\n51.4\n58.3\n43.2\n\n\n5\n20160606\n52.2\n59.7\n42.8\n\n\n6\n20160607\n56.9\n65.1\n45.9\n\n\n7\n20160608\n54.2\n60.4\n47.5\n\n\n8\n20160609\n49.4\n54.1\n45.7\n\n\n9\n20160610\n49.5\n55.9\n43.0\n\n\n10\n20160611\n54.0\n62.1\n41.7\n\n\n11\n20160612\n55.4\n64.2\n46.0\n\n\n12\n20160613\n58.3\n68.2\n47.3\n\n\n13\n20160614\n59.7\n67.8\n47.8\n\n\n14\n20160615\n63.4\n70.3\n49.3\n\n\n15\n20160616\n57.8\n67.5\n55.6\n\n\n16\n20160617\n60.4\n70.7\n55.9\n\n\n17\n20160618\n57.3\n62.8\n54.0\n\n\n18\n20160619\n56.3\n59.2\n54.1\n\n\n19\n20160620\n59.3\n69.1\n52.2\n\n\n20\n20160621\n62.6\n71.4\n50.4\n\n\n21\n20160622\n61.7\n70.2\n55.4\n\n\n22\n20160623\n60.9\n67.1\n54.9\n\n\n23\n20160624\n61.1\n68.9\n56.7\n\n\n24\n20160625\n65.7\n75.4\n57.9\n\n\n25\n20160626\n69.6\n77.7\n60.3\n\n\n26\n20160627\n60.7\n70.0\n57.6\n\n\n27\n20160628\n65.4\n73.0\n55.8\n\n\n28\n20160629\n65.8\n73.2\n59.7\n\n\n29\n20160630\n65.7\n72.7\n59.2\ndata['TEMP'].unique()\n\narray([65.5, 65.8, 68.4, 57.5, 51.4, 52.2, 56.9, 54.2, 49.4, 49.5, 54. ,\n       55.4, 58.3, 59.7, 63.4, 57.8, 60.4, 57.3, 56.3, 59.3, 62.6, 61.7,\n       60.9, 61.1, 65.7, 69.6, 60.7, 65.4])\nprint(\n    \"There were\",\n    data[\"TEMP\"].nunique(),\n    \"days with unique mean temperatures in June 2016.\",\n)\n\nThere were 28 days with unique mean temperatures in June 2016.\ndata.TEMP.mean()\n\n59.730000000000004\ndata.mean()\n\nYEARMODA    20160615.50\nTEMP              59.73\nMAX               67.94\nMIN               51.75\ndtype: float64\ndata.describe()\n\n\n\n\n\n\n\n\nYEARMODA\nTEMP\nMAX\nMIN\n\n\n\n\ncount\n3.000000e+01\n30.000000\n30.000000\n30.000000\n\n\nmean\n2.016062e+07\n59.730000\n67.940000\n51.750000\n\n\nstd\n8.803408e+00\n5.475472\n6.651761\n5.634484\n\n\nmin\n2.016060e+07\n49.400000\n54.100000\n41.700000\n\n\n25%\n2.016061e+07\n56.450000\n63.150000\n47.300000\n\n\n50%\n2.016062e+07\n60.050000\n69.000000\n54.050000\n\n\n75%\n2.016062e+07\n64.900000\n72.375000\n55.750000\n\n\nmax\n2.016063e+07\n69.600000\n80.800000\n60.300000"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-06.html#unique-values",
-    "href": "lectures/week-03/2023-09-06.html#unique-values",
-    "title": "Geog385F23",
-    "section": "Unique Values",
-    "text": "Unique Values\n\ndata['TEMP'].unique()\n\narray([65.5, 65.8, 68.4, 57.5, 51.4, 52.2, 56.9, 54.2, 49.4, 49.5, 54. ,\n       55.4, 58.3, 59.7, 63.4, 57.8, 60.4, 57.3, 56.3, 59.3, 62.6, 61.7,\n       60.9, 61.1, 65.7, 69.6, 60.7, 65.4])\n\n\n\nprint(\n    \"There were\",\n    data[\"TEMP\"].nunique(),\n    \"days with unique mean temperatures in June 2016.\",\n)\n\nThere were 28 days with unique mean temperatures in June 2016.\n\n\n\ndata.TEMP.mean()\n\n59.730000000000004\n\n\n\ndata.mean()\n\nYEARMODA    20160615.50\nTEMP              59.73\nMAX               67.94\nMIN               51.75\ndtype: float64\n\n\n\ndata.describe()\n\n\n\n\n\n  \n    \n      \n      YEARMODA\n      TEMP\n      MAX\n      MIN\n    \n  \n  \n    \n      count\n      3.000000e+01\n      30.000000\n      30.000000\n      30.000000\n    \n    \n      mean\n      2.016062e+07\n      59.730000\n      67.940000\n      51.750000\n    \n    \n      std\n      8.803408e+00\n      5.475472\n      6.651761\n      5.634484\n    \n    \n      min\n      2.016060e+07\n      49.400000\n      54.100000\n      41.700000\n    \n    \n      25%\n      2.016061e+07\n      56.450000\n      63.150000\n      47.300000\n    \n    \n      50%\n      2.016062e+07\n      60.050000\n      69.000000\n      54.050000\n    \n    \n      75%\n      2.016062e+07\n      64.900000\n      72.375000\n      55.750000\n    \n    \n      max\n      2.016063e+07\n      69.600000\n      80.800000\n      60.300000"
   },
   {
     "objectID": "lectures/week-03/2023-09-06.html#constructing-pandas-objects",
@@ -523,279 +565,6 @@
     "title": "Unique Values",
     "section": "Visualization",
     "text": "Visualization\n\nimport seaborn as sns\nsns.set()\n\n\nimport pandas\n\n\ndf = pandas.read_csv(\"data/shared/covid/covid_combined.csv\",\n                     index_col='date', parse_dates=True)\n\n\ndf.head()\n\n\n\n\n\n\n\n\nstate\nfips\ncases\ndeaths\ndtc100\npopulation\ndeaths100k\n\n\ndate\n\n\n\n\n\n\n\n\n\n\n\n2020-01-21\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n2020-01-22\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n2020-01-23\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n2020-01-24\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n2020-01-25\nWashington\n53\n1\n0\n0.0\n7614893\n0.0\n\n\n\n\n\n\n\n\ndf.tail()\n\n\n\n\n\n\n\n\nstate\nfips\ncases\ndeaths\ndtc100\npopulation\ndeaths100k\n\n\ndate\n\n\n\n\n\n\n\n\n\n\n\n2020-07-29\nNorthern Mariana Islands\n69\n40\n2\n5.000000\n55194\n3.623582\n\n\n2020-07-30\nNorthern Mariana Islands\n69\n42\n2\n4.761905\n55194\n3.623582\n\n\n2020-07-31\nNorthern Mariana Islands\n69\n42\n2\n4.761905\n55194\n3.623582\n\n\n2020-08-01\nNorthern Mariana Islands\n69\n44\n2\n4.545455\n55194\n3.623582\n\n\n2020-08-02\nNorthern Mariana Islands\n69\n45\n2\n4.444444\n55194\n3.623582\n\n\n\n\n\n\n\n\ndf.shape\n\n(8287, 7)\n\n\n\ndf.index\n\nDatetimeIndex(['2020-01-21', '2020-01-22', '2020-01-23', '2020-01-24',\n               '2020-01-25', '2020-01-26', '2020-01-27', '2020-01-28',\n               '2020-01-29', '2020-01-30',\n               ...\n               '2020-07-24', '2020-07-25', '2020-07-26', '2020-07-27',\n               '2020-07-28', '2020-07-29', '2020-07-30', '2020-07-31',\n               '2020-08-01', '2020-08-02'],\n              dtype='datetime64[ns]', name='date', length=8287, freq=None)\n\n\n\nlast_df = df.loc['2020-08-02']\n\n\nlast_df.shape\n\n(54, 7)\n\n\n\nlast_df.reset_index(inplace=True)\nlast_df\n\n\n\n\n\n\n\n\ndate\nstate\nfips\ncases\ndeaths\ndtc100\npopulation\ndeaths100k\n\n\n\n\n0\n2020-08-02\nWashington\n53\n60161\n1680\n2.792507\n7614893\n22.062030\n\n\n1\n2020-08-02\nIllinois\n17\n183662\n7718\n4.202285\n12671821\n60.906795\n\n\n2\n2020-08-02\nCalifornia\n6\n515937\n9399\n1.821734\n39512223\n23.787576\n\n\n3\n2020-08-02\nArizona\n4\n178473\n3769\n2.111804\n7278717\n51.781104\n\n\n4\n2020-08-02\nMassachusetts\n25\n118458\n8638\n7.292036\n6949503\n124.296658\n\n\n5\n2020-08-02\nWisconsin\n55\n58990\n956\n1.620614\n5822434\n16.419250\n\n\n6\n2020-08-02\nTexas\n48\n452826\n7515\n1.659578\n28995881\n25.917474\n\n\n7\n2020-08-02\nNebraska\n31\n26702\n338\n1.265823\n1934408\n17.473046\n\n\n8\n2020-08-02\nUtah\n49\n41175\n313\n0.760170\n3205958\n9.763072\n\n\n9\n2020-08-02\nOregon\n41\n19097\n331\n1.733257\n4217737\n7.847810\n\n\n10\n2020-08-02\nFlorida\n12\n487124\n7083\n1.454045\n21477737\n32.978335\n\n\n11\n2020-08-02\nNew York\n36\n421008\n32401\n7.696053\n19453561\n166.555624\n\n\n12\n2020-08-02\nRhode Island\n44\n19022\n1007\n5.293870\n1059361\n95.057303\n\n\n13\n2020-08-02\nGeorgia\n13\n177556\n3758\n2.116515\n10617423\n35.394653\n\n\n14\n2020-08-02\nNew Hampshire\n33\n6634\n417\n6.285800\n1359711\n30.668282\n\n\n15\n2020-08-02\nNorth Carolina\n37\n125339\n1996\n1.592481\n10488084\n19.031121\n\n\n16\n2020-08-02\nNew Jersey\n34\n184225\n15836\n8.596010\n8882190\n178.289363\n\n\n17\n2020-08-02\nColorado\n8\n47799\n1846\n3.862005\n5758736\n32.055646\n\n\n18\n2020-08-02\nMaryland\n24\n90835\n3515\n3.869654\n6045680\n58.140689\n\n\n19\n2020-08-02\nNevada\n32\n50270\n833\n1.657052\n3080156\n27.044085\n\n\n20\n2020-08-02\nTennessee\n47\n106804\n1062\n0.994345\n6833174\n15.541826\n\n\n21\n2020-08-02\nHawaii\n15\n2219\n25\n1.126634\n1415872\n1.765696\n\n\n22\n2020-08-02\nIndiana\n18\n69531\n2975\n4.278667\n6732219\n44.190482\n\n\n23\n2020-08-02\nKentucky\n21\n31966\n759\n2.374398\n4467673\n16.988710\n\n\n24\n2020-08-02\nMinnesota\n27\n55987\n1654\n2.954257\n5639632\n29.328155\n\n\n25\n2020-08-02\nOklahoma\n40\n38201\n550\n1.439753\n3956971\n13.899521\n\n\n26\n2020-08-02\nPennsylvania\n42\n118038\n7274\n6.162422\n12801989\n56.819296\n\n\n27\n2020-08-02\nSouth Carolina\n45\n91788\n1777\n1.935983\n5148714\n34.513473\n\n\n28\n2020-08-02\nDistrict of Columbia\n11\n12274\n586\n4.774320\n705749\n83.032353\n\n\n29\n2020-08-02\nKansas\n20\n28341\n361\n1.273773\n2913314\n12.391387\n\n\n30\n2020-08-02\nMissouri\n29\n52550\n1311\n2.494767\n6137428\n21.360739\n\n\n31\n2020-08-02\nVermont\n50\n1426\n57\n3.997195\n623989\n9.134776\n\n\n32\n2020-08-02\nVirginia\n51\n91782\n2218\n2.416596\n8535519\n25.985532\n\n\n33\n2020-08-02\nConnecticut\n9\n49810\n4432\n8.897812\n3565287\n124.309768\n\n\n34\n2020-08-02\nIowa\n19\n45723\n878\n1.920259\n3155070\n27.828226\n\n\n35\n2020-08-02\nLouisiana\n22\n119861\n4007\n3.343039\n4648794\n86.194398\n\n\n36\n2020-08-02\nOhio\n39\n93031\n3529\n3.793359\n11689100\n30.190519\n\n\n37\n2020-08-02\nMichigan\n26\n91857\n6460\n7.032670\n9986857\n64.685016\n\n\n38\n2020-08-02\nSouth Dakota\n46\n8955\n135\n1.507538\n884659\n15.260117\n\n\n39\n2020-08-02\nArkansas\n5\n43810\n464\n1.059119\n3017825\n15.375312\n\n\n40\n2020-08-02\nDelaware\n10\n14949\n585\n3.913305\n973764\n60.076158\n\n\n41\n2020-08-02\nMississippi\n28\n60553\n1703\n2.812412\n2976149\n57.221597\n\n\n42\n2020-08-02\nNew Mexico\n35\n21016\n654\n3.111915\n2096829\n31.189954\n\n\n43\n2020-08-02\nNorth Dakota\n38\n6664\n109\n1.635654\n762062\n14.303298\n\n\n44\n2020-08-02\nWyoming\n56\n2808\n26\n0.925926\n578759\n4.492371\n\n\n45\n2020-08-02\nAlaska\n2\n3982\n22\n0.552486\n731545\n3.007334\n\n\n46\n2020-08-02\nMaine\n23\n3958\n123\n3.107630\n1344212\n9.150342\n\n\n47\n2020-08-02\nAlabama\n1\n91444\n1627\n1.779231\n4903185\n33.182513\n\n\n48\n2020-08-02\nIdaho\n16\n21465\n197\n0.917773\n1787065\n11.023662\n\n\n49\n2020-08-02\nMontana\n30\n4193\n61\n1.454806\n1068778\n5.707453\n\n\n50\n2020-08-02\nPuerto Rico\n72\n18411\n230\n1.249253\n3193694\n7.201692\n\n\n51\n2020-08-02\nGuam\n66\n1328\n6\n0.451807\n165718\n3.620609\n\n\n52\n2020-08-02\nWest Virginia\n54\n6854\n117\n1.707032\n1792147\n6.528482\n\n\n53\n2020-08-02\nNorthern Mariana Islands\n69\n45\n2\n4.444444\n55194\n3.623582\n\n\n\n\n\n\n\n\n_ = sns.displot(last_df.deaths100k)\n\n\n\n\n\n_ = sns.displot(last_df.deaths100k, rug=True)"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "lectures/index.html#lectures",
-    "href": "lectures/index.html#lectures",
-    "title": "Geography 385 Spatial Data Analysis",
-    "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#data-definitions",
-    "href": "lectures/week-03/2023-09-11.html#data-definitions",
-    "title": "Spatial Data",
-    "section": "Data Definitions",
-    "text": "Data Definitions\n\nfacts and statistics collected together for reference or analysis\n\n\nthe quantities, characters, or symbols on which operations are performed by a computer, being stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media.\n\n\nthings known or assumed as facts, making the basis of reasoning or calculate\n\nSource: Oxford languages"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#datas-place",
-    "href": "lectures/week-03/2023-09-11.html#datas-place",
-    "title": "Spatial Data",
-    "section": "Data’s Place",
-    "text": "Data’s Place\n\n\n\n\n\nDIKW Pyramid\n\n\n\n\ndata: discrete facts, unorganized and lacking context or information\ninformation: data imbued with meaning - what is in the data\nknowledge: perception of the world seen through information synthesis\nwisdom: “knowing the right things to do”"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#data-sets",
-    "href": "lectures/week-03/2023-09-11.html#data-sets",
-    "title": "Spatial Data",
-    "section": "Data Sets",
-    "text": "Data Sets\nA data set is a collection of observations recorded for individual units on a set of variables.\nVariables are sometimes referred to as attributes or features (in machine learning parlance)."
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#measurement-scales",
-    "href": "lectures/week-03/2023-09-11.html#measurement-scales",
-    "title": "Spatial Data",
-    "section": "Measurement Scales",
-    "text": "Measurement Scales\n\n\n\nScale\nOperations\nExample\n\n\n\n\nnominal\nmode, frequencies\nZip Code\n\n\nordinal\nA &gt; B\nRanks, Primary, Intermediate\n\n\ninterval\n+ -\nTime\n\n\nratio\n+ - * /\nWeight, Kelvin"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#spatial-data-is-special",
-    "href": "lectures/week-03/2023-09-11.html#spatial-data-is-special",
-    "title": "Spatial Data",
-    "section": "Spatial Data is Special",
-    "text": "Spatial Data is Special\n\nSpatial data comes in many varieties and it is not easy to arrive at a system of classification that is simultaneously exclusive, exhaustive, imaginative, and satisfying.\n\n– G. Upton & B. Fingleton"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#what-is-special-about-spatial-data-1",
-    "href": "lectures/week-03/2023-09-11.html#what-is-special-about-spatial-data-1",
-    "title": "Spatial Data",
-    "section": "What is special about spatial data?",
-    "text": "What is special about spatial data?\nLocation, Location, Location\nwhere matters\nDependence is the rule, not the exception\n\nspatial interaction, contagion, spill-overs\nspatial externalities\n\nSpatial Scale\n\nInference can change with scale"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#nature-of-spatial-data",
-    "href": "lectures/week-03/2023-09-11.html#nature-of-spatial-data",
-    "title": "Spatial Data",
-    "section": "Nature of Spatial Data",
-    "text": "Nature of Spatial Data\nGeoreferences\nattribute data together with location\nGeocoding\n\nassociate observations with location\npoint: latitude-longtitude (GPS)\nareal unit: spatial reference"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#geocoding-on-line",
-    "href": "lectures/week-03/2023-09-11.html#geocoding-on-line",
-    "title": "Spatial Data",
-    "section": "Geocoding on-line",
-    "text": "Geocoding on-line\n\nGeocode Input"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#geocoding-on-line-1",
-    "href": "lectures/week-03/2023-09-11.html#geocoding-on-line-1",
-    "title": "Spatial Data",
-    "section": "Geocoding on-line",
-    "text": "Geocoding on-line\n\nGeocode Output"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#on-the-map",
-    "href": "lectures/week-03/2023-09-11.html#on-the-map",
-    "title": "Spatial Data",
-    "section": "On the Map?",
-    "text": "On the Map?\n\nMap of Geocode Output"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#on-the-map-1",
-    "href": "lectures/week-03/2023-09-11.html#on-the-map-1",
-    "title": "Spatial Data",
-    "section": "On the Map?",
-    "text": "On the Map?\n\nErrors in Geocode Output"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#location",
-    "href": "lectures/week-03/2023-09-11.html#location",
-    "title": "Spatial Data",
-    "section": "Location",
-    "text": "Location\n\nGiven: in most spatial data analysis, no choice in location\nNo sampling in the usual sense\nData = attributes augmented with locational information"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#spatial-effects",
-    "href": "lectures/week-03/2023-09-11.html#spatial-effects",
-    "title": "Spatial Data",
-    "section": "Spatial Effects",
-    "text": "Spatial Effects\nThe Trilogy\n\nSpatial Dependence\nSpatial Heterogeneity\nSpatial Scale"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#spatial-dependence",
-    "href": "lectures/week-03/2023-09-11.html#spatial-dependence",
-    "title": "Spatial Data",
-    "section": "Spatial Dependence",
-    "text": "Spatial Dependence\nTobler’s First Law of Geography\n\n“everything depends on everything else, but closer things more so”\n\n\nStructure of spatial dependence\nDistance Decay\nCloseness = Similarity"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#spatial-heterogenety",
-    "href": "lectures/week-03/2023-09-11.html#spatial-heterogenety",
-    "title": "Spatial Data",
-    "section": "Spatial Heterogenety",
-    "text": "Spatial Heterogenety\nSpatial Instability\n\nProcess varies in some way over spatial units\nMultiple forms\n\nDiscrete = regimes\nContinuous = expansion method, GWR\n\nTrade-off\n\nSpatial homogeneity = stationary process\nUniqueness = extreme heterogeneity"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#spatial-scale-1",
-    "href": "lectures/week-03/2023-09-11.html#spatial-scale-1",
-    "title": "Spatial Data",
-    "section": "Spatial Scale",
-    "text": "Spatial Scale\nMismatch\n\nSpatial scale of the process\nSpatial scale of our measurement\n\nIssues\n\npoints too far apart = miss small distance variation\narea aggregates cannot provide information on individual behavior\nEcological Fallacy"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#modifiable-areal-unit-problem-maup",
-    "href": "lectures/week-03/2023-09-11.html#modifiable-areal-unit-problem-maup",
-    "title": "Spatial Data",
-    "section": "Modifiable Areal Unit Problem (MAUP)",
-    "text": "Modifiable Areal Unit Problem (MAUP)\nAggregation Problem\n\nspecial case of ecological fallacy\na million correlation coefficients\n\nZonation Problem\n\nsize\narangement\nHow many ways could you partition the coterminous US land area into 48 polygons?"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#maup-zonation-problem",
-    "href": "lectures/week-03/2023-09-11.html#maup-zonation-problem",
-    "title": "Spatial Data",
-    "section": "MAUP Zonation Problem",
-    "text": "MAUP Zonation Problem\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#maup-aggregation-problem",
-    "href": "lectures/week-03/2023-09-11.html#maup-aggregation-problem",
-    "title": "Spatial Data",
-    "section": "MAUP Aggregation Problem",
-    "text": "MAUP Aggregation Problem\n\n\n\n\n\nhttp://en.wikipedia.org/wiki/Modifiable_areal_unit_problem\n\n\n\n\nTrue rate = 1/3 = 33%\nA’s rate = (0 +1/2) /2 = 25%\nA’s weighted rate = 1/3 * 0 + 2/3 * 50 = 33%\nB’s rate = (0 + 100) /2 = 50%\nB’s weighted rate = 2/3 * 0 + 1/3 * 100 = 33%"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#spatial-process",
-    "href": "lectures/week-03/2023-09-11.html#spatial-process",
-    "title": "Spatial Data",
-    "section": "Spatial Process",
-    "text": "Spatial Process\nSpatial Random Field\na mathemtical construct to capture randomness of values distributed over space\n\\[\\{Z(s):s \\in D \\} \\]\n\n\\(s \\in R^d:\\) location (e.g., lat-lon)\n\\(D \\in R^d:\\) index set = possible locations\n\\(Z(s):\\) random variable at location \\(s\\)"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#types-of-spatial-data-1",
-    "href": "lectures/week-03/2023-09-11.html#types-of-spatial-data-1",
-    "title": "Spatial Data",
-    "section": "Types of Spatial Data",
-    "text": "Types of Spatial Data\n\nEvents\n\naddresses of crimes\n\nDiscrete Spatial Objects\n\ncounty crime rates\n\nContinuous surfaces\n\nair quality\nrainfall"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#point-pattern-analysis",
-    "href": "lectures/week-03/2023-09-11.html#point-pattern-analysis",
-    "title": "Spatial Data",
-    "section": "Point Pattern Analysis",
-    "text": "Point Pattern Analysis\nData\n\nmapped pattern = all the values\nnot a sample in the usual sense\n\nSpatial Process\n\nobservations as a realization of a random point process\npoints occur in space according to a mathematical model"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#point-patterns",
-    "href": "lectures/week-03/2023-09-11.html#point-patterns",
-    "title": "Spatial Data",
-    "section": "Point Patterns",
-    "text": "Point Patterns\nUnmarked Point Pattern\n\nonly location is recorded\nno other attribute information\n\nMarked Point Pattern\n\nLocation is recorded\nStochastic attributes are also recorded\ne.g., sales price at address, DBH of a tree"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#point-pattern-analysis-quadrat-methods",
-    "href": "lectures/week-03/2023-09-11.html#point-pattern-analysis-quadrat-methods",
-    "title": "Spatial Data",
-    "section": "Point Pattern Analysis: Quadrat Methods",
-    "text": "Point Pattern Analysis: Quadrat Methods\n\nQuadrat Analysis"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#point-pattern-analysis-distance-based-methods",
-    "href": "lectures/week-03/2023-09-11.html#point-pattern-analysis-distance-based-methods",
-    "title": "Spatial Data",
-    "section": "Point Pattern Analysis: Distance Based Methods",
-    "text": "Point Pattern Analysis: Distance Based Methods\n\nDistance Distributions"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#areal-unit-data-lattice",
-    "href": "lectures/week-03/2023-09-11.html#areal-unit-data-lattice",
-    "title": "Spatial Data",
-    "section": "Areal Unit Data (Lattice)",
-    "text": "Areal Unit Data (Lattice)\n\nSpatial Domain: \\(D\\)\n\nDiscrete and fixed\nLocations nonrandom\nLocations countable\n\n\n\nExamples of lattice data\n\nAttributes collected by ZIP code\ncensus tract"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#lattice-data-indexing",
-    "href": "lectures/week-03/2023-09-11.html#lattice-data-indexing",
-    "title": "Spatial Data",
-    "section": "Lattice Data: Indexing",
-    "text": "Lattice Data: Indexing\n\nSite\n\nEach location is now an area or site\nOne observation on \\(Z\\) for each site\nNeed a spatial index: \\(Z(s_i)\\)\n\n\n\n\\(Z(s_i)\\)\n\n\\(s_i\\) is a representative location within the site\ne.g., centroid, largest city\nAllows for measuring distances between sites"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#lattice-data-county-per-capita-incomes",
-    "href": "lectures/week-03/2023-09-11.html#lattice-data-county-per-capita-incomes",
-    "title": "Spatial Data",
-    "section": "Lattice Data: County Per Capita Incomes",
-    "text": "Lattice Data: County Per Capita Incomes\n\n1969"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-analysis",
-    "href": "lectures/week-03/2023-09-11.html#geostatistical-analysis",
-    "title": "Spatial Data",
-    "section": "Geostatistical Analysis",
-    "text": "Geostatistical Analysis\n\nSpatial Domain: \\(D\\)\n\nA continuous and fixed set.\nMeaning \\(Z(s)\\) can be observed everywhere within \\(D\\).\nBetween any two sample locations \\(s_i\\) and \\(s_j\\) you can theoretically place an infinite number of other samples.\nBy fixed: the points in \\(D\\) are non-stochastic"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data",
-    "href": "lectures/week-03/2023-09-11.html#geostatistical-data",
-    "title": "Spatial Data",
-    "section": "Geostatistical Data",
-    "text": "Geostatistical Data\n\nContinuous Variation\n\nBecause of the continuity of \\(D\\)\nGeostatistical data is referred to as “spatial data with continuous variation.”\nContinuity is associated with \\(D\\).\nAttribute \\(Z\\) may, or may not, be continuous."
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data-monitoring-sites",
-    "href": "lectures/week-03/2023-09-11.html#geostatistical-data-monitoring-sites",
-    "title": "Spatial Data",
-    "section": "Geostatistical Data: Monitoring Sites",
-    "text": "Geostatistical Data: Monitoring Sites\n\nSites"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction",
-    "href": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction",
-    "title": "Spatial Data",
-    "section": "Geostatistical Data: Surface Reconstruction",
-    "text": "Geostatistical Data: Surface Reconstruction\n\nTessellation"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction-1",
-    "href": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction-1",
-    "title": "Spatial Data",
-    "section": "Geostatistical Data: Surface Reconstruction",
-    "text": "Geostatistical Data: Surface Reconstruction\n\nInterpolation"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction-2",
-    "href": "lectures/week-03/2023-09-11.html#geostatistical-data-surface-reconstruction-2",
-    "title": "Spatial Data",
-    "section": "Geostatistical Data: Surface Reconstruction",
-    "text": "Geostatistical Data: Surface Reconstruction\n\nKriging"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#network-data",
-    "href": "lectures/week-03/2023-09-11.html#network-data",
-    "title": "Spatial Data",
-    "section": "Network Data",
-    "text": "Network Data\n\n\nA network is a system of linear features connected at intersections and interchanges.\nThese intersections and interchanges are called nodes.\nThe linear feature connecting any given pair of nodes is called an arc.\nFormally, a network is defined as a directed graph \\(G = (N,  A)\\) consisting of an indexed set of nodes \\(N\\) with \\(n = |N|\\) and a spanning set of directed arcs \\(A\\) with \\(m = |A|\\), where \\(n\\) is the number of nodes and \\(m\\) is the number of arcs.\nEach arc on a network is represented as an ordered pair of nodes, in the form from node \\(i\\) to node \\(j\\), denoted by \\((i, j)\\)."
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#network-data-1",
-    "href": "lectures/week-03/2023-09-11.html#network-data-1",
-    "title": "Spatial Data",
-    "section": "Network Data",
-    "text": "Network Data\n\nStreet Network"
-  },
-  {
-    "objectID": "lectures/week-03/2023-09-11.html#flow-data",
-    "href": "lectures/week-03/2023-09-11.html#flow-data",
-    "title": "Spatial Data",
-    "section": "Flow Data",
-    "text": "Flow Data\n\nFlows"
   },
   {
     "objectID": "lectures/week-04/2023-09-11-spatial-data.html#data-definitions",
@@ -1055,12 +824,5 @@
     "title": "Spatial Data",
     "section": "Flow Data",
     "text": "Flow Data\n\n\n\n\nFlows"
-  },
-  {
-    "objectID": "lectures/week-04/2023-09-13.html",
-    "href": "lectures/week-04/2023-09-13.html",
-    "title": "Geog385F23",
-    "section": "",
-    "text": "GeoPandas Structure\nWorking with GeoDataFrames and GeoSeriesf\nCarrying out project\nBasic spatial queries and attribute construction\n\n\nimport geopandas\n\n/tmp/ipykernel_2579345/1616829109.py:1: DeprecationWarning: Shapely 2.0 is installed, but because PyGEOS is also installed, GeoPandas still uses PyGEOS by default. However, starting with version 0.14, the default will switch to Shapely. To force to use Shapely 2.0 now, you can either uninstall PyGEOS or set the environment variable USE_PYGEOS=0. You can do this before starting the Python process, or in your code before importing geopandas:\n\nimport os\nos.environ['USE_PYGEOS'] = '0'\nimport geopandas\n\nIn the next release, GeoPandas will switch to using Shapely by default, even if PyGEOS is installed. If you only have PyGEOS installed to get speed-ups, this switch should be smooth. However, if you are using PyGEOS directly (calling PyGEOS functions on geometries from GeoPandas), this will then stop working and you are encouraged to migrate from PyGEOS to Shapely 2.0 (https://shapely.readthedocs.io/en/latest/migration_pygeos.html).\n  import geopandas\n\n\n\ngdf = geopandas.read_file(\"./data/shared/covid/gz_2010_us_040_00_500k.json\")\n\nERROR 1: PROJ: proj_create_from_database: Open of /opt/tljh/user/share/proj failed\n\n\n\ngdf.head()\n\n\n\n\n\n  \n    \n      \n      GEO_ID\n      STATE\n      NAME\n      LSAD\n      CENSUSAREA\n      geometry\n    \n  \n  \n    \n      0\n      0400000US23\n      23\n      Maine\n      \n      30842.923\n      MULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...\n    \n    \n      1\n      0400000US25\n      25\n      Massachusetts\n      \n      7800.058\n      MULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...\n    \n    \n      2\n      0400000US26\n      26\n      Michigan\n      \n      56538.901\n      MULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...\n    \n    \n      3\n      0400000US30\n      30\n      Montana\n      \n      145545.801\n      POLYGON ((-104.05770 44.99743, -104.25015 44.9...\n    \n    \n      4\n      0400000US32\n      32\n      Nevada\n      \n      109781.180\n      POLYGON ((-114.05060 37.00040, -114.04999 36.9...\n    \n  \n\n\n\n\n\ngdf.columns.values\n\narray(['GEO_ID', 'STATE', 'NAME', 'LSAD', 'CENSUSAREA', 'geometry'],\n      dtype=object)\n\n\n\ngdf.plot()\n\n<AxesSubplot:>\n\n\n\n\n\n\ntype(gdf)\n\ngeopandas.geodataframe.GeoDataFrame\n\n\n\n\n\ngdf.geometry\n\n0     MULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...\n1     MULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...\n2     MULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...\n3     POLYGON ((-104.05770 44.99743, -104.25015 44.9...\n4     POLYGON ((-114.05060 37.00040, -114.04999 36.9...\n5     POLYGON ((-75.52684 39.65571, -75.52634 39.656...\n6     MULTIPOLYGON (((-71.94356 41.28668, -71.92680 ...\n7     MULTIPOLYGON (((-82.60288 36.03983, -82.60074 ...\n8     MULTIPOLYGON (((-82.81349 41.72347, -82.81049 ...\n9     POLYGON ((-75.41504 39.80179, -75.42804 39.809...\n10    MULTIPOLYGON (((-71.28157 41.64821, -71.27817 ...\n11    POLYGON ((-81.67754 36.58812, -81.68014 36.585...\n12    MULTIPOLYGON (((-97.13436 27.89633, -97.13360 ...\n13    POLYGON ((-114.05060 37.00040, -114.05175 37.0...\n14    MULTIPOLYGON (((-123.09055 49.00198, -123.0353...\n15    MULTIPOLYGON (((-90.45525 47.02400, -90.45713 ...\n16    MULTIPOLYGON (((-65.58733 18.38199, -65.59122 ...\n17    MULTIPOLYGON (((-76.07147 38.20350, -76.04879 ...\n18    MULTIPOLYGON (((-85.00237 31.00068, -85.02411 ...\n19    MULTIPOLYGON (((-164.97620 54.13459, -164.9377...\n20    POLYGON ((-109.04522 36.99908, -109.04524 36.9...\n21    POLYGON ((-94.55929 36.49950, -94.51948 36.499...\n22    MULTIPOLYGON (((-122.44632 37.86105, -122.4385...\n23    POLYGON ((-102.04224 36.99308, -102.05450 36.9...\n24    MULTIPOLYGON (((-71.85957 41.32240, -71.86823 ...\n25    MULTIPOLYGON (((-75.55945 39.62981, -75.55910 ...\n26    POLYGON ((-77.03860 38.79151, -77.03890 38.800...\n27    MULTIPOLYGON (((-85.15641 29.67963, -85.13740 ...\n28    POLYGON ((-81.44412 30.70971, -81.44872 30.709...\n29    MULTIPOLYGON (((-171.73761 25.79210, -171.7223...\n30    POLYGON ((-111.04669 42.00157, -111.41587 42.0...\n31    POLYGON ((-87.53233 39.99778, -87.53254 39.987...\n32    POLYGON ((-88.02803 37.79922, -88.02938 37.803...\n33    POLYGON ((-95.76565 40.58521, -95.75889 40.588...\n34    POLYGON ((-94.61808 36.99813, -94.62522 36.998...\n35    MULTIPOLYGON (((-83.67541 36.60081, -83.67561 ...\n36    MULTIPOLYGON (((-88.86507 29.75271, -88.88975 ...\n37    POLYGON ((-91.37161 43.50095, -91.37695 43.500...\n38    MULTIPOLYGON (((-88.71072 30.25080, -88.65680 ...\n39    POLYGON ((-89.53910 36.49820, -89.53452 36.491...\n40    POLYGON ((-95.76565 40.58521, -95.76853 40.583...\n41    MULTIPOLYGON (((-72.45852 42.72685, -72.45849 ...\n42    POLYGON ((-109.05004 31.33250, -109.05017 31.4...\n43    POLYGON ((-96.56328 45.93524, -96.57690 45.935...\n44    POLYGON ((-94.61792 36.49941, -94.61531 36.484...\n45    POLYGON ((-117.22007 44.30138, -117.22245 44.2...\n46    POLYGON ((-78.54109 33.85111, -78.55394 33.847...\n47    POLYGON ((-96.44341 42.48949, -96.45971 42.486...\n48    POLYGON ((-72.04008 44.15575, -72.04271 44.152...\n49    MULTIPOLYGON (((-76.04653 37.95359, -76.04169 ...\n50    POLYGON ((-81.96830 37.53780, -81.96540 37.541...\n51    POLYGON ((-109.05008 41.00066, -109.17368 41.0...\nName: geometry, dtype: geometry\n\n\n\ngdf.iloc[0].geometry\n\n\n\n\n\ngdf.shape\n\n(52, 6)\n\n\n\ngdf.head(52)\n\n\n\n\n\n  \n    \n      \n      GEO_ID\n      STATE\n      NAME\n      LSAD\n      CENSUSAREA\n      geometry\n    \n  \n  \n    \n      0\n      0400000US23\n      23\n      Maine\n      \n      30842.923\n      MULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...\n    \n    \n      1\n      0400000US25\n      25\n      Massachusetts\n      \n      7800.058\n      MULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...\n    \n    \n      2\n      0400000US26\n      26\n      Michigan\n      \n      56538.901\n      MULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...\n    \n    \n      3\n      0400000US30\n      30\n      Montana\n      \n      145545.801\n      POLYGON ((-104.05770 44.99743, -104.25015 44.9...\n    \n    \n      4\n      0400000US32\n      32\n      Nevada\n      \n      109781.180\n      POLYGON ((-114.05060 37.00040, -114.04999 36.9...\n    \n    \n      5\n      0400000US34\n      34\n      New Jersey\n      \n      7354.220\n      POLYGON ((-75.52684 39.65571, -75.52634 39.656...\n    \n    \n      6\n      0400000US36\n      36\n      New York\n      \n      47126.399\n      MULTIPOLYGON (((-71.94356 41.28668, -71.92680 ...\n    \n    \n      7\n      0400000US37\n      37\n      North Carolina\n      \n      48617.905\n      MULTIPOLYGON (((-82.60288 36.03983, -82.60074 ...\n    \n    \n      8\n      0400000US39\n      39\n      Ohio\n      \n      40860.694\n      MULTIPOLYGON (((-82.81349 41.72347, -82.81049 ...\n    \n    \n      9\n      0400000US42\n      42\n      Pennsylvania\n      \n      44742.703\n      POLYGON ((-75.41504 39.80179, -75.42804 39.809...\n    \n    \n      10\n      0400000US44\n      44\n      Rhode Island\n      \n      1033.814\n      MULTIPOLYGON (((-71.28157 41.64821, -71.27817 ...\n    \n    \n      11\n      0400000US47\n      47\n      Tennessee\n      \n      41234.896\n      POLYGON ((-81.67754 36.58812, -81.68014 36.585...\n    \n    \n      12\n      0400000US48\n      48\n      Texas\n      \n      261231.711\n      MULTIPOLYGON (((-97.13436 27.89633, -97.13360 ...\n    \n    \n      13\n      0400000US49\n      49\n      Utah\n      \n      82169.620\n      POLYGON ((-114.05060 37.00040, -114.05175 37.0...\n    \n    \n      14\n      0400000US53\n      53\n      Washington\n      \n      66455.521\n      MULTIPOLYGON (((-123.09055 49.00198, -123.0353...\n    \n    \n      15\n      0400000US55\n      55\n      Wisconsin\n      \n      54157.805\n      MULTIPOLYGON (((-90.45525 47.02400, -90.45713 ...\n    \n    \n      16\n      0400000US72\n      72\n      Puerto Rico\n      \n      3423.775\n      MULTIPOLYGON (((-65.58733 18.38199, -65.59122 ...\n    \n    \n      17\n      0400000US24\n      24\n      Maryland\n      \n      9707.241\n      MULTIPOLYGON (((-76.07147 38.20350, -76.04879 ...\n    \n    \n      18\n      0400000US01\n      01\n      Alabama\n      \n      50645.326\n      MULTIPOLYGON (((-85.00237 31.00068, -85.02411 ...\n    \n    \n      19\n      0400000US02\n      02\n      Alaska\n      \n      570640.950\n      MULTIPOLYGON (((-164.97620 54.13459, -164.9377...\n    \n    \n      20\n      0400000US04\n      04\n      Arizona\n      \n      113594.084\n      POLYGON ((-109.04522 36.99908, -109.04524 36.9...\n    \n    \n      21\n      0400000US05\n      05\n      Arkansas\n      \n      52035.477\n      POLYGON ((-94.55929 36.49950, -94.51948 36.499...\n    \n    \n      22\n      0400000US06\n      06\n      California\n      \n      155779.220\n      MULTIPOLYGON (((-122.44632 37.86105, -122.4385...\n    \n    \n      23\n      0400000US08\n      08\n      Colorado\n      \n      103641.888\n      POLYGON ((-102.04224 36.99308, -102.05450 36.9...\n    \n    \n      24\n      0400000US09\n      09\n      Connecticut\n      \n      4842.355\n      MULTIPOLYGON (((-71.85957 41.32240, -71.86823 ...\n    \n    \n      25\n      0400000US10\n      10\n      Delaware\n      \n      1948.543\n      MULTIPOLYGON (((-75.55945 39.62981, -75.55910 ...\n    \n    \n      26\n      0400000US11\n      11\n      District of Columbia\n      \n      61.048\n      POLYGON ((-77.03860 38.79151, -77.03890 38.800...\n    \n    \n      27\n      0400000US12\n      12\n      Florida\n      \n      53624.759\n      MULTIPOLYGON (((-85.15641 29.67963, -85.13740 ...\n    \n    \n      28\n      0400000US13\n      13\n      Georgia\n      \n      57513.485\n      POLYGON ((-81.44412 30.70971, -81.44872 30.709...\n    \n    \n      29\n      0400000US15\n      15\n      Hawaii\n      \n      6422.628\n      MULTIPOLYGON (((-171.73761 25.79210, -171.7223...\n    \n    \n      30\n      0400000US16\n      16\n      Idaho\n      \n      82643.117\n      POLYGON ((-111.04669 42.00157, -111.41587 42.0...\n    \n    \n      31\n      0400000US17\n      17\n      Illinois\n      \n      55518.930\n      POLYGON ((-87.53233 39.99778, -87.53254 39.987...\n    \n    \n      32\n      0400000US18\n      18\n      Indiana\n      \n      35826.109\n      POLYGON ((-88.02803 37.79922, -88.02938 37.803...\n    \n    \n      33\n      0400000US19\n      19\n      Iowa\n      \n      55857.130\n      POLYGON ((-95.76565 40.58521, -95.75889 40.588...\n    \n    \n      34\n      0400000US20\n      20\n      Kansas\n      \n      81758.717\n      POLYGON ((-94.61808 36.99813, -94.62522 36.998...\n    \n    \n      35\n      0400000US21\n      21\n      Kentucky\n      \n      39486.338\n      MULTIPOLYGON (((-83.67541 36.60081, -83.67561 ...\n    \n    \n      36\n      0400000US22\n      22\n      Louisiana\n      \n      43203.905\n      MULTIPOLYGON (((-88.86507 29.75271, -88.88975 ...\n    \n    \n      37\n      0400000US27\n      27\n      Minnesota\n      \n      79626.743\n      POLYGON ((-91.37161 43.50095, -91.37695 43.500...\n    \n    \n      38\n      0400000US28\n      28\n      Mississippi\n      \n      46923.274\n      MULTIPOLYGON (((-88.71072 30.25080, -88.65680 ...\n    \n    \n      39\n      0400000US29\n      29\n      Missouri\n      \n      68741.522\n      POLYGON ((-89.53910 36.49820, -89.53452 36.491...\n    \n    \n      40\n      0400000US31\n      31\n      Nebraska\n      \n      76824.171\n      POLYGON ((-95.76565 40.58521, -95.76853 40.583...\n    \n    \n      41\n      0400000US33\n      33\n      New Hampshire\n      \n      8952.651\n      MULTIPOLYGON (((-72.45852 42.72685, -72.45849 ...\n    \n    \n      42\n      0400000US35\n      35\n      New Mexico\n      \n      121298.148\n      POLYGON ((-109.05004 31.33250, -109.05017 31.4...\n    \n    \n      43\n      0400000US38\n      38\n      North Dakota\n      \n      69000.798\n      POLYGON ((-96.56328 45.93524, -96.57690 45.935...\n    \n    \n      44\n      0400000US40\n      40\n      Oklahoma\n      \n      68594.921\n      POLYGON ((-94.61792 36.49941, -94.61531 36.484...\n    \n    \n      45\n      0400000US41\n      41\n      Oregon\n      \n      95988.013\n      POLYGON ((-117.22007 44.30138, -117.22245 44.2...\n    \n    \n      46\n      0400000US45\n      45\n      South Carolina\n      \n      30060.696\n      POLYGON ((-78.54109 33.85111, -78.55394 33.847...\n    \n    \n      47\n      0400000US46\n      46\n      South Dakota\n      \n      75811.000\n      POLYGON ((-96.44341 42.48949, -96.45971 42.486...\n    \n    \n      48\n      0400000US50\n      50\n      Vermont\n      \n      9216.657\n      POLYGON ((-72.04008 44.15575, -72.04271 44.152...\n    \n    \n      49\n      0400000US51\n      51\n      Virginia\n      \n      39490.086\n      MULTIPOLYGON (((-76.04653 37.95359, -76.04169 ...\n    \n    \n      50\n      0400000US54\n      54\n      West Virginia\n      \n      24038.210\n      POLYGON ((-81.96830 37.53780, -81.96540 37.541...\n    \n    \n      51\n      0400000US56\n      56\n      Wyoming\n      \n      97093.141\n      POLYGON ((-109.05008 41.00066, -109.17368 41.0...\n    \n  \n\n\n\n\n\ndrop_states = ['15', '02', '72'] # HA, AK, PR\n\n\ngdf[gdf.STATE.isin(drop_states)].plot()\n\n<AxesSubplot:>\n\n\n\n\n\n\ngdf[~gdf.STATE.isin(drop_states)].plot()\n\n<AxesSubplot:>\n\n\n\n\n\n\ngdf = gdf[~gdf.STATE.isin(drop_states)]\n\n\ngdf.shape\n\n(49, 6)\n\n\n\n\n\n\ngdf.centroid\n\n/tmp/ipykernel_2579345/2017122361.py:1: UserWarning: Geometry is in a geographic CRS. Results from 'centroid' are likely incorrect. Use 'GeoSeries.to_crs()' to re-project geometries to a projected CRS before this operation.\n\n  gdf.centroid\n\n\n0      POINT (-69.22532 45.36948)\n1      POINT (-71.79546 42.25229)\n2      POINT (-85.43751 44.35323)\n3     POINT (-109.64507 47.03355)\n4     POINT (-116.65540 39.35646)\n5      POINT (-74.66099 40.18393)\n6      POINT (-75.50198 42.93930)\n7      POINT (-79.35542 35.53980)\n8      POINT (-82.79018 40.29333)\n9      POINT (-77.79953 40.87382)\n10     POINT (-71.55250 41.67619)\n11     POINT (-86.34329 35.84299)\n12     POINT (-99.35528 31.49051)\n13    POINT (-111.67820 39.32379)\n14    POINT (-120.45017 47.38108)\n15     POINT (-90.01113 44.63829)\n17     POINT (-76.76446 39.03041)\n18     POINT (-86.82843 32.78969)\n20    POINT (-111.66458 34.29326)\n21     POINT (-92.43928 34.89974)\n22    POINT (-119.61077 37.24612)\n23    POINT (-105.54782 38.99855)\n24     POINT (-72.72576 41.62055)\n25     POINT (-75.50018 38.99178)\n26     POINT (-77.01630 38.90473)\n27     POINT (-82.50162 28.64096)\n28     POINT (-83.44606 32.64908)\n30    POINT (-114.65933 44.38912)\n31     POINT (-89.19828 40.06474)\n32     POINT (-86.27529 39.90853)\n33     POINT (-93.50004 42.07462)\n34     POINT (-98.38022 38.48470)\n35     POINT (-85.29049 37.52666)\n36     POINT (-91.98048 31.05264)\n37     POINT (-94.30870 46.31645)\n38     POINT (-89.66510 32.75040)\n39     POINT (-92.47742 38.36762)\n40     POINT (-99.81080 41.52715)\n41     POINT (-71.57760 43.68569)\n42    POINT (-106.10838 34.42137)\n43    POINT (-100.46931 47.44634)\n44     POINT (-97.50844 35.58350)\n45    POINT (-120.55529 43.93673)\n46     POINT (-80.89550 33.90710)\n47    POINT (-100.23049 44.43615)\n48     POINT (-72.66272 44.07518)\n49     POINT (-78.80562 37.51539)\n50     POINT (-80.61385 38.64251)\n51    POINT (-107.55145 42.99964)\ndtype: geometry\n\n\n\ngdf.crs\n\n<Geographic 2D CRS: EPSG:4326>\nName: WGS 84\nAxis Info [ellipsoidal]:\n- Lat[north]: Geodetic latitude (degree)\n- Lon[east]: Geodetic longitude (degree)\nArea of Use:\n- name: World.\n- bounds: (-180.0, -90.0, 180.0, 90.0)\nDatum: World Geodetic System 1984 ensemble\n- Ellipsoid: WGS 84\n- Prime Meridian: Greenwich\n\n\n\ngdf.to_crs(gdf.estimate_utm_crs()).plot()\n\n<AxesSubplot:>\n\n\n\n\n\n\ngdf = gdf.to_crs(gdf.estimate_utm_crs())\n\n\ngdf.centroid\n\n0      POINT (2359392.452 5305169.775)\n1      POINT (2253174.905 4901469.336)\n2      POINT (1108124.800 4935453.192)\n3      POINT (-765955.563 5348067.290)\n4     POINT (-1548246.254 4630302.336)\n5      POINT (2065285.016 4612318.097)\n6      POINT (1930049.196 4904992.641)\n7      POINT (1742974.165 4021487.098)\n8      POINT (1368634.294 4510266.503)\n9      POINT (1784134.621 4638257.315)\n10     POINT (2289313.142 4842131.086)\n11     POINT (1102080.849 3988935.477)\n12     POINT (-103892.519 3500028.226)\n13    POINT (-1115997.209 4520861.031)\n14    POINT (-1565541.918 5625943.989)\n15      POINT (738620.228 4945674.977)\n17     POINT (1910429.070 4447760.368)\n18     POINT (1078425.172 3643488.570)\n20    POINT (-1230212.721 3954699.221)\n21      POINT (550933.347 3861451.888)\n22    POINT (-1870826.275 4466915.330)\n23     POINT (-590190.342 4392344.096)\n24     POINT (2192677.610 4811150.640)\n25     POINT (2020359.310 4464239.060)\n26     POINT (1889584.643 4429716.358)\n27     POINT (1535090.511 3210901.406)\n28     POINT (1399285.825 3651528.582)\n30    POINT (-1223231.299 5144300.473)\n31      POINT (824539.285 4439350.669)\n32     POINT (1074696.801 4437810.568)\n33      POINT (458939.639 4658274.632)\n34       POINT (29865.949 4274404.492)\n35     POINT (1181577.693 4182456.487)\n36      POINT (598555.176 3435096.661)\n37      POINT (399444.786 5126179.145)\n38      POINT (812334.714 3626923.994)\n39      POINT (547395.056 4245527.933)\n40      POINT (-68074.613 4621136.163)\n41     POINT (2227578.113 5064712.956)\n42     POINT (-710483.211 3886170.809)\n43      POINT (-63437.281 5282398.408)\n44       POINT (91977.904 3947894.482)\n45    POINT (-1716081.976 5249621.330)\n46     POINT (1623336.735 3818285.055)\n47      POINT (-76107.494 4946849.414)\n48     POINT (2128860.270 5085004.659)\n49     POINT (1758189.886 4249101.361)\n50     POINT (1579306.753 4350654.685)\n51     POINT (-688676.799 4864507.482)\ndtype: geometry\n\n\n\ngdf.crs\n\n<Projected CRS: EPSG:32615>\nName: WGS 84 / UTM zone 15N\nAxis Info [cartesian]:\n- E[east]: Easting (metre)\n- N[north]: Northing (metre)\nArea of Use:\n- name: Between 96°W and 90°W, northern hemisphere between equator and 84°N, onshore and offshore. Canada - Manitoba; Nunavut; Ontario. Ecuador -Galapagos. Guatemala. Mexico. United States (USA).\n- bounds: (-96.0, 0.0, -90.0, 84.0)\nCoordinate Operation:\n- name: UTM zone 15N\n- method: Transverse Mercator\nDatum: World Geodetic System 1984 ensemble\n- Ellipsoid: WGS 84\n- Prime Meridian: Greenwich\n\n\n\ngdf['centroid'] = gdf.centroid\n\n\nbase = gdf.plot()\ngdf.centroid.plot(ax=base, color='r')\n\n<AxesSubplot:>"
   }
 ]
