@@ -37,4 +37,4 @@ format:
 - Week 05
 
   - [09-18 GeoPandas Spatial Queries](week-05/2023-09-18.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-05/2023-09-18.ipynb)
- 
+  - [09-20 Geovisualization](week-05/2023-09-20.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-05/2023-09-20.ipynb)
