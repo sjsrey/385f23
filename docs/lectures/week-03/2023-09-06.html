@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.1.189">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Geog385F23 - Unique Values</title>
+<title>Geog385F23 – quarto-inputd754477e</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,10 +17,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -47,13 +46,43 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -89,8 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
@@ -112,23 +140,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <span class="navbar-title">Geog385F23</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../syllabus.html" rel="" target="">
- <span class="menu-text">Syllabus</span></a>
+    <a class="nav-link" href="../../syllabus.html">Syllabus</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../lectures" rel="" target="">
- <span class="menu-text">Lectures</span></a>
+    <a class="nav-link" href="../../lectures">Lectures</a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -142,7 +166,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#constructing-pandas-objects" id="toc-constructing-pandas-objects" class="nav-link active" data-scroll-target="#constructing-pandas-objects">Constructing Pandas objects</a></li>
+  <li><a href="#unique-values" id="toc-unique-values" class="nav-link active" data-scroll-target="#unique-values">Unique Values</a></li>
+  <li><a href="#constructing-pandas-objects" id="toc-constructing-pandas-objects" class="nav-link" data-scroll-target="#constructing-pandas-objects">Constructing Pandas objects</a></li>
   <li><a href="#common-tabular-operations" id="toc-common-tabular-operations" class="nav-link" data-scroll-target="#common-tabular-operations">Common tabular operations</a></li>
   <li><a href="#selecting-and-updating-data" id="toc-selecting-and-updating-data" class="nav-link" data-scroll-target="#selecting-and-updating-data">Selecting and updating data</a>
   <ul class="collapse">
@@ -159,22 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Unique Values</h1>
-</div>
 
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
 
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -185,151 +195,149 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"># Data file contents: Daily temperatures (mean</th>
-<th data-quarto-table-cell-role="th">min</th>
-<th data-quarto-table-cell-role="th">max) for Kumpula</th>
-<th data-quarto-table-cell-role="th">Helsinki</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td># for June 1-30</td>
-<td>2016</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td># Data source: https://www.ncdc.noaa.gov/cdo-w...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td># Data processing: Extracted temperatures from...</td>
-<td>converted to</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td># comma-separated format</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>#</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td># David Whipp - 02.10.2017</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
-<td>YEARMODA</td>
-<td>TEMP</td>
-<td>MAX</td>
-<td>MIN</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th># Data file contents: Daily temperatures (mean</th>
+      <th>min</th>
+      <th>max) for Kumpula</th>
+      <th>Helsinki</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>#                     for June 1-30</td>
+      <td>2016</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td># Data source: https://www.ncdc.noaa.gov/cdo-w...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td># Data processing: Extracted temperatures from...</td>
+      <td>converted to</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>#                  comma-separated format</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td># David Whipp - 02.10.2017</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>YEARMODA</td>
+      <td>TEMP</td>
+      <td>MAX</td>
+      <td>MIN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
 <div class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>data.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"># Data file contents: Daily temperatures (mean</th>
-<th data-quarto-table-cell-role="th">min</th>
-<th data-quarto-table-cell-role="th">max) for Kumpula</th>
-<th data-quarto-table-cell-role="th">Helsinki</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">32</td>
-<td>20160626</td>
-<td>69.6</td>
-<td>77.7</td>
-<td>60.3</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">33</td>
-<td>20160627</td>
-<td>60.7</td>
-<td>70.0</td>
-<td>57.6</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">34</td>
-<td>20160628</td>
-<td>65.4</td>
-<td>73.0</td>
-<td>55.8</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">35</td>
-<td>20160629</td>
-<td>65.8</td>
-<td>73.2</td>
-<td>59.7</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">36</td>
-<td>20160630</td>
-<td>65.7</td>
-<td>72.7</td>
-<td>59.2</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th># Data file contents: Daily temperatures (mean</th>
+      <th>min</th>
+      <th>max) for Kumpula</th>
+      <th>Helsinki</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>32</th>
+      <td>20160626</td>
+      <td>69.6</td>
+      <td>77.7</td>
+      <td>60.3</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>20160627</td>
+      <td>60.7</td>
+      <td>70.0</td>
+      <td>57.6</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>20160628</td>
+      <td>65.4</td>
+      <td>73.0</td>
+      <td>55.8</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>20160629</td>
+      <td>65.8</td>
+      <td>73.2</td>
+      <td>59.7</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>20160630</td>
+      <td>65.7</td>
+      <td>72.7</td>
+      <td>59.2</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -345,116 +353,114 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-<td>70.9</td>
-<td>47.3</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-<td>58.3</td>
-<td>43.2</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+      <td>70.9</td>
+      <td>47.3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+      <td>58.3</td>
+      <td>43.2</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
 <div class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">25</td>
-<td>20160626</td>
-<td>69.6</td>
-<td>77.7</td>
-<td>60.3</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">26</td>
-<td>20160627</td>
-<td>60.7</td>
-<td>70.0</td>
-<td>57.6</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">27</td>
-<td>20160628</td>
-<td>65.4</td>
-<td>73.0</td>
-<td>55.8</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">28</td>
-<td>20160629</td>
-<td>65.8</td>
-<td>73.2</td>
-<td>59.7</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">29</td>
-<td>20160630</td>
-<td>65.7</td>
-<td>72.7</td>
-<td>59.2</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>25</th>
+      <td>20160626</td>
+      <td>69.6</td>
+      <td>77.7</td>
+      <td>60.3</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>20160627</td>
+      <td>60.7</td>
+      <td>70.0</td>
+      <td>57.6</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>20160628</td>
+      <td>65.4</td>
+      <td>73.0</td>
+      <td>55.8</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>20160629</td>
+      <td>65.8</td>
+      <td>73.2</td>
+      <td>59.7</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>20160630</td>
+      <td>65.7</td>
+      <td>72.7</td>
+      <td>59.2</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -466,46 +472,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>temp_data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -567,46 +572,45 @@ dtype: object</code></pre>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>selection <span class="op">=</span> data[[<span class="st">"YEARMODA"</span>, <span class="st">"TEMP"</span>]]</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>selection.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -641,79 +645,78 @@ dtype: float64</code></pre>
 <div class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>data.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">count</td>
-<td>3.000000e+01</td>
-<td>30.000000</td>
-<td>30.000000</td>
-<td>30.000000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">mean</td>
-<td>2.016062e+07</td>
-<td>59.730000</td>
-<td>67.940000</td>
-<td>51.750000</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">std</td>
-<td>8.803408e+00</td>
-<td>5.475472</td>
-<td>6.651761</td>
-<td>5.634484</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">min</td>
-<td>2.016060e+07</td>
-<td>49.400000</td>
-<td>54.100000</td>
-<td>41.700000</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">25%</td>
-<td>2.016061e+07</td>
-<td>56.450000</td>
-<td>63.150000</td>
-<td>47.300000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">50%</td>
-<td>2.016062e+07</td>
-<td>60.050000</td>
-<td>69.000000</td>
-<td>54.050000</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">75%</td>
-<td>2.016062e+07</td>
-<td>64.900000</td>
-<td>72.375000</td>
-<td>55.750000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">max</td>
-<td>2.016063e+07</td>
-<td>69.600000</td>
-<td>80.800000</td>
-<td>60.300000</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>3.000000e+01</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2.016062e+07</td>
+      <td>59.730000</td>
+      <td>67.940000</td>
+      <td>51.750000</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8.803408e+00</td>
+      <td>5.475472</td>
+      <td>6.651761</td>
+      <td>5.634484</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>2.016060e+07</td>
+      <td>49.400000</td>
+      <td>54.100000</td>
+      <td>41.700000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.016061e+07</td>
+      <td>56.450000</td>
+      <td>63.150000</td>
+      <td>47.300000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2.016062e+07</td>
+      <td>60.050000</td>
+      <td>69.000000</td>
+      <td>54.050000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>2.016062e+07</td>
+      <td>64.900000</td>
+      <td>72.375000</td>
+      <td>55.750000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>2.016063e+07</td>
+      <td>69.600000</td>
+      <td>80.800000</td>
+      <td>60.300000</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -726,236 +729,237 @@ dtype: float64</code></pre>
 <div class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>data.head(<span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-<td>70.9</td>
-<td>47.3</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-<td>58.3</td>
-<td>43.2</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>20160606</td>
-<td>52.2</td>
-<td>59.7</td>
-<td>42.8</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
-<td>20160607</td>
-<td>56.9</td>
-<td>65.1</td>
-<td>45.9</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>20160608</td>
-<td>54.2</td>
-<td>60.4</td>
-<td>47.5</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>20160609</td>
-<td>49.4</td>
-<td>54.1</td>
-<td>45.7</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>20160610</td>
-<td>49.5</td>
-<td>55.9</td>
-<td>43.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">10</td>
-<td>20160611</td>
-<td>54.0</td>
-<td>62.1</td>
-<td>41.7</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">11</td>
-<td>20160612</td>
-<td>55.4</td>
-<td>64.2</td>
-<td>46.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">12</td>
-<td>20160613</td>
-<td>58.3</td>
-<td>68.2</td>
-<td>47.3</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">13</td>
-<td>20160614</td>
-<td>59.7</td>
-<td>67.8</td>
-<td>47.8</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">14</td>
-<td>20160615</td>
-<td>63.4</td>
-<td>70.3</td>
-<td>49.3</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">15</td>
-<td>20160616</td>
-<td>57.8</td>
-<td>67.5</td>
-<td>55.6</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">16</td>
-<td>20160617</td>
-<td>60.4</td>
-<td>70.7</td>
-<td>55.9</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">17</td>
-<td>20160618</td>
-<td>57.3</td>
-<td>62.8</td>
-<td>54.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">18</td>
-<td>20160619</td>
-<td>56.3</td>
-<td>59.2</td>
-<td>54.1</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">19</td>
-<td>20160620</td>
-<td>59.3</td>
-<td>69.1</td>
-<td>52.2</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">20</td>
-<td>20160621</td>
-<td>62.6</td>
-<td>71.4</td>
-<td>50.4</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">21</td>
-<td>20160622</td>
-<td>61.7</td>
-<td>70.2</td>
-<td>55.4</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">22</td>
-<td>20160623</td>
-<td>60.9</td>
-<td>67.1</td>
-<td>54.9</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">23</td>
-<td>20160624</td>
-<td>61.1</td>
-<td>68.9</td>
-<td>56.7</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">24</td>
-<td>20160625</td>
-<td>65.7</td>
-<td>75.4</td>
-<td>57.9</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">25</td>
-<td>20160626</td>
-<td>69.6</td>
-<td>77.7</td>
-<td>60.3</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">26</td>
-<td>20160627</td>
-<td>60.7</td>
-<td>70.0</td>
-<td>57.6</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">27</td>
-<td>20160628</td>
-<td>65.4</td>
-<td>73.0</td>
-<td>55.8</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">28</td>
-<td>20160629</td>
-<td>65.8</td>
-<td>73.2</td>
-<td>59.7</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">29</td>
-<td>20160630</td>
-<td>65.7</td>
-<td>72.7</td>
-<td>59.2</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+      <td>70.9</td>
+      <td>47.3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+      <td>58.3</td>
+      <td>43.2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>20160606</td>
+      <td>52.2</td>
+      <td>59.7</td>
+      <td>42.8</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>20160607</td>
+      <td>56.9</td>
+      <td>65.1</td>
+      <td>45.9</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>20160608</td>
+      <td>54.2</td>
+      <td>60.4</td>
+      <td>47.5</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>20160609</td>
+      <td>49.4</td>
+      <td>54.1</td>
+      <td>45.7</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>20160610</td>
+      <td>49.5</td>
+      <td>55.9</td>
+      <td>43.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>20160611</td>
+      <td>54.0</td>
+      <td>62.1</td>
+      <td>41.7</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>20160612</td>
+      <td>55.4</td>
+      <td>64.2</td>
+      <td>46.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>20160613</td>
+      <td>58.3</td>
+      <td>68.2</td>
+      <td>47.3</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>20160614</td>
+      <td>59.7</td>
+      <td>67.8</td>
+      <td>47.8</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>20160615</td>
+      <td>63.4</td>
+      <td>70.3</td>
+      <td>49.3</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>20160616</td>
+      <td>57.8</td>
+      <td>67.5</td>
+      <td>55.6</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>20160617</td>
+      <td>60.4</td>
+      <td>70.7</td>
+      <td>55.9</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>20160618</td>
+      <td>57.3</td>
+      <td>62.8</td>
+      <td>54.0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>20160619</td>
+      <td>56.3</td>
+      <td>59.2</td>
+      <td>54.1</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20160620</td>
+      <td>59.3</td>
+      <td>69.1</td>
+      <td>52.2</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20160621</td>
+      <td>62.6</td>
+      <td>71.4</td>
+      <td>50.4</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>20160622</td>
+      <td>61.7</td>
+      <td>70.2</td>
+      <td>55.4</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>20160623</td>
+      <td>60.9</td>
+      <td>67.1</td>
+      <td>54.9</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>20160624</td>
+      <td>61.1</td>
+      <td>68.9</td>
+      <td>56.7</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>20160625</td>
+      <td>65.7</td>
+      <td>75.4</td>
+      <td>57.9</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>20160626</td>
+      <td>69.6</td>
+      <td>77.7</td>
+      <td>60.3</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>20160627</td>
+      <td>60.7</td>
+      <td>70.0</td>
+      <td>57.6</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>20160628</td>
+      <td>65.4</td>
+      <td>73.0</td>
+      <td>55.8</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>20160629</td>
+      <td>65.8</td>
+      <td>73.2</td>
+      <td>59.7</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>20160630</td>
+      <td>65.7</td>
+      <td>72.7</td>
+      <td>59.2</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
+<section id="unique-values" class="level2">
+<h2 class="anchored" data-anchor-id="unique-values">Unique Values</h2>
 <div class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'TEMP'</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
@@ -993,82 +997,82 @@ dtype: float64</code></pre>
 <div class="cell" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>data.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="31">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">count</td>
-<td>3.000000e+01</td>
-<td>30.000000</td>
-<td>30.000000</td>
-<td>30.000000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">mean</td>
-<td>2.016062e+07</td>
-<td>59.730000</td>
-<td>67.940000</td>
-<td>51.750000</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">std</td>
-<td>8.803408e+00</td>
-<td>5.475472</td>
-<td>6.651761</td>
-<td>5.634484</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">min</td>
-<td>2.016060e+07</td>
-<td>49.400000</td>
-<td>54.100000</td>
-<td>41.700000</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">25%</td>
-<td>2.016061e+07</td>
-<td>56.450000</td>
-<td>63.150000</td>
-<td>47.300000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">50%</td>
-<td>2.016062e+07</td>
-<td>60.050000</td>
-<td>69.000000</td>
-<td>54.050000</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">75%</td>
-<td>2.016062e+07</td>
-<td>64.900000</td>
-<td>72.375000</td>
-<td>55.750000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">max</td>
-<td>2.016063e+07</td>
-<td>69.600000</td>
-<td>80.800000</td>
-<td>60.300000</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>3.000000e+01</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+      <td>30.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2.016062e+07</td>
+      <td>59.730000</td>
+      <td>67.940000</td>
+      <td>51.750000</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8.803408e+00</td>
+      <td>5.475472</td>
+      <td>6.651761</td>
+      <td>5.634484</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>2.016060e+07</td>
+      <td>49.400000</td>
+      <td>54.100000</td>
+      <td>41.700000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.016061e+07</td>
+      <td>56.450000</td>
+      <td>63.150000</td>
+      <td>47.300000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2.016062e+07</td>
+      <td>60.050000</td>
+      <td>69.000000</td>
+      <td>54.050000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>2.016062e+07</td>
+      <td>64.900000</td>
+      <td>72.375000</td>
+      <td>55.750000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>2.016063e+07</td>
+      <td>69.600000</td>
+      <td>80.800000</td>
+      <td>60.300000</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
+</section>
 <section id="constructing-pandas-objects" class="level2">
 <h2 class="anchored" data-anchor-id="constructing-pandas-objects">Constructing Pandas objects</h2>
 <div class="cell" data-execution_count="32">
@@ -1102,46 +1106,45 @@ dtype: float64</code></pre>
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>new_data <span class="op">=</span> pd.DataFrame(data<span class="op">=</span>{<span class="st">"station"</span>: stations, <span class="st">"lat"</span>: latitudes, <span class="st">"lon"</span>: longitudes})</span>
 <span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>new_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="35">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">station</th>
-<th data-quarto-table-cell-role="th">lat</th>
-<th data-quarto-table-cell-role="th">lon</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>Hanko</td>
-<td>59.77</td>
-<td>22.95</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>Heinola</td>
-<td>61.20</td>
-<td>26.05</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>Kaisaniemi</td>
-<td>60.18</td>
-<td>24.94</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>Malmi</td>
-<td>60.25</td>
-<td>25.05</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>station</th>
+      <th>lat</th>
+      <th>lon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Hanko</td>
+      <td>59.77</td>
+      <td>22.95</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Heinola</td>
+      <td>61.20</td>
+      <td>26.05</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kaisaniemi</td>
+      <td>60.18</td>
+      <td>24.94</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Malmi</td>
+      <td>60.25</td>
+      <td>25.05</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1157,46 +1160,45 @@ dtype: float64</code></pre>
 <span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>new_data_2 <span class="op">=</span> pd.DataFrame(dictionaries)</span>
 <span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a>new_data_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="36">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">station</th>
-<th data-quarto-table-cell-role="th">lat</th>
-<th data-quarto-table-cell-role="th">lon</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>Hanko</td>
-<td>59.77</td>
-<td>22.95</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>Heinola</td>
-<td>61.20</td>
-<td>26.05</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>Kaisaniemi</td>
-<td>60.18</td>
-<td>24.94</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>Malmi</td>
-<td>60.25</td>
-<td>25.05</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>station</th>
+      <th>lat</th>
+      <th>lon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Hanko</td>
+      <td>59.77</td>
+      <td>22.95</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Heinola</td>
+      <td>61.20</td>
+      <td>26.05</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kaisaniemi</td>
+      <td>60.18</td>
+      <td>24.94</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Malmi</td>
+      <td>60.25</td>
+      <td>25.05</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1214,41 +1216,40 @@ Index: []</code></pre>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"lat"</span>] <span class="op">=</span> latitudes</span>
 <span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="38">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">lon</th>
-<th data-quarto-table-cell-role="th">lat</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>22.95</td>
-<td>59.77</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>26.05</td>
-<td>61.20</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>24.94</td>
-<td>60.18</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>25.05</td>
-<td>60.25</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>lon</th>
+      <th>lat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>22.95</td>
+      <td>59.77</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>26.05</td>
+      <td>61.20</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>24.94</td>
+      <td>60.18</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>25.05</td>
+      <td>60.25</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1258,58 +1259,57 @@ Index: []</code></pre>
 <div class="cell" data-execution_count="39">
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="39">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-<td>70.9</td>
-<td>47.3</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-<td>58.3</td>
-<td>43.2</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+      <td>70.9</td>
+      <td>47.3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+      <td>58.3</td>
+      <td>43.2</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1317,64 +1317,63 @@ Index: []</code></pre>
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'DIFF'</span>] <span class="op">=</span> <span class="fl">0.0</span></span>
 <span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="40">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-<td>0.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-<td>0.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-<td>0.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-<td>70.9</td>
-<td>47.3</td>
-<td>0.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-<td>58.3</td>
-<td>43.2</td>
-<td>0.0</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+      <td>70.9</td>
+      <td>47.3</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+      <td>58.3</td>
+      <td>43.2</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1388,64 +1387,63 @@ Index: []</code></pre>
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'DIFF'</span>] <span class="op">=</span> data[<span class="st">'MAX'</span>] <span class="op">-</span> data[<span class="st">'MIN'</span>]</span>
 <span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="42">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-<td>18.9</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-<td>25.8</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-<td>22.3</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-<td>70.9</td>
-<td>47.3</td>
-<td>23.6</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-<td>58.3</td>
-<td>43.2</td>
-<td>15.1</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+      <td>18.9</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+      <td>25.8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+      <td>22.3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+      <td>70.9</td>
+      <td>47.3</td>
+      <td>23.6</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+      <td>58.3</td>
+      <td>43.2</td>
+      <td>15.1</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1453,70 +1451,69 @@ Index: []</code></pre>
 <div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">"TEMP_CELSIUS"</span>] <span class="op">=</span> (data[<span class="st">"TEMP"</span>] <span class="op">-</span> <span class="dv">32</span>) <span class="op">/</span> (<span class="dv">9</span> <span class="op">/</span> <span class="dv">5</span>)</span>
 <span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="43">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-<td>18.9</td>
-<td>18.611111</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-<td>25.8</td>
-<td>18.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-<td>22.3</td>
-<td>20.222222</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-<td>70.9</td>
-<td>47.3</td>
-<td>23.6</td>
-<td>14.166667</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-<td>58.3</td>
-<td>43.2</td>
-<td>15.1</td>
-<td>10.777778</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+      <td>18.9</td>
+      <td>18.611111</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+      <td>25.8</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+      <td>22.3</td>
+      <td>20.222222</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+      <td>70.9</td>
+      <td>47.3</td>
+      <td>23.6</td>
+      <td>14.166667</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+      <td>58.3</td>
+      <td>43.2</td>
+      <td>15.1</td>
+      <td>10.777778</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1527,70 +1524,69 @@ Index: []</code></pre>
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>selection <span class="op">=</span> data[<span class="dv">0</span>:<span class="dv">5</span>]</span>
 <span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>selection</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="44">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-<td>18.9</td>
-<td>18.611111</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-<td>25.8</td>
-<td>18.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-<td>22.3</td>
-<td>20.222222</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-<td>70.9</td>
-<td>47.3</td>
-<td>23.6</td>
-<td>14.166667</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-<td>58.3</td>
-<td>43.2</td>
-<td>15.1</td>
-<td>10.777778</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+      <td>18.9</td>
+      <td>18.611111</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+      <td>25.8</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+      <td>22.3</td>
+      <td>20.222222</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+      <td>70.9</td>
+      <td>47.3</td>
+      <td>23.6</td>
+      <td>14.166667</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+      <td>58.3</td>
+      <td>43.2</td>
+      <td>15.1</td>
+      <td>10.777778</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1634,51 +1630,50 @@ Name: 4, dtype: float64</code></pre>
 <span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>selection <span class="op">=</span> data.loc[<span class="dv">0</span>:<span class="dv">5</span>, [<span class="st">"TEMP"</span>, <span class="st">"TEMP_CELSIUS"</span>]]</span>
 <span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>selection</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="48">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>65.5</td>
-<td>18.611111</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>65.8</td>
-<td>18.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>68.4</td>
-<td>20.222222</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>57.5</td>
-<td>14.166667</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>51.4</td>
-<td>10.777778</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>52.2</td>
-<td>11.222222</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>TEMP</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>65.5</td>
+      <td>18.611111</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>65.8</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>68.4</td>
+      <td>20.222222</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>57.5</td>
+      <td>14.166667</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>51.4</td>
+      <td>10.777778</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>52.2</td>
+      <td>11.222222</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1722,70 +1717,69 @@ Value at position (0,0) is 20160601</code></pre>
 <div class="cell" data-execution_count="53">
 <div class="sourceCode cell-code" id="cb81"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>data.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="53">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">25</td>
-<td>20160626</td>
-<td>69.6</td>
-<td>77.7</td>
-<td>60.3</td>
-<td>17.4</td>
-<td>20.888889</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">26</td>
-<td>20160627</td>
-<td>60.7</td>
-<td>70.0</td>
-<td>57.6</td>
-<td>12.4</td>
-<td>15.944444</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">27</td>
-<td>20160628</td>
-<td>65.4</td>
-<td>73.0</td>
-<td>55.8</td>
-<td>17.2</td>
-<td>18.555556</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">28</td>
-<td>20160629</td>
-<td>65.8</td>
-<td>73.2</td>
-<td>59.7</td>
-<td>13.5</td>
-<td>18.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">29</td>
-<td>20160630</td>
-<td>65.7</td>
-<td>72.7</td>
-<td>59.2</td>
-<td>13.5</td>
-<td>18.722222</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>25</th>
+      <td>20160626</td>
+      <td>69.6</td>
+      <td>77.7</td>
+      <td>60.3</td>
+      <td>17.4</td>
+      <td>20.888889</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>20160627</td>
+      <td>60.7</td>
+      <td>70.0</td>
+      <td>57.6</td>
+      <td>12.4</td>
+      <td>15.944444</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>20160628</td>
+      <td>65.4</td>
+      <td>73.0</td>
+      <td>55.8</td>
+      <td>17.2</td>
+      <td>18.555556</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>20160629</td>
+      <td>65.8</td>
+      <td>73.2</td>
+      <td>59.7</td>
+      <td>13.5</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>20160630</td>
+      <td>65.7</td>
+      <td>72.7</td>
+      <td>59.2</td>
+      <td>13.5</td>
+      <td>18.722222</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1806,52 +1800,51 @@ Value at position (0,0) is 20160601</code></pre>
 <span id="cb84-4"><a href="#cb84-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Do the selection based on criteria applied to YEARMODA column</span></span>
 <span id="cb84-5"><a href="#cb84-5" aria-hidden="true" tabindex="-1"></a>data.loc[data[<span class="st">"YEARMODA"</span>].isin(selection_criteria)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="55">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-<td>18.9</td>
-<td>18.611111</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>20160608</td>
-<td>54.2</td>
-<td>60.4</td>
-<td>47.5</td>
-<td>12.9</td>
-<td>12.333333</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>20160609</td>
-<td>49.4</td>
-<td>54.1</td>
-<td>45.7</td>
-<td>8.4</td>
-<td>9.666667</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+      <td>18.9</td>
+      <td>18.611111</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>20160608</td>
+      <td>54.2</td>
+      <td>60.4</td>
+      <td>47.5</td>
+      <td>12.9</td>
+      <td>12.333333</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>20160609</td>
+      <td>49.4</td>
+      <td>54.1</td>
+      <td>45.7</td>
+      <td>8.4</td>
+      <td>9.666667</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -1898,178 +1891,177 @@ Name: TEMP_CELSIUS, dtype: bool</code></pre>
 <div class="sourceCode cell-code" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>warm_temps <span class="op">=</span> data[data.TEMP_CELSIUS <span class="op">&gt;</span> <span class="dv">15</span>]</span>
 <span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>warm_temps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="57">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-<td>18.9</td>
-<td>18.611111</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-<td>25.8</td>
-<td>18.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-<td>22.3</td>
-<td>20.222222</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">13</td>
-<td>20160614</td>
-<td>59.7</td>
-<td>67.8</td>
-<td>47.8</td>
-<td>20.0</td>
-<td>15.388889</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">14</td>
-<td>20160615</td>
-<td>63.4</td>
-<td>70.3</td>
-<td>49.3</td>
-<td>21.0</td>
-<td>17.444444</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">16</td>
-<td>20160617</td>
-<td>60.4</td>
-<td>70.7</td>
-<td>55.9</td>
-<td>14.8</td>
-<td>15.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">19</td>
-<td>20160620</td>
-<td>59.3</td>
-<td>69.1</td>
-<td>52.2</td>
-<td>16.9</td>
-<td>15.166667</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">20</td>
-<td>20160621</td>
-<td>62.6</td>
-<td>71.4</td>
-<td>50.4</td>
-<td>21.0</td>
-<td>17.000000</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">21</td>
-<td>20160622</td>
-<td>61.7</td>
-<td>70.2</td>
-<td>55.4</td>
-<td>14.8</td>
-<td>16.500000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">22</td>
-<td>20160623</td>
-<td>60.9</td>
-<td>67.1</td>
-<td>54.9</td>
-<td>12.2</td>
-<td>16.055556</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">23</td>
-<td>20160624</td>
-<td>61.1</td>
-<td>68.9</td>
-<td>56.7</td>
-<td>12.2</td>
-<td>16.166667</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">24</td>
-<td>20160625</td>
-<td>65.7</td>
-<td>75.4</td>
-<td>57.9</td>
-<td>17.5</td>
-<td>18.722222</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">25</td>
-<td>20160626</td>
-<td>69.6</td>
-<td>77.7</td>
-<td>60.3</td>
-<td>17.4</td>
-<td>20.888889</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">26</td>
-<td>20160627</td>
-<td>60.7</td>
-<td>70.0</td>
-<td>57.6</td>
-<td>12.4</td>
-<td>15.944444</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">27</td>
-<td>20160628</td>
-<td>65.4</td>
-<td>73.0</td>
-<td>55.8</td>
-<td>17.2</td>
-<td>18.555556</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">28</td>
-<td>20160629</td>
-<td>65.8</td>
-<td>73.2</td>
-<td>59.7</td>
-<td>13.5</td>
-<td>18.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">29</td>
-<td>20160630</td>
-<td>65.7</td>
-<td>72.7</td>
-<td>59.2</td>
-<td>13.5</td>
-<td>18.722222</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+      <td>18.9</td>
+      <td>18.611111</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+      <td>25.8</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+      <td>22.3</td>
+      <td>20.222222</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>20160614</td>
+      <td>59.7</td>
+      <td>67.8</td>
+      <td>47.8</td>
+      <td>20.0</td>
+      <td>15.388889</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>20160615</td>
+      <td>63.4</td>
+      <td>70.3</td>
+      <td>49.3</td>
+      <td>21.0</td>
+      <td>17.444444</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>20160617</td>
+      <td>60.4</td>
+      <td>70.7</td>
+      <td>55.9</td>
+      <td>14.8</td>
+      <td>15.777778</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20160620</td>
+      <td>59.3</td>
+      <td>69.1</td>
+      <td>52.2</td>
+      <td>16.9</td>
+      <td>15.166667</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20160621</td>
+      <td>62.6</td>
+      <td>71.4</td>
+      <td>50.4</td>
+      <td>21.0</td>
+      <td>17.000000</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>20160622</td>
+      <td>61.7</td>
+      <td>70.2</td>
+      <td>55.4</td>
+      <td>14.8</td>
+      <td>16.500000</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>20160623</td>
+      <td>60.9</td>
+      <td>67.1</td>
+      <td>54.9</td>
+      <td>12.2</td>
+      <td>16.055556</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>20160624</td>
+      <td>61.1</td>
+      <td>68.9</td>
+      <td>56.7</td>
+      <td>12.2</td>
+      <td>16.166667</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>20160625</td>
+      <td>65.7</td>
+      <td>75.4</td>
+      <td>57.9</td>
+      <td>17.5</td>
+      <td>18.722222</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>20160626</td>
+      <td>69.6</td>
+      <td>77.7</td>
+      <td>60.3</td>
+      <td>17.4</td>
+      <td>20.888889</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>20160627</td>
+      <td>60.7</td>
+      <td>70.0</td>
+      <td>57.6</td>
+      <td>12.4</td>
+      <td>15.944444</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>20160628</td>
+      <td>65.4</td>
+      <td>73.0</td>
+      <td>55.8</td>
+      <td>17.2</td>
+      <td>18.555556</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>20160629</td>
+      <td>65.8</td>
+      <td>73.2</td>
+      <td>59.7</td>
+      <td>13.5</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>20160630</td>
+      <td>65.7</td>
+      <td>72.7</td>
+      <td>59.2</td>
+      <td>13.5</td>
+      <td>18.722222</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -2077,142 +2069,141 @@ Name: TEMP_CELSIUS, dtype: bool</code></pre>
 <div class="sourceCode cell-code" id="cb88"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>warm_temps <span class="op">=</span> data[(data[<span class="st">"TEMP_CELSIUS"</span>] <span class="op">&gt;</span> <span class="dv">15</span>) <span class="op">&amp;</span> (data[<span class="st">"YEARMODA"</span>] <span class="op">&gt;=</span> <span class="dv">20160615</span>)]</span>
 <span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>warm_temps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="58">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">14</td>
-<td>20160615</td>
-<td>63.4</td>
-<td>70.3</td>
-<td>49.3</td>
-<td>21.0</td>
-<td>17.444444</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">16</td>
-<td>20160617</td>
-<td>60.4</td>
-<td>70.7</td>
-<td>55.9</td>
-<td>14.8</td>
-<td>15.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">19</td>
-<td>20160620</td>
-<td>59.3</td>
-<td>69.1</td>
-<td>52.2</td>
-<td>16.9</td>
-<td>15.166667</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">20</td>
-<td>20160621</td>
-<td>62.6</td>
-<td>71.4</td>
-<td>50.4</td>
-<td>21.0</td>
-<td>17.000000</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">21</td>
-<td>20160622</td>
-<td>61.7</td>
-<td>70.2</td>
-<td>55.4</td>
-<td>14.8</td>
-<td>16.500000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">22</td>
-<td>20160623</td>
-<td>60.9</td>
-<td>67.1</td>
-<td>54.9</td>
-<td>12.2</td>
-<td>16.055556</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">23</td>
-<td>20160624</td>
-<td>61.1</td>
-<td>68.9</td>
-<td>56.7</td>
-<td>12.2</td>
-<td>16.166667</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">24</td>
-<td>20160625</td>
-<td>65.7</td>
-<td>75.4</td>
-<td>57.9</td>
-<td>17.5</td>
-<td>18.722222</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">25</td>
-<td>20160626</td>
-<td>69.6</td>
-<td>77.7</td>
-<td>60.3</td>
-<td>17.4</td>
-<td>20.888889</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">26</td>
-<td>20160627</td>
-<td>60.7</td>
-<td>70.0</td>
-<td>57.6</td>
-<td>12.4</td>
-<td>15.944444</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">27</td>
-<td>20160628</td>
-<td>65.4</td>
-<td>73.0</td>
-<td>55.8</td>
-<td>17.2</td>
-<td>18.555556</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">28</td>
-<td>20160629</td>
-<td>65.8</td>
-<td>73.2</td>
-<td>59.7</td>
-<td>13.5</td>
-<td>18.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">29</td>
-<td>20160630</td>
-<td>65.7</td>
-<td>72.7</td>
-<td>59.2</td>
-<td>13.5</td>
-<td>18.722222</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>14</th>
+      <td>20160615</td>
+      <td>63.4</td>
+      <td>70.3</td>
+      <td>49.3</td>
+      <td>21.0</td>
+      <td>17.444444</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>20160617</td>
+      <td>60.4</td>
+      <td>70.7</td>
+      <td>55.9</td>
+      <td>14.8</td>
+      <td>15.777778</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20160620</td>
+      <td>59.3</td>
+      <td>69.1</td>
+      <td>52.2</td>
+      <td>16.9</td>
+      <td>15.166667</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20160621</td>
+      <td>62.6</td>
+      <td>71.4</td>
+      <td>50.4</td>
+      <td>21.0</td>
+      <td>17.000000</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>20160622</td>
+      <td>61.7</td>
+      <td>70.2</td>
+      <td>55.4</td>
+      <td>14.8</td>
+      <td>16.500000</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>20160623</td>
+      <td>60.9</td>
+      <td>67.1</td>
+      <td>54.9</td>
+      <td>12.2</td>
+      <td>16.055556</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>20160624</td>
+      <td>61.1</td>
+      <td>68.9</td>
+      <td>56.7</td>
+      <td>12.2</td>
+      <td>16.166667</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>20160625</td>
+      <td>65.7</td>
+      <td>75.4</td>
+      <td>57.9</td>
+      <td>17.5</td>
+      <td>18.722222</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>20160626</td>
+      <td>69.6</td>
+      <td>77.7</td>
+      <td>60.3</td>
+      <td>17.4</td>
+      <td>20.888889</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>20160627</td>
+      <td>60.7</td>
+      <td>70.0</td>
+      <td>57.6</td>
+      <td>12.4</td>
+      <td>15.944444</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>20160628</td>
+      <td>65.4</td>
+      <td>73.0</td>
+      <td>55.8</td>
+      <td>17.2</td>
+      <td>18.555556</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>20160629</td>
+      <td>65.8</td>
+      <td>73.2</td>
+      <td>59.7</td>
+      <td>13.5</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>20160630</td>
+      <td>65.7</td>
+      <td>72.7</td>
+      <td>59.2</td>
+      <td>13.5</td>
+      <td>18.722222</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -2221,142 +2212,141 @@ Name: TEMP_CELSIUS, dtype: bool</code></pre>
 <div class="sourceCode cell-code" id="cb89"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a>warm_temps <span class="op">=</span> warm_temps.reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a>warm_temps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="59">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160615</td>
-<td>63.4</td>
-<td>70.3</td>
-<td>49.3</td>
-<td>21.0</td>
-<td>17.444444</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160617</td>
-<td>60.4</td>
-<td>70.7</td>
-<td>55.9</td>
-<td>14.8</td>
-<td>15.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160620</td>
-<td>59.3</td>
-<td>69.1</td>
-<td>52.2</td>
-<td>16.9</td>
-<td>15.166667</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160621</td>
-<td>62.6</td>
-<td>71.4</td>
-<td>50.4</td>
-<td>21.0</td>
-<td>17.000000</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160622</td>
-<td>61.7</td>
-<td>70.2</td>
-<td>55.4</td>
-<td>14.8</td>
-<td>16.500000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>20160623</td>
-<td>60.9</td>
-<td>67.1</td>
-<td>54.9</td>
-<td>12.2</td>
-<td>16.055556</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
-<td>20160624</td>
-<td>61.1</td>
-<td>68.9</td>
-<td>56.7</td>
-<td>12.2</td>
-<td>16.166667</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>20160625</td>
-<td>65.7</td>
-<td>75.4</td>
-<td>57.9</td>
-<td>17.5</td>
-<td>18.722222</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>20160626</td>
-<td>69.6</td>
-<td>77.7</td>
-<td>60.3</td>
-<td>17.4</td>
-<td>20.888889</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>20160627</td>
-<td>60.7</td>
-<td>70.0</td>
-<td>57.6</td>
-<td>12.4</td>
-<td>15.944444</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">10</td>
-<td>20160628</td>
-<td>65.4</td>
-<td>73.0</td>
-<td>55.8</td>
-<td>17.2</td>
-<td>18.555556</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">11</td>
-<td>20160629</td>
-<td>65.8</td>
-<td>73.2</td>
-<td>59.7</td>
-<td>13.5</td>
-<td>18.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">12</td>
-<td>20160630</td>
-<td>65.7</td>
-<td>72.7</td>
-<td>59.2</td>
-<td>13.5</td>
-<td>18.722222</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160615</td>
+      <td>63.4</td>
+      <td>70.3</td>
+      <td>49.3</td>
+      <td>21.0</td>
+      <td>17.444444</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160617</td>
+      <td>60.4</td>
+      <td>70.7</td>
+      <td>55.9</td>
+      <td>14.8</td>
+      <td>15.777778</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160620</td>
+      <td>59.3</td>
+      <td>69.1</td>
+      <td>52.2</td>
+      <td>16.9</td>
+      <td>15.166667</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160621</td>
+      <td>62.6</td>
+      <td>71.4</td>
+      <td>50.4</td>
+      <td>21.0</td>
+      <td>17.000000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160622</td>
+      <td>61.7</td>
+      <td>70.2</td>
+      <td>55.4</td>
+      <td>14.8</td>
+      <td>16.500000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>20160623</td>
+      <td>60.9</td>
+      <td>67.1</td>
+      <td>54.9</td>
+      <td>12.2</td>
+      <td>16.055556</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>20160624</td>
+      <td>61.1</td>
+      <td>68.9</td>
+      <td>56.7</td>
+      <td>12.2</td>
+      <td>16.166667</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>20160625</td>
+      <td>65.7</td>
+      <td>75.4</td>
+      <td>57.9</td>
+      <td>17.5</td>
+      <td>18.722222</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>20160626</td>
+      <td>69.6</td>
+      <td>77.7</td>
+      <td>60.3</td>
+      <td>17.4</td>
+      <td>20.888889</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>20160627</td>
+      <td>60.7</td>
+      <td>70.0</td>
+      <td>57.6</td>
+      <td>12.4</td>
+      <td>15.944444</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>20160628</td>
+      <td>65.4</td>
+      <td>73.0</td>
+      <td>55.8</td>
+      <td>17.2</td>
+      <td>18.555556</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>20160629</td>
+      <td>65.8</td>
+      <td>73.2</td>
+      <td>59.7</td>
+      <td>13.5</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>20160630</td>
+      <td>65.7</td>
+      <td>72.7</td>
+      <td>59.2</td>
+      <td>13.5</td>
+      <td>18.722222</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -2372,140 +2362,138 @@ Name: TEMP_CELSIUS, dtype: bool</code></pre>
 <div class="cell" data-execution_count="60">
 <div class="sourceCode cell-code" id="cb92"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>data.sort_values(by<span class="op">=</span><span class="st">"TEMP"</span>).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="60">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>20160609</td>
-<td>49.4</td>
-<td>54.1</td>
-<td>45.7</td>
-<td>8.4</td>
-<td>9.666667</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>20160610</td>
-<td>49.5</td>
-<td>55.9</td>
-<td>43.0</td>
-<td>12.9</td>
-<td>9.722222</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-<td>58.3</td>
-<td>43.2</td>
-<td>15.1</td>
-<td>10.777778</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>20160606</td>
-<td>52.2</td>
-<td>59.7</td>
-<td>42.8</td>
-<td>16.9</td>
-<td>11.222222</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">10</td>
-<td>20160611</td>
-<td>54.0</td>
-<td>62.1</td>
-<td>41.7</td>
-<td>20.4</td>
-<td>12.222222</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>8</th>
+      <td>20160609</td>
+      <td>49.4</td>
+      <td>54.1</td>
+      <td>45.7</td>
+      <td>8.4</td>
+      <td>9.666667</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>20160610</td>
+      <td>49.5</td>
+      <td>55.9</td>
+      <td>43.0</td>
+      <td>12.9</td>
+      <td>9.722222</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+      <td>58.3</td>
+      <td>43.2</td>
+      <td>15.1</td>
+      <td>10.777778</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>20160606</td>
+      <td>52.2</td>
+      <td>59.7</td>
+      <td>42.8</td>
+      <td>16.9</td>
+      <td>11.222222</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>20160611</td>
+      <td>54.0</td>
+      <td>62.1</td>
+      <td>41.7</td>
+      <td>20.4</td>
+      <td>12.222222</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
 <div class="cell" data-execution_count="61">
 <div class="sourceCode cell-code" id="cb93"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a>data.sort_values(by<span class="op">=</span><span class="st">"TEMP"</span>, ascending<span class="op">=</span><span class="va">False</span>).head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="61">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">25</td>
-<td>20160626</td>
-<td>69.6</td>
-<td>77.7</td>
-<td>60.3</td>
-<td>17.4</td>
-<td>20.888889</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-<td>22.3</td>
-<td>20.222222</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-<td>25.8</td>
-<td>18.777778</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">28</td>
-<td>20160629</td>
-<td>65.8</td>
-<td>73.2</td>
-<td>59.7</td>
-<td>13.5</td>
-<td>18.777778</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">29</td>
-<td>20160630</td>
-<td>65.7</td>
-<td>72.7</td>
-<td>59.2</td>
-<td>13.5</td>
-<td>18.722222</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>25</th>
+      <td>20160626</td>
+      <td>69.6</td>
+      <td>77.7</td>
+      <td>60.3</td>
+      <td>17.4</td>
+      <td>20.888889</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+      <td>22.3</td>
+      <td>20.222222</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+      <td>25.8</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>20160629</td>
+      <td>65.8</td>
+      <td>73.2</td>
+      <td>59.7</td>
+      <td>13.5</td>
+      <td>18.777778</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>20160630</td>
+      <td>65.7</td>
+      <td>72.7</td>
+      <td>59.2</td>
+      <td>13.5</td>
+      <td>18.722222</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -2519,378 +2507,375 @@ Name: TEMP_CELSIUS, dtype: bool</code></pre>
 <span id="cb94-7"><a href="#cb94-7" aria-hidden="true" tabindex="-1"></a>data[<span class="st">"WEEKDAY"</span>] <span class="op">=</span> day_list</span>
 <span id="cb94-8"><a href="#cb94-8" aria-hidden="true" tabindex="-1"></a>data.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="62">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-<th data-quarto-table-cell-role="th">WEEKDAY</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>20160601</td>
-<td>65.5</td>
-<td>73.6</td>
-<td>54.7</td>
-<td>18.9</td>
-<td>18.611111</td>
-<td>Wed</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>20160602</td>
-<td>65.8</td>
-<td>80.8</td>
-<td>55.0</td>
-<td>25.8</td>
-<td>18.777778</td>
-<td>Thu</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-<td>22.3</td>
-<td>20.222222</td>
-<td>Fri</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-<td>70.9</td>
-<td>47.3</td>
-<td>23.6</td>
-<td>14.166667</td>
-<td>Sat</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>20160605</td>
-<td>51.4</td>
-<td>58.3</td>
-<td>43.2</td>
-<td>15.1</td>
-<td>10.777778</td>
-<td>Sun</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>20160606</td>
-<td>52.2</td>
-<td>59.7</td>
-<td>42.8</td>
-<td>16.9</td>
-<td>11.222222</td>
-<td>Mon</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
-<td>20160607</td>
-<td>56.9</td>
-<td>65.1</td>
-<td>45.9</td>
-<td>19.2</td>
-<td>13.833333</td>
-<td>Tue</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>20160608</td>
-<td>54.2</td>
-<td>60.4</td>
-<td>47.5</td>
-<td>12.9</td>
-<td>12.333333</td>
-<td>Wed</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>20160609</td>
-<td>49.4</td>
-<td>54.1</td>
-<td>45.7</td>
-<td>8.4</td>
-<td>9.666667</td>
-<td>Thu</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>20160610</td>
-<td>49.5</td>
-<td>55.9</td>
-<td>43.0</td>
-<td>12.9</td>
-<td>9.722222</td>
-<td>Fri</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+      <th>WEEKDAY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20160601</td>
+      <td>65.5</td>
+      <td>73.6</td>
+      <td>54.7</td>
+      <td>18.9</td>
+      <td>18.611111</td>
+      <td>Wed</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20160602</td>
+      <td>65.8</td>
+      <td>80.8</td>
+      <td>55.0</td>
+      <td>25.8</td>
+      <td>18.777778</td>
+      <td>Thu</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+      <td>22.3</td>
+      <td>20.222222</td>
+      <td>Fri</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+      <td>70.9</td>
+      <td>47.3</td>
+      <td>23.6</td>
+      <td>14.166667</td>
+      <td>Sat</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>20160605</td>
+      <td>51.4</td>
+      <td>58.3</td>
+      <td>43.2</td>
+      <td>15.1</td>
+      <td>10.777778</td>
+      <td>Sun</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>20160606</td>
+      <td>52.2</td>
+      <td>59.7</td>
+      <td>42.8</td>
+      <td>16.9</td>
+      <td>11.222222</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>20160607</td>
+      <td>56.9</td>
+      <td>65.1</td>
+      <td>45.9</td>
+      <td>19.2</td>
+      <td>13.833333</td>
+      <td>Tue</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>20160608</td>
+      <td>54.2</td>
+      <td>60.4</td>
+      <td>47.5</td>
+      <td>12.9</td>
+      <td>12.333333</td>
+      <td>Wed</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>20160609</td>
+      <td>49.4</td>
+      <td>54.1</td>
+      <td>45.7</td>
+      <td>8.4</td>
+      <td>9.666667</td>
+      <td>Thu</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>20160610</td>
+      <td>49.5</td>
+      <td>55.9</td>
+      <td>43.0</td>
+      <td>12.9</td>
+      <td>9.722222</td>
+      <td>Fri</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
 <div class="cell" data-execution_count="63">
 <div class="sourceCode cell-code" id="cb95"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>data.sort_values(by<span class="op">=</span>[<span class="st">"WEEKDAY"</span>, <span class="st">"TEMP_CELSIUS"</span>], ascending<span class="op">=</span>[<span class="va">True</span>, <span class="va">False</span>]).head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="63">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-<th data-quarto-table-cell-role="th">WEEKDAY</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-<td>22.3</td>
-<td>20.222222</td>
-<td>Fri</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">23</td>
-<td>20160624</td>
-<td>61.1</td>
-<td>68.9</td>
-<td>56.7</td>
-<td>12.2</td>
-<td>16.166667</td>
-<td>Fri</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">16</td>
-<td>20160617</td>
-<td>60.4</td>
-<td>70.7</td>
-<td>55.9</td>
-<td>14.8</td>
-<td>15.777778</td>
-<td>Fri</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>20160610</td>
-<td>49.5</td>
-<td>55.9</td>
-<td>43.0</td>
-<td>12.9</td>
-<td>9.722222</td>
-<td>Fri</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">26</td>
-<td>20160627</td>
-<td>60.7</td>
-<td>70.0</td>
-<td>57.6</td>
-<td>12.4</td>
-<td>15.944444</td>
-<td>Mon</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">19</td>
-<td>20160620</td>
-<td>59.3</td>
-<td>69.1</td>
-<td>52.2</td>
-<td>16.9</td>
-<td>15.166667</td>
-<td>Mon</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">12</td>
-<td>20160613</td>
-<td>58.3</td>
-<td>68.2</td>
-<td>47.3</td>
-<td>20.9</td>
-<td>14.611111</td>
-<td>Mon</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>20160606</td>
-<td>52.2</td>
-<td>59.7</td>
-<td>42.8</td>
-<td>16.9</td>
-<td>11.222222</td>
-<td>Mon</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">24</td>
-<td>20160625</td>
-<td>65.7</td>
-<td>75.4</td>
-<td>57.9</td>
-<td>17.5</td>
-<td>18.722222</td>
-<td>Sat</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>20160604</td>
-<td>57.5</td>
-<td>70.9</td>
-<td>47.3</td>
-<td>23.6</td>
-<td>14.166667</td>
-<td>Sat</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+      <th>WEEKDAY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+      <td>22.3</td>
+      <td>20.222222</td>
+      <td>Fri</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>20160624</td>
+      <td>61.1</td>
+      <td>68.9</td>
+      <td>56.7</td>
+      <td>12.2</td>
+      <td>16.166667</td>
+      <td>Fri</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>20160617</td>
+      <td>60.4</td>
+      <td>70.7</td>
+      <td>55.9</td>
+      <td>14.8</td>
+      <td>15.777778</td>
+      <td>Fri</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>20160610</td>
+      <td>49.5</td>
+      <td>55.9</td>
+      <td>43.0</td>
+      <td>12.9</td>
+      <td>9.722222</td>
+      <td>Fri</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>20160627</td>
+      <td>60.7</td>
+      <td>70.0</td>
+      <td>57.6</td>
+      <td>12.4</td>
+      <td>15.944444</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20160620</td>
+      <td>59.3</td>
+      <td>69.1</td>
+      <td>52.2</td>
+      <td>16.9</td>
+      <td>15.166667</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>20160613</td>
+      <td>58.3</td>
+      <td>68.2</td>
+      <td>47.3</td>
+      <td>20.9</td>
+      <td>14.611111</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>20160606</td>
+      <td>52.2</td>
+      <td>59.7</td>
+      <td>42.8</td>
+      <td>16.9</td>
+      <td>11.222222</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>20160625</td>
+      <td>65.7</td>
+      <td>75.4</td>
+      <td>57.9</td>
+      <td>17.5</td>
+      <td>18.722222</td>
+      <td>Sat</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20160604</td>
+      <td>57.5</td>
+      <td>70.9</td>
+      <td>47.3</td>
+      <td>23.6</td>
+      <td>14.166667</td>
+      <td>Sat</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
 <div class="cell" data-execution_count="58">
 <div class="sourceCode cell-code" id="cb96"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a>data.sort_values(by<span class="op">=</span>[<span class="st">"WEEKDAY"</span>], ascending<span class="op">=</span>[<span class="va">True</span>]).head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="58">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">YEARMODA</th>
-<th data-quarto-table-cell-role="th">TEMP</th>
-<th data-quarto-table-cell-role="th">MAX</th>
-<th data-quarto-table-cell-role="th">MIN</th>
-<th data-quarto-table-cell-role="th">DIFF</th>
-<th data-quarto-table-cell-role="th">TEMP_CELSIUS</th>
-<th data-quarto-table-cell-role="th">WEEKDAY</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>20160603</td>
-<td>68.4</td>
-<td>77.9</td>
-<td>55.6</td>
-<td>22.3</td>
-<td>20.222222</td>
-<td>Fri</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">16</td>
-<td>20160617</td>
-<td>60.4</td>
-<td>70.7</td>
-<td>55.9</td>
-<td>14.8</td>
-<td>15.777778</td>
-<td>Fri</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">23</td>
-<td>20160624</td>
-<td>61.1</td>
-<td>68.9</td>
-<td>56.7</td>
-<td>12.2</td>
-<td>16.166667</td>
-<td>Fri</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>20160610</td>
-<td>49.5</td>
-<td>55.9</td>
-<td>43.0</td>
-<td>12.9</td>
-<td>9.722222</td>
-<td>Fri</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">12</td>
-<td>20160613</td>
-<td>58.3</td>
-<td>68.2</td>
-<td>47.3</td>
-<td>20.9</td>
-<td>14.611111</td>
-<td>Mon</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">19</td>
-<td>20160620</td>
-<td>59.3</td>
-<td>69.1</td>
-<td>52.2</td>
-<td>16.9</td>
-<td>15.166667</td>
-<td>Mon</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">5</td>
-<td>20160606</td>
-<td>52.2</td>
-<td>59.7</td>
-<td>42.8</td>
-<td>16.9</td>
-<td>11.222222</td>
-<td>Mon</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">26</td>
-<td>20160627</td>
-<td>60.7</td>
-<td>70.0</td>
-<td>57.6</td>
-<td>12.4</td>
-<td>15.944444</td>
-<td>Mon</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">17</td>
-<td>20160618</td>
-<td>57.3</td>
-<td>62.8</td>
-<td>54.0</td>
-<td>8.8</td>
-<td>14.055556</td>
-<td>Sat</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">10</td>
-<td>20160611</td>
-<td>54.0</td>
-<td>62.1</td>
-<td>41.7</td>
-<td>20.4</td>
-<td>12.222222</td>
-<td>Sat</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YEARMODA</th>
+      <th>TEMP</th>
+      <th>MAX</th>
+      <th>MIN</th>
+      <th>DIFF</th>
+      <th>TEMP_CELSIUS</th>
+      <th>WEEKDAY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>20160603</td>
+      <td>68.4</td>
+      <td>77.9</td>
+      <td>55.6</td>
+      <td>22.3</td>
+      <td>20.222222</td>
+      <td>Fri</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>20160617</td>
+      <td>60.4</td>
+      <td>70.7</td>
+      <td>55.9</td>
+      <td>14.8</td>
+      <td>15.777778</td>
+      <td>Fri</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>20160624</td>
+      <td>61.1</td>
+      <td>68.9</td>
+      <td>56.7</td>
+      <td>12.2</td>
+      <td>16.166667</td>
+      <td>Fri</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>20160610</td>
+      <td>49.5</td>
+      <td>55.9</td>
+      <td>43.0</td>
+      <td>12.9</td>
+      <td>9.722222</td>
+      <td>Fri</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>20160613</td>
+      <td>58.3</td>
+      <td>68.2</td>
+      <td>47.3</td>
+      <td>20.9</td>
+      <td>14.611111</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20160620</td>
+      <td>59.3</td>
+      <td>69.1</td>
+      <td>52.2</td>
+      <td>16.9</td>
+      <td>15.166667</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>20160606</td>
+      <td>52.2</td>
+      <td>59.7</td>
+      <td>42.8</td>
+      <td>16.9</td>
+      <td>11.222222</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>20160627</td>
+      <td>60.7</td>
+      <td>70.0</td>
+      <td>57.6</td>
+      <td>12.4</td>
+      <td>15.944444</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>20160618</td>
+      <td>57.3</td>
+      <td>62.8</td>
+      <td>54.0</td>
+      <td>8.8</td>
+      <td>14.055556</td>
+      <td>Sat</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>20160611</td>
+      <td>54.0</td>
+      <td>62.1</td>
+      <td>41.7</td>
+      <td>20.4</td>
+      <td>12.222222</td>
+      <td>Sat</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -2911,172 +2896,170 @@ Name: TEMP_CELSIUS, dtype: bool</code></pre>
 <div class="cell" data-execution_count="70">
 <div class="sourceCode cell-code" id="cb100"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="70">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">state</th>
-<th data-quarto-table-cell-role="th">fips</th>
-<th data-quarto-table-cell-role="th">cases</th>
-<th data-quarto-table-cell-role="th">deaths</th>
-<th data-quarto-table-cell-role="th">dtc100</th>
-<th data-quarto-table-cell-role="th">population</th>
-<th data-quarto-table-cell-role="th">deaths100k</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">date</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2020-01-21</td>
-<td>Washington</td>
-<td>53</td>
-<td>1</td>
-<td>0</td>
-<td>0.0</td>
-<td>7614893</td>
-<td>0.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2020-01-22</td>
-<td>Washington</td>
-<td>53</td>
-<td>1</td>
-<td>0</td>
-<td>0.0</td>
-<td>7614893</td>
-<td>0.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2020-01-23</td>
-<td>Washington</td>
-<td>53</td>
-<td>1</td>
-<td>0</td>
-<td>0.0</td>
-<td>7614893</td>
-<td>0.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2020-01-24</td>
-<td>Washington</td>
-<td>53</td>
-<td>1</td>
-<td>0</td>
-<td>0.0</td>
-<td>7614893</td>
-<td>0.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2020-01-25</td>
-<td>Washington</td>
-<td>53</td>
-<td>1</td>
-<td>0</td>
-<td>0.0</td>
-<td>7614893</td>
-<td>0.0</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>state</th>
+      <th>fips</th>
+      <th>cases</th>
+      <th>deaths</th>
+      <th>dtc100</th>
+      <th>population</th>
+      <th>deaths100k</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2020-01-21</th>
+      <td>Washington</td>
+      <td>53</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>7614893</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2020-01-22</th>
+      <td>Washington</td>
+      <td>53</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>7614893</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2020-01-23</th>
+      <td>Washington</td>
+      <td>53</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>7614893</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2020-01-24</th>
+      <td>Washington</td>
+      <td>53</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>7614893</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2020-01-25</th>
+      <td>Washington</td>
+      <td>53</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>7614893</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
 <div class="cell" data-execution_count="71">
 <div class="sourceCode cell-code" id="cb101"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a>df.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="71">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">state</th>
-<th data-quarto-table-cell-role="th">fips</th>
-<th data-quarto-table-cell-role="th">cases</th>
-<th data-quarto-table-cell-role="th">deaths</th>
-<th data-quarto-table-cell-role="th">dtc100</th>
-<th data-quarto-table-cell-role="th">population</th>
-<th data-quarto-table-cell-role="th">deaths100k</th>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">date</th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2020-07-29</td>
-<td>Northern Mariana Islands</td>
-<td>69</td>
-<td>40</td>
-<td>2</td>
-<td>5.000000</td>
-<td>55194</td>
-<td>3.623582</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2020-07-30</td>
-<td>Northern Mariana Islands</td>
-<td>69</td>
-<td>42</td>
-<td>2</td>
-<td>4.761905</td>
-<td>55194</td>
-<td>3.623582</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2020-07-31</td>
-<td>Northern Mariana Islands</td>
-<td>69</td>
-<td>42</td>
-<td>2</td>
-<td>4.761905</td>
-<td>55194</td>
-<td>3.623582</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">2020-08-01</td>
-<td>Northern Mariana Islands</td>
-<td>69</td>
-<td>44</td>
-<td>2</td>
-<td>4.545455</td>
-<td>55194</td>
-<td>3.623582</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2020-08-02</td>
-<td>Northern Mariana Islands</td>
-<td>69</td>
-<td>45</td>
-<td>2</td>
-<td>4.444444</td>
-<td>55194</td>
-<td>3.623582</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>state</th>
+      <th>fips</th>
+      <th>cases</th>
+      <th>deaths</th>
+      <th>dtc100</th>
+      <th>population</th>
+      <th>deaths100k</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2020-07-29</th>
+      <td>Northern Mariana Islands</td>
+      <td>69</td>
+      <td>40</td>
+      <td>2</td>
+      <td>5.000000</td>
+      <td>55194</td>
+      <td>3.623582</td>
+    </tr>
+    <tr>
+      <th>2020-07-30</th>
+      <td>Northern Mariana Islands</td>
+      <td>69</td>
+      <td>42</td>
+      <td>2</td>
+      <td>4.761905</td>
+      <td>55194</td>
+      <td>3.623582</td>
+    </tr>
+    <tr>
+      <th>2020-07-31</th>
+      <td>Northern Mariana Islands</td>
+      <td>69</td>
+      <td>42</td>
+      <td>2</td>
+      <td>4.761905</td>
+      <td>55194</td>
+      <td>3.623582</td>
+    </tr>
+    <tr>
+      <th>2020-08-01</th>
+      <td>Northern Mariana Islands</td>
+      <td>69</td>
+      <td>44</td>
+      <td>2</td>
+      <td>4.545455</td>
+      <td>55194</td>
+      <td>3.623582</td>
+    </tr>
+    <tr>
+      <th>2020-08-02</th>
+      <td>Northern Mariana Islands</td>
+      <td>69</td>
+      <td>45</td>
+      <td>2</td>
+      <td>4.444444</td>
+      <td>55194</td>
+      <td>3.623582</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -3112,621 +3095,620 @@ Name: TEMP_CELSIUS, dtype: bool</code></pre>
 <div class="sourceCode cell-code" id="cb109"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a>last_df.reset_index(inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb109-2"><a href="#cb109-2" aria-hidden="true" tabindex="-1"></a>last_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="76">
+
 <div>
 
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">date</th>
-<th data-quarto-table-cell-role="th">state</th>
-<th data-quarto-table-cell-role="th">fips</th>
-<th data-quarto-table-cell-role="th">cases</th>
-<th data-quarto-table-cell-role="th">deaths</th>
-<th data-quarto-table-cell-role="th">dtc100</th>
-<th data-quarto-table-cell-role="th">population</th>
-<th data-quarto-table-cell-role="th">deaths100k</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>2020-08-02</td>
-<td>Washington</td>
-<td>53</td>
-<td>60161</td>
-<td>1680</td>
-<td>2.792507</td>
-<td>7614893</td>
-<td>22.062030</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>2020-08-02</td>
-<td>Illinois</td>
-<td>17</td>
-<td>183662</td>
-<td>7718</td>
-<td>4.202285</td>
-<td>12671821</td>
-<td>60.906795</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>2020-08-02</td>
-<td>California</td>
-<td>6</td>
-<td>515937</td>
-<td>9399</td>
-<td>1.821734</td>
-<td>39512223</td>
-<td>23.787576</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>2020-08-02</td>
-<td>Arizona</td>
-<td>4</td>
-<td>178473</td>
-<td>3769</td>
-<td>2.111804</td>
-<td>7278717</td>
-<td>51.781104</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>2020-08-02</td>
-<td>Massachusetts</td>
-<td>25</td>
-<td>118458</td>
-<td>8638</td>
-<td>7.292036</td>
-<td>6949503</td>
-<td>124.296658</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>2020-08-02</td>
-<td>Wisconsin</td>
-<td>55</td>
-<td>58990</td>
-<td>956</td>
-<td>1.620614</td>
-<td>5822434</td>
-<td>16.419250</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
-<td>2020-08-02</td>
-<td>Texas</td>
-<td>48</td>
-<td>452826</td>
-<td>7515</td>
-<td>1.659578</td>
-<td>28995881</td>
-<td>25.917474</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>2020-08-02</td>
-<td>Nebraska</td>
-<td>31</td>
-<td>26702</td>
-<td>338</td>
-<td>1.265823</td>
-<td>1934408</td>
-<td>17.473046</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>2020-08-02</td>
-<td>Utah</td>
-<td>49</td>
-<td>41175</td>
-<td>313</td>
-<td>0.760170</td>
-<td>3205958</td>
-<td>9.763072</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>2020-08-02</td>
-<td>Oregon</td>
-<td>41</td>
-<td>19097</td>
-<td>331</td>
-<td>1.733257</td>
-<td>4217737</td>
-<td>7.847810</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">10</td>
-<td>2020-08-02</td>
-<td>Florida</td>
-<td>12</td>
-<td>487124</td>
-<td>7083</td>
-<td>1.454045</td>
-<td>21477737</td>
-<td>32.978335</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">11</td>
-<td>2020-08-02</td>
-<td>New York</td>
-<td>36</td>
-<td>421008</td>
-<td>32401</td>
-<td>7.696053</td>
-<td>19453561</td>
-<td>166.555624</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">12</td>
-<td>2020-08-02</td>
-<td>Rhode Island</td>
-<td>44</td>
-<td>19022</td>
-<td>1007</td>
-<td>5.293870</td>
-<td>1059361</td>
-<td>95.057303</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">13</td>
-<td>2020-08-02</td>
-<td>Georgia</td>
-<td>13</td>
-<td>177556</td>
-<td>3758</td>
-<td>2.116515</td>
-<td>10617423</td>
-<td>35.394653</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">14</td>
-<td>2020-08-02</td>
-<td>New Hampshire</td>
-<td>33</td>
-<td>6634</td>
-<td>417</td>
-<td>6.285800</td>
-<td>1359711</td>
-<td>30.668282</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">15</td>
-<td>2020-08-02</td>
-<td>North Carolina</td>
-<td>37</td>
-<td>125339</td>
-<td>1996</td>
-<td>1.592481</td>
-<td>10488084</td>
-<td>19.031121</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">16</td>
-<td>2020-08-02</td>
-<td>New Jersey</td>
-<td>34</td>
-<td>184225</td>
-<td>15836</td>
-<td>8.596010</td>
-<td>8882190</td>
-<td>178.289363</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">17</td>
-<td>2020-08-02</td>
-<td>Colorado</td>
-<td>8</td>
-<td>47799</td>
-<td>1846</td>
-<td>3.862005</td>
-<td>5758736</td>
-<td>32.055646</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">18</td>
-<td>2020-08-02</td>
-<td>Maryland</td>
-<td>24</td>
-<td>90835</td>
-<td>3515</td>
-<td>3.869654</td>
-<td>6045680</td>
-<td>58.140689</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">19</td>
-<td>2020-08-02</td>
-<td>Nevada</td>
-<td>32</td>
-<td>50270</td>
-<td>833</td>
-<td>1.657052</td>
-<td>3080156</td>
-<td>27.044085</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">20</td>
-<td>2020-08-02</td>
-<td>Tennessee</td>
-<td>47</td>
-<td>106804</td>
-<td>1062</td>
-<td>0.994345</td>
-<td>6833174</td>
-<td>15.541826</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">21</td>
-<td>2020-08-02</td>
-<td>Hawaii</td>
-<td>15</td>
-<td>2219</td>
-<td>25</td>
-<td>1.126634</td>
-<td>1415872</td>
-<td>1.765696</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">22</td>
-<td>2020-08-02</td>
-<td>Indiana</td>
-<td>18</td>
-<td>69531</td>
-<td>2975</td>
-<td>4.278667</td>
-<td>6732219</td>
-<td>44.190482</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">23</td>
-<td>2020-08-02</td>
-<td>Kentucky</td>
-<td>21</td>
-<td>31966</td>
-<td>759</td>
-<td>2.374398</td>
-<td>4467673</td>
-<td>16.988710</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">24</td>
-<td>2020-08-02</td>
-<td>Minnesota</td>
-<td>27</td>
-<td>55987</td>
-<td>1654</td>
-<td>2.954257</td>
-<td>5639632</td>
-<td>29.328155</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">25</td>
-<td>2020-08-02</td>
-<td>Oklahoma</td>
-<td>40</td>
-<td>38201</td>
-<td>550</td>
-<td>1.439753</td>
-<td>3956971</td>
-<td>13.899521</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">26</td>
-<td>2020-08-02</td>
-<td>Pennsylvania</td>
-<td>42</td>
-<td>118038</td>
-<td>7274</td>
-<td>6.162422</td>
-<td>12801989</td>
-<td>56.819296</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">27</td>
-<td>2020-08-02</td>
-<td>South Carolina</td>
-<td>45</td>
-<td>91788</td>
-<td>1777</td>
-<td>1.935983</td>
-<td>5148714</td>
-<td>34.513473</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">28</td>
-<td>2020-08-02</td>
-<td>District of Columbia</td>
-<td>11</td>
-<td>12274</td>
-<td>586</td>
-<td>4.774320</td>
-<td>705749</td>
-<td>83.032353</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">29</td>
-<td>2020-08-02</td>
-<td>Kansas</td>
-<td>20</td>
-<td>28341</td>
-<td>361</td>
-<td>1.273773</td>
-<td>2913314</td>
-<td>12.391387</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">30</td>
-<td>2020-08-02</td>
-<td>Missouri</td>
-<td>29</td>
-<td>52550</td>
-<td>1311</td>
-<td>2.494767</td>
-<td>6137428</td>
-<td>21.360739</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">31</td>
-<td>2020-08-02</td>
-<td>Vermont</td>
-<td>50</td>
-<td>1426</td>
-<td>57</td>
-<td>3.997195</td>
-<td>623989</td>
-<td>9.134776</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">32</td>
-<td>2020-08-02</td>
-<td>Virginia</td>
-<td>51</td>
-<td>91782</td>
-<td>2218</td>
-<td>2.416596</td>
-<td>8535519</td>
-<td>25.985532</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">33</td>
-<td>2020-08-02</td>
-<td>Connecticut</td>
-<td>9</td>
-<td>49810</td>
-<td>4432</td>
-<td>8.897812</td>
-<td>3565287</td>
-<td>124.309768</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">34</td>
-<td>2020-08-02</td>
-<td>Iowa</td>
-<td>19</td>
-<td>45723</td>
-<td>878</td>
-<td>1.920259</td>
-<td>3155070</td>
-<td>27.828226</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">35</td>
-<td>2020-08-02</td>
-<td>Louisiana</td>
-<td>22</td>
-<td>119861</td>
-<td>4007</td>
-<td>3.343039</td>
-<td>4648794</td>
-<td>86.194398</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">36</td>
-<td>2020-08-02</td>
-<td>Ohio</td>
-<td>39</td>
-<td>93031</td>
-<td>3529</td>
-<td>3.793359</td>
-<td>11689100</td>
-<td>30.190519</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">37</td>
-<td>2020-08-02</td>
-<td>Michigan</td>
-<td>26</td>
-<td>91857</td>
-<td>6460</td>
-<td>7.032670</td>
-<td>9986857</td>
-<td>64.685016</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">38</td>
-<td>2020-08-02</td>
-<td>South Dakota</td>
-<td>46</td>
-<td>8955</td>
-<td>135</td>
-<td>1.507538</td>
-<td>884659</td>
-<td>15.260117</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">39</td>
-<td>2020-08-02</td>
-<td>Arkansas</td>
-<td>5</td>
-<td>43810</td>
-<td>464</td>
-<td>1.059119</td>
-<td>3017825</td>
-<td>15.375312</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">40</td>
-<td>2020-08-02</td>
-<td>Delaware</td>
-<td>10</td>
-<td>14949</td>
-<td>585</td>
-<td>3.913305</td>
-<td>973764</td>
-<td>60.076158</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">41</td>
-<td>2020-08-02</td>
-<td>Mississippi</td>
-<td>28</td>
-<td>60553</td>
-<td>1703</td>
-<td>2.812412</td>
-<td>2976149</td>
-<td>57.221597</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">42</td>
-<td>2020-08-02</td>
-<td>New Mexico</td>
-<td>35</td>
-<td>21016</td>
-<td>654</td>
-<td>3.111915</td>
-<td>2096829</td>
-<td>31.189954</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">43</td>
-<td>2020-08-02</td>
-<td>North Dakota</td>
-<td>38</td>
-<td>6664</td>
-<td>109</td>
-<td>1.635654</td>
-<td>762062</td>
-<td>14.303298</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">44</td>
-<td>2020-08-02</td>
-<td>Wyoming</td>
-<td>56</td>
-<td>2808</td>
-<td>26</td>
-<td>0.925926</td>
-<td>578759</td>
-<td>4.492371</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">45</td>
-<td>2020-08-02</td>
-<td>Alaska</td>
-<td>2</td>
-<td>3982</td>
-<td>22</td>
-<td>0.552486</td>
-<td>731545</td>
-<td>3.007334</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">46</td>
-<td>2020-08-02</td>
-<td>Maine</td>
-<td>23</td>
-<td>3958</td>
-<td>123</td>
-<td>3.107630</td>
-<td>1344212</td>
-<td>9.150342</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">47</td>
-<td>2020-08-02</td>
-<td>Alabama</td>
-<td>1</td>
-<td>91444</td>
-<td>1627</td>
-<td>1.779231</td>
-<td>4903185</td>
-<td>33.182513</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">48</td>
-<td>2020-08-02</td>
-<td>Idaho</td>
-<td>16</td>
-<td>21465</td>
-<td>197</td>
-<td>0.917773</td>
-<td>1787065</td>
-<td>11.023662</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">49</td>
-<td>2020-08-02</td>
-<td>Montana</td>
-<td>30</td>
-<td>4193</td>
-<td>61</td>
-<td>1.454806</td>
-<td>1068778</td>
-<td>5.707453</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">50</td>
-<td>2020-08-02</td>
-<td>Puerto Rico</td>
-<td>72</td>
-<td>18411</td>
-<td>230</td>
-<td>1.249253</td>
-<td>3193694</td>
-<td>7.201692</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">51</td>
-<td>2020-08-02</td>
-<td>Guam</td>
-<td>66</td>
-<td>1328</td>
-<td>6</td>
-<td>0.451807</td>
-<td>165718</td>
-<td>3.620609</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">52</td>
-<td>2020-08-02</td>
-<td>West Virginia</td>
-<td>54</td>
-<td>6854</td>
-<td>117</td>
-<td>1.707032</td>
-<td>1792147</td>
-<td>6.528482</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">53</td>
-<td>2020-08-02</td>
-<td>Northern Mariana Islands</td>
-<td>69</td>
-<td>45</td>
-<td>2</td>
-<td>4.444444</td>
-<td>55194</td>
-<td>3.623582</td>
-</tr>
-</tbody>
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>date</th>
+      <th>state</th>
+      <th>fips</th>
+      <th>cases</th>
+      <th>deaths</th>
+      <th>dtc100</th>
+      <th>population</th>
+      <th>deaths100k</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2020-08-02</td>
+      <td>Washington</td>
+      <td>53</td>
+      <td>60161</td>
+      <td>1680</td>
+      <td>2.792507</td>
+      <td>7614893</td>
+      <td>22.062030</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2020-08-02</td>
+      <td>Illinois</td>
+      <td>17</td>
+      <td>183662</td>
+      <td>7718</td>
+      <td>4.202285</td>
+      <td>12671821</td>
+      <td>60.906795</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2020-08-02</td>
+      <td>California</td>
+      <td>6</td>
+      <td>515937</td>
+      <td>9399</td>
+      <td>1.821734</td>
+      <td>39512223</td>
+      <td>23.787576</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2020-08-02</td>
+      <td>Arizona</td>
+      <td>4</td>
+      <td>178473</td>
+      <td>3769</td>
+      <td>2.111804</td>
+      <td>7278717</td>
+      <td>51.781104</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2020-08-02</td>
+      <td>Massachusetts</td>
+      <td>25</td>
+      <td>118458</td>
+      <td>8638</td>
+      <td>7.292036</td>
+      <td>6949503</td>
+      <td>124.296658</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2020-08-02</td>
+      <td>Wisconsin</td>
+      <td>55</td>
+      <td>58990</td>
+      <td>956</td>
+      <td>1.620614</td>
+      <td>5822434</td>
+      <td>16.419250</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2020-08-02</td>
+      <td>Texas</td>
+      <td>48</td>
+      <td>452826</td>
+      <td>7515</td>
+      <td>1.659578</td>
+      <td>28995881</td>
+      <td>25.917474</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2020-08-02</td>
+      <td>Nebraska</td>
+      <td>31</td>
+      <td>26702</td>
+      <td>338</td>
+      <td>1.265823</td>
+      <td>1934408</td>
+      <td>17.473046</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2020-08-02</td>
+      <td>Utah</td>
+      <td>49</td>
+      <td>41175</td>
+      <td>313</td>
+      <td>0.760170</td>
+      <td>3205958</td>
+      <td>9.763072</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2020-08-02</td>
+      <td>Oregon</td>
+      <td>41</td>
+      <td>19097</td>
+      <td>331</td>
+      <td>1.733257</td>
+      <td>4217737</td>
+      <td>7.847810</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2020-08-02</td>
+      <td>Florida</td>
+      <td>12</td>
+      <td>487124</td>
+      <td>7083</td>
+      <td>1.454045</td>
+      <td>21477737</td>
+      <td>32.978335</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2020-08-02</td>
+      <td>New York</td>
+      <td>36</td>
+      <td>421008</td>
+      <td>32401</td>
+      <td>7.696053</td>
+      <td>19453561</td>
+      <td>166.555624</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2020-08-02</td>
+      <td>Rhode Island</td>
+      <td>44</td>
+      <td>19022</td>
+      <td>1007</td>
+      <td>5.293870</td>
+      <td>1059361</td>
+      <td>95.057303</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>2020-08-02</td>
+      <td>Georgia</td>
+      <td>13</td>
+      <td>177556</td>
+      <td>3758</td>
+      <td>2.116515</td>
+      <td>10617423</td>
+      <td>35.394653</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2020-08-02</td>
+      <td>New Hampshire</td>
+      <td>33</td>
+      <td>6634</td>
+      <td>417</td>
+      <td>6.285800</td>
+      <td>1359711</td>
+      <td>30.668282</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2020-08-02</td>
+      <td>North Carolina</td>
+      <td>37</td>
+      <td>125339</td>
+      <td>1996</td>
+      <td>1.592481</td>
+      <td>10488084</td>
+      <td>19.031121</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>2020-08-02</td>
+      <td>New Jersey</td>
+      <td>34</td>
+      <td>184225</td>
+      <td>15836</td>
+      <td>8.596010</td>
+      <td>8882190</td>
+      <td>178.289363</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2020-08-02</td>
+      <td>Colorado</td>
+      <td>8</td>
+      <td>47799</td>
+      <td>1846</td>
+      <td>3.862005</td>
+      <td>5758736</td>
+      <td>32.055646</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>2020-08-02</td>
+      <td>Maryland</td>
+      <td>24</td>
+      <td>90835</td>
+      <td>3515</td>
+      <td>3.869654</td>
+      <td>6045680</td>
+      <td>58.140689</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>2020-08-02</td>
+      <td>Nevada</td>
+      <td>32</td>
+      <td>50270</td>
+      <td>833</td>
+      <td>1.657052</td>
+      <td>3080156</td>
+      <td>27.044085</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>2020-08-02</td>
+      <td>Tennessee</td>
+      <td>47</td>
+      <td>106804</td>
+      <td>1062</td>
+      <td>0.994345</td>
+      <td>6833174</td>
+      <td>15.541826</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>2020-08-02</td>
+      <td>Hawaii</td>
+      <td>15</td>
+      <td>2219</td>
+      <td>25</td>
+      <td>1.126634</td>
+      <td>1415872</td>
+      <td>1.765696</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>2020-08-02</td>
+      <td>Indiana</td>
+      <td>18</td>
+      <td>69531</td>
+      <td>2975</td>
+      <td>4.278667</td>
+      <td>6732219</td>
+      <td>44.190482</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>2020-08-02</td>
+      <td>Kentucky</td>
+      <td>21</td>
+      <td>31966</td>
+      <td>759</td>
+      <td>2.374398</td>
+      <td>4467673</td>
+      <td>16.988710</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>2020-08-02</td>
+      <td>Minnesota</td>
+      <td>27</td>
+      <td>55987</td>
+      <td>1654</td>
+      <td>2.954257</td>
+      <td>5639632</td>
+      <td>29.328155</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>2020-08-02</td>
+      <td>Oklahoma</td>
+      <td>40</td>
+      <td>38201</td>
+      <td>550</td>
+      <td>1.439753</td>
+      <td>3956971</td>
+      <td>13.899521</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>2020-08-02</td>
+      <td>Pennsylvania</td>
+      <td>42</td>
+      <td>118038</td>
+      <td>7274</td>
+      <td>6.162422</td>
+      <td>12801989</td>
+      <td>56.819296</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>2020-08-02</td>
+      <td>South Carolina</td>
+      <td>45</td>
+      <td>91788</td>
+      <td>1777</td>
+      <td>1.935983</td>
+      <td>5148714</td>
+      <td>34.513473</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>2020-08-02</td>
+      <td>District of Columbia</td>
+      <td>11</td>
+      <td>12274</td>
+      <td>586</td>
+      <td>4.774320</td>
+      <td>705749</td>
+      <td>83.032353</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>2020-08-02</td>
+      <td>Kansas</td>
+      <td>20</td>
+      <td>28341</td>
+      <td>361</td>
+      <td>1.273773</td>
+      <td>2913314</td>
+      <td>12.391387</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>2020-08-02</td>
+      <td>Missouri</td>
+      <td>29</td>
+      <td>52550</td>
+      <td>1311</td>
+      <td>2.494767</td>
+      <td>6137428</td>
+      <td>21.360739</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>2020-08-02</td>
+      <td>Vermont</td>
+      <td>50</td>
+      <td>1426</td>
+      <td>57</td>
+      <td>3.997195</td>
+      <td>623989</td>
+      <td>9.134776</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>2020-08-02</td>
+      <td>Virginia</td>
+      <td>51</td>
+      <td>91782</td>
+      <td>2218</td>
+      <td>2.416596</td>
+      <td>8535519</td>
+      <td>25.985532</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>2020-08-02</td>
+      <td>Connecticut</td>
+      <td>9</td>
+      <td>49810</td>
+      <td>4432</td>
+      <td>8.897812</td>
+      <td>3565287</td>
+      <td>124.309768</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>2020-08-02</td>
+      <td>Iowa</td>
+      <td>19</td>
+      <td>45723</td>
+      <td>878</td>
+      <td>1.920259</td>
+      <td>3155070</td>
+      <td>27.828226</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>2020-08-02</td>
+      <td>Louisiana</td>
+      <td>22</td>
+      <td>119861</td>
+      <td>4007</td>
+      <td>3.343039</td>
+      <td>4648794</td>
+      <td>86.194398</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>2020-08-02</td>
+      <td>Ohio</td>
+      <td>39</td>
+      <td>93031</td>
+      <td>3529</td>
+      <td>3.793359</td>
+      <td>11689100</td>
+      <td>30.190519</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>2020-08-02</td>
+      <td>Michigan</td>
+      <td>26</td>
+      <td>91857</td>
+      <td>6460</td>
+      <td>7.032670</td>
+      <td>9986857</td>
+      <td>64.685016</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>2020-08-02</td>
+      <td>South Dakota</td>
+      <td>46</td>
+      <td>8955</td>
+      <td>135</td>
+      <td>1.507538</td>
+      <td>884659</td>
+      <td>15.260117</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>2020-08-02</td>
+      <td>Arkansas</td>
+      <td>5</td>
+      <td>43810</td>
+      <td>464</td>
+      <td>1.059119</td>
+      <td>3017825</td>
+      <td>15.375312</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>2020-08-02</td>
+      <td>Delaware</td>
+      <td>10</td>
+      <td>14949</td>
+      <td>585</td>
+      <td>3.913305</td>
+      <td>973764</td>
+      <td>60.076158</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>2020-08-02</td>
+      <td>Mississippi</td>
+      <td>28</td>
+      <td>60553</td>
+      <td>1703</td>
+      <td>2.812412</td>
+      <td>2976149</td>
+      <td>57.221597</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>2020-08-02</td>
+      <td>New Mexico</td>
+      <td>35</td>
+      <td>21016</td>
+      <td>654</td>
+      <td>3.111915</td>
+      <td>2096829</td>
+      <td>31.189954</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>2020-08-02</td>
+      <td>North Dakota</td>
+      <td>38</td>
+      <td>6664</td>
+      <td>109</td>
+      <td>1.635654</td>
+      <td>762062</td>
+      <td>14.303298</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>2020-08-02</td>
+      <td>Wyoming</td>
+      <td>56</td>
+      <td>2808</td>
+      <td>26</td>
+      <td>0.925926</td>
+      <td>578759</td>
+      <td>4.492371</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>2020-08-02</td>
+      <td>Alaska</td>
+      <td>2</td>
+      <td>3982</td>
+      <td>22</td>
+      <td>0.552486</td>
+      <td>731545</td>
+      <td>3.007334</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>2020-08-02</td>
+      <td>Maine</td>
+      <td>23</td>
+      <td>3958</td>
+      <td>123</td>
+      <td>3.107630</td>
+      <td>1344212</td>
+      <td>9.150342</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>2020-08-02</td>
+      <td>Alabama</td>
+      <td>1</td>
+      <td>91444</td>
+      <td>1627</td>
+      <td>1.779231</td>
+      <td>4903185</td>
+      <td>33.182513</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>2020-08-02</td>
+      <td>Idaho</td>
+      <td>16</td>
+      <td>21465</td>
+      <td>197</td>
+      <td>0.917773</td>
+      <td>1787065</td>
+      <td>11.023662</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>2020-08-02</td>
+      <td>Montana</td>
+      <td>30</td>
+      <td>4193</td>
+      <td>61</td>
+      <td>1.454806</td>
+      <td>1068778</td>
+      <td>5.707453</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>2020-08-02</td>
+      <td>Puerto Rico</td>
+      <td>72</td>
+      <td>18411</td>
+      <td>230</td>
+      <td>1.249253</td>
+      <td>3193694</td>
+      <td>7.201692</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>2020-08-02</td>
+      <td>Guam</td>
+      <td>66</td>
+      <td>1328</td>
+      <td>6</td>
+      <td>0.451807</td>
+      <td>165718</td>
+      <td>3.620609</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>2020-08-02</td>
+      <td>West Virginia</td>
+      <td>54</td>
+      <td>6854</td>
+      <td>117</td>
+      <td>1.707032</td>
+      <td>1792147</td>
+      <td>6.528482</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>2020-08-02</td>
+      <td>Northern Mariana Islands</td>
+      <td>69</td>
+      <td>45</td>
+      <td>2</td>
+      <td>4.444444</td>
+      <td>55194</td>
+      <td>3.623582</td>
+    </tr>
+  </tbody>
 </table>
-
 </div>
 </div>
 </div>
@@ -3774,23 +3756,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -3802,24 +3770,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
     setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -3855,128 +3806,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
       });
-    }
+      return popup.innerHTML;
+    });
   }
 });
 </script>
