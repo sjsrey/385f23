@@ -95,7 +95,7 @@
     "href": "lectures/index.html",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)\n09-27 Spatial Dependence"
   },
   {
     "objectID": "lectures/week-04/2023-09-11-spatial-data.html#data-definitions",
@@ -754,6 +754,286 @@
     "title": "Geog385F23",
     "section": "Uses of W",
     "text": "Uses of W\n\nFind largest difference between neighbors\n\nw_adjlist = w.to_adjlist()\n\n\nw_adjlist.head()\n\n\n\n\n\n  \n    \n      \n      focal\n      neighbor\n      weight\n    \n  \n  \n    \n      0\n      0\n      38\n      1.0\n    \n    \n      1\n      1\n      6\n      1.0\n    \n    \n      2\n      1\n      10\n      1.0\n    \n    \n      3\n      1\n      22\n      1.0\n    \n    \n      4\n      1\n      38\n      1.0\n    \n  \n\n\n\n\n\ny = join_gdf.rep_int.values\n\n\ny\n\narray([36, 27, 34, 49, 37, 30, 28, 41, 42, 39, 30, 48, 39, 54, 33, 42, 31,\n       52, 40, 46, 30, 41, 32, 29, 11, 37, 41, 49, 33, 42, 41, 46, 44, 41,\n       39, 44, 41, 47, 35, 37, 50, 45, 32, 43, 53, 29, 43, 43, 57])\n\n\n\nimport numpy as np\nw_adjlist['pairdiff'] = np.abs(y[w_adjlist.focal] - y[w_adjlist.neighbor])\n\n\nw_adjlist\n\n\n\n\n\n  \n    \n      \n      focal\n      neighbor\n      weight\n      pairdiff\n    \n  \n  \n    \n      0\n      0\n      38\n      1.0\n      1\n    \n    \n      1\n      1\n      6\n      1.0\n      1\n    \n    \n      2\n      1\n      10\n      1.0\n      3\n    \n    \n      3\n      1\n      22\n      1.0\n      5\n    \n    \n      4\n      1\n      38\n      1.0\n      8\n    \n    \n      ...\n      ...\n      ...\n      ...\n      ...\n    \n    \n      213\n      48\n      13\n      1.0\n      3\n    \n    \n      214\n      48\n      21\n      1.0\n      16\n    \n    \n      215\n      48\n      27\n      1.0\n      8\n    \n    \n      216\n      48\n      37\n      1.0\n      10\n    \n    \n      217\n      48\n      44\n      1.0\n      4\n    \n  \n\n218 rows × 4 columns\n\n\n\n\nw_adjlist.pairdiff.max()\n\n32\n\n\n\nw_adjlist[['pairdiff']].idxmax()\n\npairdiff    104\ndtype: int64\n\n\n\nw_adjlist.iloc[w_adjlist[['pairdiff']].idxmax()]\n\n\n\n\n\n  \n    \n      \n      focal\n      neighbor\n      weight\n      pairdiff\n    \n  \n  \n    \n      104\n      24\n      46\n      1.0\n      32\n    \n  \n\n\n\n\n\njoin_gdf.iloc[[24, 46]]\n\n\n\n\n\n  \n    \n      \n      index\n      GEO_ID\n      STATE\n      state\n      LSAD\n      CENSUSAREA\n      geometry\n      Rep\n      No lean\n      Democrat/lean Dem.\n      Sample\\tsize\n      rep_int\n      queen_neighbors\n    \n  \n  \n    \n      24\n      25\n      0400000US11\n      11\n      District of Columbia\n      \n      61.048\n      POLYGON ((1889905.340 4416707.434, 1889692.665...\n      11%\n      15%\n      73%\n      303\n      11\n      2\n    \n    \n      46\n      48\n      0400000US51\n      51\n      Virginia\n      \n      39490.086\n      MULTIPOLYGON (((1994538.922 4338939.700, 19949...\n      43%\n      18%\n      39%\n      882\n      43\n      6\n    \n  \n\n\n\n\n\n\nSpatial Lag\n\nfrom libpysal.weights.spatial_lag import lag_spatial\n\n\nw.transform = 'r'\n\n\nlag_spatial?\n\n\nSignature: lag_spatial(w, y)\nDocstring:\nSpatial lag operator.\nIf w is row standardized, returns the average of each observation's neighbors;\nif not, returns the weighted sum of each observation's neighbors.\nParameters\n----------\nw                   : W\n                      libpysal spatial weightsobject\ny                   : array\n                      numpy array with dimensionality conforming to w (see examples)\nReturns\n-------\nwy                  : array\n                      array of numeric values for the spatial lag\nExamples\n--------\nSetup a 9x9 binary spatial weights matrix and vector of data; compute the\nspatial lag of the vector.\n>>> import libpysal\n>>> import numpy as np\n>>> w = libpysal.weights.lat2W(3, 3)\n>>> y = np.arange(9)\n>>> yl = libpysal.weights.lag_spatial(w, y)\n>>> yl\narray([ 4.,  6.,  6., 10., 16., 14., 10., 18., 12.])\nRow standardize the weights matrix and recompute the spatial lag\n>>> w.transform = 'r'\n>>> yl = libpysal.weights.lag_spatial(w, y)\n>>> yl\narray([2.        , 2.        , 3.        , 3.33333333, 4.        ,\n       4.66666667, 5.        , 6.        , 6.        ])\nExplicitly define data vector as 9x1 and recompute the spatial lag\n>>> y.shape = (9, 1)\n>>> yl = libpysal.weights.lag_spatial(w, y)\n>>> yl\narray([[2.        ],\n       [2.        ],\n       [3.        ],\n       [3.33333333],\n       [4.        ],\n       [4.66666667],\n       [5.        ],\n       [6.        ],\n       [6.        ]])\nTake the spatial lag of a 9x2 data matrix\n>>> yr = np.arange(8, -1, -1)\n>>> yr.shape = (9, 1)\n>>> x = np.hstack((y, yr))\n>>> yl = libpysal.weights.lag_spatial(w, x)\n>>> yl\narray([[2.        , 6.        ],\n       [2.        , 6.        ],\n       [3.        , 5.        ],\n       [3.33333333, 4.66666667],\n       [4.        , 4.        ],\n       [4.66666667, 3.33333333],\n       [5.        , 3.        ],\n       [6.        , 2.        ],\n       [6.        , 2.        ]])\nFile:      /opt/tljh/user/lib/python3.9/site-packages/libpysal/weights/spatial_lag.py\nType:      function\n\n\n\n\nlag_rep_int = lag_spatial(w, y)\n\n\nlag_rep_int\n\narray([35.        , 30.8       , 42.        , 52.25      , 41.        ,\n       32.        , 31.4       , 43.75      , 40.4       , 33.83333333,\n       29.5       , 44.        , 42.25      , 43.5       , 40.5       ,\n       36.75      , 33.        , 42.5       , 39.8       , 43.        ,\n       36.33333333, 46.57142857, 28.33333333, 33.33333333, 37.        ,\n       46.5       , 44.2       , 43.66666667, 42.        , 38.25      ,\n       42.5       , 43.5       , 41.71428571, 43.        , 46.5       ,\n       46.75      , 43.75      , 46.5       , 30.66666667, 43.8       ,\n       47.        , 41.66666667, 37.25      , 41.        , 47.16666667,\n       30.        , 36.33333333, 39.8       , 48.83333333])\n\n\n\njoin_gdf['lag_rep_int'] = lag_rep_int\n\n\nimport matplotlib.pyplot as plt\n\n\nf, axs = plt.subplots(1, 2, figsize=(16, 9))\nax1, ax2 = axs\n\ngdf = join_gdf\n\ngdf.plot(column='rep_int',\n         cmap='Reds',\n         scheme='quantiles',\n         k=5,\n         edgecolor='grey',\n         linewidth=0.1,\n         alpha=0.75,\n         legend=True,\n         legend_kwds={'loc': 'lower left'},\n         ax =ax1,\n        )\nax1.set_axis_off()\nax1.set_title(\"Leaning Republican\")\n\n\ngdf.plot(column='lag_rep_int',\n         cmap='Reds',\n         scheme='quantiles',\n         k=5,\n         edgecolor='grey',\n         linewidth=0.1,\n         alpha=0.75,\n         legend=True,\n         legend_kwds={'loc': 'lower left'},\n         ax =ax2,\n        )\nax2.set_axis_off()\nax2.set_title(\"Spatial Lag Leaning Republican\")\n\nText(0.5, 1.0, 'Spatial Lag Leaning Republican')\n\n\n\n\n\n\ngdf.plot.scatter(x='rep_int', y='lag_rep_int')\n\n<AxesSubplot:xlabel='rep_int', ylabel='lag_rep_int'>\n\n\n\n\n\n\nimport seaborn as sns\n_ = sns.regplot(x='rep_int', y='lag_rep_int', data=gdf)\n\n\n\n\n\nimport seaborn as sns\n_ = sns.regplot(x='rep_int', y='lag_rep_int', data=gdf)\nplt.axhline(y=gdf.lag_rep_int.mean(), color='g', linestyle='--')\nplt.axvline(x=gdf.rep_int.mean(), color='g', linestyle='--')\n\n<matplotlib.lines.Line2D at 0x7fc5d2669af0>\n\n\n\n\n\n\nf, axs = plt.subplots(1, 2, figsize=(16, 9))\nax1, ax2 = axs\n\ngdf = join_gdf\n\ngdf.plot(column='rep_int',\n         cmap='Reds',\n         scheme='quantiles',\n         k=5,\n         edgecolor='grey',\n         linewidth=0.1,\n         alpha=0.75,\n         legend=True,\n         legend_kwds={'loc': 'lower left'},\n         ax =ax1,\n        )\nax1.set_axis_off()\nax1.set_title(\"Leaning Republican\")\n\n\ngdf.plot(column='lag_rep_int',\n         cmap='Reds',\n         scheme='quantiles',\n         k=5,\n         edgecolor='grey',\n         linewidth=0.1,\n         alpha=0.75,\n         legend=True,\n         legend_kwds={'loc': 'lower left'},\n         ax =ax2,\n        )\nax2.set_axis_off()\n_= ax2.set_title(\"Spatial Lag Leaning Republican\")\n\n\n\n\n\ngdf.explore(column='rep_int', cmap='Reds')\n\n\nMake this Notebook Trusted to load map: File -> Trust Notebook\n\n\n\ngdf.to_parquet('repub_lean.parquet')"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#outline",
+    "href": "lectures/week-06/2023-09-27.html#outline",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Outline",
+    "text": "Outline\n\nConcepts and Issues\nNull and Alternative Hypotheses\nSpatial Autocorrelation Tests"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-dependence",
+    "href": "lectures/week-06/2023-09-27.html#spatial-dependence",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Dependence",
+    "text": "Spatial Dependence\n\nThere is no question with respect to emergent geospatial science. The important harbingers were Geary’s article on spatial autocorrelation, Dacey’s paper about two- and K-color maps, and that of Bachi on geographic series.\n– Berry, Griifth, Tiefelsdorf (2008)"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-dependence-1",
+    "href": "lectures/week-06/2023-09-27.html#spatial-dependence-1",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Dependence",
+    "text": "Spatial Dependence\nWorking Concept\n\nwhat happens at one place depends on events in nearby places\nall things are related but nearby things are more related than distant things (Tobler)\ncentral focus in lattice data analysis"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#goodchild-1991",
+    "href": "lectures/week-06/2023-09-27.html#goodchild-1991",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Goodchild 1991",
+    "text": "Goodchild 1991\n\na world without positive spatial dependence would be an impossible world\nimpossible to describe\nimpossible to live in\nhell is a place with no spatial dependence"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-dependence-2",
+    "href": "lectures/week-06/2023-09-27.html#spatial-dependence-2",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Dependence",
+    "text": "Spatial Dependence\nCategorizing\n\nType: Substantive versus nuisance\nDirection: Positive versus negative\n\nIssues\n\nTime versus space\nInference"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#substantive-spatial-dependence",
+    "href": "lectures/week-06/2023-09-27.html#substantive-spatial-dependence",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Substantive Spatial Dependence",
+    "text": "Substantive Spatial Dependence\nProcess Based\n\nPart of the process under study\nLeaving it out\n\nIncomplete understanding\nBiased inferences"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#nuisance-spatial-dependence",
+    "href": "lectures/week-06/2023-09-27.html#nuisance-spatial-dependence",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Nuisance Spatial Dependence",
+    "text": "Nuisance Spatial Dependence\nNot Process Based\n\nArtifact of data collection\nProcess boundaries not matching data boundaries\nScattering across pixels\nGIS induced"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#boundary",
+    "href": "lectures/week-06/2023-09-27.html#boundary",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Boundary",
+    "text": "Boundary"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#boundary-mismatch",
+    "href": "lectures/week-06/2023-09-27.html#boundary-mismatch",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Boundary Mismatch",
+    "text": "Boundary Mismatch\n\n\nEven if \\(A\\) and \\(B\\) are independent\n\\(A'\\) and \\(B'\\) will be dependent"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#nusiance-vs.-substantive-dependence",
+    "href": "lectures/week-06/2023-09-27.html#nusiance-vs.-substantive-dependence",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Nusiance vs. Substantive Dependence",
+    "text": "Nusiance vs. Substantive Dependence\nIssues\n\nNot always easy to differentiate from substantive\nDifferent implications for each type\nSpecification strategies (Econometrics)\nBoth can be operating jointly"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#space-versus-time",
+    "href": "lectures/week-06/2023-09-27.html#space-versus-time",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Space versus Time",
+    "text": "Space versus Time\nTemporal Dependence\n\nPast influences the future\nRecursive\nOne dimension"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#space-versus-time-1",
+    "href": "lectures/week-06/2023-09-27.html#space-versus-time-1",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Space versus Time",
+    "text": "Space versus Time\nSpatial Dependence\n\nMulti-directional\nSimultaneous"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#terminology",
+    "href": "lectures/week-06/2023-09-27.html#terminology",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Terminology",
+    "text": "Terminology\nRelated Concepts\n\nSpatial Dependence\nSpatial Autocorrelation\nSpatial Association"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-dependence-3",
+    "href": "lectures/week-06/2023-09-27.html#spatial-dependence-3",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Dependence",
+    "text": "Spatial Dependence\nDistributional Characteristic\n\nMultivariate density function\ndifficult/impossible to verify empirically\n\nDependent Distribution\n\ndoes not factor in marginal densities"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-autocorrelation",
+    "href": "lectures/week-06/2023-09-27.html#spatial-autocorrelation",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation\n\nAuto = same variable\nCorrelation = scaled covariance\nSpatial - geographic pattern to the correlation"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-autocorrelation-1",
+    "href": "lectures/week-06/2023-09-27.html#spatial-autocorrelation-1",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation\nMeasurement of Moment of Distribution\n\noff-diagonal elements of variance-covariance matrix\nautocovariance\n\\(C[y_i,y_j] \\ne 0 \\ \\forall i\\ne j\\)\ncan be estimated\n\nSpatial Autocorrelation Coefficient\n\nsignificance test on coefficient = 0"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-autocorrelation-2",
+    "href": "lectures/week-06/2023-09-27.html#spatial-autocorrelation-2",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation\nJoint multivariate distribution function \\[f(y) = \\frac{ \\exp\\left[\n-\\frac{1}{2}\n(y-\\mu)'\n\\Sigma^{-1}\n(y-\\mu)\n\\right]}\n{\\sqrt{(2\\pi)^n|\\Sigma|}}\\]"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#variance-covariance-matrix",
+    "href": "lectures/week-06/2023-09-27.html#variance-covariance-matrix",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Variance-Covariance Matrix",
+    "text": "Variance-Covariance Matrix\n\\[\\Sigma=\n\\left[\n\\begin{array}{rrrr}\n\\sigma_{1,1}&\\sigma_{1,2}&\\ldots&\\sigma_{1,n}\\\\\n\\sigma_{2,1}&\\sigma_{2,2}&\\ldots&\\sigma_{2,n}\\\\\n\\vdots&\\vdots&\\ddots&\\vdots\\\\\n\\sigma_{n,1}&\\sigma_{n,2}&\\ldots&\\sigma_{n,n}\n\\end{array}\n\\right]\\]\n\ncovariance: \\(\\sigma_{i,j} = E[(y_i - \\mu_i)(y_j-\\mu_j) ]\\)\nsymmetry: \\(\\sigma_{i,j} =\\sigma_{i,j}\\)\nvariance: \\(\\sigma_{i,i} = E[(y_i - \\mu_i)(y_i-\\mu_i) ]\\)"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#correlation",
+    "href": "lectures/week-06/2023-09-27.html#correlation",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Correlation",
+    "text": "Correlation\n\\[\\rho_{ij} = \\frac{\\sigma_{ij}}{\\sqrt{\\sigma_{i}^2}\\sqrt{\\sigma_{j}^2}}\\] \\[-1.0 \\le \\rho_{ij} \\le 1.0\\]"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#data-types-and-autocorrelation",
+    "href": "lectures/week-06/2023-09-27.html#data-types-and-autocorrelation",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Data Types and Autocorrelation",
+    "text": "Data Types and Autocorrelation\nPoint Data\n\nfocus on geometric pattern\nrandom vs. nonrandom\nclustered vs. uniform\n\nGeostatistics\n\n2-D modeling of spatial covariance (pairs of observations in function of distance)\nkriging, spatial prediction"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#data-types-and-autocorrelation-1",
+    "href": "lectures/week-06/2023-09-27.html#data-types-and-autocorrelation-1",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Data Types and Autocorrelation",
+    "text": "Data Types and Autocorrelation\nLattice Data\n\nareal units: states, counties, census tracts, watersheds\npoints: centroids of areal units\nfocus on the spatial nonrandomness of attribute values"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-association",
+    "href": "lectures/week-06/2023-09-27.html#spatial-association",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Association",
+    "text": "Spatial Association\nNot a Rigorously Defined Term\n\nUsually the same as spatial autocorrelation\noften used in non-technical discussion\navoid unless meaning is clear"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-dependence-4",
+    "href": "lectures/week-06/2023-09-27.html#spatial-dependence-4",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Dependence",
+    "text": "Spatial Dependence\nGood News (for geographers)\n\nSpace matters\nSuggestive of underlying process\n\nBad news\n\ninvalidates random sampling assumption\nnecessitates new methods = spatial statistics and spatial econometrics"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-dependence-implications",
+    "href": "lectures/week-06/2023-09-27.html#spatial-dependence-implications",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Dependence: Implications",
+    "text": "Spatial Dependence: Implications\nThe specific process we are simulating is as follows:\\[\\begin{aligned}\n\\label{eq:simdgp}y&=&X\\beta + \\epsilon \\\\ \\nonumber\\epsilon &=& \\lambda W \\epsilon + \\nu  \\end{aligned}\\] where \\(\\nu^{\\sim}N(0,\\sigma^{2}I)\\), \\(\\lambda\\) is a spatial autocorrelation parameter (scalar) and \\(W\\) is a spatial weights matrix. If \\(\\lambda=0\\) then the \\(i.i.d.\\) assumption holds, otherwise there is spatial dependence.\n\\(\\beta=40, \\ \\sigma^2=16, \\ x=[1,1,\\ldots]\\)\n\\(\\lambda=[0.0, 0.25, 0.50, 0.75], \\ n=25\\)"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-dependence-implications-1",
+    "href": "lectures/week-06/2023-09-27.html#spatial-dependence-implications-1",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Dependence: Implications",
+    "text": "Spatial Dependence: Implications\nFor each D.G.P. we are going to generate 500 samples of size \\(n=25\\) for our map. You can think of this as generating 500 maps using the same D.G.P.. For each sample we will then do the following:\n\nEstimate \\(\\mu\\) with \\(\\bar{y}\\)\nTest the hypothesis that \\(\\mu=40\\)"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#implications",
+    "href": "lectures/week-06/2023-09-27.html#implications",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Implications",
+    "text": "Implications\n\n\nMonte Carlo Results\n\n\n\\(\\lambda\\)\n0.00\n0.25\n0.50\n0.75\n\n\n\n\n\\(\\hat{\\mu}\\)\n39.947\n39.931\n39.901\n39.814\n\n\n\\(\\sigma_{\\bar{x}}\\)\n0.816\n1.090\n1.641\n3.304\n\n\n\\(p\\)\n0.056\n0.148\n0.278\n0.492"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-randomness",
+    "href": "lectures/week-06/2023-09-27.html#spatial-randomness",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Randomness",
+    "text": "Spatial Randomness\nNull Hypothesis\n\nobserved spatial pattern of values is equally likely as any other spatial pattern\nvalues at one location do no depend on values at other (neighboring) locations\nunder spatial randomness, the location of values may be altered without affecting the information content of the data"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-autocorrelation-on-a-grid",
+    "href": "lectures/week-06/2023-09-27.html#spatial-autocorrelation-on-a-grid",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Autocorrelation on a Grid",
+    "text": "Spatial Autocorrelation on a Grid\n\nNegative, Random, Positive"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#positive-spatial-autocorrelation",
+    "href": "lectures/week-06/2023-09-27.html#positive-spatial-autocorrelation",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Positive Spatial Autocorrelation",
+    "text": "Positive Spatial Autocorrelation\nClustering\n\nlike values tend to be in similar locations\n\nNeighbor similarity\n\nmore alike than they would be under spatial randomness\n\nCompatible with Diffusion\n\nbut not necessarily caused by diffusion"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#positive-spatial-autocorrelation-1",
+    "href": "lectures/week-06/2023-09-27.html#positive-spatial-autocorrelation-1",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Positive Spatial Autocorrelation",
+    "text": "Positive Spatial Autocorrelation"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#negative-spatial-autocorrelation",
+    "href": "lectures/week-06/2023-09-27.html#negative-spatial-autocorrelation",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Negative Spatial Autocorrelation",
+    "text": "Negative Spatial Autocorrelation\nCheckerboard pattern\n\nanti-clustering\n\nNeighbor dissimilarity\n\nmore dissimilar than they would be under spatial randomness\n\nCompatible with Competition\n\nbut not necessarily caused by competition"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#negative-spatial-autocorrelation-1",
+    "href": "lectures/week-06/2023-09-27.html#negative-spatial-autocorrelation-1",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Negative Spatial Autocorrelation",
+    "text": "Negative Spatial Autocorrelation"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#autocorrelation-and-diffusion",
+    "href": "lectures/week-06/2023-09-27.html#autocorrelation-and-diffusion",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Autocorrelation and Diffusion",
+    "text": "Autocorrelation and Diffusion\nOne does not necessarily imply the other\n\ndiffusion tends to yield positive spatial autocorrelation but the reverse is not necessary\npositive spatial correlation may be due to structural factors, without contagion or diffusion"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#true-vs.-apparent-contagion",
+    "href": "lectures/week-06/2023-09-27.html#true-vs.-apparent-contagion",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "True vs. Apparent Contagion",
+    "text": "True vs. Apparent Contagion\nWhat is the Cause behind the clustering?\n\nTrue contagion\n\nresult of a contagious process, social interaction, dynamic process\n\nApparent contagion\n\nspatial heterogeneity\nstratification\n\nCannot be distinguished in a pure cross section\nEquifinality or Identification Problem"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#clustering",
+    "href": "lectures/week-06/2023-09-27.html#clustering",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Clustering",
+    "text": "Clustering\nGlobal characeristic\n\nproperty of overall pattern = all observations\nare like values more grouped in space than random\ntest by means of a global spatial autocorrelation statistic\nno location of the clusters determined"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#clusters",
+    "href": "lectures/week-06/2023-09-27.html#clusters",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Clusters",
+    "text": "Clusters\nLocal characeristic\n\nwhere are the like values more grouped in space than random?\nproperty of local pattern = location-specific\ntest by means of a local spatial autocorrelation statistic\nlocal clusters may be compatible with global spatial randomness"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#spatial-autocorrelation-statistic",
+    "href": "lectures/week-06/2023-09-27.html#spatial-autocorrelation-statistic",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Spatial Autocorrelation Statistic",
+    "text": "Spatial Autocorrelation Statistic\nStructure\n\nFormal Test of Match between Value Similarity and Locational Similarity\nStatistic Summarizes Both Aspects\nSignificance\n\nhow likely is it (p-value) that the computed statistic would take this (extreme) value in a spatially random pattern"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#attribute-similarity",
+    "href": "lectures/week-06/2023-09-27.html#attribute-similarity",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Attribute Similarity",
+    "text": "Attribute Similarity\n\nSummary of the similarity or dissimilarity of a variable at different locations\n\nvariable \\(y\\) at locations \\(i,j\\) with \\(i\\ne j\\)\n\nMeasures of similarity\n\ncross product: \\(y_i y_j\\)\n\nMeasures of dissimilarity\n\nsquared differences: \\((y_i - y_j)^2\\)\nabsolute differences: \\(|y_i - y_j|\\)"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#locational-similarity",
+    "href": "lectures/week-06/2023-09-27.html#locational-similarity",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Locational Similarity",
+    "text": "Locational Similarity\n\nFormalizing the notion of Neighbor\n\nwhen two spatial units a-priori are likely to interact\n\nSpatial Weights\n\nnot necessarility geographical\nmany approaches"
+  },
+  {
+    "objectID": "lectures/week-06/2023-09-27.html#summary",
+    "href": "lectures/week-06/2023-09-27.html#summary",
+    "title": "Spatial Autocorrelation Concepts",
+    "section": "Summary",
+    "text": "Summary\nSpatial Dependence\n\nCore of Lattice Analysis\nSpatial Autocorrelation More Complex than Temporal Autocorrelation\nCombine Value and Locational Similarities"
   },
   {
     "objectID": "lectures/week-02/2023-08-30-functions-scripts.html",

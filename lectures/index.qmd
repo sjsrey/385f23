@@ -43,3 +43,4 @@ format:
 - Week 06
 
   - [09-25 Spatial Weights](week-06/2023-09-25.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-06/2023-09-25.ipynb)
+  - [09-27 Spatial Dependence](week-06/2023-09-27.qmd)
