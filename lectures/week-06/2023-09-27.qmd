@@ -1,7 +1,6 @@
 ---
 title: "Spatial Autocorrelation Concepts"
 author: "Sergio Rey"
-date: "February 28, 2023"
 format: 
   revealjs:
     theme: simple
