@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Geog385F23 – quarto-input4bb7553e</title>
+<title>Geog385F23 - GeoPandas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,9 +17,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -46,43 +47,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -118,7 +89,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
@@ -140,19 +112,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <span class="navbar-title">Geog385F23</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../syllabus.html">Syllabus</a>
+    <a class="nav-link" href="../../syllabus.html" rel="" target="">
+ <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../lectures">Lectures</a>
+    <a class="nav-link" href="../../lectures" rel="" target="">
+ <span class="menu-text">Lectures</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -166,21 +142,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#geopandas" id="toc-geopandas" class="nav-link active" data-scroll-target="#geopandas">GeoPandas</a>
-  <ul class="collapse">
-  <li><a href="#geometry" id="toc-geometry" class="nav-link" data-scroll-target="#geometry">Geometry</a></li>
+  <li><a href="#geometry" id="toc-geometry" class="nav-link active" data-scroll-target="#geometry">Geometry</a></li>
   <li><a href="#centroids-and-geometry" id="toc-centroids-and-geometry" class="nav-link" data-scroll-target="#centroids-and-geometry">Centroids and geometry</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">GeoPandas</h1>
+</div>
 
 
-<section id="geopandas" class="level1">
-<h1>GeoPandas</h1>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
 <ul>
 <li>GeoPandas Structure</li>
 <li>Working with GeoDataFrames and GeoSeriesf</li>
@@ -209,69 +195,70 @@ In the next release, GeoPandas will switch to using Shapely by default, even if 
 <div class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>gdf.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
-
 <div>
 
-<table class="dataframe table table-sm table-striped">
-  <thead>
-    <tr>
-      <th></th>
-      <th>GEO_ID</th>
-      <th>STATE</th>
-      <th>NAME</th>
-      <th>LSAD</th>
-      <th>CENSUSAREA</th>
-      <th>geometry</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0400000US23</td>
-      <td>23</td>
-      <td>Maine</td>
-      <td></td>
-      <td>30842.923</td>
-      <td>MULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0400000US25</td>
-      <td>25</td>
-      <td>Massachusetts</td>
-      <td></td>
-      <td>7800.058</td>
-      <td>MULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0400000US26</td>
-      <td>26</td>
-      <td>Michigan</td>
-      <td></td>
-      <td>56538.901</td>
-      <td>MULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0400000US30</td>
-      <td>30</td>
-      <td>Montana</td>
-      <td></td>
-      <td>145545.801</td>
-      <td>POLYGON ((-104.05770 44.99743, -104.25015 44.9...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0400000US32</td>
-      <td>32</td>
-      <td>Nevada</td>
-      <td></td>
-      <td>109781.180</td>
-      <td>POLYGON ((-114.05060 37.00040, -114.04999 36.9...</td>
-    </tr>
-  </tbody>
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">GEO_ID</th>
+<th data-quarto-table-cell-role="th">STATE</th>
+<th data-quarto-table-cell-role="th">NAME</th>
+<th data-quarto-table-cell-role="th">LSAD</th>
+<th data-quarto-table-cell-role="th">CENSUSAREA</th>
+<th data-quarto-table-cell-role="th">geometry</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>0400000US23</td>
+<td>23</td>
+<td>Maine</td>
+<td></td>
+<td>30842.923</td>
+<td>MULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>0400000US25</td>
+<td>25</td>
+<td>Massachusetts</td>
+<td></td>
+<td>7800.058</td>
+<td>MULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>0400000US26</td>
+<td>26</td>
+<td>Michigan</td>
+<td></td>
+<td>56538.901</td>
+<td>MULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>0400000US30</td>
+<td>30</td>
+<td>Montana</td>
+<td></td>
+<td>145545.801</td>
+<td>POLYGON ((-104.05770 44.99743, -104.25015 44.9...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>0400000US32</td>
+<td>32</td>
+<td>Nevada</td>
+<td></td>
+<td>109781.180</td>
+<td>POLYGON ((-114.05060 37.00040, -114.04999 36.9...</td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -372,492 +359,493 @@ Name: geometry, dtype: geometry</code></pre>
 <div class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>gdf.head(<span class="dv">52</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
-
 <div>
 
-<table class="dataframe table table-sm table-striped">
-  <thead>
-    <tr>
-      <th></th>
-      <th>GEO_ID</th>
-      <th>STATE</th>
-      <th>NAME</th>
-      <th>LSAD</th>
-      <th>CENSUSAREA</th>
-      <th>geometry</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0400000US23</td>
-      <td>23</td>
-      <td>Maine</td>
-      <td></td>
-      <td>30842.923</td>
-      <td>MULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0400000US25</td>
-      <td>25</td>
-      <td>Massachusetts</td>
-      <td></td>
-      <td>7800.058</td>
-      <td>MULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0400000US26</td>
-      <td>26</td>
-      <td>Michigan</td>
-      <td></td>
-      <td>56538.901</td>
-      <td>MULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0400000US30</td>
-      <td>30</td>
-      <td>Montana</td>
-      <td></td>
-      <td>145545.801</td>
-      <td>POLYGON ((-104.05770 44.99743, -104.25015 44.9...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0400000US32</td>
-      <td>32</td>
-      <td>Nevada</td>
-      <td></td>
-      <td>109781.180</td>
-      <td>POLYGON ((-114.05060 37.00040, -114.04999 36.9...</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0400000US34</td>
-      <td>34</td>
-      <td>New Jersey</td>
-      <td></td>
-      <td>7354.220</td>
-      <td>POLYGON ((-75.52684 39.65571, -75.52634 39.656...</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0400000US36</td>
-      <td>36</td>
-      <td>New York</td>
-      <td></td>
-      <td>47126.399</td>
-      <td>MULTIPOLYGON (((-71.94356 41.28668, -71.92680 ...</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>0400000US37</td>
-      <td>37</td>
-      <td>North Carolina</td>
-      <td></td>
-      <td>48617.905</td>
-      <td>MULTIPOLYGON (((-82.60288 36.03983, -82.60074 ...</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0400000US39</td>
-      <td>39</td>
-      <td>Ohio</td>
-      <td></td>
-      <td>40860.694</td>
-      <td>MULTIPOLYGON (((-82.81349 41.72347, -82.81049 ...</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0400000US42</td>
-      <td>42</td>
-      <td>Pennsylvania</td>
-      <td></td>
-      <td>44742.703</td>
-      <td>POLYGON ((-75.41504 39.80179, -75.42804 39.809...</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>0400000US44</td>
-      <td>44</td>
-      <td>Rhode Island</td>
-      <td></td>
-      <td>1033.814</td>
-      <td>MULTIPOLYGON (((-71.28157 41.64821, -71.27817 ...</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>0400000US47</td>
-      <td>47</td>
-      <td>Tennessee</td>
-      <td></td>
-      <td>41234.896</td>
-      <td>POLYGON ((-81.67754 36.58812, -81.68014 36.585...</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>0400000US48</td>
-      <td>48</td>
-      <td>Texas</td>
-      <td></td>
-      <td>261231.711</td>
-      <td>MULTIPOLYGON (((-97.13436 27.89633, -97.13360 ...</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>0400000US49</td>
-      <td>49</td>
-      <td>Utah</td>
-      <td></td>
-      <td>82169.620</td>
-      <td>POLYGON ((-114.05060 37.00040, -114.05175 37.0...</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>0400000US53</td>
-      <td>53</td>
-      <td>Washington</td>
-      <td></td>
-      <td>66455.521</td>
-      <td>MULTIPOLYGON (((-123.09055 49.00198, -123.0353...</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>0400000US55</td>
-      <td>55</td>
-      <td>Wisconsin</td>
-      <td></td>
-      <td>54157.805</td>
-      <td>MULTIPOLYGON (((-90.45525 47.02400, -90.45713 ...</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>0400000US72</td>
-      <td>72</td>
-      <td>Puerto Rico</td>
-      <td></td>
-      <td>3423.775</td>
-      <td>MULTIPOLYGON (((-65.58733 18.38199, -65.59122 ...</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>0400000US24</td>
-      <td>24</td>
-      <td>Maryland</td>
-      <td></td>
-      <td>9707.241</td>
-      <td>MULTIPOLYGON (((-76.07147 38.20350, -76.04879 ...</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>0400000US01</td>
-      <td>01</td>
-      <td>Alabama</td>
-      <td></td>
-      <td>50645.326</td>
-      <td>MULTIPOLYGON (((-85.00237 31.00068, -85.02411 ...</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>0400000US02</td>
-      <td>02</td>
-      <td>Alaska</td>
-      <td></td>
-      <td>570640.950</td>
-      <td>MULTIPOLYGON (((-164.97620 54.13459, -164.9377...</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>0400000US04</td>
-      <td>04</td>
-      <td>Arizona</td>
-      <td></td>
-      <td>113594.084</td>
-      <td>POLYGON ((-109.04522 36.99908, -109.04524 36.9...</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>0400000US05</td>
-      <td>05</td>
-      <td>Arkansas</td>
-      <td></td>
-      <td>52035.477</td>
-      <td>POLYGON ((-94.55929 36.49950, -94.51948 36.499...</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>0400000US06</td>
-      <td>06</td>
-      <td>California</td>
-      <td></td>
-      <td>155779.220</td>
-      <td>MULTIPOLYGON (((-122.44632 37.86105, -122.4385...</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>0400000US08</td>
-      <td>08</td>
-      <td>Colorado</td>
-      <td></td>
-      <td>103641.888</td>
-      <td>POLYGON ((-102.04224 36.99308, -102.05450 36.9...</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>0400000US09</td>
-      <td>09</td>
-      <td>Connecticut</td>
-      <td></td>
-      <td>4842.355</td>
-      <td>MULTIPOLYGON (((-71.85957 41.32240, -71.86823 ...</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>0400000US10</td>
-      <td>10</td>
-      <td>Delaware</td>
-      <td></td>
-      <td>1948.543</td>
-      <td>MULTIPOLYGON (((-75.55945 39.62981, -75.55910 ...</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>0400000US11</td>
-      <td>11</td>
-      <td>District of Columbia</td>
-      <td></td>
-      <td>61.048</td>
-      <td>POLYGON ((-77.03860 38.79151, -77.03890 38.800...</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>0400000US12</td>
-      <td>12</td>
-      <td>Florida</td>
-      <td></td>
-      <td>53624.759</td>
-      <td>MULTIPOLYGON (((-85.15641 29.67963, -85.13740 ...</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>0400000US13</td>
-      <td>13</td>
-      <td>Georgia</td>
-      <td></td>
-      <td>57513.485</td>
-      <td>POLYGON ((-81.44412 30.70971, -81.44872 30.709...</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>0400000US15</td>
-      <td>15</td>
-      <td>Hawaii</td>
-      <td></td>
-      <td>6422.628</td>
-      <td>MULTIPOLYGON (((-171.73761 25.79210, -171.7223...</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>0400000US16</td>
-      <td>16</td>
-      <td>Idaho</td>
-      <td></td>
-      <td>82643.117</td>
-      <td>POLYGON ((-111.04669 42.00157, -111.41587 42.0...</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>0400000US17</td>
-      <td>17</td>
-      <td>Illinois</td>
-      <td></td>
-      <td>55518.930</td>
-      <td>POLYGON ((-87.53233 39.99778, -87.53254 39.987...</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>0400000US18</td>
-      <td>18</td>
-      <td>Indiana</td>
-      <td></td>
-      <td>35826.109</td>
-      <td>POLYGON ((-88.02803 37.79922, -88.02938 37.803...</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>0400000US19</td>
-      <td>19</td>
-      <td>Iowa</td>
-      <td></td>
-      <td>55857.130</td>
-      <td>POLYGON ((-95.76565 40.58521, -95.75889 40.588...</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>0400000US20</td>
-      <td>20</td>
-      <td>Kansas</td>
-      <td></td>
-      <td>81758.717</td>
-      <td>POLYGON ((-94.61808 36.99813, -94.62522 36.998...</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>0400000US21</td>
-      <td>21</td>
-      <td>Kentucky</td>
-      <td></td>
-      <td>39486.338</td>
-      <td>MULTIPOLYGON (((-83.67541 36.60081, -83.67561 ...</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>0400000US22</td>
-      <td>22</td>
-      <td>Louisiana</td>
-      <td></td>
-      <td>43203.905</td>
-      <td>MULTIPOLYGON (((-88.86507 29.75271, -88.88975 ...</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>0400000US27</td>
-      <td>27</td>
-      <td>Minnesota</td>
-      <td></td>
-      <td>79626.743</td>
-      <td>POLYGON ((-91.37161 43.50095, -91.37695 43.500...</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>0400000US28</td>
-      <td>28</td>
-      <td>Mississippi</td>
-      <td></td>
-      <td>46923.274</td>
-      <td>MULTIPOLYGON (((-88.71072 30.25080, -88.65680 ...</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>0400000US29</td>
-      <td>29</td>
-      <td>Missouri</td>
-      <td></td>
-      <td>68741.522</td>
-      <td>POLYGON ((-89.53910 36.49820, -89.53452 36.491...</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>0400000US31</td>
-      <td>31</td>
-      <td>Nebraska</td>
-      <td></td>
-      <td>76824.171</td>
-      <td>POLYGON ((-95.76565 40.58521, -95.76853 40.583...</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>0400000US33</td>
-      <td>33</td>
-      <td>New Hampshire</td>
-      <td></td>
-      <td>8952.651</td>
-      <td>MULTIPOLYGON (((-72.45852 42.72685, -72.45849 ...</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>0400000US35</td>
-      <td>35</td>
-      <td>New Mexico</td>
-      <td></td>
-      <td>121298.148</td>
-      <td>POLYGON ((-109.05004 31.33250, -109.05017 31.4...</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>0400000US38</td>
-      <td>38</td>
-      <td>North Dakota</td>
-      <td></td>
-      <td>69000.798</td>
-      <td>POLYGON ((-96.56328 45.93524, -96.57690 45.935...</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>0400000US40</td>
-      <td>40</td>
-      <td>Oklahoma</td>
-      <td></td>
-      <td>68594.921</td>
-      <td>POLYGON ((-94.61792 36.49941, -94.61531 36.484...</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>0400000US41</td>
-      <td>41</td>
-      <td>Oregon</td>
-      <td></td>
-      <td>95988.013</td>
-      <td>POLYGON ((-117.22007 44.30138, -117.22245 44.2...</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>0400000US45</td>
-      <td>45</td>
-      <td>South Carolina</td>
-      <td></td>
-      <td>30060.696</td>
-      <td>POLYGON ((-78.54109 33.85111, -78.55394 33.847...</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>0400000US46</td>
-      <td>46</td>
-      <td>South Dakota</td>
-      <td></td>
-      <td>75811.000</td>
-      <td>POLYGON ((-96.44341 42.48949, -96.45971 42.486...</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>0400000US50</td>
-      <td>50</td>
-      <td>Vermont</td>
-      <td></td>
-      <td>9216.657</td>
-      <td>POLYGON ((-72.04008 44.15575, -72.04271 44.152...</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>0400000US51</td>
-      <td>51</td>
-      <td>Virginia</td>
-      <td></td>
-      <td>39490.086</td>
-      <td>MULTIPOLYGON (((-76.04653 37.95359, -76.04169 ...</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>0400000US54</td>
-      <td>54</td>
-      <td>West Virginia</td>
-      <td></td>
-      <td>24038.210</td>
-      <td>POLYGON ((-81.96830 37.53780, -81.96540 37.541...</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>0400000US56</td>
-      <td>56</td>
-      <td>Wyoming</td>
-      <td></td>
-      <td>97093.141</td>
-      <td>POLYGON ((-109.05008 41.00066, -109.17368 41.0...</td>
-    </tr>
-  </tbody>
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">GEO_ID</th>
+<th data-quarto-table-cell-role="th">STATE</th>
+<th data-quarto-table-cell-role="th">NAME</th>
+<th data-quarto-table-cell-role="th">LSAD</th>
+<th data-quarto-table-cell-role="th">CENSUSAREA</th>
+<th data-quarto-table-cell-role="th">geometry</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>0400000US23</td>
+<td>23</td>
+<td>Maine</td>
+<td></td>
+<td>30842.923</td>
+<td>MULTIPOLYGON (((-67.61976 44.51975, -67.61541 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>0400000US25</td>
+<td>25</td>
+<td>Massachusetts</td>
+<td></td>
+<td>7800.058</td>
+<td>MULTIPOLYGON (((-70.83204 41.60650, -70.82373 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>0400000US26</td>
+<td>26</td>
+<td>Michigan</td>
+<td></td>
+<td>56538.901</td>
+<td>MULTIPOLYGON (((-88.68443 48.11579, -88.67563 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>0400000US30</td>
+<td>30</td>
+<td>Montana</td>
+<td></td>
+<td>145545.801</td>
+<td>POLYGON ((-104.05770 44.99743, -104.25015 44.9...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>0400000US32</td>
+<td>32</td>
+<td>Nevada</td>
+<td></td>
+<td>109781.180</td>
+<td>POLYGON ((-114.05060 37.00040, -114.04999 36.9...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>0400000US34</td>
+<td>34</td>
+<td>New Jersey</td>
+<td></td>
+<td>7354.220</td>
+<td>POLYGON ((-75.52684 39.65571, -75.52634 39.656...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>0400000US36</td>
+<td>36</td>
+<td>New York</td>
+<td></td>
+<td>47126.399</td>
+<td>MULTIPOLYGON (((-71.94356 41.28668, -71.92680 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>0400000US37</td>
+<td>37</td>
+<td>North Carolina</td>
+<td></td>
+<td>48617.905</td>
+<td>MULTIPOLYGON (((-82.60288 36.03983, -82.60074 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>0400000US39</td>
+<td>39</td>
+<td>Ohio</td>
+<td></td>
+<td>40860.694</td>
+<td>MULTIPOLYGON (((-82.81349 41.72347, -82.81049 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>0400000US42</td>
+<td>42</td>
+<td>Pennsylvania</td>
+<td></td>
+<td>44742.703</td>
+<td>POLYGON ((-75.41504 39.80179, -75.42804 39.809...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>0400000US44</td>
+<td>44</td>
+<td>Rhode Island</td>
+<td></td>
+<td>1033.814</td>
+<td>MULTIPOLYGON (((-71.28157 41.64821, -71.27817 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>0400000US47</td>
+<td>47</td>
+<td>Tennessee</td>
+<td></td>
+<td>41234.896</td>
+<td>POLYGON ((-81.67754 36.58812, -81.68014 36.585...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>0400000US48</td>
+<td>48</td>
+<td>Texas</td>
+<td></td>
+<td>261231.711</td>
+<td>MULTIPOLYGON (((-97.13436 27.89633, -97.13360 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>0400000US49</td>
+<td>49</td>
+<td>Utah</td>
+<td></td>
+<td>82169.620</td>
+<td>POLYGON ((-114.05060 37.00040, -114.05175 37.0...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>0400000US53</td>
+<td>53</td>
+<td>Washington</td>
+<td></td>
+<td>66455.521</td>
+<td>MULTIPOLYGON (((-123.09055 49.00198, -123.0353...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>0400000US55</td>
+<td>55</td>
+<td>Wisconsin</td>
+<td></td>
+<td>54157.805</td>
+<td>MULTIPOLYGON (((-90.45525 47.02400, -90.45713 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">16</td>
+<td>0400000US72</td>
+<td>72</td>
+<td>Puerto Rico</td>
+<td></td>
+<td>3423.775</td>
+<td>MULTIPOLYGON (((-65.58733 18.38199, -65.59122 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">17</td>
+<td>0400000US24</td>
+<td>24</td>
+<td>Maryland</td>
+<td></td>
+<td>9707.241</td>
+<td>MULTIPOLYGON (((-76.07147 38.20350, -76.04879 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>0400000US01</td>
+<td>01</td>
+<td>Alabama</td>
+<td></td>
+<td>50645.326</td>
+<td>MULTIPOLYGON (((-85.00237 31.00068, -85.02411 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>0400000US02</td>
+<td>02</td>
+<td>Alaska</td>
+<td></td>
+<td>570640.950</td>
+<td>MULTIPOLYGON (((-164.97620 54.13459, -164.9377...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">20</td>
+<td>0400000US04</td>
+<td>04</td>
+<td>Arizona</td>
+<td></td>
+<td>113594.084</td>
+<td>POLYGON ((-109.04522 36.99908, -109.04524 36.9...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">21</td>
+<td>0400000US05</td>
+<td>05</td>
+<td>Arkansas</td>
+<td></td>
+<td>52035.477</td>
+<td>POLYGON ((-94.55929 36.49950, -94.51948 36.499...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">22</td>
+<td>0400000US06</td>
+<td>06</td>
+<td>California</td>
+<td></td>
+<td>155779.220</td>
+<td>MULTIPOLYGON (((-122.44632 37.86105, -122.4385...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">23</td>
+<td>0400000US08</td>
+<td>08</td>
+<td>Colorado</td>
+<td></td>
+<td>103641.888</td>
+<td>POLYGON ((-102.04224 36.99308, -102.05450 36.9...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">24</td>
+<td>0400000US09</td>
+<td>09</td>
+<td>Connecticut</td>
+<td></td>
+<td>4842.355</td>
+<td>MULTIPOLYGON (((-71.85957 41.32240, -71.86823 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">25</td>
+<td>0400000US10</td>
+<td>10</td>
+<td>Delaware</td>
+<td></td>
+<td>1948.543</td>
+<td>MULTIPOLYGON (((-75.55945 39.62981, -75.55910 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">26</td>
+<td>0400000US11</td>
+<td>11</td>
+<td>District of Columbia</td>
+<td></td>
+<td>61.048</td>
+<td>POLYGON ((-77.03860 38.79151, -77.03890 38.800...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">27</td>
+<td>0400000US12</td>
+<td>12</td>
+<td>Florida</td>
+<td></td>
+<td>53624.759</td>
+<td>MULTIPOLYGON (((-85.15641 29.67963, -85.13740 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">28</td>
+<td>0400000US13</td>
+<td>13</td>
+<td>Georgia</td>
+<td></td>
+<td>57513.485</td>
+<td>POLYGON ((-81.44412 30.70971, -81.44872 30.709...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">29</td>
+<td>0400000US15</td>
+<td>15</td>
+<td>Hawaii</td>
+<td></td>
+<td>6422.628</td>
+<td>MULTIPOLYGON (((-171.73761 25.79210, -171.7223...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">30</td>
+<td>0400000US16</td>
+<td>16</td>
+<td>Idaho</td>
+<td></td>
+<td>82643.117</td>
+<td>POLYGON ((-111.04669 42.00157, -111.41587 42.0...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">31</td>
+<td>0400000US17</td>
+<td>17</td>
+<td>Illinois</td>
+<td></td>
+<td>55518.930</td>
+<td>POLYGON ((-87.53233 39.99778, -87.53254 39.987...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">32</td>
+<td>0400000US18</td>
+<td>18</td>
+<td>Indiana</td>
+<td></td>
+<td>35826.109</td>
+<td>POLYGON ((-88.02803 37.79922, -88.02938 37.803...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">33</td>
+<td>0400000US19</td>
+<td>19</td>
+<td>Iowa</td>
+<td></td>
+<td>55857.130</td>
+<td>POLYGON ((-95.76565 40.58521, -95.75889 40.588...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">34</td>
+<td>0400000US20</td>
+<td>20</td>
+<td>Kansas</td>
+<td></td>
+<td>81758.717</td>
+<td>POLYGON ((-94.61808 36.99813, -94.62522 36.998...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">35</td>
+<td>0400000US21</td>
+<td>21</td>
+<td>Kentucky</td>
+<td></td>
+<td>39486.338</td>
+<td>MULTIPOLYGON (((-83.67541 36.60081, -83.67561 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">36</td>
+<td>0400000US22</td>
+<td>22</td>
+<td>Louisiana</td>
+<td></td>
+<td>43203.905</td>
+<td>MULTIPOLYGON (((-88.86507 29.75271, -88.88975 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">37</td>
+<td>0400000US27</td>
+<td>27</td>
+<td>Minnesota</td>
+<td></td>
+<td>79626.743</td>
+<td>POLYGON ((-91.37161 43.50095, -91.37695 43.500...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">38</td>
+<td>0400000US28</td>
+<td>28</td>
+<td>Mississippi</td>
+<td></td>
+<td>46923.274</td>
+<td>MULTIPOLYGON (((-88.71072 30.25080, -88.65680 ...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">39</td>
+<td>0400000US29</td>
+<td>29</td>
+<td>Missouri</td>
+<td></td>
+<td>68741.522</td>
+<td>POLYGON ((-89.53910 36.49820, -89.53452 36.491...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">40</td>
+<td>0400000US31</td>
+<td>31</td>
+<td>Nebraska</td>
+<td></td>
+<td>76824.171</td>
+<td>POLYGON ((-95.76565 40.58521, -95.76853 40.583...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">41</td>
+<td>0400000US33</td>
+<td>33</td>
+<td>New Hampshire</td>
+<td></td>
+<td>8952.651</td>
+<td>MULTIPOLYGON (((-72.45852 42.72685, -72.45849 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">42</td>
+<td>0400000US35</td>
+<td>35</td>
+<td>New Mexico</td>
+<td></td>
+<td>121298.148</td>
+<td>POLYGON ((-109.05004 31.33250, -109.05017 31.4...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">43</td>
+<td>0400000US38</td>
+<td>38</td>
+<td>North Dakota</td>
+<td></td>
+<td>69000.798</td>
+<td>POLYGON ((-96.56328 45.93524, -96.57690 45.935...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">44</td>
+<td>0400000US40</td>
+<td>40</td>
+<td>Oklahoma</td>
+<td></td>
+<td>68594.921</td>
+<td>POLYGON ((-94.61792 36.49941, -94.61531 36.484...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">45</td>
+<td>0400000US41</td>
+<td>41</td>
+<td>Oregon</td>
+<td></td>
+<td>95988.013</td>
+<td>POLYGON ((-117.22007 44.30138, -117.22245 44.2...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">46</td>
+<td>0400000US45</td>
+<td>45</td>
+<td>South Carolina</td>
+<td></td>
+<td>30060.696</td>
+<td>POLYGON ((-78.54109 33.85111, -78.55394 33.847...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">47</td>
+<td>0400000US46</td>
+<td>46</td>
+<td>South Dakota</td>
+<td></td>
+<td>75811.000</td>
+<td>POLYGON ((-96.44341 42.48949, -96.45971 42.486...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">48</td>
+<td>0400000US50</td>
+<td>50</td>
+<td>Vermont</td>
+<td></td>
+<td>9216.657</td>
+<td>POLYGON ((-72.04008 44.15575, -72.04271 44.152...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">49</td>
+<td>0400000US51</td>
+<td>51</td>
+<td>Virginia</td>
+<td></td>
+<td>39490.086</td>
+<td>MULTIPOLYGON (((-76.04653 37.95359, -76.04169 ...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">50</td>
+<td>0400000US54</td>
+<td>54</td>
+<td>West Virginia</td>
+<td></td>
+<td>24038.210</td>
+<td>POLYGON ((-81.96830 37.53780, -81.96540 37.541...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">51</td>
+<td>0400000US56</td>
+<td>56</td>
+<td>Wyoming</td>
+<td></td>
+<td>97093.141</td>
+<td>POLYGON ((-109.05008 41.00066, -109.17368 41.0...</td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -1072,7 +1060,6 @@ Datum: World Geodetic System 1984 ensemble
 
 
 </section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1102,9 +1089,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1116,7 +1117,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -1152,24 +1170,128 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
