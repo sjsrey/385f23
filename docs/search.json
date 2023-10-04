@@ -102,14 +102,14 @@
     "href": "lectures/index.html",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)\n09-27 Spatial Dependence\n\nWeek 07\n\n10-02 Join Counts (ipynb)\n10-02 Moran’s I (ipynb)"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)\n09-27 Spatial Dependence\n\nWeek 07\n\n10-02 Join Counts (ipynb)\n10-04 Moran’s I (ipynb)"
   },
   {
     "objectID": "lectures/index.html#lectures",
     "href": "lectures/index.html#lectures",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)\n09-27 Spatial Dependence\n\nWeek 07\n\n10-02 Join Counts (ipynb)\n10-02 Moran’s I (ipynb)"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)\n09-27 Spatial Dependence\n\nWeek 07\n\n10-02 Join Counts (ipynb)\n10-04 Moran’s I (ipynb)"
   },
   {
     "objectID": "lectures/week-07/2023-10-02.html",
