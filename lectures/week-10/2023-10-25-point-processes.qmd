@@ -260,6 +260,7 @@ Implications
 ## Poisson Distribution $\lambda=20$
 
 ```{python}
+#| warning: false
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -277,6 +278,7 @@ The example we just did is known as $n-conditioning$ where we will always get $n
 A slightly different approach to generating a random point process is to use $\lambda-conditioning$
 
 ```{python}
+#| warning: false
 from scipy.stats import poisson
 lam=20
 n = poisson.rvs(lam, 1)
@@ -400,6 +402,7 @@ r centered on the parent. Offspring events are independently and identically dis
 ## Contagion process of size 20 with 10 parents and 2 children
 
 ```{python}
+#| warning: false
 import pointpats as pp
 np.random.seed(12345)
 w = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])
@@ -411,7 +414,7 @@ draw.realizations[0].plot(window=True, title='Contagion Point Process (10 parent
 ## Contagion process of size 20 with 2 parents and 10 children
 
 ```{python}
-
+#| warning: false
 import pointpats as pp
 np.random.seed(12345)
 w = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])
@@ -446,7 +449,7 @@ $\lambda(s) = 100 e^{-(x^2 + y^2) / \sigma}$
 $\sigma$ is a scale parameter here, equal to 0.5
 ```{python}
 #| code-fold: true
-
+#| warning: false
 
 import numpy as np;  # NumPy package for arrays, random number generation, etc
 import matplotlib.pyplot as plt  # For plotting
@@ -526,7 +529,7 @@ plt.ylim([xMin, xMax]);
 That pattern comes from a spatially-explicit thinning of a CSR pattern:
 ```{python}
 #| code-fold: true
-
+#| warning: false
 # Plotting
 plt.scatter(xx, yy, edgecolor='b', facecolor='none', alpha=0.5);
 plt.xlabel('x');
@@ -614,12 +617,14 @@ df.head()
 ```
 
 ```{python}
+#| warning: false
 import seaborn as sns
 sns.scatterplot(x='x', y='y', hue='thin', data=df);
 ```
 
 ##  Matern (Sequential)
 ```{python}
+#| warning: false
 delta = 0.1
 N = 20
 n = 1
@@ -639,6 +644,7 @@ sns.scatterplot(x='x', y='y', data=df);
 ## CSR n=20
 
 ```{python}
+#| warning: false
 delta = 0.1
 xy = np.random.rand(20,2)
 df = pd.DataFrame(data=xy, columns=['x', 'y'])
