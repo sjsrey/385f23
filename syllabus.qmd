@@ -116,23 +116,23 @@ completed the readings.
 |      | Sep-27 | Spatial Dependence            | GDS 6        |            |
 | 7    | Oct-02 | Global Autocorrelation        | GDS 6        | Quiz 5     |
 |      | Oct-04 | Global Autocorrelation Tests  | GDS 6        |            |
-| 8    | Oct-09 | Local Autocorrelation         | GDS 7        | Quiz 6     |
-|      | Oct-11 | Local Autocorrelation Tests   | GDS 7        | Exercise 2 |
-| 9    | Oct-16 | Point Pattern Data            | GDS 8        | Quiz 7     |
-|      | Oct-18 | Centrography                  | GDS 8        |            |
-| 10   | Oct-23 | Point Processes               | GDS 8        | Quiz 8     |
-|      | Oct-25 | Quadrat Statistics            | GDS 8        |            |
-| 11   | Oct-30 | Nearest Neighbor Statistics   | GDS 8        | Quiz 9     |
-|      | Nov-01 | Distance Based Statistics     | GDS 8        |            |
-| 12   | Nov-06 | Geostatistical Data           | TBA          | Quiz 10    |
-|      | Nov-08 | Spatial Interpolation         | TBA          | Exercise 3 |
-| 13   | Nov-13 | Kriging                       | TBA          | Quiz 11    |
-|      | Nov-15 | Network Data                  | TBA          |            |
-| 14   | Nov-20 | Spatial Interaction Data      | TBA          | Quiz 12    |
-|      | Nov-22 | Gravity Models                | TBA          |            |
-| 15   | Nov-27 | Measuring Spatial Disparities | TBA          | Quiz 13    |
-|      | Nov-29 | Spatial Segregation           | TBA          |            |
-| 16   | Dec-04 | Change of Support Problems    | TBA          | Quiz 14    |
+| 8    | Oct-09 | Studio                       | GDS 7        | Quiz 6     |
+|      | Oct-11 | Local Autocorrelation        | GDS 7        |  |
+| 9    | Oct-16 | Local Autocorrelation Tests  | GDS 8        | Quiz 7, Exercise 2|
+|      | Oct-18 | Point Pattern Data           | GDS 8        |            |
+| 10   | Oct-23 | Centrography                 | GDS 8        | Quiz 8     |
+|      | Oct-25 | Point Processes              | GDS 8        |            |
+| 11   | Oct-30 | Quadrat Statistics           | GDS 8        | Quiz 9     |
+|      | Nov-01 | Nearest Neighbor Statistics  | GDS 8        |            |
+| 12   | Nov-06 | Distance Based Statistics    | TBA          | Quiz 10    |
+|      | Nov-08 | Geostatistical Data          | TBA          | Exercise 3 |
+| 13   | Nov-13 | Spatial Interpolation        | TBA          | Quiz 11    |
+|      | Nov-15 | Kriging                      | TBA          |            |
+| 14   | Nov-20 | Network Data                 | TBA          | Quiz 12    |
+|      | Nov-22 | Spatial Interaction Data     | TBA          |            |
+| 15   | Nov-27 | Gravity Models               | TBA          | Quiz 13    |
+|      | Nov-29 | Measuring Spatial Disparities| TBA          |            |
+| 16   | Dec-04 | Spatial Segregation          | TBA          | Quiz 14    |
 |      | Dec-06 | Next Steps in SDA             |              | Exercise 4 |
 | 17   | Dec-11 | Final Review                  |              | Quiz 15    |
 | 18   | Dec-18 | *Final Exam (13:00-15:00)*    |              |            |
