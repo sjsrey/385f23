@@ -51,4 +51,6 @@ format:
   - [10-02 Join Counts](week-07/2023-10-02.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-07/2023-10-02.ipynb)
   - [10-04 Moran's I](week-07/2023-10-04.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-07/2023-10-04.ipynb)
 
-
+- Week 08
+  - 10-09 Studio (Exercise 2 collaboration)
+  - [10-011 Local Autocorrelation](week-08/2023-10-11.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-08/2023-10-11.ipynb)
