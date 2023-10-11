@@ -54,3 +54,8 @@ format:
 - Week 08
   - 10-09 Studio (Exercise 2 collaboration)
   - [10-11 Local Autocorrelation](week-08/2023-10-11.ipynb) [(ipynb)](https://github.com/sjsrey/385f23/blob/main/lectures/week-08/2023-10-11.ipynb)
+
+
+- Week 09
+  - [11-16 Local Analysis of Educational Achievment](https://knaaptime.com/instructed_california/)
+  - [11-18 Point Patterns](week-09/2023-10-18-point-patterns.qmd) 
