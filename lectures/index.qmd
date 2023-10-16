@@ -57,5 +57,5 @@ format:
 
 
 - Week 09
-  - [11-16 Local Analysis of Educational Achievment](https://knaaptime.com/instructed_california/)
-  - [11-18 Point Patterns](week-09/2023-10-18-point-patterns.qmd) 
+  - [10-16 Local Analysis of Educational Achievment](https://knaaptime.com/instructed_california/)
+  - [10-18 Point Patterns](week-09/2023-10-18-point-patterns.qmd) 
