@@ -59,3 +59,7 @@ format:
 - Week 09
   - [10-16 Local Analysis of Educational Achievment](https://knaaptime.com/instructed_california/)
   - [10-18 Point Patterns](week-09/2023-10-18-point-patterns.qmd) 
+
+- Week 10 
+  - [10-23 Centrography](week-10/2023-10-23-centrography.qmd) 
+  - [11-25 Point Processes](week-10/2023-10-25-point-processes.qmd) 
