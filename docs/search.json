@@ -102,14 +102,14 @@
     "href": "lectures/index.html",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)\n09-27 Spatial Dependence\n\nWeek 07\n\n10-02 Join Counts (ipynb)\n10-04 Moran’s I (ipynb)\n\nWeek 08\n\n10-09 Studio (Exercise 2 collaboration)\n10-11 Local Autocorrelation (ipynb)"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)\n09-27 Spatial Dependence\n\nWeek 07\n\n10-02 Join Counts (ipynb)\n10-04 Moran’s I (ipynb)\n\nWeek 08\n\n10-09 Studio (Exercise 2 collaboration)\n10-11 Local Autocorrelation (ipynb)\n\nWeek 09\n\n10-16 Local Analysis of Educational Achievment\n10-18 Point Patterns\n\nWeek 10\n\n10-23 Centrography\n11-25 Point Processes"
   },
   {
     "objectID": "lectures/index.html#lectures",
     "href": "lectures/index.html#lectures",
     "title": "Geography 385 Spatial Data Analysis",
     "section": "",
-    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)\n09-27 Spatial Dependence\n\nWeek 07\n\n10-02 Join Counts (ipynb)\n10-04 Moran’s I (ipynb)\n\nWeek 08\n\n10-09 Studio (Exercise 2 collaboration)\n10-11 Local Autocorrelation (ipynb)"
+    "text": "Week 01\n\n08-21 Course Introduction\n08-23 Jupyter Introduction (ipynb)\n\nWeek 02\n\n08-28 Python Introduction (ipynb)\n08-30 Functions and Scripts (ipynb) (temp_converter.py)\n\nWeek 03\n\n09-06 Python Introduction to Data Analysis (ipynb)\n\nWeek 04\n\n09-11 Spatial Data\n09-13 GeoPandas (ipynb)\n\nWeek 05\n\n09-18 GeoPandas Spatial Queries (ipynb)\n09-20 Geovisualization (ipynb)\n\nWeek 06\n\n09-25 Spatial Weights (ipynb)\n09-27 Spatial Dependence\n\nWeek 07\n\n10-02 Join Counts (ipynb)\n10-04 Moran’s I (ipynb)\n\nWeek 08\n\n10-09 Studio (Exercise 2 collaboration)\n10-11 Local Autocorrelation (ipynb)\n\nWeek 09\n\n10-16 Local Analysis of Educational Achievment\n10-18 Point Patterns\n\nWeek 10\n\n10-23 Centrography\n11-25 Point Processes"
   },
   {
     "objectID": "lectures/week-07/2023-10-02.html",
@@ -1272,5 +1272,467 @@
     "title": "Spatial Data",
     "section": "Flow Data",
     "text": "Flow Data\n\n\n\n\nFlows"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html",
+    "href": "lectures/week-10/2023-10-25-point-processes.html",
+    "title": "Point Processes",
+    "section": "",
+    "text": "Thus far we have been looking at a collection of points as a point pattern.\nNow we want to take a different view of that pattern, one that sees the pattern as the outcome of a process.\nA point process is a statistical model that will generate point patterns with particular characteristics.\nFrom a scientific point of view we are interested in making inferences about the process that may have generated our point pattern."
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#introduction",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#introduction",
+    "title": "Point Processes",
+    "section": "",
+    "text": "Thus far we have been looking at a collection of points as a point pattern.\nNow we want to take a different view of that pattern, one that sees the pattern as the outcome of a process.\nA point process is a statistical model that will generate point patterns with particular characteristics.\nFrom a scientific point of view we are interested in making inferences about the process that may have generated our point pattern."
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#first-order-properties",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#first-order-properties",
+    "title": "Point Processes",
+    "section": "First Order Properties",
+    "text": "First Order Properties\n\nFirst Order Properties: Spatial Analysis\nMean value of the process in space\n\nVariation in mean value of the process in space\nGlobal, large scale spatial trend\n\nFirst Order Property of Point Patterns, Intensity: \\(\\lambda\\)\n\nIntensity: \\(\\lambda\\) = number of events expected per unit area\nEstimation of \\(\\lambda\\)\nSpatial variation of \\(\\lambda\\), \\(\\lambda(s)\\), \\(s\\) is a location\n\n\\[\\lambda(s) = \\lim_{ds\\rightarrow 0}\\left\\{ \\frac{E(Y(ds))}{ds} \\right\\}\\]"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#second-order-property",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#second-order-property",
+    "title": "Point Processes",
+    "section": "Second Order Property",
+    "text": "Second Order Property\n\nSecond Order Properties: Spatial Analysis\nSpatial Correlation Structure\n\nDeviations in values from process mean\nLocal or small scale effects\n\nSecond Order Property of Point Patterns\n\nRelationship between number of events in pairs of areas\nSecond order intensity \\(\\gamma(s_i,s_j)\\)\n\n\\[\\gamma(s_i,s_j) = \\lim_{ds_i\\rightarrow 0,ds_j\\rightarrow 0}\\left\\{\n       \\frac{E(Y(ds_i)Y(ds_j))}{ds_ids_j} \\right\\}\\]"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#spatial-stationarity",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#spatial-stationarity",
+    "title": "Point Processes",
+    "section": "Spatial Stationarity",
+    "text": "Spatial Stationarity\nFirst Order Stationarity \\[\\lambda(s) = \\lambda \\forall s \\in A\\] \\[E(Y(A)) = \\lambda \\times A\\]\nSecond Order Stationarity \\[\\gamma(s_i,s_j) = \\gamma(s_i - s_j) = \\gamma(h)\\]\n\n\\(h\\) is the vector difference between locations \\(s_i\\) and \\(s_j\\)\n\\(h\\) encompasses direction and distance (relative location)\nSecond order intensity only depends on \\(h\\) for second order stationarity"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#spatial-isotropy-and-stationarity",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#spatial-isotropy-and-stationarity",
+    "title": "Point Processes",
+    "section": "Spatial Isotropy and Stationarity",
+    "text": "Spatial Isotropy and Stationarity\nIsotropic Process\n\nWhen a stationary process is invariant to rotation about the origin.\nRelationship between two events depend only on the distance separating their locations and not on their orientation to each other.\nDepends only on distance, not direction\n\nUsefulness\n\nTwo pairs of events from a stationary process separated by same distance and relative direction should have same “relatedness”\nTwo pairs of events from a stationary and isotropic process separated by the same distance (irrespective of direction) should have the same “relatedness”\nBoth allow for replication and the ability to carry out estimation of the underlying DGP."
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#invariance",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#invariance",
+    "title": "Point Processes",
+    "section": "Invariance",
+    "text": "Invariance\n\n\n\n\n\n\n\nUnder Translation\n\n\n\n\n\n\n\nUnder Rotation\n\n\n\n\nFigure 1: Invariance"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#complete-spatial-randomness",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#complete-spatial-randomness",
+    "title": "Point Processes",
+    "section": "Complete Spatial Randomness",
+    "text": "Complete Spatial Randomness\n\nCSR\n\nStandard of Reference\nUniform: each location has equal probability\nIndependent: location of points independent\nHomogeneous Planar Poisson Point Process\n\n\n\nPoisson Point Process\n\nIntensity\n\nnumber of points in region \\(A: N(A)\\)\nintensity: \\(\\lambda = N/|A|\\)\nimplies: \\(\\lambda |A|\\) points randomly scattered in a region with area \\(|A|\\)\ne.g., \\(10\\times 1\\) (points per \\(km^2\\))\n\n\n\nPoisson Distribution \\(N(A) \\sim Poi(\\lambda |A|)\\)"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#poisson-distribution",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#poisson-distribution",
+    "title": "Point Processes",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\n\nSingle Parameter Distribution: \\(\\lambda |A|\\)\n\nGenerally, \\(\\lambda\\) is the number of events in some well defined interval\n\nTime: phone calls to operator in one hour\nTime: accidents at an intersection per week\nSpace: trees in a quadrat\n\nLet \\(x\\) be a Poisson random variable\n\n\\(E[x] = V[x]= \\lambda |A|\\)\n\n\n\n\nPoisson Distribution \\[P(x) =  \\frac{e^{-\\lambda |A|} (\\lambda |A|)^x}{x!}\\]"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#spatial-example",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#spatial-example",
+    "title": "Point Processes",
+    "section": "Spatial Example",
+    "text": "Spatial Example\n\nCSR with \\(\\lambda = 5/km^2\\)\n\nRegion = Circle\n\narea = \\(|A| = \\pi r^2\\)\n\\(r=0.1\\ km\\) then area \\(\\approx 0.03 \\ km^2\\)\n\nProbability of Zero Points in Circle \\[\\begin{aligned}\n         P[N(A) = 0] &= &  e^{-\\lambda |A|} (\\lambda |A|)^x /x!\\\\\n                     &\\approx&e^{-5 \\times 0.03} (5 \\times 0.03)^0 /0!\\\\\n                     &\\approx&e^{-5 \\times 0.03} \\\\\n                     &\\approx&0.86\n       \\end{aligned}\\]"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#complete-spatial-randomness-csr",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#complete-spatial-randomness-csr",
+    "title": "Point Processes",
+    "section": "Complete Spatial Randomness (CSR)",
+    "text": "Complete Spatial Randomness (CSR)\n\nHomogeneous spatial Poisson point process\n\nThe number of events occurring within a finite region \\(A\\) is a random variable following a Poisson distribution with mean \\(\\lambda|A|\\), with \\(|A|\\) denoting area of \\(A\\).\nGiven the total number of events \\(N\\) occurring within an area \\(A\\), the locations of the \\(N\\) events represent an independent random sample of \\(N\\) locations where each location is equally likely to be chosen as an event.\n\n\n\n\nCriterion 2 is the general concept of CSR (uniform (random)) distribution in \\(A\\).\nCriterion 1 pertains to the intensity \\(\\lambda\\)."
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#homogeneous-poisson-process",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#homogeneous-poisson-process",
+    "title": "Point Processes",
+    "section": "Homogeneous Poisson Process",
+    "text": "Homogeneous Poisson Process\n\nImplications\n\nThe number of events in nonoverlapping regions in \\(A\\) are statistically independent.\nFor any region \\(R \\subset A\\): \\[\\lim_{|R| \\rightarrow 0} \\frac{Pr[exactly\\ one\\ event\\ in\\ R]}{|R|}\n      = \\lambda &gt; 0\\]\n\\[\\lim_{|R| \\rightarrow 0} \\frac{Pr[more\\ than\\ one\\ event\\ in\\\n       R]}{|R|} = 0\\]\n\n\n:::"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#homogeneous-poisson-process-1",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#homogeneous-poisson-process-1",
+    "title": "Point Processes",
+    "section": "Homogeneous Poisson process",
+    "text": "Homogeneous Poisson process\n\nImplications\n\n\\(\\lambda\\) is the intensity of the spatial point pattern.\nFor a Poisson random variable, \\(Y\\): \\[E[Y] = \\lambda = V[Y]\\]\nProvides the motivation for some quadrat tests of CSR hypothesis.\n\nIf \\(Y_R\\) is the count in quadrat \\(R\\)\nIf \\(\\widehat{E[Y]}&lt; \\widehat{V[Y]}\\): overdispersion = spatial clustering\nIf \\(\\widehat{E[Y]}&gt; \\widehat{V[Y]}\\): underdispersion = spatial uniformity"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#poisson-distribution-lambda20",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#poisson-distribution-lambda20",
+    "title": "Point Processes",
+    "section": "Poisson Distribution \\(\\lambda=20\\)",
+    "text": "Poisson Distribution \\(\\lambda=20\\)\n\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\nnp.random.seed(12345)\nxy = np.random.rand(20,2)\ndf = pd.DataFrame(data=xy, columns=['x','y'])\nsns.scatterplot(x='x', y='y', data=df);\ndf.shape\n\n(20, 2)\n\n\n\n\n\nThe example we just did is known as \\(n-conditioning\\) where we will always get \\(n\\) points for the CSR process.\nA slightly different approach to generating a random point process is to use \\(\\lambda-conditioning\\)\n\nfrom scipy.stats import poisson\nlam=20\nn = poisson.rvs(lam, 1)\nxy = np.random.rand(n,2)\ndf = pd.DataFrame(data=xy, columns=['x','y'])\nsns.scatterplot(x='x', y='y', data=df);\ndf.shape\n\n(26, 2)\n\n\n\n\n\nThe difference is the number of points in the pattern will always be \\(n\\) with \\(n-conditioning\\) but may not be \\(n\\) with \\(\\lambda-conditioning\\). The latter allows the intensity to be drawn from a Poisson distribution, then that becomes the parameter for the draw of the point pattern."
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#limitations-of-csr",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#limitations-of-csr",
+    "title": "Point Processes",
+    "section": "Limitations of CSR",
+    "text": "Limitations of CSR\n\nStationary Poisson Process\n\nhomogeneous\ntranslation invaratiant\n\n\n\nRare in practice - very few actual processes are CSR\n\n\nStrawman\n\npurely a benchmark\nnull hypothesis"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#inhomogeneous-poisson-process-ipp",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#inhomogeneous-poisson-process-ipp",
+    "title": "Point Processes",
+    "section": "Inhomogeneous Poisson Process (IPP)",
+    "text": "Inhomogeneous Poisson Process (IPP)\n\nCriteria\n\nThe number of events occurring within a finite region \\(A\\) is a random variable following a Poisson Distribution with mean \\(\\int_{A}\\lambda(s) ds\\).\nGiven the total number of events \\(N\\) occurring within \\(A\\), the \\(N\\) events represent an independent sample of \\(N\\) locations, with the probability of sampling a particular point \\(s\\) proportional to \\(\\lambda(s)\\).\n\n\n\nSpatially Variable Intensity \\(\\lambda(s)\\)\n\nUseful for constant risk hypothesis\nUnderlying population at risk is spatially clustered\nWant to control for that since with individual constant risk apparent clusters would be generated.\nCompare pattern against constant risk, not CSR."
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#inhomogeneous-poisson-process",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#inhomogeneous-poisson-process",
+    "title": "Point Processes",
+    "section": "Inhomogeneous Poisson Process",
+    "text": "Inhomogeneous Poisson Process\n\nImplications\n\nApparent clusters can occur solely due to heterogeneities in the intensity function \\(\\lambda(s)\\).\nIndividual event locations still remain independent of one another.\nProcess is not stationary due to intensity heterogeneity\n\n\n\nHPP vs. IPP HPP is a special case of IPP with a constant intensity"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#csr-vs.-constant-risk-hypotheses",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#csr-vs.-constant-risk-hypotheses",
+    "title": "Point Processes",
+    "section": "CSR vs. Constant Risk Hypotheses",
+    "text": "CSR vs. Constant Risk Hypotheses\n\nCSR\n\nIntensity is spatially constant\nPopulation at risk assumed spatially uniform\nUseful null hypothesis if these conditions are met\n\n\n\nConstant Risk Hypothesis\n\nPopulation density variable\nIndividual risk constant\nExpected number of events should vary with population density\nClusters due to deviation from CSR\nClusters due to deviation from CSR and Constant Risk"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#contagion-process-of-size-20-with-10-parents-and-2-children",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#contagion-process-of-size-20-with-10-parents-and-2-children",
+    "title": "Point Processes",
+    "section": "Contagion process of size 20 with 10 parents and 2 children",
+    "text": "Contagion process of size 20 with 10 parents and 2 children\n\nimport pointpats as pp\nnp.random.seed(12345)\nw = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])\ndraw = pp.PoissonClusterPointProcess(w, 20, 10, 0.05, 1, asPP=True, conditioning=False)\ndraw.realizations[0].plot(window=True, title='Contagion Point Process (10 parents)')"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#contagion-process-of-size-20-with-2-parents-and-10-children",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#contagion-process-of-size-20-with-2-parents-and-10-children",
+    "title": "Point Processes",
+    "section": "Contagion process of size 20 with 2 parents and 10 children",
+    "text": "Contagion process of size 20 with 2 parents and 10 children\n\nimport pointpats as pp\nnp.random.seed(12345)\nw = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])\ndraw = pp.PoissonClusterPointProcess(w, 20, 2, 0.05, 1, asPP=True, conditioning=False)\ndraw.realizations[0].plot(window=True, title='Contagion Point Process (2 parents)')"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#inhomogenous-poisson-process",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#inhomogenous-poisson-process",
+    "title": "Point Processes",
+    "section": "Inhomogenous Poisson Process",
+    "text": "Inhomogenous Poisson Process\n\nIntensity varies with a covariate\n\ntrend surface\n\\(\\lambda(s) = exp(\\alpha + \\beta s)\\)\n\n\n\nIntensity varies with distance to a focus\n\n\\(\\lambda(s) = \\lambda 0(s). f( || s-s_0||, \\theta)\\)"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#simulating-an-inhomogeneous-poisson-point-process",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#simulating-an-inhomogeneous-poisson-point-process",
+    "title": "Point Processes",
+    "section": "Simulating An Inhomogeneous Poisson Point Process",
+    "text": "Simulating An Inhomogeneous Poisson Point Process\nIntensity function:\n\\(\\lambda(s) = 100 e^{-(x^2 + y^2) / \\sigma}\\)\n\\(\\sigma\\) is a scale parameter here, equal to 0.5\n\n\nCode\nimport numpy as np;  # NumPy package for arrays, random number generation, etc\nimport matplotlib.pyplot as plt  # For plotting\nfrom scipy.optimize import minimize  # For optimizing\nfrom scipy import integrate  # For integrating\n\nplt.close('all');  # close all figures\n\n# Simulation window parameters\nxMin = 0;\nxMax = 1;\nyMin = 0;\nyMax = 1;\nxDelta = xMax - xMin;\nyDelta = yMax - yMin;  # rectangle dimensions\nareaTotal = xDelta * yDelta;\n\nnumbSim = 10 ** 3;  # number of simulations\ns = 0.5;  # scale parameter\n# Point process parameters\ndef fun_lambda(x, y):\n    return 100 * np.exp(-(x ** 2 + y ** 2) / s ** 2);  # intensity function\n#fun_lambda = lambda x,y: 100 * np.exp(-(x ** 2 + y ** 2) / s ** 2);\n\n###START -- find maximum lambda -- START ###\n# For an intensity function lambda, given by function fun_lambda,\n# finds the maximum of lambda in a rectangular region given by\n# [xMin,xMax,yMin,yMax].\ndef fun_Neg(x):\n    return -fun_lambda(x[0], x[1]);  # negative of lambda\n#fun_Neg = lambda x: -fun_lambda(x[0], x[1]);  # negative of lambda\n\nxy0 = [(xMin + xMax) / 2, (yMin + yMax) / 2];  # initial value(ie centre)\n# Find largest lambda value\nresultsOpt = minimize(fun_Neg, xy0, bounds=((xMin, xMax), (yMin, yMax)));\nlambdaNegMin = resultsOpt.fun;  # retrieve minimum value found by minimize\nlambdaMax = -lambdaNegMin;\n\n\n###END -- find maximum lambda -- END ###\n\n# define thinning probability function\ndef fun_p(x, y):\n    return fun_lambda(x, y) / lambdaMax;\n#fun_p = lambda x, y: fun_lambda(x, y) / lambdaMax;\n\n# for collecting statistics -- set numbSim=1 for one simulation\nnumbPointsRetained = np.zeros(numbSim);  # vector to record number of points\nfor ii in range(numbSim):\n    # Simulate a Poisson point process\n    numbPoints = np.random.poisson(areaTotal * lambdaMax);  # Poisson number of points\n    xx = np.random.uniform(0, xDelta, ((numbPoints, 1))) + xMin;  # x coordinates of Poisson points\n    yy = np.random.uniform(0, yDelta, ((numbPoints, 1))) + yMin;  # y coordinates of Poisson points\n\n    # calculate spatially-dependent thinning probabilities\n    p = fun_p(xx, yy);\n\n    # Generate Bernoulli variables (ie coin flips) for thinning\n    booleRetained = np.random.uniform(0, 1, ((numbPoints, 1))) &lt; p;  # points to be retained\n\n    # x/y locations of retained points\n    xxRetained = xx[booleRetained];\n    yyRetained = yy[booleRetained];\n    numbPointsRetained[ii] = xxRetained.size;\n\n# Plotting\nplt.scatter(xxRetained, yyRetained, edgecolor='b', facecolor='none', alpha=0.5);\nplt.xlabel('x');\nplt.ylabel('y');\nplt.xlim([xMin, xMax]);\nplt.ylim([xMin, xMax]);\n\n\n\n\n\nsource\nThat pattern comes from a spatially-explicit thinning of a CSR pattern:\n\n\nCode\n# Plotting\nplt.scatter(xx, yy, edgecolor='b', facecolor='none', alpha=0.5);\nplt.xlabel('x');\nplt.ylabel('y');"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#regular-processes",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#regular-processes",
+    "title": "Point Processes",
+    "section": "Regular Processes",
+    "text": "Regular Processes\n\nLess grouped than CSR\n\nfewer high densities\ndispersed\nrepulsion, competition\n\n\n\nUnderdispersion\n\nvariance &lt; mean\nless variation in densities than CSR"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#inhibition-process",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#inhibition-process",
+    "title": "Point Processes",
+    "section": "Inhibition Process",
+    "text": "Inhibition Process\n\nMinimum Permissible Distance\n\nno two points closer than \\(\\delta\\)\npacking intensity \\(\\tau = \\lambda \\pi \\delta^2 / 4\\)\n\n\n\nMatern Process\n\nthinned Poisson process using \\(\\delta\\)\nsequential inhibition process, generate points conditional on previous points and distance (denser than the thinned approach)"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#matern-thinning",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#matern-thinning",
+    "title": "Point Processes",
+    "section": "Matern (Thinning)",
+    "text": "Matern (Thinning)\n\nnp.random.seed(12345)\ndelta = 0.1\nn = 20\nxy = np.random.random((n,2))\nxy\nfrom scipy.spatial import distance_matrix\n\nd = distance_matrix(xy, xy) # 20 x 20 distance matrix\nd[0] # first row\n\narray([0.        , 0.75403388, 0.4570564 , 0.33860475, 0.38256491,\n       0.67009276, 0.94484483, 0.716711  , 0.56856568, 0.40881349,\n       0.49326812, 0.46210886, 0.64101492, 0.36620498, 0.20105384,\n       1.02432357, 0.29284635, 0.4855703 , 0.42540863, 0.41333518])\n\n\nDetermine which observations to thin\n\nijs = np.where(d&lt;delta)\ni,j = ijs\npairs = list(zip(i[i!=j], j[i!=j]))\nprint(\"The pairs within delta of one another:\")\nprint(pairs)\ndrop = []\n\nfor left, right in pairs:\n    if left in drop or right in drop:\n        continue\n    else:\n        drop.append(left)\n        \nprint(\"Observations to drop:\")\nprint(drop)\n\nThe pairs within delta of one another:\n[(3, 9), (3, 13), (9, 3), (9, 13), (9, 19), (13, 3), (13, 9), (19, 9)]\nObservations to drop:\n[3, 9]\n\n\n\nimport pandas as pd\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\ndf['thin'] = False\ndf.iloc[drop, df.columns.get_loc('thin')] = True\ndf.head()\n\n\n\n\n\n\n\n\nx\ny\nthin\n\n\n\n\n0\n0.929616\n0.316376\nFalse\n\n\n1\n0.183919\n0.204560\nFalse\n\n\n2\n0.567725\n0.595545\nFalse\n\n\n3\n0.964515\n0.653177\nTrue\n\n\n4\n0.748907\n0.653570\nFalse\n\n\n\n\n\n\n\n\nimport seaborn as sns\nsns.scatterplot(x='x', y='y', hue='thin', data=df);"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#matern-sequential",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#matern-sequential",
+    "title": "Point Processes",
+    "section": "Matern (Sequential)",
+    "text": "Matern (Sequential)\n\ndelta = 0.1\nN = 20\nn = 1\nxy = np.zeros((N,2))\nxy[0,:] = np.random.rand(1,2)\nwhile n &lt; N:\n    candidate = np.random.rand(1,2)\n    d = distance_matrix(xy[:n,:], candidate)\n    if d.min() &gt; delta:\n        xy[n,:] = candidate\n        n += 1\n\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\nsns.scatterplot(x='x', y='y', data=df);"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-25-point-processes.html#csr-n20",
+    "href": "lectures/week-10/2023-10-25-point-processes.html#csr-n20",
+    "title": "Point Processes",
+    "section": "CSR n=20",
+    "text": "CSR n=20\n\ndelta = 0.1\nxy = np.random.rand(20,2)\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\nsns.scatterplot(x='x', y='y', data=df);"
+  },
+  {
+    "objectID": "lectures/week-12/pi_sim.html",
+    "href": "lectures/week-12/pi_sim.html",
+    "title": "Geog385F23",
+    "section": "",
+    "text": "import numpy\nimport seaborn\n\n\nn = 10000\nxy = numpy.random.random((n,2))\n\n\nxy[0:10]\n\narray([[0.54793542, 0.47487312],\n       [0.37175508, 0.27585956],\n       [0.67455229, 0.83556616],\n       [0.47284257, 0.06297568],\n       [0.35279046, 0.0692831 ],\n       [0.32496125, 0.53579636],\n       [0.09934598, 0.04802856],\n       [0.97355217, 0.85862869],\n       [0.39703994, 0.00762409],\n       [0.73813219, 0.42080489]])\n\n\n\nseaborn.scatterplot(x=xy[:,0], y=xy[:,1])\n\n/Users/srey/mambaforge/envs/385f23/lib/python3.10/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead\n  if pd.api.types.is_categorical_dtype(vector):\n/Users/srey/mambaforge/envs/385f23/lib/python3.10/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead\n  if pd.api.types.is_categorical_dtype(vector):\n\n\n&lt;Axes: &gt;\n\n\n\n\n\nArea of a circle: \\[\nA_c = \\pi r*2\n\\]\nArea of a square: \\[ l*l = A_s\\]\n\nimport matplotlib.pyplot as plt\n\n\nfigure, axes = plt.subplots()\nDrawing_uncolored_circle = plt.Circle( (0.5, 0.5 ),\n                                      0.5 ,\n                                      fill = False )\n \naxes.set_aspect( 1 )\naxes.add_artist( Drawing_uncolored_circle )\nplt.title( 'Unit Circle and Unit Square' )\nplt.show()\n\n\n\n\n\nds = xy -.5\n\n\nds\n\narray([[ 0.04793542, -0.02512688],\n       [-0.12824492, -0.22414044],\n       [ 0.17455229,  0.33556616],\n       ...,\n       [ 0.20245124,  0.20094301],\n       [ 0.45447726,  0.24013232],\n       [ 0.20171588,  0.40397786]])\n\n\n\nds = (ds**2).sum(axis=1)**(1/2)\n\n\nds\n\narray([0.05412175, 0.25823574, 0.37825011, ..., 0.2852448 , 0.51401664,\n       0.45153893])\n\n\n\\[A_c / A_s = \\frac{\\pi r^2}{1}\\]\n\\[\\frac{A_c / A_s}{r^2} = \\pi\\]\n\n((ds&lt;.5).sum()/n) / (.5*.5)\n\n3.1492"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#point-pattern-analysis-objectives",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#point-pattern-analysis-objectives",
+    "title": "Point Pattern Basics",
+    "section": "Point Pattern Analysis Objectives",
+    "text": "Point Pattern Analysis Objectives\nGoals\n\nPattern detection\nAssessing the presence of clustering\nIdentification of individual clusters\n\nGeneral Approaches\n\nEstimate intensity of the process\nFormulating an idealized model and investigating deviations from expectations\nFormulating a stochastic model and fitting it to the data"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#point-pattern-analysis-definitions",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#point-pattern-analysis-definitions",
+    "title": "Point Pattern Basics",
+    "section": "Point Pattern Analysis Definitions",
+    "text": "Point Pattern Analysis Definitions\nSpatial Point Pattern: A set of events, irregularly distributed within a region \\(A\\) and presumed to have been generated by some form of stochastic mechanism.\nRepresentation \\(\\left\\{Y(A),  A \\subset \\Re \\right\\}\\), where \\(Y(A)\\) is the number of events occurring in area \\(A\\).\nEvents, points, locations\n\nEvent\n\nan occurrence of interest\n\nPoint\n\nany location in study area\n\nEvent location\n\na particular point where an event occurs"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#point-pattern-analysis-definitions-1",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#point-pattern-analysis-definitions-1",
+    "title": "Point Pattern Basics",
+    "section": "Point Pattern Analysis Definitions",
+    "text": "Point Pattern Analysis Definitions\nRegion: \\(A\\)\n\nMost often planar (two-dimensional Euclidean space)\nOne dimensional applications also possible\nThree-dimensional increasingly popular (space + time)\nPoint processes on networks (non-planar)"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#space-time-point-patterns",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#space-time-point-patterns",
+    "title": "Point Pattern Basics",
+    "section": "Space-Time Point Patterns",
+    "text": "Space-Time Point Patterns"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#space-time-point-patterns-1",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#space-time-point-patterns-1",
+    "title": "Point Pattern Basics",
+    "section": "Space-Time Point Patterns",
+    "text": "Space-Time Point Patterns"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#point-patterns-on-networks",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#point-patterns-on-networks",
+    "title": "Point Pattern Basics",
+    "section": "Point Patterns on Networks",
+    "text": "Point Patterns on Networks"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#point-patterns",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#point-patterns",
+    "title": "Point Pattern Basics",
+    "section": "Point Patterns",
+    "text": "Point Patterns\nUnmarked Point Patterns\n\nOnly location is recorded\nAttribute is binary (presence, absence)\n\nMarked Point Patterns\n\nLocation is recorded\nNon-binary stochastic attribute\ne.g., sales at a retail store, dbh of tree"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#realizations",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#realizations",
+    "title": "Point Pattern Basics",
+    "section": "Realizations",
+    "text": "Realizations\nMapped Point Patterns\n\nAll events are recorded and mapped\nComplete enumeration of events\nFull information on the realization from the process\n\nSampled Point Patterns\n\nSample of events are recorded and mapped\nComplete enumeration of events impossible or intractable\nPartial information on the realization from the process\nPresence/“absence” data (ecology, forestry)"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#research-questions-1",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#research-questions-1",
+    "title": "Point Pattern Basics",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nLocation Only are points randomly located or patterned\nLocation and Value\n\nmarked point pattern\nis combination of location and value random or patterned\n\n\nBoth Cases: What is the Underlying Process?"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#points-on-a-plane-planar-point-pattern-anaysis",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#points-on-a-plane-planar-point-pattern-anaysis",
+    "title": "Point Pattern Basics",
+    "section": "Points on a Plane (Planar Point Pattern Anaysis)",
+    "text": "Points on a Plane (Planar Point Pattern Anaysis)\nClassic Point Pattern Analysis\n\npoints on an isotropic plane\nno effect of translation and rotation\nclassic examples: tree seedlings, rocks, etc\n\nDistance\n\nno directional effects\nno translational effects\nstraight line distance only"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#events-point-map",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#events-point-map",
+    "title": "Point Pattern Basics",
+    "section": "Events: Point Map",
+    "text": "Events: Point Map"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#points-in-context",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#points-in-context",
+    "title": "Point Pattern Basics",
+    "section": "Points in Context",
+    "text": "Points in Context"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#intensity",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#intensity",
+    "title": "Point Pattern Basics",
+    "section": "Intensity",
+    "text": "Intensity\nFirst Moment\n\nnumber of points \\(N\\), area of study \\(|A|\\)\nintensity: \\(\\lambda = N/|A|\\)\narea depends on bounds, often arbitrary\n\nArtificial Boundaries\n\nbounding box (rectangle, square)\nother (city boundary)"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#bounding-box",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#bounding-box",
+    "title": "Point Pattern Basics",
+    "section": "Bounding Box",
+    "text": "Bounding Box"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#district-boundary",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#district-boundary",
+    "title": "Point Pattern Basics",
+    "section": "District Boundary",
+    "text": "District Boundary"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#convex-hull",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#convex-hull",
+    "title": "Point Pattern Basics",
+    "section": "Convex Hull",
+    "text": "Convex Hull\n\nTightest fit various algorithms\nRescaled Convex Hull (Ripley-Rasson)\n\nadjust to properly reflect spatial domain of point process\nuse centroid of convex hull\nrescale by \\(1/[\\sqrt{(1-m/N)}]\\)\n\\(m\\): number of vertices of convex hull"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#convex-hull-1",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#convex-hull-1",
+    "title": "Point Pattern Basics",
+    "section": "Convex Hull",
+    "text": "Convex Hull"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#multiple-boundaries",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#multiple-boundaries",
+    "title": "Point Pattern Basics",
+    "section": "Multiple Boundaries",
+    "text": "Multiple Boundaries"
+  },
+  {
+    "objectID": "lectures/week-09/2023-10-18-point-patterns.html#intensity-estimates",
+    "href": "lectures/week-09/2023-10-18-point-patterns.html#intensity-estimates",
+    "title": "Point Pattern Basics",
+    "section": "Intensity Estimates",
+    "text": "Intensity Estimates\n\n\n\n\nArea\nIntensity\n\n\n\n\\(km^2\\)\n\\(cases/km^2\\)\n\n\nDistrict Boundary\n315.155\n3.29\n\n\nBounding Box\n310.951\n3.33\n\n\nConvex Hull\n229.421\n4.52\n\n\n\n\nN=1036"
+  },
+  {
+    "objectID": "lectures/week-12/2023-11-01-distance-methods.html",
+    "href": "lectures/week-12/2023-11-01-distance-methods.html",
+    "title": "Inter-Event Distances",
+    "section": "",
+    "text": "import numpy as np\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nimport warnings\nwarnings.filterwarnings('ignore')\nnp.random.seed(12345)\nn = 60\nxy = np.random.rand(60,2)\ndf = pd.DataFrame(data=xy, columns=['x', 'y'])\nsns.scatterplot(x='x', y='y', data=df);"
+  },
+  {
+    "objectID": "lectures/week-12/2023-11-01-distance-methods.html#ripleys-g",
+    "href": "lectures/week-12/2023-11-01-distance-methods.html#ripleys-g",
+    "title": "Inter-Event Distances",
+    "section": "Ripley’s G",
+    "text": "Ripley’s G\n\nfrom pointpats import PointPattern\n\n\ncsr = PointPattern(xy)\n\n\nimport networkx as nx\n\nG = nx.DiGraph()\nfor idx, point in enumerate(csr.points.values):\n    G.add_node(idx, pos=point)\n\npos = nx.get_node_attributes(G, 'pos')\n\nnx.draw(G, pos, node_size=2)\n\nnidx, nnd = csr.knn(1) # here we have the indices of the nearest neighbors (nidx) and the distances (nnd)\nfor idx, neighbor in enumerate(nidx):\n    edge = (idx, neighbor[0])\n    G.add_edges_from([edge])\npos = nx.get_node_attributes(G, 'pos')\nnx.draw(G, pos, node_size=2)\n\n\n\n\n\nfrom pointpats import distance_statistics\n\n\nxy\n\narray([[0.92961609, 0.31637555],\n       [0.18391881, 0.20456028],\n       [0.56772503, 0.5955447 ],\n       [0.96451452, 0.6531771 ],\n       [0.74890664, 0.65356987],\n       [0.74771481, 0.96130674],\n       [0.0083883 , 0.10644438],\n       [0.29870371, 0.65641118],\n       [0.80981255, 0.87217591],\n       [0.9646476 , 0.72368535],\n       [0.64247533, 0.71745362],\n       [0.46759901, 0.32558468],\n       [0.43964461, 0.72968908],\n       [0.99401459, 0.67687371],\n       [0.79082252, 0.17091426],\n       [0.02684928, 0.80037024],\n       [0.90372254, 0.02467621],\n       [0.49174732, 0.52625517],\n       [0.59636601, 0.05195755],\n       [0.89508953, 0.72826618],\n       [0.81835001, 0.50022275],\n       [0.81018941, 0.09596853],\n       [0.21895004, 0.25871906],\n       [0.46810575, 0.4593732 ],\n       [0.70950978, 0.17805301],\n       [0.53144988, 0.16774223],\n       [0.76881392, 0.92817055],\n       [0.60949366, 0.15018349],\n       [0.4896267 , 0.37734495],\n       [0.84860141, 0.91109723],\n       [0.38384872, 0.3154959 ],\n       [0.56839415, 0.18781804],\n       [0.12584154, 0.68759581],\n       [0.79960672, 0.57353657],\n       [0.97322998, 0.63405438],\n       [0.88842172, 0.49541476],\n       [0.35161653, 0.71423037],\n       [0.50392912, 0.22563761],\n       [0.24497444, 0.7928007 ],\n       [0.49517241, 0.91509367],\n       [0.94537183, 0.53323223],\n       [0.25249259, 0.72086206],\n       [0.36743876, 0.49864844],\n       [0.22657505, 0.35356565],\n       [0.65085179, 0.3129329 ],\n       [0.76873545, 0.7818371 ],\n       [0.85240948, 0.94990574],\n       [0.10732291, 0.91072536],\n       [0.33605516, 0.82638043],\n       [0.89810064, 0.0427153 ],\n       [0.195795  , 0.29450132],\n       [0.62699988, 0.08622311],\n       [0.14294502, 0.51582652],\n       [0.68934133, 0.85662581],\n       [0.64736168, 0.58161868],\n       [0.71111596, 0.25241686],\n       [0.90015968, 0.44229369],\n       [0.02052082, 0.95966101],\n       [0.65222542, 0.51320625],\n       [0.68235638, 0.48954039]])\n\n\n\nxy.shape\n\n(60, 2)\n\n\n\ng_test = distance_statistics.g_test(xy, support=10)\n\n\ng_test.support\n\narray([0.        , 0.02234347, 0.04468694, 0.06703042, 0.08937389,\n       0.11171736, 0.13406083, 0.15640431, 0.17874778, 0.20109125])\n\n\n\ng_test.statistic\n\narray([0.        , 0.06666667, 0.25      , 0.45      , 0.75      ,\n       0.88333333, 0.93333333, 0.95      , 0.96666667, 1.        ])\n\n\n\ng_test.pvalue\n\narray([0.    , 0.2107, 0.1562, 0.0401, 0.2977, 0.3212, 0.149 , 0.0276,\n       0.01  , 0.    ])\n\n\n\nnp.random.seed(12345)\n\n\ng_test = distance_statistics.g_test(xy, support=10, keep_simulations=True)\n\n\nplt.plot(g_test.support, np.median(g_test.simulations, axis=0), \n         color='k', label='simulated')\nplt.plot(g_test.support, g_test.statistic, \n         marker='x', color='orangered', label='observed')\nplt.legend()\nplt.xlabel('Distance')\nplt.ylabel('G Function')\nplt.title('G Function Plot')\nplt.show()\n\n\n\n\n\nimport pointpats as pp\nw = pp.Window([(0,0), (0,1), (1,1), (1,0), (0,0)])\ndraw = pp.PoissonClusterPointProcess(w, n, 2, 0.05, 1, asPP=True, conditioning=False)\ndraw.realizations[0].plot(window=True, title='Contagion Point Process (2 parents)')\n\n\n\n\n\nclustered = draw.realizations[0]\n\n\nclustered.summary()\n\nPoint Pattern\n60 points\nBounding rectangle [(0.3880852068183017,0.1920487333670708), (0.9855308808338277,0.7859987725789288)]\nArea of window: 1.0\nIntensity estimate for window: 60.0\n          x         y\n0  0.936029  0.253485\n1  0.929974  0.222201\n2  0.985531  0.198189\n3  0.451586  0.684369\n4  0.981087  0.252155\n\n\n\nclustered.points.values\n\narray([[0.93602881, 0.25348454],\n       [0.92997417, 0.22220051],\n       [0.98553088, 0.19818927],\n       [0.45158648, 0.68436857],\n       [0.98108664, 0.25215456],\n       [0.40895267, 0.70424641],\n       [0.98211881, 0.22395621],\n       [0.46341858, 0.67617262],\n       [0.45572343, 0.66778889],\n       [0.91247863, 0.24327922],\n       [0.4674465 , 0.69849281],\n       [0.42829857, 0.74424264],\n       [0.96144818, 0.23353782],\n       [0.96175169, 0.21380255],\n       [0.39956613, 0.66084373],\n       [0.45791592, 0.66212453],\n       [0.41341877, 0.66078139],\n       [0.39268188, 0.7026463 ],\n       [0.92951266, 0.19340388],\n       [0.39165541, 0.70455229],\n       [0.94548963, 0.23318984],\n       [0.96958363, 0.24623238],\n       [0.96061191, 0.24956254],\n       [0.9427918 , 0.19204873],\n       [0.4069812 , 0.70905879],\n       [0.9663112 , 0.276375  ],\n       [0.44699419, 0.73553358],\n       [0.45471201, 0.68990331],\n       [0.97001214, 0.22988156],\n       [0.45035077, 0.66932915],\n       [0.92289704, 0.26274113],\n       [0.41729609, 0.67551453],\n       [0.44700433, 0.65169471],\n       [0.95415705, 0.20597264],\n       [0.41578524, 0.64990448],\n       [0.40636046, 0.68940098],\n       [0.93587486, 0.20592523],\n       [0.43427924, 0.66446834],\n       [0.45442091, 0.71029846],\n       [0.96890921, 0.27829812],\n       [0.39917253, 0.66454166],\n       [0.38808521, 0.72102199],\n       [0.92563766, 0.23180904],\n       [0.98166772, 0.26329744],\n       [0.41058935, 0.72536645],\n       [0.96991539, 0.26144296],\n       [0.43114115, 0.65582185],\n       [0.95190485, 0.23491177],\n       [0.9624271 , 0.27930562],\n       [0.93040262, 0.25472519],\n       [0.41702449, 0.67069695],\n       [0.97441752, 0.20817744],\n       [0.45011998, 0.72272556],\n       [0.39649612, 0.70697249],\n       [0.41934237, 0.69166806],\n       [0.95085344, 0.21735325],\n       [0.39727912, 0.71160756],\n       [0.95655616, 0.20818975],\n       [0.69084822, 0.78509157],\n       [0.65813137, 0.78599877]])\n\n\n\ng_test_clustered = distance_statistics.g_test(clustered.points.values, support=10, keep_simulations=True)\n\n\nplt.plot(g_test_clustered.support, np.median(g_test_clustered.simulations, axis=0), \n         color='k', label='simulated')\nplt.plot(g_test_clustered.support, g_test_clustered.statistic, \n         marker='x', color='orangered', label='observed')\nplt.legend()\nplt.xlabel('Distance')\nplt.ylabel('G Function')\nplt.title('G Function Plot')\nplt.show()\n\n\n\n\n\n# grab the middle 95% of simulations using numpy:\nmiddle_95pct = np.percentile(g_test_clustered.simulations, q=(2.5, 97.5), axis=0)\n# use the fill_between function to color between the 2.5% and 97.5% envelope\nplt.fill_between(g_test_clustered.support, *middle_95pct, \n                 color='lightgrey', label='simulated')\n\n# plot the line for the observed value of G(d)\nplt.plot(g_test_clustered.support, g_test_clustered.statistic, \n         color='orangered', label='observed')\n# and plot the support points depending on whether their p-value is smaller than .05\nplt.scatter(g_test_clustered.support, g_test_clustered.statistic, \n            cmap='viridis', c=g_test_clustered.pvalue &lt; .01)\nplt.legend()\nplt.xlabel('Distance')\nplt.ylabel('G Function')\nplt.title('G Function Plot')\nplt.show()"
+  },
+  {
+    "objectID": "lectures/week-12/2023-11-01-distance-methods.html#f-function",
+    "href": "lectures/week-12/2023-11-01-distance-methods.html#f-function",
+    "title": "Inter-Event Distances",
+    "section": "F function",
+    "text": "F function"
+  },
+  {
+    "objectID": "lectures/week-12/2023-11-01-distance-methods.html#j-function",
+    "href": "lectures/week-12/2023-11-01-distance-methods.html#j-function",
+    "title": "Inter-Event Distances",
+    "section": "J Function",
+    "text": "J Function"
+  },
+  {
+    "objectID": "lectures/week-12/2023-11-01-distance-methods.html#k-function",
+    "href": "lectures/week-12/2023-11-01-distance-methods.html#k-function",
+    "title": "Inter-Event Distances",
+    "section": "K Function",
+    "text": "K Function"
+  },
+  {
+    "objectID": "lectures/week-12/2023-11-01-distance-methods.html#l-function",
+    "href": "lectures/week-12/2023-11-01-distance-methods.html#l-function",
+    "title": "Inter-Event Distances",
+    "section": "L Function",
+    "text": "L Function"
+  },
+  {
+    "objectID": "lectures/week-12/2023-11-01-distance-methods.html#fix-csr-in-example",
+    "href": "lectures/week-12/2023-11-01-distance-methods.html#fix-csr-in-example",
+    "title": "Inter-Event Distances",
+    "section": "Fix csr in example",
+    "text": "Fix csr in example\npick up with clustered and csr from https://nbviewer.org/github/pysal/pointpats/blob/main/notebooks/process.ipynb\n\nfrom libpysal.cg import shapely_ext\n# open the virginia polygon shapefile\nva = ps.io.open(ps.examples.get_path(\"virginia.shp\"))\npolys = [shp for shp in va]\nstate = shapely_ext.cascaded_union(polys)\n\n\nwindow = pointpats.window.Window(state.parts)\n\n\n\nfrom pointpats.process import PoissonPointProcess\n\n\npattern = PoissonPointProcess(window, 100, 1)\n\n\npattern.realizations[0]\n\narray([[-79.8705931 ,  36.6526587 ],\n       [-80.13967944,  37.18954009],\n       [-82.27761471,  37.17301512],\n       [-80.57092517,  37.37479842],\n       [-78.38763559,  37.49059824],\n       [-77.93929516,  37.93103913],\n       [-81.18061492,  37.13423631],\n       [-77.46924055,  38.44666055],\n       [-77.34437054,  36.77006713],\n       [-78.08238833,  38.83228648],\n       [-78.28886085,  37.53910199],\n       [-79.35027017,  37.59312314],\n       [-80.25690467,  36.85098847],\n       [-78.50297153,  38.75091539],\n       [-78.76640813,  38.74309759],\n       [-76.49010443,  37.67184973],\n       [-81.56839706,  36.62215255],\n       [-77.22713177,  36.65878699],\n       [-78.25059727,  37.93070185],\n       [-79.84179216,  37.04859528],\n       [-77.18292786,  36.80756687],\n       [-78.43943896,  36.76007596],\n       [-79.36846287,  36.99080377],\n       [-79.35179056,  37.67703254],\n       [-79.27239092,  37.07119148],\n       [-76.79282078,  36.80454957],\n       [-77.81419474,  37.77067074],\n       [-80.03107599,  37.61072156],\n       [-79.66425419,  37.8160351 ],\n       [-75.65124904,  37.65494416],\n       [-78.54717023,  38.04410072],\n       [-77.77553166,  38.67094002],\n       [-78.98707441,  38.70022687],\n       [-76.71224413,  38.09754108],\n       [-80.64965952,  36.6110004 ],\n       [-82.23583633,  37.27324709],\n       [-77.75441939,  37.88938661],\n       [-80.30151806,  37.41424082],\n       [-78.22747745,  36.74816192],\n       [-77.06895646,  38.21092115],\n       [-77.65222425,  38.21041911],\n       [-82.53918681,  36.81356627],\n       [-78.56893829,  38.74017507],\n       [-82.02632003,  36.96185632],\n       [-78.40752198,  37.03820001],\n       [-80.64392193,  37.00316181],\n       [-75.66871133,  37.92849661],\n       [-77.82001888,  37.85649168],\n       [-76.83321677,  38.0304104 ],\n       [-77.83598296,  37.51702566],\n       [-79.56729733,  37.6795819 ],\n       [-80.21230901,  37.29699201],\n       [-78.87895875,  37.78825737],\n       [-76.77292363,  36.66060503],\n       [-80.24522525,  37.5257574 ],\n       [-79.22904671,  36.9114553 ],\n       [-76.67926928,  37.3074161 ],\n       [-82.24403311,  36.61837181],\n       [-78.52535545,  37.73902981],\n       [-79.58602447,  38.34695309],\n       [-78.35763535,  36.94285659],\n       [-78.79232224,  36.55797826],\n       [-80.93200388,  36.71362487],\n       [-77.6258897 ,  38.60360348],\n       [-82.75633489,  36.91185332],\n       [-78.40455984,  38.495067  ],\n       [-78.51589643,  38.78890087],\n       [-80.97435547,  36.70610323],\n       [-77.68547614,  39.24944729],\n       [-77.56290273,  38.82173935],\n       [-78.50208062,  38.68640757],\n       [-76.65184701,  36.59800227],\n       [-79.19038388,  37.6110072 ],\n       [-76.05218409,  36.6731357 ],\n       [-79.75372603,  36.96927011],\n       [-81.95535381,  37.20428505],\n       [-78.2629914 ,  38.34697101],\n       [-78.32773364,  37.04693354],\n       [-77.92076451,  37.82898546],\n       [-79.95590256,  36.68795069],\n       [-77.34645107,  37.94549237],\n       [-78.91336545,  38.11502448],\n       [-78.66729528,  38.38885941],\n       [-77.48290387,  39.09100999],\n       [-81.99140098,  37.25512693],\n       [-76.7257266 ,  37.23346923],\n       [-78.90465728,  37.730973  ],\n       [-76.42192572,  37.7456001 ],\n       [-77.54990046,  37.75308622],\n       [-78.47895168,  36.78838971],\n       [-76.41188235,  37.79225381],\n       [-78.54588005,  38.74775608],\n       [-78.85488859,  37.26604972],\n       [-76.66371088,  37.84195335],\n       [-77.84390581,  38.44426545],\n       [-78.30005164,  37.19172186],\n       [-78.0706889 ,  38.63816117],\n       [-77.3432877 ,  38.30798819],\n       [-79.17065452,  38.5195279 ],\n       [-77.26794181,  38.04113075]])\n\n\n\npp_csr = pointpats.PointPattern(pattern.realizations[0])\n\n\npp_csr.plot(window=True, hull=True, title='Random Point Pattern')"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html",
+    "href": "lectures/week-10/2023-10-23-centrography.html",
+    "title": "Centrography for Point Patterns",
+    "section": "",
+    "text": "Centrography refers to a set of descriptive statistics that provide summary descriptions of point patterns.\nThis notebook introduces three types of centrography analysis for point patterns in pysal.\n\nCentral Tendency\nDispersion and Orientation\nShape Analysis\n\nWe also illustrate centrography analysis using two simulated datasets. See Another Example\n\nCentral Tendency\n\nmean_center: calculate the mean center of the unmarked point pattern.\nweighted_mean_center: calculate the weighted mean center of the marked point pattern.\nmanhattan_median: calculate the manhattan median\neuclidean_median: calculate the Euclidean median\n\nDispersion and Orientation\n\nstd_distance: calculate the standard distance\nstandard deviational ellipse\n\nShape Analysis\n\nhull: calculate the convex hull of the point pattern\nmbr: calculate the minimum bounding box (rectangle)\n\n\nAll of the above functions operate on a series of coordinate pairs. That is, the data type of the first argument should be \\((n,2)\\) array_like. In case that you have a point pattern (PointPattern instance), you need to pass its attribute “points” instead of itself to these functions.\n\nimport numpy as np\nfrom pointpats import PointPattern\n%matplotlib inline\nimport matplotlib.pyplot as plt\npoints = [[66.22, 32.54], [22.52, 22.39], [31.01, 81.21],\n          [9.47, 31.02],  [30.78, 60.10], [75.21, 58.93],\n          [79.26,  7.68], [8.23, 39.93],  [98.73, 77.17],\n          [89.78, 42.53], [65.19, 92.08], [54.46, 8.48]]\npp = PointPattern(points) #create a point pattern \"pp\" from list\npp.points \n\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n0\n66.22\n32.54\n\n\n1\n22.52\n22.39\n\n\n2\n31.01\n81.21\n\n\n3\n9.47\n31.02\n\n\n4\n30.78\n60.10\n\n\n5\n75.21\n58.93\n\n\n6\n79.26\n7.68\n\n\n7\n8.23\n39.93\n\n\n8\n98.73\n77.17\n\n\n9\n89.78\n42.53\n\n\n10\n65.19\n92.08\n\n\n11\n54.46\n8.48\n\n\n\n\n\n\n\n\ntype(pp.points)\n\npandas.core.frame.DataFrame\n\n\nWe can use PointPattern class method plot to visualize pp.\n\npp.plot()\n\n\n\n\n\nfrom pointpats.centrography import (hull, mbr, mean_center,\n                                    weighted_mean_center, manhattan_median,\n                                    std_distance,euclidean_median,ellipse)"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#introduction",
+    "href": "lectures/week-10/2023-10-23-centrography.html#introduction",
+    "title": "Centrography for Point Patterns",
+    "section": "",
+    "text": "Centrography refers to a set of descriptive statistics that provide summary descriptions of point patterns.\nThis notebook introduces three types of centrography analysis for point patterns in pysal.\n\nCentral Tendency\nDispersion and Orientation\nShape Analysis\n\nWe also illustrate centrography analysis using two simulated datasets. See Another Example\n\nCentral Tendency\n\nmean_center: calculate the mean center of the unmarked point pattern.\nweighted_mean_center: calculate the weighted mean center of the marked point pattern.\nmanhattan_median: calculate the manhattan median\neuclidean_median: calculate the Euclidean median\n\nDispersion and Orientation\n\nstd_distance: calculate the standard distance\nstandard deviational ellipse\n\nShape Analysis\n\nhull: calculate the convex hull of the point pattern\nmbr: calculate the minimum bounding box (rectangle)\n\n\nAll of the above functions operate on a series of coordinate pairs. That is, the data type of the first argument should be \\((n,2)\\) array_like. In case that you have a point pattern (PointPattern instance), you need to pass its attribute “points” instead of itself to these functions.\n\nimport numpy as np\nfrom pointpats import PointPattern\n%matplotlib inline\nimport matplotlib.pyplot as plt\npoints = [[66.22, 32.54], [22.52, 22.39], [31.01, 81.21],\n          [9.47, 31.02],  [30.78, 60.10], [75.21, 58.93],\n          [79.26,  7.68], [8.23, 39.93],  [98.73, 77.17],\n          [89.78, 42.53], [65.19, 92.08], [54.46, 8.48]]\npp = PointPattern(points) #create a point pattern \"pp\" from list\npp.points \n\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n0\n66.22\n32.54\n\n\n1\n22.52\n22.39\n\n\n2\n31.01\n81.21\n\n\n3\n9.47\n31.02\n\n\n4\n30.78\n60.10\n\n\n5\n75.21\n58.93\n\n\n6\n79.26\n7.68\n\n\n7\n8.23\n39.93\n\n\n8\n98.73\n77.17\n\n\n9\n89.78\n42.53\n\n\n10\n65.19\n92.08\n\n\n11\n54.46\n8.48\n\n\n\n\n\n\n\n\ntype(pp.points)\n\npandas.core.frame.DataFrame\n\n\nWe can use PointPattern class method plot to visualize pp.\n\npp.plot()\n\n\n\n\n\nfrom pointpats.centrography import (hull, mbr, mean_center,\n                                    weighted_mean_center, manhattan_median,\n                                    std_distance,euclidean_median,ellipse)"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#mean-center-x_mcy_mc",
+    "href": "lectures/week-10/2023-10-23-centrography.html#mean-center-x_mcy_mc",
+    "title": "Centrography for Point Patterns",
+    "section": "Mean Center \\((x_{mc},y_{mc})\\)",
+    "text": "Mean Center \\((x_{mc},y_{mc})\\)\n\\[x_{mc}=\\frac{1}{n} \\sum^n_{i=1}x_i\\] \\[y_{mc}=\\frac{1}{n} \\sum^n_{i=1}y_i\\]\n\nmc = mean_center(pp.points)\nmc\n\narray([52.57166667, 46.17166667])\n\n\n\npp.plot()\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28f76ef80&gt;"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#weighted-mean-center-x_wmcy_wmc",
+    "href": "lectures/week-10/2023-10-23-centrography.html#weighted-mean-center-x_wmcy_wmc",
+    "title": "Centrography for Point Patterns",
+    "section": "Weighted Mean Center \\((x_{wmc},y_{wmc})\\)",
+    "text": "Weighted Mean Center \\((x_{wmc},y_{wmc})\\)\n\\[x_{wmc}=\\sum^n_{i=1} \\frac{w_i x_i}{\\sum^n_{i=1}w_i}\\] \\[y_{wmc}=\\sum^n_{i=1} \\frac{w_i y_i}{\\sum^n_{i=1}w_i}\\]\nThe Weighted mean center is meant for marked point patterns. Aside from the first argument which is a series of \\((x,y)\\) coordinates in weighted_mean_center function, we need to specify its second argument which is the weight for each event point.\n\nweights = np.arange(12)\nweights\n\narray([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])\n\n\n\nwmc = weighted_mean_center(pp.points, weights)\nwmc\n\narray([60.51681818, 47.76848485])\n\n\n\npp.plot() #use class method \"plot\" to visualize point pattern\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center') \nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28f8a0640&gt;"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#manhattan-median-x_mmy_mm",
+    "href": "lectures/week-10/2023-10-23-centrography.html#manhattan-median-x_mmy_mm",
+    "title": "Centrography for Point Patterns",
+    "section": "Manhattan Median \\((x_{mm},y_{mm})\\)",
+    "text": "Manhattan Median \\((x_{mm},y_{mm})\\)\n\\[min  f(x_{mm},y_{mm})= \\sum^n_{i=1}(|x_i-x_{mm}|+|y_i-y_{mm}|)\\]\nThe Manhattan median is the location which minimizes the absolute distance to all the event points. It is an extension of the median measure in one-dimensional space to two-dimensional space. Since in one-dimensional space, a median is the number separating the higher half of a dataset from the lower half, we define the Manhattan median as a tuple whose first element is the median of \\(x\\) coordinates and second element is the median of \\(y\\) coordinates.\nThough Manhattan median can be found very quickly, it is not unique if you have even number of points. In this case, pysal handles the Manhattan median the same way as numpy.median: return the average of the two middle values.\n\n#get the number of points in point pattern \"pp\"\npp.n\n\n12\n\n\n\n#Manhattan Median is not unique for \"pp\"\nmm = manhattan_median(pp.points)\nmm\n\n/Users/srey/mambaforge/envs/385f23/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.\n  warnings.warn(s)\n\n\narray([59.825, 41.23 ])\n\n\n\npp.plot()\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28f999540&gt;"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#euclidean-median-x_emy_em",
+    "href": "lectures/week-10/2023-10-23-centrography.html#euclidean-median-x_emy_em",
+    "title": "Centrography for Point Patterns",
+    "section": "Euclidean Median \\((x_{em},y_{em})\\)",
+    "text": "Euclidean Median \\((x_{em},y_{em})\\)\n\\[min  f(x_{em},y_{em})= \\sum^n_{i=1} \\sqrt{(x_i-x_{em})^2+(y_i-y_{em})^2}\\]\nThe Euclidean Median is the location from which the sum of the Euclidean distances to all points in a distribution is a minimum. It is an optimization problem and very important for more general location allocation problems. There is no closed form solution. We can use first iterative algorithm (Kuhn and Kuenne, 1962) to approximate Euclidean Median.\nBelow, we define a function named median_center with the first argument points a series of \\((x,y)\\) coordinates and the second argument crit the convergence criterion.\n\ndef median_center(points, crit=0.0001):\n    points = np.asarray(points)\n    x0, y0 = points.mean(axis=0)\n    dx = np.inf\n    dy = np.inf\n    iteration = 0\n    while np.abs(dx) &gt; crit or np.abs(dy) &gt; crit:\n        xd = points[:, 0] - x0\n        yd = points[:, 1] - y0\n        d = np.sqrt(xd*xd + yd*yd)\n        w = 1./d\n        w = w / w.sum()\n        x1 = w * points[:, 0]\n        x1 = x1.sum()\n        y1 = w * points[:, 1]\n        y1 = y1.sum()\n        dx = x1 - x0\n        dy = y1 - y0\n        iteration +=1 \n        print(x0, x1, dx, dy, d.sum(), iteration)\n        x0 = x1\n        y0 = y1\n               \n    return x1, y1\n\n\nmedian_center(pp.points, crit=.0001)\n\n52.57166666666668 53.178128280602785 0.606461613936105 -0.9290354286335258 466.24479074356606 1\n53.178128280602785 53.56643624463614 0.388307964033352 -0.4199402653980684 465.9311160558993 2\n53.56643624463614 53.80720376806838 0.24076752343224683 -0.1974862190386233 465.84555867343346 3\n53.80720376806838 53.95348076207835 0.1462769940099662 -0.09642613786996179 465.8197750145871 4\n53.95348076207835 54.04117257066307 0.08769180858472225 -0.04872250646902643 465.8115372002813 5\n54.04117257066307 54.09327726928146 0.05210469861838618 -0.025370793047137852 465.80882301324334 6\n54.09327726928146 54.12405125525861 0.030773985977148755 -0.013552246205456697 465.8079149010591 7\n54.12405125525861 54.14215248769505 0.018101232436443127 -0.00739190209046825 465.8076087750224 8\n54.14215248769505 54.15276956049696 0.010617072801906602 -0.0040992658298719675 465.8075052025632 9\n54.15276956049696 54.15898467957115 0.0062151190741914775 -0.0023026998071102867 465.80747009858044 10\n54.15898467957115 54.16261796248172 0.0036332829105703013 -0.0013061853179365812 465.80745819050844 11\n54.16261796248172 54.16473989468326 0.002121932201539778 -0.0007463404183738476 465.80745414933307 12\n54.16473989468326 54.165978319450346 0.00123842476708802 -0.00042875101595285514 465.80745277762423 13\n54.165978319450346 54.166700756153695 0.0007224367033487056 -0.00024727631074483725 465.80745231197506 14\n54.166700756153695 54.16712204754273 0.0004212913890384584 -0.00014302182778891392 465.8074521538953 15\n54.16712204754273 54.16736766581608 0.00024561827334679265 -8.289363293556562e-05 465.8074521002288 16\n54.16736766581608 54.167510839857464 0.0001431740413835314 -4.8115880247223686e-05 465.80745208200943 17\n54.167510839857464 54.167594287646125 8.344778866131719e-05 -2.7959041396741213e-05 465.807452075824 18\n\n\n(54.167594287646125, 44.42430865883205)\n\n\nAfter 18 iterations, the convergence criterion is reached. The Euclidean Median is \\((54.167594287646125,44.424308658832047)\\).\nWe can also call the function euclidean_median in pysal to calculate the Euclidean Median.\n\nem = euclidean_median(pp.points)\nem\n\narray([54.16773427, 44.42425854])\n\n\nThe two results we get from euclidean_median function in pysal and the median_center function we define here are very much the same.\n\npp.plot()\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28f99a350&gt;"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#standard-distance-standard-distance-circle",
+    "href": "lectures/week-10/2023-10-23-centrography.html#standard-distance-standard-distance-circle",
+    "title": "Centrography for Point Patterns",
+    "section": "Standard Distance & Standard Distance Circle",
+    "text": "Standard Distance & Standard Distance Circle\n\\[SD = \\displaystyle \\sqrt{\\frac{\\sum^n_{i=1}(x_i-x_{m})^2}{n} + \\frac{\\sum^n_{i=1}(y_i-y_{m})^2}{n}}\\]\nThe Standard distance is closely related to the usual definition of the standard deviation of a data set, and it provides a measure of how dispersed the events are around their mean center \\((x_m,y_m)\\). Taken together, these measurements can be used to plot a summary circle (standard distance circle) for the point pattern, centered at \\((x_m,y_m)\\) with radius \\(SD\\), as shown below.\n\nstdd = std_distance(pp.points)\nstdd\n\n40.14980648908671\n\n\nPlot mean center as well as the standard distance circle.\n\ncircle1=plt.Circle((mc[0], mc[1]),stdd,color='r')\nax = pp.plot(get_ax=True, title='Standard Distance Circle')\nax.add_artist(circle1)\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nax.set_aspect('equal')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28faad930&gt;\n\n\n\n\n\nFrom the above figure, we can observe that there are five points outside the standard distance circle which are potential outliers."
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#standard-deviational-ellipse",
+    "href": "lectures/week-10/2023-10-23-centrography.html#standard-deviational-ellipse",
+    "title": "Centrography for Point Patterns",
+    "section": "Standard Deviational Ellipse",
+    "text": "Standard Deviational Ellipse\nCompared with standard distance circle which measures dispersion using a single parameter \\(SD\\), standard deviational ellipse measures dispersion and trend in two dimensions through angle of rotation \\(\\theta\\), dispersion along major axis \\(s_x\\) and dispersion along minor axis \\(s_y\\):\n\nMajor axis defines the direction of maximum spread in the distribution. \\(s_x\\) is the semi-major axis (half the length of the major axis):\n\n\\[ s_x = \\displaystyle \\sqrt{\\frac{2(\\sum_{i=1}^n (x_i-\\bar{x})\\cos(\\theta) - \\sum_{i=1}^n (y_i-\\bar{y})\\sin(\\theta))^2}{n-2}}\\]\n\nMinor axis defines the direction of minimum spread and is orthogonal to major axis. \\(s_y\\) is the semi-minor axis (half the length of the minor axis):\n\n\\[ s_y = \\displaystyle \\sqrt{\\frac{2(\\sum_{i=1}^n (x_i-\\bar{x})\\sin(\\theta) - \\sum_{i=1}^n (y_i-\\bar{y})\\cos(\\theta))^2}{n-2}}\\]\n\nThe ellipse is rotated clockwise through an angle \\(\\theta\\):\n\n\\[\\theta = \\displaystyle \\arctan{\\{ (\\sum_i(x_i-\\bar{x})^2-\\sum_i(y_i-\\bar{y})^2) + \\frac{[(\\sum_i(x_i-\\bar{x})^2-\\sum_i(y_i-\\bar{y})^2)^2 + 4(\\sum_i(x-\\bar{x})(y_i-\\bar{y}))^2]^\\frac{1}{2}}{2\\sum_i(x-\\bar{x})(y_i-\\bar{y})}\\}}\\]\n\nsx, sy, theta = ellipse(pp.points)\nsx, sy, theta\n\n(39.62386788646298, 42.753818949026815, 1.1039268428650906)\n\n\n\ntheta_degree = np.degrees(theta) #need degree of rotation to plot the ellipse\ntheta_degree\n\n63.250348987371304\n\n\nThe Standard Deviational Ellipse for the point pattern is rotated clockwise by \\(63.25^{\\circ}\\).\n\nfrom matplotlib.patches import Ellipse\nfrom pylab import figure, show,rand\nfig = figure()\n#ax = fig.add_subplot(111, aspect='equal')\ne = Ellipse(xy=mean_center(pp.points), width=sx*2, height=sy*2, angle=-theta_degree) #angle is rotation in degrees (anti-clockwise)\nax = pp.plot(get_ax=True, title='Standard Deviational Ellipse')\nax.add_artist(e)\ne.set_clip_box(ax.bbox)\ne.set_facecolor([0.8,0,0])\ne.set_edgecolor([1,0,0])\nax.set_xlim(0,100)\nax.set_ylim(0,100)\nax.set_aspect('equal')\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.legend(numpoints=1)\nshow()\n\n&lt;Figure size 672x480 with 0 Axes&gt;"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#convex-hull",
+    "href": "lectures/week-10/2023-10-23-centrography.html#convex-hull",
+    "title": "Centrography for Point Patterns",
+    "section": "Convex Hull",
+    "text": "Convex Hull\nThe convex hull of a point pattern pp is the smallest convex set that contains pp. We can call function hull to caculate the convex hull.\n\nhull(pp.points)\n\narray([[31.01, 81.21],\n       [ 8.23, 39.93],\n       [ 9.47, 31.02],\n       [22.52, 22.39],\n       [54.46,  8.48],\n       [79.26,  7.68],\n       [89.78, 42.53],\n       [98.73, 77.17],\n       [65.19, 92.08]])\n\n\nBy specifying “hull” argument True in PointPattern class method plot, we can easily plot convex hull of the point pattern.\n\npp.plot(title='Centers', hull=True ) #plot point pattern \"pp\" as well as its convex hull\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28fa92950&gt;"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#minimum-bounding-rectangle",
+    "href": "lectures/week-10/2023-10-23-centrography.html#minimum-bounding-rectangle",
+    "title": "Centrography for Point Patterns",
+    "section": "Minimum Bounding Rectangle",
+    "text": "Minimum Bounding Rectangle\nMinimum Bounding Rectangle (Box) is the same as the minimum bounding Rectangle of its convex hull. Thus, it is almost always bigger than convex hull.\nWe can call mbr function to calculate the leftmost, downmost, rightmost, and upmost value of the vertices of minimum bounding rectangle.\n\nmbr(pp.points)\n\n/var/folders/w4/_fx8nhgx7bb77lbtxzxv31f40000gq/T/ipykernel_12519/2243439823.py:1: FutureWarning: This function will be deprecated in the next release of pointpats.\n  mbr(pp.points)\n\n\n(8.23, 7.68, 98.73, 92.08)\n\n\nThus, four vertices of the minimum bounding rectangle is \\((8.23,7.68),(98.73,7.68),(98.73,92.08),(8.23,92.08)\\).\n\npp.plot(title='Centers', window=True ) #plot point pattern \"pp\" as well as its Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28fc270d0&gt;\n\n\n\n\n\n\npp.plot(title='Centers',  hull=True , window=True )#plot point pattern \"pp\", convex hull, and Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nplt.plot(wmc[0], wmc[1], 'gd', label='Weighted Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28fccbcd0&gt;\n\n\n\n\n\nPlot Standard Distance Circle and Convex Hull.\n\ncircle1=plt.Circle((mc[0], mc[1]),stdd,color='r',alpha=0.2)\nax = pp.plot(get_ax=True, title='Standard Distance Circle', hull=True)\nax.add_artist(circle1)\nplt.plot(mc[0], mc[1], 'b^', label='Mean Center')\nax.set_aspect('equal')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28fd50be0&gt;"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#simulate-a-100-point-dataset-within-va-state-border-from-a-csr-complete-spatial-randomness-process.",
+    "href": "lectures/week-10/2023-10-23-centrography.html#simulate-a-100-point-dataset-within-va-state-border-from-a-csr-complete-spatial-randomness-process.",
+    "title": "Centrography for Point Patterns",
+    "section": "Simulate a 100-point dataset within VA state border from a CSR (complete spatial randomness) process.",
+    "text": "Simulate a 100-point dataset within VA state border from a CSR (complete spatial randomness) process.\n\npp = csr(as_window(state), 100, 1, asPP=True).realizations[0]\npp.plot(window=True)\n\n\n\n\n\npp.plot(window=True, hull=True)\n\n\n\n\n\nmc = mean_center(pp.points)\nmm = manhattan_median(pp.points)\nem = euclidean_median(pp.points)\npp.plot(title='Centers',  hull=True , window=True )#plot point pattern \"pp\", convex hull, and Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28ffeead0&gt;\n\n\n\n\n\nPlot Standard Distance Circle of the simulated point pattern.\n\nsx, sy, theta = ellipse(pp.points)\nsx, sy, theta\ntheta_degree = np.degrees(theta) #need degree of rotation to plot the ellipse\nfrom matplotlib.patches import Ellipse\nfrom pylab import figure, show,rand\nfig = figure()\n#ax = fig.add_subplot(111, aspect='equal')\ne = Ellipse(xy=mean_center(pp.points), width=sx*2, height=sy*2, angle=-theta_degree)\nax = pp.plot(get_ax=True, title='Standard Deviational Ellipse')\nax.add_artist(e)\ne.set_clip_box(ax.bbox)\ne.set_facecolor([0.8,0,0])\ne.set_edgecolor([1,0,0])\nax.set_xlim(300000,1000000)\nax.set_ylim(4050000,4350000)\n#ax.set_aspect('equal')\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.legend(numpoints=1)\nshow()\n\n&lt;Figure size 672x480 with 0 Axes&gt;"
+  },
+  {
+    "objectID": "lectures/week-10/2023-10-23-centrography.html#simulate-a-500-point-dataset-within-va-state-border-from-a-csr-complete-spatial-randomness-process.",
+    "href": "lectures/week-10/2023-10-23-centrography.html#simulate-a-500-point-dataset-within-va-state-border-from-a-csr-complete-spatial-randomness-process.",
+    "title": "Centrography for Point Patterns",
+    "section": "Simulate a 500-point dataset within VA state border from a CSR (complete spatial randomness) process.",
+    "text": "Simulate a 500-point dataset within VA state border from a CSR (complete spatial randomness) process.\n\npp = csr(as_window(state), 500, 1, asPP=True).realizations[0]\npp.plot(window=True)\n\n\n\n\n\npp.plot(window=True, hull=True)\n\n\n\n\n\nmc = mean_center(pp.points)\nmm = manhattan_median(pp.points)\nem = euclidean_median(pp.points)\npp.plot(title='Centers',  hull=True , window=True )#plot point pattern \"pp\", convex hull, and Minimum Bounding Rectangle\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.plot(mm[0], mm[1], 'rv', label='Manhattan Median')\nplt.plot(em[0], em[1], 'm+', label='Euclidean Median')\nplt.legend(numpoints=1)\n\n&lt;matplotlib.legend.Legend at 0x28fc25bd0&gt;\n\n\n\n\n\n\nsx, sy, theta = ellipse(pp.points)\nsx, sy, theta\ntheta_degree = np.degrees(theta) #need degree of rotation to plot the ellipse\nfrom matplotlib.patches import Ellipse\nfrom pylab import figure, show,rand\nfig = figure()\n#ax = fig.add_subplot(111, aspect='equal')\ne = Ellipse(xy=mean_center(pp.points), width=sx*2, height=sy*2, angle=-theta_degree)\nax = pp.plot(get_ax=True, title='Standard Deviational Ellipse')\nax.add_artist(e)\ne.set_clip_box(ax.bbox)\ne.set_facecolor([0.8,0,0])\ne.set_edgecolor([1,0,0])\nax.set_xlim(300000,1000000)\nax.set_ylim(4050000,4350000)\n#ax.set_aspect('equal')\nplt.plot(mc[0], mc[1], 'c^', label='Mean Center')\nplt.legend(numpoints=1)\nshow()\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\n\n\nIf we calculate the Euclidean distances between every event point and Mean Center (Euclidean Median), and sum them up, we can see that Euclidean Median is the optimal point in iterms of minimizing the Euclidean distances to all the event points.\n\nfrom pointpats import dtot\nprint(dtot(mc, pp.points))\nprint(dtot(em, pp.points))\nprint(dtot(mc, pp.points) &gt; dtot(em, pp.points))\n\n74600928.2837328\n74279426.4231433\nTrue"
   }
 ]
