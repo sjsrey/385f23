@@ -12,6 +12,8 @@ dependencies:
   - xarray
   - jupyterlab
   - osmnx
+  - h3-py
+  - pykrige
   - pip:
     - rioxarray
     - rasterstats
