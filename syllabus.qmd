@@ -129,8 +129,8 @@ completed the readings.
 | 13   | Nov-13 | Spatial Interpolation        | TBA          | Quiz 11    |
 |      | Nov-15 | Kriging                      | TBA          |            |
 | 14   | Nov-20 | Network Data                 | TBA          | Quiz 12    |
-|      | Nov-22 | Spatial Interaction Data     | TBA          |            |
-| 15   | Nov-27 | Gravity Models               | TBA          | Quiz 13    |
+|      | Nov-22 | No Class SDSU Holiday        | TBA          |            |
+| 15   | Nov-27 | Spatial Interaction Data               | TBA          | Quiz 13    |
 |      | Nov-29 | Measuring Spatial Disparities| TBA          |            |
 | 16   | Dec-04 | Spatial Segregation          | TBA          | Quiz 14    |
 |      | Dec-06 | Next Steps in SDA             |              | Exercise 4 |
