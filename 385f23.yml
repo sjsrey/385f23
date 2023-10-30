@@ -1,0 +1,17 @@
+name: 385f23
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - geopandas
+  - geosnap
+  - pysal
+  - seaborn
+  - contextily
+  - scikit-learn
+  - jupyterlab
+  - matplotlib
+  - pyarrow
+  - quarto
+  - texlive-core
+

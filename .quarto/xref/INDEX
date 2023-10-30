@@ -76,5 +76,11 @@
   },
   "lectures/week-10/2023-10-25-point-processes.qmd": {
     "2023-10-25-point-processes.html": "49ebe777"
+  },
+  "lectures/week-12/2023-11-06-distance-based.ipynb": {
+    "2023-11-06-distance-based.html": "61ad647b"
+  },
+  "lectures/week-12/2023-11-08-geostat-data.ipynb": {
+    "2023-11-08-geostat-data.html": "73062bdf"
   }
 }
