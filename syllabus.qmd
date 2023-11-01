@@ -125,14 +125,14 @@ completed the readings.
 | 11   | Oct-30 | Quadrat Statistics           | GDS 8        | Quiz 9     |
 |      | Nov-01 | Nearest Neighbor Statistics  | GDS 8        |            |
 | 12   | Nov-06 | Distance Based Statistics    | GDS 8          | Quiz 10    |
-|      | Nov-08 | Geostatistical Data          | TBA          | Exercise 3 |
-| 13   | Nov-13 | Spatial Interpolation        | TBA          | Quiz 11    |
-|      | Nov-15 | NARSC Workshop (Zoom)        | TBA          |            |
-| 14   | Nov-20 | Network Data                 | TBA          | Quiz 12    |
-|      | Nov-22 | No Class SDSU Holiday        | TBA          |            |
-| 15   | Nov-27 | Spatial Interaction Data               | TBA          | Quiz 13    |
-|      | Nov-29 | Measuring Spatial Disparities| TBA          |            |
-| 16   | Dec-04 | Spatial Segregation          | TBA          | Quiz 14    |
+|      | Nov-08 | Geostatistical Data          | [DS 6](https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm)          | Exercise 3 |
+| 13   | Nov-13 | Spatial Interpolation        | [DS 6.6](https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm)          | Quiz 11    |
+|      | Nov-15 | NARSC Workshop (Zoom)        |           |            |
+| 14   | Nov-20 | Network Data                 | [DS 7](https://www.spatialanalysisonline.com/HTML/network_and_location_analysis.htm)          | Quiz 12    |
+|      | Nov-22 | No Class SDSU Holiday        |           |            |
+| 15   | Nov-27 | Spatial Interaction Data               | [TO](https://openjournals.wu.ac.at/region/paper_175/175.html)          | Quiz 13    |
+|      | Nov-29 | Measuring Spatial Disparities| GDS 9          |            |
+| 16   | Dec-04 | Spatial Segregation          | [CEN](https://www.census.gov/topics/housing/housing-patterns/guidance/appendix-b.html)          | Quiz 14    |
 |      | Dec-06 | Next Steps in SDA             |              | Exercise 4 |
 | 17   | Dec-11 | Final Review                  |              | Quiz 15    |
 | 18   | Dec-18 | *Final Exam (13:00-15:00)*    |              |            |
