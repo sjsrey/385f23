@@ -82,5 +82,17 @@
   },
   "lectures/week-12/2023-11-08-geostat-data.ipynb": {
     "2023-11-08-geostat-data.html": "73062bdf"
+  },
+  "lectures/week-11/2023-10-30-quadrat-statistics.ipynb": {
+    "2023-10-30-quadrat-statistics.html": "675483e6"
+  },
+  "lectures/week-12/distance_statistics-numpy-oriented.ipynb": {
+    "distance_statistics-numpy-oriented.html": "405f2617"
+  },
+  "lectures/week-11/2023-11-01-nearest-neighbor-Copy1.ipynb": {
+    "2023-11-01-nearest-neighbor-Copy1.html": "6d05a972"
+  },
+  "lectures/week-11/2023-11-01-nearest-neighbor.ipynb": {
+    "2023-11-01-nearest-neighbor.html": "60bd68f9"
   }
 }

@@ -124,10 +124,10 @@ completed the readings.
 |      | Oct-25 | Point Processes              | GDS 8        |            |
 | 11   | Oct-30 | Quadrat Statistics           | GDS 8        | Quiz 9     |
 |      | Nov-01 | Nearest Neighbor Statistics  | GDS 8        |            |
-| 12   | Nov-06 | Distance Based Statistics    | TBA          | Quiz 10    |
+| 12   | Nov-06 | Distance Based Statistics    | GDS 8          | Quiz 10    |
 |      | Nov-08 | Geostatistical Data          | TBA          | Exercise 3 |
 | 13   | Nov-13 | Spatial Interpolation        | TBA          | Quiz 11    |
-|      | Nov-15 | Kriging                      | TBA          |            |
+|      | Nov-15 | NARSC Workshop (Zoom)        | TBA          |            |
 | 14   | Nov-20 | Network Data                 | TBA          | Quiz 12    |
 |      | Nov-22 | No Class SDSU Holiday        | TBA          |            |
 | 15   | Nov-27 | Spatial Interaction Data               | TBA          | Quiz 13    |
