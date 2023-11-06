@@ -77,22 +77,34 @@
   "lectures/week-10/2023-10-25-point-processes.qmd": {
     "2023-10-25-point-processes.html": "49ebe777"
   },
-  "lectures/week-12/2023-11-06-distance-based.ipynb": {
-    "2023-11-06-distance-based.html": "61ad647b"
-  },
-  "lectures/week-12/2023-11-08-geostat-data.ipynb": {
-    "2023-11-08-geostat-data.html": "73062bdf"
-  },
   "lectures/week-11/2023-10-30-quadrat-statistics.ipynb": {
-    "2023-10-30-quadrat-statistics.html": "675483e6"
-  },
-  "lectures/week-12/distance_statistics-numpy-oriented.ipynb": {
-    "distance_statistics-numpy-oriented.html": "405f2617"
+    "2023-10-30-quadrat-statistics.html": "7e6e5e3a"
   },
   "lectures/week-11/2023-11-01-nearest-neighbor-Copy1.ipynb": {
-    "2023-11-01-nearest-neighbor-Copy1.html": "6d05a972"
+    "2023-11-01-nearest-neighbor-Copy1.html": "cdb8b4f9"
   },
   "lectures/week-11/2023-11-01-nearest-neighbor.ipynb": {
-    "2023-11-01-nearest-neighbor.html": "60bd68f9"
+    "2023-11-01-nearest-neighbor.html": "6c1530e4"
+  },
+  "lectures/week-12/interpolation_deterministic.ipynb": {
+    "interpolation_deterministic.html": "f986e5d1"
+  },
+  "lectures/week-12/2023-11-06-distance-based.ipynb": {
+    "2023-11-06-distance-based.html": "d6565e19"
+  },
+  "lectures/week-12/2023-11-01-distance-based.ipynb": {
+    "2023-11-01-distance-based.html": "beb0c92f"
+  },
+  "lectures/week-12/interp.ipynb": {
+    "interp.html": "e0d1060f"
+  },
+  "lectures/week-12/interpolation_kriging.ipynb": {
+    "interpolation_kriging.html": "8661d55b"
+  },
+  "lectures/week-12/distance_statistics-numpy-oriented.ipynb": {
+    "distance_statistics-numpy-oriented.html": "f5718d3d"
+  },
+  "lectures/week-12/geostat_data.ipynb": {
+    "geostat_data.html": "f264081c"
   }
 }

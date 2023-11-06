@@ -1,0 +1,19 @@
+name: 385f23
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - pysal
+  - geosnap
+  - seaborn
+  - contextily
+  - xarray
+  - jupyterlab
+  - osmnx
+  - h3-py
+  - pykrige
+  - pip:
+    - rioxarray
+    - rasterstats

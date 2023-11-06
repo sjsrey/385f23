@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Geog385F23 - Distance Based Statistical Method for Planar Point Patterns</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Geog385F23</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../syllabus.html" rel="" target="">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lectures" rel="" target="">
+ <span class="menu-text">Lectures</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#mean-nearest-neighbor-distance-statistics" id="toc-mean-nearest-neighbor-distance-statistics" class="nav-link" data-scroll-target="#mean-nearest-neighbor-distance-statistics">Mean Nearest Neighbor Distance Statistics</a></li>
+  <li><a href="#nearest-neighbor-distance-functions" id="toc-nearest-neighbor-distance-functions" class="nav-link" data-scroll-target="#nearest-neighbor-distance-functions">Nearest Neighbor Distance Functions</a></li>
+  <li><a href="#interevent-distance-functions" id="toc-interevent-distance-functions" class="nav-link" data-scroll-target="#interevent-distance-functions">Interevent Distance Functions</a></li>
+  <li><a href="#csr-example" id="toc-csr-example" class="nav-link" data-scroll-target="#csr-example">CSR Example</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Distance Based Statistical Method for Planar Point Patterns</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><strong>Authors: Serge Rey <a href="mailto:sjsrey@gmail.com" class="email">sjsrey@gmail.com</a> and Wei Kang <a href="mailto:weikang9009@gmail.com" class="email">weikang9009@gmail.com</a></strong></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Distance based methods for point patterns are of three types:</p>
+<ul>
+<li><a href="#Mean-Nearest-Neighbor-Distance-Statistics">Mean Nearest Neighbor Distance Statistics</a></li>
+<li><a href="#Nearest-Neighbor-Distance-Functions">Nearest Neighbor Distance Functions</a></li>
+<li><a href="#Interevent-Distance-Functions">Interevent Distance Functions</a></li>
+</ul>
+<p>In addition, we are going to introduce a computational technique <a href="#Simulation-Envelopes">Simulation Envelopes</a> to aid in making inferences about the data generating process. An <a href="#CSR-Example">example</a> is used to demonstrate how to use and interprete simulation envelopes.</p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> spatial</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> libpysal <span class="im">as</span> ps</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pointpats <span class="im">import</span> ripley</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>ImportError: cannot import name 'ripley' from 'pointpats' (/home/serge/miniforge3/envs/385f23/lib/python3.11/site-packages/pointpats/__init__.py)</code></pre>
+</div>
+</div>
+</section>
+<section id="mean-nearest-neighbor-distance-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="mean-nearest-neighbor-distance-statistics">Mean Nearest Neighbor Distance Statistics</h2>
+<p>The nearest neighbor(s) for a point <span class="math inline">\(u\)</span> is the point(s) <span class="math inline">\(N(u)\)</span> which meet the condition <span class="math display">\[d_{u,N(u)} \leq d_{u,j} \forall j \in S - u\]</span></p>
+<p>The distance between the nearest neighbor(s) <span class="math inline">\(N(u)\)</span> and the point <span class="math inline">\(u\)</span> is nearest neighbor distance for <span class="math inline">\(u\)</span>. After searching for nearest neighbor(s) for all the points and calculating the corresponding distances, we are able to calculate mean nearest neighbor distance by averaging these distances.</p>
+<p>It was demonstrated by Clark and Evans(1954) that mean nearest neighbor distance statistics distribution is a normal distribution under null hypothesis (underlying spatial process is CSR). We can utilize the test statistics to determine whether the point pattern is the outcome of CSR. If not, is it the outcome of cluster or regular spatial process?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>points <span class="op">=</span> np.array([[<span class="fl">66.22</span>, <span class="fl">32.54</span>], [<span class="fl">22.52</span>, <span class="fl">22.39</span>], [<span class="fl">31.01</span>, <span class="fl">81.21</span>],</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                   [<span class="fl">9.47</span>, <span class="fl">31.02</span>],  [<span class="fl">30.78</span>, <span class="fl">60.10</span>], [<span class="fl">75.21</span>, <span class="fl">58.93</span>],</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                   [<span class="fl">79.26</span>,  <span class="fl">7.68</span>], [<span class="fl">8.23</span>, <span class="fl">39.93</span>],  [<span class="fl">98.73</span>, <span class="fl">77.17</span>],</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                   [<span class="fl">89.78</span>, <span class="fl">42.53</span>], [<span class="fl">65.19</span>, <span class="fl">92.08</span>], [<span class="fl">54.46</span>, <span class="fl">8.48</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="nearest-neighbor-distance-functions" class="level2">
+<h2 class="anchored" data-anchor-id="nearest-neighbor-distance-functions">Nearest Neighbor Distance Functions</h2>
+<p>Nearest neighbour distance distribution functions (including the nearest “event-to-event” and “point-event” distance distribution functions) of a point process are cumulative distribution functions of several kinds – <span class="math inline">\(G, F, J\)</span>. By comparing the distance function of the observed point pattern with that of the point pattern from a CSR process, we are able to infer whether the underlying spatial process of the observed point pattern is CSR or not for a given confidence level.</p>
+<section id="g-function---event-to-event" class="level4">
+<h4 class="anchored" data-anchor-id="g-function---event-to-event"><span class="math inline">\(G\)</span> function - event-to-event</h4>
+<p>The <span class="math inline">\(G\)</span> function is a kind of “cumulative” density describing the distribution of distances within a point pattern. For a given distance <span class="math inline">\(d\)</span>, <span class="math inline">\(G(d)\)</span> is the proportion of nearest neighbor distances that are less than <span class="math inline">\(d\)</span>. To express this, we first need to define the nearest neighbor distance, which is the smallest distance from each observation <span class="math inline">\(i\)</span> to some other observation <span class="math inline">\(j\)</span>, where <span class="math inline">\(j \neq i\)</span>: <span class="math display">\[ min_{j\neq i}\{d_{ij}\} = d^*_i \]</span></p>
+<p>With this, we can define the <span class="math inline">\(G\)</span> function as a cumulative density function: <span class="math display">\[G(d) = \frac{1}{N}\sum_{i=1}^N \mathcal{I}(d^*_i &lt; d)\]</span> where <span class="math inline">\(\mathcal{I}(.)\)</span> is an <em>indicator function</em> that is <span class="math inline">\(1\)</span> when the argument is true and is zero otherwise. In simple terms, <span class="math inline">\(G(d)\)</span> gives the percentage of of nearest neighbor distances (<span class="math inline">\(d^*_i\)</span>) that are smaller than <span class="math inline">\(d\)</span>; when <span class="math inline">\(d\)</span> is very small, <span class="math inline">\(G(d)\)</span> is close to zero. When <span class="math inline">\(d\)</span> is large, <span class="math inline">\(G(d)\)</span> approaches one.</p>
+<p>Analytical results about <span class="math inline">\(G\)</span> are available assuming that the “null” process of locating points in the study area is completely spatially random. In a completely spatially random process, the <span class="math inline">\(G(d)\)</span> value should be: <span class="math display">\[
+G(d) = 1-e^{-\lambda \pi d^2}
+\]</span> Practically, we assess statistical significance for the <span class="math inline">\(G(d)\)</span> function using simulations, where a known spatially-random process is generated and then analyzed. This partially accounts for issues with irregularly-shaped study areas, where locations of points are constrained.</p>
+<p>In practice, we use the <code>ripley.g_test</code> function to conduct a test on the <span class="math inline">\(G(d)\)</span>. It estimates a value of <span class="math inline">\(G(d)\)</span> for a set of values (called the <code>support</code>). To compute the <span class="math inline">\(G\)</span> function for ten values of <span class="math inline">\(d\)</span> ranging from the smallest possible to the largest values in the data:</p>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>g_test <span class="op">=</span> ripley.g_test(points, support<span class="op">=</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>All statistical tests in the <code>pointpats.distance_statistics</code> return a <code>collections.namedtuple</code> object with the following properties: - <code>support</code>, which contains the distance values (<span class="math inline">\(d\)</span>) used to compute the distance statistic. - <code>statistic</code>, which expresses the value of the requested function at each value of <span class="math inline">\(d\)</span> in the <code>support</code>. - <code>pvalue</code>, which expresses the fraction of observed simulations (under a completely spatially random process) that are more extreme than the observed statistics. - <code>simulations</code>, which stores the simulated values of the statistic under a spatially random process. Generally, this is <em>not</em> saved (for efficiency reasons), but can be requested using <code>keep_simulations</code>.</p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>g_test.support</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>array([ 0.        ,  3.84791574,  7.69583148, 11.54374723, 15.39166297,
+       19.23957871, 23.08749445, 26.93541019, 30.78332593, 34.63124168])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>g_test.statistic</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>array([0.        , 0.        , 0.        , 0.16666667, 0.16666667,
+       0.25      , 0.58333333, 0.83333333, 0.91666667, 1.        ])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>g_test.pvalue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>array([0.00e+00, 0.00e+00, 0.00e+00, 2.89e-02, 1.10e-03, 1.00e-04,
+       4.30e-03, 6.10e-02, 7.33e-02, 0.00e+00])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>g_test.simulations</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To make a plot of the statistic, the <code>statistic</code> is generally plotted on the vertical axis and the <code>support</code> on the horizontal axis. Here, we will show the median simulated value of <span class="math inline">\(G(d)\)</span> as well.</p>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>g_test <span class="op">=</span> ripley.g_test(points, support<span class="op">=</span><span class="dv">10</span>, keep_simulations<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>plt.plot(g_test.support, np.median(g_test.simulations, axis<span class="op">=</span><span class="dv">0</span>), </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>         color<span class="op">=</span><span class="st">'k'</span>, label<span class="op">=</span><span class="st">'simulated'</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>plt.plot(g_test.support, g_test.statistic, </span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>         marker<span class="op">=</span><span class="st">'x'</span>, color<span class="op">=</span><span class="st">'orangered'</span>, label<span class="op">=</span><span class="st">'observed'</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Distance'</span>)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'G Function'</span>)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'G Function Plot'</span>)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="distance_statistics-numpy-oriented_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>As you can see, the <span class="math inline">\(G\)</span> function increases very slowly at small distances and the line is below the typical simulated value (shown in black). We can verify the visual intuition here by looking at the p-value for each point and plotting the simulated <span class="math inline">\(G(d)\)</span> curves, too:</p>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># grab the middle 95% of simulations using numpy:</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>middle_95pct <span class="op">=</span> np.percentile(g_test.simulations, q<span class="op">=</span>(<span class="fl">2.5</span>, <span class="fl">97.5</span>), axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># use the fill_between function to color between the 2.5% and 97.5% envelope</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>plt.fill_between(g_test.support, <span class="op">*</span>middle_95pct, </span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>                 color<span class="op">=</span><span class="st">'lightgrey'</span>, label<span class="op">=</span><span class="st">'simulated'</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the line for the observed value of G(d)</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>plt.plot(g_test.support, g_test.statistic, </span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>         color<span class="op">=</span><span class="st">'orangered'</span>, label<span class="op">=</span><span class="st">'observed'</span>)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># and plot the support points depending on whether their p-value is smaller than .05</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>plt.scatter(g_test.support, g_test.statistic, </span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>            cmap<span class="op">=</span><span class="st">'viridis'</span>, c<span class="op">=</span>g_test.pvalue <span class="op">&lt;</span> <span class="fl">.01</span>)</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Distance'</span>)</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'G Function'</span>)</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'G Function Plot'</span>)</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="distance_statistics-numpy-oriented_files/figure-html/cell-11-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>From this, we can see that there is statistically significant “dispersion” at small values of <span class="math inline">\(d\)</span>, since there are <em>too few</em> nearest neighbor distances observed between <span class="math inline">\(0 &lt; d &lt; 25\)</span>. Once we get to very large distances, the simulation envelope covers the observed statistic. As such, we can say that the point pattern recorded in <code>points</code> is unusally dispersed.</p>
+<p>To evaluate the <span class="math inline">\(G(d)\)</span> function without considering any statistical significance or simulations, you can use the <code>g_function</code> in the <code>ripley</code> module, which simply returns the distances &amp; values of <span class="math inline">\(G(d)\)</span>.</p>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>ripley.g_function(points)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>(array([ 0.        ,  1.82269693,  3.64539386,  5.46809079,  7.29078772,
+         9.11348465, 10.93618158, 12.75887851, 14.58157544, 16.40427237,
+        18.2269693 , 20.04966623, 21.87236316, 23.69506009, 25.51775702,
+        27.34045395, 29.16315088, 30.98584782, 32.80854475, 34.63124168]),
+ array([0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.16666667, 0.16666667, 0.16666667, 0.16666667, 0.25      ,
+        0.25      , 0.25      , 0.41666667, 0.58333333, 0.75      ,
+        0.83333333, 0.83333333, 0.91666667, 0.91666667, 1.        ]))</code></pre>
+</div>
+</div>
+</section>
+<section id="f-function---point-event" class="level4">
+<h4 class="anchored" data-anchor-id="f-function---point-event"><span class="math inline">\(F\)</span> function - “point-event”</h4>
+<p>When the number of events in a point pattern is small, <span class="math inline">\(G\)</span> function is rough. For the pattern contained in <code>points</code>, there are only 12 observations! This means that there are only 12 nearest neighbor distances, and thus only 12 possible values for the <span class="math inline">\(G(d)\)</span> statistic, at any <span class="math inline">\(d\)</span>.</p>
+<p>One way to get around this is to turn to an alternative, the <span class="math inline">\(F(d)\)</span> function. This is analogous to the <span class="math inline">\(G(d)\)</span> function, but measures the nearest neighbor distance <em>from</em> a set of known randomly-distributed points <em>to</em> a point in the observed pattern. Another way of thinking about <span class="math inline">\(F(d)\)</span> is that it reflects a <em>between-pattern</em> measure of dispersion, where one pattern is completely spatially random and the other pattern is our observed pattern. In contrast, <span class="math inline">\(G(d)\)</span> is a <em>within-pattern</em> measure of dispersion.</p>
+<p>For a randomly simulated point pattern of size <span class="math inline">\(N_s\)</span>, this makes the <span class="math inline">\(F(d)\)</span> function:</p>
+<p><span class="math display">\[F(d) = \frac{1}{N_s} \sum_k^{N_s} \mathcal{I}(d^*_k &lt; d)\]</span></p>
+<p>This can have <span class="math inline">\(N_s\)</span> possible values for any <span class="math inline">\(d\)</span>, and thus can give a much more fine-grained view of the point pattern. In this sense, the <span class="math inline">\(F(d)\)</span> function is often called the <em>empty space function</em>, as it measures the distance from random points in “empty space” to the “filled” points in our point pattern. The number of those random points governs how “fine-grained” our measure of the observed point pattern can be.</p>
+<p>Just like the <code>ripley.g_test</code>, this function is evaluated for every <span class="math inline">\(d\)</span> in a support. Further, we can provide <em>custom</em> values for <code>support</code>, just in case we have known distance values of interest.</p>
+<p>Below, we’ll use the same ten <code>support</code> values from <span class="math inline">\(G(d)\)</span> function. And, let’s constrain the “simulated” point patterns to fall within the convex hull of our original point pattern:</p>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>f_test <span class="op">=</span> ripley.f_test(points, support <span class="op">=</span> g_test.support, keep_simulations<span class="op">=</span><span class="va">True</span>, hull<span class="op">=</span><span class="st">'convex'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Since the <span class="math inline">\(F(d)\)</span> function is very smooth, we can see the <span class="math inline">\(F(d)\)</span> statistic and its simulations clearly by plotting their values directly as lines. For the simulated values, we will make them very transparent. As before we will visualize statistical significance using the <code>pvalue</code> attribute:</p>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>plt.plot(f_test.support, f_test.simulations.T, alpha<span class="op">=</span><span class="fl">.01</span>, color<span class="op">=</span><span class="st">'k'</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>plt.plot(f_test.support, f_test.statistic, color<span class="op">=</span><span class="st">'red'</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>plt.scatter(f_test.support, f_test.statistic, </span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>            cmap<span class="op">=</span><span class="st">'viridis'</span>, c<span class="op">=</span>f_test.pvalue <span class="op">&lt;</span> <span class="fl">.05</span>,</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>            zorder<span class="op">=</span><span class="dv">4</span> <span class="co"># make sure they plot on top</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>           )</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Distance'</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'F Function'</span>)</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'F Function Plot'</span>)</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="distance_statistics-numpy-oriented_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>From this we see that the values of the <span class="math inline">\(F\)</span> function are <em>too high</em> for distances from about 15 to 25, and (in contrast) for values between <span class="math inline">\(5 &lt; d &lt; 10\)</span>, the <span class="math inline">\(F(d)\)</span> function has too few short distances. When the observed <span class="math inline">\(F(d)\)</span> values are too large, then the pattern is too dispersed, or regular. If the empirical <span class="math inline">\(F(d)\)</span> tends to fall below the simulated values, then it reflects clustering. This is the <em>opposite</em> of the interpretation of the <span class="math inline">\(G(d)\)</span> function above, so be careful!</p>
+</section>
+<section id="j-function---a-combination-of-event-event-and-point-event" class="level4">
+<h4 class="anchored" data-anchor-id="j-function---a-combination-of-event-event-and-point-event"><span class="math inline">\(J\)</span> function - a combination of “event-event” and “point-event”</h4>
+<p>The <span class="math inline">\(J\)</span> function combines the <span class="math inline">\(G\)</span> and <span class="math inline">\(F\)</span> function, in an attempt to provide an immediate graphical indication of the clustering both internally and with respect to the empty space distribution. Practically, the <span class="math inline">\(J(d)\)</span> function is computed as a kind of “relative clustering ratio”:</p>
+<p><span class="math display">\[J(d) = \frac{1-G(d)}{1-F(d)}\]</span></p>
+<p>where the numerator captures the clustering due to within-pattern distances and the denominator captures that for the pattern-to-empty distances. This means that when <span class="math inline">\(J(d)&lt;1\)</span>, the underlying point process is a cluster point process, and when <span class="math inline">\(J(d)=1\)</span>, the underlying point process is a random point process; otherwise, it is a dispersed point process.</p>
+<p>This function can suffer from numerical stability issues; as <span class="math inline">\(G(d)\)</span> and <span class="math inline">\(F(d)\)</span> both approach <span class="math inline">\(1\)</span>, the <span class="math inline">\(J\)</span> ratio can become chaotic. Further, when <span class="math inline">\(G\)</span> or <span class="math inline">\(F\)</span> reaches one, the <span class="math inline">\(J\)</span> function changes abruptly. As such, the <span class="math inline">\(J\)</span> function is often <em>truncated</em> to the first <span class="math inline">\(1\)</span> (either in <span class="math inline">\(F(d)\)</span> or <span class="math inline">\(G(d)\)</span>), and any <span class="math inline">\(d\)</span> where both <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> are <span class="math inline">\(1\)</span> is assigned a <span class="math inline">\(J\)</span> value of <span class="math inline">\(1\)</span>.</p>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>jp1 <span class="op">=</span> ripley.j_test(points, support<span class="op">=</span><span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/lw17329/Dropbox/dev/pointpats/pointpats/ripley.py:894: UserWarning: requested 20 bins to evaluate the J function, but it reaches infinity at d=25.5178, meaning only 14 bins will be used to characterize the J function.
+  tree, distances=distances, **core_kwargs</code></pre>
+</div>
+</div>
+<p>As you can see from the warning above, the <span class="math inline">\(J\)</span> function did encounter numerical stability issues at about <span class="math inline">\(d=25\)</span>. To address this, <code>pointpats</code> truncated the <span class="math inline">\(J\)</span> function to only have 14 values in its support, rather than the <span class="math inline">\(20\)</span> requested.</p>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>plt.plot(jp1.support, jp1.statistic, color<span class="op">=</span><span class="st">'orangered'</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>plt.axhline(<span class="dv">1</span>, linestyle<span class="op">=</span><span class="st">':'</span>, color<span class="op">=</span><span class="st">'k'</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Distance'</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'J Function'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<pre><code>Text(0, 0.5, 'J Function')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="distance_statistics-numpy-oriented_files/figure-html/cell-16-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>From the above figure, we see that the <span class="math inline">\(J\)</span> function is above the <span class="math inline">\(J(d)=1\)</span> horizontal line, especially as <span class="math inline">\(d\)</span> gets large. This suggests that the process is over-dispersed.</p>
+</section>
+</section>
+<section id="interevent-distance-functions" class="level2">
+<h2 class="anchored" data-anchor-id="interevent-distance-functions">Interevent Distance Functions</h2>
+<p>While both the <span class="math inline">\(F(d)\)</span> and <span class="math inline">\(G(d)\)</span> functions are useful, they only consider the distance between each point <span class="math inline">\(i\)</span> and its nearest point. Earlier we spelled this distance <span class="math inline">\(d_i^*\)</span>, and the distance between <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> was <span class="math inline">\(d_{ij}\)</span>. So, note that <span class="math inline">\(d_{i}^*\)</span> is the <em>only</em> term that matters for <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span>, if <span class="math inline">\(d_{ij}\)</span> changes (but <span class="math inline">\(j\)</span> isn’t closest to <span class="math inline">\(i\)</span>), then the <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> functions generally remain the same.</p>
+<p>So, further statistical summary functions have been developed to consider the <em>whole</em> distance distribution, not only the nearest neighbor distances. These functions (still considered part of the “Ripley” alphabet, are the <span class="math inline">\(K\)</span>, and <span class="math inline">\(L\)</span> functions.</p>
+<section id="k-function" class="level4">
+<h4 class="anchored" data-anchor-id="k-function"><span class="math inline">\(K\)</span> function</h4>
+<p>The <span class="math inline">\(K(d)\)</span> function is a scaled version of the cumulative density function for <em>all</em> distances within a point pattern. As such, it’s a “relative” of the <span class="math inline">\(G\)</span> function that considers all distances, not just the nearest neighbor distances. Practically, the <span class="math inline">\(K(d)\)</span> function can be thought of as the percentage of all distances that are less than <span class="math inline">\(d\)</span>. Therefore, for a threshold distance <span class="math inline">\(d\)</span>, the <span class="math inline">\(K\)</span> function is defined as:</p>
+<p><span class="math display">\[K(d) = \frac{1}{N\hat\lambda} \underset{i=1}{\overset{N}{\sum}}\underset{j=1}{\overset{N}{\sum}} \mathcal{I}\left(d_ij &lt; d\right)\]</span></p>
+<p>In this equation, <span class="math inline">\(\hat\lambda\)</span> is the <em>intensity</em> of the point process. This represents how many points (on average) you would expect in a unit area. You can think of this as an analogue to the <em>density</em> of the points in the pattern: large values of <span class="math inline">\(\hat\lambda\)</span> mean many points per area, and small values of <span class="math inline">\(\hat\lambda\)</span> mean there are fewer points per area. Generally, this parameter is unknown, and is modelled using the average number of points in the study area. This assumes that the intensity of the point pattern is <em>constant</em> or <em>homogeneous</em> over the study area.</p>
+<p>In the same manner as before, we can construct a set of <span class="math inline">\(K(d)\)</span> function evaluations for random point patterns, and compare them to the observed <span class="math inline">\(K(d)\)</span> function we saw in our original data.</p>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>k_test <span class="op">=</span> ripley.k_test(points, keep_simulations<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>plt.plot(k_test.support, k_test.simulations.T, color<span class="op">=</span><span class="st">'k'</span>, alpha<span class="op">=</span><span class="fl">.01</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>plt.plot(k_test.support, k_test.statistic, color<span class="op">=</span><span class="st">'orangered'</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>plt.scatter(k_test.support, k_test.statistic, </span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>            cmap<span class="op">=</span><span class="st">'viridis'</span>, c<span class="op">=</span>k_test.pvalue <span class="op">&lt;</span> <span class="fl">.05</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>            zorder<span class="op">=</span><span class="dv">4</span> <span class="co"># make sure they plot on top</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>           )</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Distance'</span>)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'K Function'</span>)</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'K Function Plot'</span>)</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="distance_statistics-numpy-oriented_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Again, we can see that the envelopes are generally above the observed function, meaining that our point pattern is dispersed. We can draw this conclusion because the distances are <em>too small</em>, suggesting the pattern is less clustered than otherwise woudl be expected. When points are too regular, their distances tend to be smaller than if they were distributed randomly.</p>
+</section>
+<section id="l-function---interevent" class="level4">
+<h4 class="anchored" data-anchor-id="l-function---interevent"><span class="math inline">\(L\)</span> function - “interevent”</h4>
+<p>The <span class="math inline">\(L\)</span> function is a scaled version of <span class="math inline">\(K\)</span> function, defined in order to assist with interpretation. The expected value of the <span class="math inline">\(K(d)\)</span> function <em>increases</em> with <span class="math inline">\(d\)</span>; this makes sense, since the number of pairs of points closer than <span class="math inline">\(d\)</span> will increase as <span class="math inline">\(d\)</span> increases. So, we can define a normalization of <span class="math inline">\(K\)</span> that <em>removes</em> this increase as <span class="math inline">\(d\)</span> increases.</p>
+<p><span class="math display">\[L(d) = \sqrt{\frac{K(d)}{\pi}}-d\]</span></p>
+<p>For a pattern that is spatially random, <span class="math inline">\(L(d)\)</span> is <span class="math inline">\(0\)</span> at all <span class="math inline">\(d\)</span> values. So, we can use this standardization to make it easier to visualize the results of the <span class="math inline">\(K\)</span> function:</p>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>l_test <span class="op">=</span> ripley.l_test(points, keep_simulations<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>plt.plot(l_test.support, l_test.simulations.T, color<span class="op">=</span><span class="st">'k'</span>, alpha<span class="op">=</span><span class="fl">.01</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>plt.plot(l_test.support, l_test.statistic, color<span class="op">=</span><span class="st">'orangered'</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>plt.scatter(l_test.support, l_test.statistic, </span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>            cmap<span class="op">=</span><span class="st">'viridis'</span>, c<span class="op">=</span>l_test.pvalue <span class="op">&lt;</span> <span class="fl">.05</span>,</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>            zorder<span class="op">=</span><span class="dv">4</span> <span class="co"># make sure they plot on top</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>           )</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Distance'</span>)</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'K Function'</span>)</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'K Function Plot'</span>)</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="distance_statistics-numpy-oriented_files/figure-html/cell-20-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="csr-example" class="level2">
+<h2 class="anchored" data-anchor-id="csr-example">CSR Example</h2>
+<p>In this example, we are going to generate a point pattern as the “observed” point pattern. This ensures that the data generating process is completely spatially random. Then, we will simulate CSR in the same domain for 100 times and construct evaluate the ripley functions for these simulations.</p>
+<div class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> geopandas.read_file(ps.examples.get_path(<span class="st">"vautm17n.shp"</span>))</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>state <span class="op">=</span> df.geometry.cascaded_union</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Generate the point pattern <strong>pp</strong> (size 100) from CSR as the “observed” point pattern.</p>
+<div class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>pattern <span class="op">=</span> ripley.simulate(state, size<span class="op">=</span><span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>before we go any further, let’s visualize these simulated values:</p>
+<div class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>df.plot()</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(<span class="op">*</span>pattern.T, color<span class="op">=</span><span class="st">'orangered'</span>, marker<span class="op">=</span><span class="st">'.'</span>)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="37">
+<pre><code>&lt;matplotlib.collections.PathCollection at 0x7fa1a2827890&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="distance_statistics-numpy-oriented_files/figure-html/cell-23-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>And, let’s check if there are 100 points:</p>
+<div class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>pattern.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="38">
+<pre><code>(100, 2)</code></pre>
+</div>
+</div>
+<p>Yep! So, next to simulate a set of realizations in the same manner, we can use the <code>size</code> argument again, just like the <code>numpy.random</code> simulators. This means that, to simulate <span class="math inline">\(K\)</span> realizations of a pattern of size <span class="math inline">\(N\)</span>, then we use <code>simulate(hull, size=(N,K)</code>. For just one realization, we can use <code>size=N</code>.</p>
+<div class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>random_realizations <span class="op">=</span> ripley.simulate(state, size<span class="op">=</span>(<span class="dv">100</span>,<span class="dv">100</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To show the random pattern is truly random, we can visualize all of the points:</p>
+<div class="cell" data-execution_count="59">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>df.plot(facecolor<span class="op">=</span><span class="st">'none'</span>, edgecolor<span class="op">=</span><span class="st">'k'</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(<span class="op">*</span>random_realizations.T, marker<span class="op">=</span><span class="st">'.'</span>, s<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>plt.scatter(<span class="op">*</span>pattern.T, color<span class="op">=</span><span class="st">'orangered'</span>, marker<span class="op">=</span><span class="st">'.'</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="distance_statistics-numpy-oriented_files/figure-html/cell-26-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Let’s now compute the <code>G</code> function for the observed pattern as well as all the realizations we just made.</p>
+<div class="cell" data-execution_count="67">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>observed_g <span class="op">=</span> ripley.g_function(pattern)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>comparison_g <span class="op">=</span> [ripley.g_function(realization, support<span class="op">=</span>observed_g[<span class="dv">0</span>]) </span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> realization <span class="kw">in</span> random_realizations]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="68">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>plt.plot(<span class="op">*</span>observed_g, color<span class="op">=</span><span class="st">'orangered'</span>)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>[plt.plot(<span class="op">*</span>comparison, color<span class="op">=</span><span class="st">'k'</span>, alpha<span class="op">=</span><span class="fl">.01</span>) </span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a> <span class="cf">for</span> comparison <span class="kw">in</span> comparison_g]</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="distance_statistics-numpy-oriented_files/figure-html/cell-28-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>All other functions work identically!</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
