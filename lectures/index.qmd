@@ -67,3 +67,6 @@ format:
 - Week 11 
   - [10-30 Quadrat Statistics](week-11/2023-10-30-quadrat-statistics.ipynb) 
   - [11-01 Nearest Neighbor Statistics](week-11/2023-11-01-nearest-neighbor.ipynb)
+
+- Week 12
+  - [11-06 Distance Based Statistics](week-12/2023-11-06-distance-based.ipynb) 
