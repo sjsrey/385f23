@@ -71,3 +71,6 @@ format:
 - Week 12
   - [11-06 Distance Based Statistics](week-12/2023-11-06-distance-based.ipynb) 
   - [11-08 Geostatistics](week-12/geostat.pdf)
+
+- Week 13
+  - [11-13 Spatial Interpolatoin](week-13/2023-11-13-interpolation.ipynb) 
