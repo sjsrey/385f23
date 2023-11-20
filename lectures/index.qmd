@@ -73,4 +73,6 @@ format:
   - [11-08 Geostatistics](week-12/geostat.pdf)
 
 - Week 13
-  - [11-13 Spatial Interpolatoin](week-13/2023-11-13-interpolation.ipynb) 
+  - [11-13 Spatial Interpolation: Deterministic Methods](week-13/2023-11-13-interpolation_deterministic.ipynb) 
+  - 11-15 PySAL@NARSC
+  
