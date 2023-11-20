@@ -128,13 +128,13 @@ completed the readings.
 |      | Nov-08 | Geostatistical Data          | [DS 6](https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm)          | Exercise 3 |
 | 13   | Nov-13 | Spatial Interpolation        | [DS 6.6](https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm)          | Quiz 11    |
 |      | Nov-15 | NARSC Workshop (Zoom)        |           |            |
-| 14   | Nov-20 | Network Data                 | [DS 7](https://www.spatialanalysisonline.com/HTML/network_and_location_analysis.htm)          | Quiz 12    |
+| 14   | Nov-20 | Kriging                      | [DS 6](https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm)          | Quiz 12    |
 |      | Nov-22 | No Class SDSU Holiday        |           |            |
-| 15   | Nov-27 | Spatial Interaction Data               | [TO](https://openjournals.wu.ac.at/region/paper_175/175.html)          | Quiz 13    |
+| 15   | Nov-27 | Studio: Spatial Disparities               | GDS 9          | Quiz 13    |
 |      | Nov-29 | Measuring Spatial Disparities| GDS 9          |            |
-| 16   | Dec-04 | Spatial Segregation          | [CEN](https://www.census.gov/topics/housing/housing-patterns/guidance/appendix-b.html)          | Quiz 14    |
-|      | Dec-06 | Next Steps in SDA             |              | Exercise 4 |
-| 17   | Dec-11 | Final Review                  |              | Quiz 15    |
+| 16   | Dec-04 | Geoprocessing for Disparities Research          |          | Quiz 14    |
+|      | Dec-06 | Statistical Analysis of Spatial Disparities             |              | Exercise 4 |
+| 17   | Dec-11 | Final Review                  |              | Quiz 15, Exercise 4    |
 | 18   | Dec-18 | *Final Exam (13:00-15:00)*    |              |            |
 
 
