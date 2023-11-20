@@ -133,7 +133,7 @@ completed the readings.
 | 15   | Nov-27 | Studio: Spatial Disparities               | GDS 9          | Quiz 13    |
 |      | Nov-29 | Measuring Spatial Disparities| GDS 9          |            |
 | 16   | Dec-04 | Geoprocessing for Disparities Research          |          | Quiz 14    |
-|      | Dec-06 | Statistical Analysis of Spatial Disparities             |              | Exercise 4 |
+|      | Dec-06 | Statistical Analysis of Spatial Disparities             |              | |
 | 17   | Dec-11 | Final Review                  |              | Quiz 15, Exercise 4    |
 | 18   | Dec-18 | *Final Exam (13:00-15:00)*    |              |            |
 
