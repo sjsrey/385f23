@@ -1,0 +1,7 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Geostatistical Perspective}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Spatial Random Field}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Moment Conditions}{16}{0}{1}
+\beamer@sectionintoc {2}{Variogram and Correlogram}{19}{0}{2}
+\beamer@subsectionintoc {2}{1}{Semi-Variogram}{22}{0}{2}
+\beamer@subsectionintoc {2}{2}{Covariogram}{28}{0}{2}

@@ -106,5 +106,53 @@
   },
   "lectures/week-12/geostat_data.ipynb": {
     "geostat_data.html": "f264081c"
+  },
+  "lectures/week-13/2023-11-13-interpolation_deterministic.ipynb": {
+    "2023-11-13-interpolation_deterministic.html": "a032361e"
+  },
+  "lectures/week-13/2023-11-13-interp-data.ipynb": {
+    "2023-11-13-interp-data.html": "75a0d041"
+  },
+  "lectures/week-13/week-12/2023-11-13-interpolation_deterministic.ipynb": {
+    "2023-11-13-interpolation_deterministic.html": "9e0ea759"
+  },
+  "lectures/week-13/week-12/2023-11-06-distance-based.ipynb": {
+    "2023-11-06-distance-based.html": "6da39337"
+  },
+  "lectures/week-13/week-12/interp.ipynb": {
+    "interp.html": "00a01a95"
+  },
+  "lectures/week-13/week-12/2023-11-08-geostat-data.ipynb": {
+    "2023-11-08-geostat-data.html": "90a165aa"
+  },
+  "lectures/week-13/week-12/interpolation_kriging.ipynb": {
+    "interpolation_kriging.html": "47d57c55"
+  },
+  "lectures/week-13/week-12/ex4.ipynb": {
+    "ex4.html": "292d6ea3"
+  },
+  "lectures/week-13/week-12/distance_statistics-numpy-oriented.ipynb": {
+    "distance_statistics-numpy-oriented.html": "4ad2399f"
+  },
+  "lectures/week-13/week-12/geostat_data.ipynb": {
+    "geostat_data.html": "58dc4bff"
+  },
+  "lectures/week-13/geostat_data.ipynb": {
+    "geostat_data.html": "2139049f"
+  },
+  "lectures/week-12/2023-11-08-geostat-data.ipynb": {
+    "2023-11-08-geostat-data.html": "19caf0cd"
+  },
+  "lectures/week-13/2023-11-13-interpolation.ipynb": {
+    "2023-11-13-interpolation.html": "5536dc26"
+  },
+  "lectures/week-14/2023-11-20-interpolation_kriging.ipynb": {
+    "2023-11-20-interpolation_kriging.html": "6b17c5a9"
+  },
+  "lectures/week-15/2023-11-27-studio-disparities-overview.qmd": {
+    "2023-11-27-studio-disparities-overview.html": "5f2a720c"
+  },
+  "lectures/week-15/2023-11-29-spatial-disparities.qmd": {
+    "2023-11-29-spatial-disparities.html": "38c7df7d"
   }
 }
