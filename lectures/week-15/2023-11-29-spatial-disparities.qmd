@@ -1,0 +1,84 @@
+---
+title: "Spatial Disparities"
+author: "Serge Rey"
+date: "2023-11-29"
+format: 
+  revealjs:
+    theme: simple
+---
+# Spatial Disparities 
+<br/>
+
+::: {.incremental}
+- Definitions
+- Spatial Disparities Research
+- Methods
+- Data
+- Issues
+:::
+
+# Spatial Disparities: Definitions
+
+## Concepts
+
+- Equality
+- Equity
+- Spatial Disparities
+
+## Equality and Inequality
+
+![[Source](https://www.humanrightscareers.com/issues/inequity-vs-inequality-an-explainer/)](../images/equalityopportunity.png)
+
+## Equality and Inequality
+
+![[Source](https://www.humanrightscareers.com/issues/inequity-vs-inequality-an-explainer/)](../images/equalityoutput.png)
+
+## Inequality and Inequity
+
+- Inequality implies *differences* between individuals or groups of individuals
+- Inequity refers to *differences* which are considered *unfair* and *unjust*
+- Not all inequalities are unjust
+- All inequities are the product of unjust inequalities
+
+## Inequality of
+- income
+- wealth
+- health burdens
+- accessibility to resources
+- educational outcomes
+
+## Why is analyzing inequality important?
+
+- Science and understanding
+- Inequality may impose unfair burdens on members of society
+- Inequality may reduce the productive capacity of the system
+- Inequality can lead to increased polarization and fragmentation
+
+
+## Spatial Disparities Defined
+
+> Spatial disparities occur when socio-economic outcomes differ across places.
+
+![Spatial Disparities](../images/spatialdisparitiesoverman.png)
+
+
+
+
+# Spatial Disparities: Research
+
+## Environmental Justice Literature
+
+![Maantay, J. (2002) "Mapping environmental injustices: pitfalls and potential of geographic information systems in assessing environmental health and equity" *Environmental Health Perspectives*](../images/envj-research-table.png){width=6in}
+
+
+
+
+
+# Spatial Disparities: Methods
+
+
+# Spatial Disparities: Data
+# Spatial Disparities: Issues
+- Temporality
+- Spatial Scale
+- Causal Inference?

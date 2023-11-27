@@ -13,16 +13,23 @@ format:
 
 ## Class Meetings
 
-| Meeting | Location | Time                   |
-|---------|----------|------------------------|
-| Lecture | [LSN 111](https://map.concept3d.com/?id=801#!ct/62917,40419,15205,54894,71456?m/617937) | Mon & Wed 3:30 - 4:45pm |
+| Meeting | Location          | Time                    |
+|---------|-------------------|-------------------------|
+| Lecture | [LSN 111][lsn111] | Mon & Wed 3:30 - 4:45pm |
+
+[lsn111]: https://map.concept3d.com/?id=801#!ct/62917,40419,15205,54894,71456?m/617937
 
 ## Teaching Team 
 
-| Name                                                       | Office hours                                                                   | Location                                                                                                                        |
-| ---------------------------------------------------------- | -------------------                                                            | ------------------------------------------------------------------------------------------------------------------------------- |
-| [Sergio Rey](https://geography.sdsu.edu/people/bios/rey)   | [Thu 3:30 - 4:30pm (by appointment)](https://calendly.com/sjsrey/office-hours) | [PSFA 361G](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/)  |
-| Jin Huang                                                  | Fri 10:30am                                                                    | [PSFA 361F](https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/)  |
+| Name              | Office hours                             | Location          |
+|-------------------|------------------------------------------|-------------------|
+| [Sergio Rey][rey] | [Thu 3:30 - 4:30pm (by appointment)][oh] | [PSFA 361G][361g] |
+| Jin Huang         | Fri 10:30am                              | [PSFA 361F][361f] |
+
+[rey]: https://geography.sdsu.edu/people/bios/rey
+[oh]: https://calendly.com/sjsrey/office-hours 
+[361g]: https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/
+[361f]: https://map.concept3d.com/?id=801#!ce/12160?ct/62917,40419,40418,20161,15205,48503,54894,16202,12164?m/147097?s/
 
 
 
@@ -100,44 +107,45 @@ completed the readings.
 
 ## Schedule (Planned)
 
-| Week | Dates  | Topic                         | Reading      | Due        |
-|------+--------+-------------------------------+--------------+------------|
-| 1    | Aug-21 | Course Introduction           |              |            |
-|      | Aug-23 | Jupyter Hub                   | GDA 1  GDS 2 |            |
-| 2    | Aug-28 | Python: Programming Concepts  | GDA 2        | Quiz 1     |
-|      | Aug-30 | Python: Scripting         | GDA 2        |            |
-| 3    | Sep-04 | *Labor Day Holiday*           |              |            |
-|      | Sep-06 | Python: Data Analysis/Visualization         | GDA 3,4        |            |
-| 4    | Sep-11 | Python: Geographic Data       | GDA 5        | Quiz 2     |
-|      | Sep-13 | Geopandas           | GDA 6        | Exercise 1 |
-| 5    | Sep-18 | PySAL         | GDS 3        | Quiz 3     |
-|      | Sep-20 | GeoVisualization              | GDS 5        |            |
-| 6    | Sep-25 | Spatial Weights               | GDS 4        | Quiz 4     |
-|      | Sep-27 | Spatial Dependence            | GDS 6        |            |
-| 7    | Oct-02 | Global Autocorrelation        | GDS 6        | Quiz 5     |
-|      | Oct-04 | Global Autocorrelation Tests  | GDS 6        |            |
-| 8    | Oct-09 | Studio                       | GDS 7        | Quiz 6     |
-|      | Oct-11 | Local Autocorrelation        | GDS 7        |  |
-| 9    | Oct-16 | Local Autocorrelation Tests  | GDS 8        | Quiz 7, Exercise 2|
-|      | Oct-18 | Point Pattern Data           | GDS 8        |            |
-| 10   | Oct-23 | Centrography                 | GDS 8        | Quiz 8     |
-|      | Oct-25 | Point Processes              | GDS 8        |            |
-| 11   | Oct-30 | Quadrat Statistics           | GDS 8        | Quiz 9     |
-|      | Nov-01 | Nearest Neighbor Statistics  | GDS 8        |            |
-| 12   | Nov-06 | Distance Based Statistics    | GDS 8          | Quiz 10    |
-|      | Nov-08 | Geostatistical Data          | [DS 6](https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm)          | Exercise 3 |
-| 13   | Nov-13 | Spatial Interpolation        | [DS 6.6](https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm)          | Quiz 11    |
-|      | Nov-15 | NARSC Workshop (Zoom)        |           |            |
-| 14   | Nov-20 | Kriging                      | [DS 6](https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm)          | Quiz 12    |
-|      | Nov-22 | No Class SDSU Holiday        |           |            |
-| 15   | Nov-27 | Studio: Spatial Disparities               | GDS 9          | Quiz 13    |
-|      | Nov-29 | Measuring Spatial Disparities| GDS 9          |            |
-| 16   | Dec-04 | Geoprocessing for Disparities Research          |          | Quiz 14    |
-|      | Dec-06 | Statistical Analysis of Spatial Disparities             |              | |
-| 17   | Dec-11 | Final Review                  |              | Quiz 15, Exercise 4    |
-| 18   | Dec-18 | *Final Exam (13:00-15:00)*    |              |            |
+| Week | Dates  | Topic                                        | Reading        | Due                 |
+|------|--------|----------------------------------------------|----------------|---------------------|
+| 1    | Aug-21 | Course Introduction                          |                |                     |
+|      | Aug-23 | Jupyter Hub                                  | GDA 1  GDS 2   |                     |
+| 2    | Aug-28 | Python: Programming Concepts                 | GDA 2          | Quiz 1              |
+|      | Aug-30 | Python: Scripting                            | GDA 2          |                     |
+| 3    | Sep-04 | *Labor Day Holiday*                          |                |                     |
+|      | Sep-06 | Python: Data Analysis/Visualization          | GDA 3,4        |                     |
+| 4    | Sep-11 | Python: Geographic Data                      | GDA 5          | Quiz 2              |
+|      | Sep-13 | Geopandas                                    | GDA 6          | Exercise 1          |
+| 5    | Sep-18 | PySAL                                        | GDS 3          | Quiz 3              |
+|      | Sep-20 | GeoVisualization                             | GDS 5          |                     |
+| 6    | Sep-25 | Spatial Weights                              | GDS 4          | Quiz 4              |
+|      | Sep-27 | Spatial Dependence                           | GDS 6          |                     |
+| 7    | Oct-02 | Global Autocorrelation                       | GDS 6          | Quiz 5              |
+|      | Oct-04 | Global Autocorrelation Tests                 | GDS 6          |                     |
+| 8    | Oct-09 | Studio                                       | GDS 7          | Quiz 6              |
+|      | Oct-11 | Local Autocorrelation                        | GDS 7          |                     |
+| 9    | Oct-16 | Local Autocorrelation Tests                  | GDS 8          | Quiz 7, Exercise 2  |
+|      | Oct-18 | Point Pattern Data                           | GDS 8          |                     |
+| 10   | Oct-23 | Centrography                                 | GDS 8          | Quiz 8              |
+|      | Oct-25 | Point Processes                              | GDS 8          |                     |
+| 11   | Oct-30 | Quadrat Statistics                           | GDS 8          | Quiz 9              |
+|      | Nov-01 | Nearest Neighbor Statistics                  | GDS 8          |                     |
+| 12   | Nov-06 | Distance Based Statistics                    | GDS 8          | Quiz 10             |
+|      | Nov-08 | Geostatistical Data                          | [DS 6][DS6]    | Exercise 3          |
+| 13   | Nov-13 | Spatial Interpolation                        | [DS 6.6][DS66] | Quiz 11             |
+|      | Nov-15 | NARSC Workshop (Zoom)                        |                |                     |
+| 14   | Nov-20 | Kriging                                      | [DS 6][DS6]    | Quiz 12             |
+|      | Nov-22 | *No Class SDSU Holiday*                      |                |                     |
+| 15   | Nov-27 | Studio: Spatial Disparities                  | GDS 9          |                     |
+|      | Nov-29 | Geoprocessing for Spatial Disparities        | GDS 9          |                     |
+| 16   | Dec-04 | Areal Interpolation for Disparities Research |                | Quiz 13             |
+|      | Dec-06 | Statistical Analysis of Spatial Disparities  |                | Quiz 14             |
+| 17   | Dec-11 | Final Review                                 |                | Quiz 15, Exercise 4 |
+| 18   | Dec-18 | *Final Exam (13:00-15:00)*                   |                |                     |
 
-
+[DS6]: https://www.spatialanalysisonline.com/HTML/surface_and_field_analysis.htm
+[DS66]: https://www.spatialanalysisonline.com/HTML/deterministic_interpolation_me.htm
 [gda]: https://pythongis.org/index.html
 [gds]: https://geographicdata.science/book/intro.html 
 [gds1]: https://geographicdata.science/book/notebooks/01_geo_thinking.html

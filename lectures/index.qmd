@@ -57,7 +57,7 @@ format:
 
 
 - Week 09
-  - [10-16 Local Analysis of Educational Achievment](https://knaaptime.com/instructed_california/)
+  - [10-16 Local Analysis of Educational Achievement](https://knaaptime.com/instructed_california/)
   - [10-18 Point Patterns](week-09/2023-10-18-point-patterns.qmd) 
 
 - Week 10 
@@ -74,7 +74,7 @@ format:
 
 - Week 13
   - [11-13 Spatial Interpolation: Deterministic Methods](week-13/2023-11-13-interpolation_deterministic.ipynb) 
-  - 11-15 PySAL@NARSC
+  - [11-15 PySAL@NARSC](https://sdsu.zoom.us/rec/play/rKXFbnaPv-wytuVTUttS5trqI2Ueq_2VvKT_pel08hQVxbg2G9Mz0hgCocgb6T79S7a3lKlhEe2U_bI.X43paExncNgnfgXD?autoplay=true&startTime=1700064957000)
   
 - Week 14
   - [11-20 Spatial Interpolation: Kriging](week-14/2023-11-20-interpolation_kriging.ipynb)
@@ -82,13 +82,14 @@ format:
 
 - Week 15
 
-  - 11-27 Spatial Disparities Studio: Overview
-  - 11-29 Spatial Disparities Studio: Measuring Spatial Inequality
+  - [11-27 Spatial Disparities Studio: Overview](week-15/2023-11-27-studio-disparities-overview.qmd)
+  - 11-29 Spatial Disparities Studio: Geoprocessing for Measuring Spatial
+    Disparities Research 
    
   
 - Week 16
-  - 12-04 Spatial Disparities Studio: Geoprocessing for Spatial Inequality
-    Anaysis
+  - 12-04 Spatial Disparities Studio: Areal Interpolation for Spatial
+  Disparities Research 
   - 12-06 Spatial Disparities Studio: Integration Geoprocessing and Statistical
     Analysis of Disparities 
 - Week 17
@@ -103,7 +104,7 @@ format:
   
 - Week 16
   - 12-04 Spatial Disparities Studio: Geoprocessing for Spatial Inequality
-    Anaysis
+    Analysis
   - 12-06 Spatial Disparities Studio: Integration Geoprocessing and Statistical
     Analysis of Disparities 
 - Week 17

@@ -1,0 +1,171 @@
+---
+title: "Spatial Disparities Studio: Overview"
+author: "Serge Rey"
+date: "2023-11-27"
+format: 
+  revealjs:
+    theme: simple
+---
+# Spatial Disparities Studio: Overview
+<br/>
+
+::: {.incremental}
+- Studio Objectives
+- Overview of Studio
+:::
+
+# Studio Objectives
+
+::: {.incremental}
+- Integrate spatial and statistical analysis
+- Deep dive on an empirical research question 
+- Collaboration on exercise 4
+:::
+
+# Overview of Spatial Disparities Studio
+## Structure
+::: {.incremental}
+- Today: Overview  of Spatial Disparities Research Design
+- 2023-11-29 Geoprocessing for Disparities Research 
+- 2023-12-04 Areal Interpolation for Disparities Research
+- 2023-12-06 Integration of Spatial Analysis and Statistical Inference
+:::
+
+
+## Spatial Disparities
+
+![[LA Times](https://www.latimes.com/projects/la-me-freeway-pollution/)](images/latimes.png)
+
+
+## Research Questions in Spatial Disparities
+
+::: {.incremental}
+- Are the *burdens* of exposure to freeway air and noise pollution felt
+  *disproportionately* by *different groups*?
+- Ethnoracial disparities
+- Socioeconomic disparities
+- Intersectional disparities
+:::
+
+## Classic Research Design
+
+::: {.incremental}
+- Control and Treatment "Groups"
+- Treatment Group: given the drug
+- Control Group: given a placebo
+- Test if outcomes are different between two groups
+:::
+
+## Spatial Research Design
+
+::: {.incremental}
+- Control and Treatment "Groups"
+- Treatment Group: those exposed to freeway pollution
+- Control Group: those not exposed to freeway pollution
+- Test if outcomes are different between two groups
+:::
+
+
+
+## Spatial Research Design
+
+- Control and Treatment "Groups"
+- Treatment Group: those exposed to freeway pollution
+- Control Group: those not exposed to freeway pollution
+- Test if outcomes are different between two groups
+
+**An individual's location determines their treatment status.**
+
+## Spatial Research Design
+
+::: {.incremental}
+- Rephrase the research questions
+- Are the populations exposed to different levels of freeway pollution different groups?
+- Is the ethnoracial composition of the population of high pollution areas different from that of low pollution areas? 
+- Is the socioeconomic status of the population of high pollution areas different from that of low pollution areas? 
+:::
+
+
+## Spatial Research Design (Qualifications)
+
+::: {.incremental}
+- Observational study versus randomized controlled trial
+- Assignment is not random
+- Individuals may interact (spatial interaction)
+- Temporality
+:::
+
+
+# Implementation of Research Design
+
+## Three Components of Research Design
+::: {.incremental}
+1. *Where* are the areas of high (low) exposure to freeway pollution?
+2. *Who* lives in those areas?
+3. Statistical Tests for difference in populations between these areas.
+:::
+
+
+## Geoprocessing in support of Spatial Disparities
+
+1. *Where* are the areas of high (low) exposure to freeway pollution?
+
+::: {.incremental}
+- Unary Union
+- Dissolve
+- Clipping
+- Buffering
+::: 
+
+## Geoprocessing in support of Spatial Disparities
+
+1. *Where* are the areas of high (low) exposure to freeway pollution?
+
+- Unary Union
+- Dissolve
+- Clipping
+- Buffering
+
+GeoPandas
+
+
+## Areal Interpolation
+
+2. *Who* lives in those areas?
+
+:::: {.columns}
+::: {.column width="60%"}
+![[PySAL: Tobler](https://pysal.org/tobler)](images/tobler.png)
+:::
+
+::: {.column width="40%"}
+- Extensive Variables (Counts)
+- Intensive Variables (Rates, proportions)
+:::
+
+::::
+
+## Statistical Evaluation of Hypotheses
+
+### Ethnoracial Disparities
+
+::: {.incremental}
+- $H_0$ There is no difference in the ethnoracial composition of the population
+in the high and low exposure areas.  
+- $H_1$ There is a difference in the ethnoracial composition of the population
+in the high and low exposure areas.
+:::
+
+
+### Socioeconomic Disparities
+::: {.incremental}
+- $H_0$ There is no difference in the socioeconomic status of the population
+in the high and low exposure areas.  
+- $H_1$ There is a difference in the socioeconomic status of the population
+in the high and low exposure areas.
+:::
+
+
+
+# Exercise 4
+[Canvas](https://sdsu.instructure.com/courses/133232/assignments/1114781)
