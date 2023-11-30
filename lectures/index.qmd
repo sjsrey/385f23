@@ -83,9 +83,8 @@ format:
 - Week 15
 
   - [11-27 Spatial Disparities Studio: Overview](week-15/2023-11-27-studio-disparities-overview.qmd)
-  - 11-29 Spatial Disparities Studio: Geoprocessing for Measuring Spatial
-    Disparities Research 
-   
+  - [11-29 Spatial Disparities Studio: Geoprocessing for Measuring Spatial Disparities
+    Research](week-15/2023-11-29-disparities_studio-geoprocessing.ipynb)
   
 - Week 16
   - 12-04 Spatial Disparities Studio: Areal Interpolation for Spatial
