@@ -354,7 +354,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>plt.plot(mc[<span class="dv">0</span>], mc[<span class="dv">1</span>], <span class="st">'b^'</span>, label<span class="op">=</span><span class="st">'Mean Center'</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecf2802510&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x28593eb30&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-7-output-2.png" width="442" height="431"></p>
@@ -385,7 +385,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>plt.plot(wmc[<span class="dv">0</span>], wmc[<span class="dv">1</span>], <span class="st">'gd'</span>, label<span class="op">=</span><span class="st">'Weighted Mean Center'</span>)</span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecea64e0d0&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x107a66e90&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-10-output-2.png" width="442" height="431"></p>
@@ -409,7 +409,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>mm <span class="op">=</span> manhattan_median(pp.points)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>mm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/home/serge/miniforge3/envs/385f23/lib/python3.11/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.
+<pre><code>/Users/srey/mambaforge/envs/385f23/lib/python3.10/site-packages/pointpats/centrography.py:208: UserWarning: Manhattan Median is not unique for even point patterns.
   warnings.warn(s)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="11">
@@ -423,7 +423,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>plt.plot(mm[<span class="dv">0</span>], mm[<span class="dv">1</span>], <span class="st">'rv'</span>, label<span class="op">=</span><span class="st">'Manhattan Median'</span>)</span>
 <span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecea6b2d90&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x285a5de70&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-13-output-2.png" width="442" height="431"></p>
@@ -505,7 +505,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecea6e7850&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x285ad6bc0&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-17-output-2.png" width="442" height="431"></p>
@@ -535,7 +535,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>ax.set_aspect(<span class="st">'equal'</span>)</span>
 <span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecf27a2c50&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x285e2cdc0&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-19-output-2.png" width="442" height="431"></p>
@@ -627,7 +627,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecea46ab10&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x285e97910&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-24-output-2.png" width="442" height="431"></p>
@@ -641,7 +641,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>mbr(pp.points)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/tmp/ipykernel_201333/2243439823.py:1: FutureWarning: This function will be deprecated in the next release of pointpats.
+<pre><code>/var/folders/w4/_fx8nhgx7bb77lbtxzxv31f40000gq/T/ipykernel_68831/2243439823.py:1: FutureWarning: This function will be deprecated in the next release of pointpats.
   mbr(pp.points)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="24">
@@ -657,7 +657,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecea4cd250&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x287882ec0&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-26-output-2.png" width="442" height="431"></p>
@@ -671,7 +671,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecea36ba50&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x28d8ee800&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-27-output-2.png" width="442" height="431"></p>
@@ -686,7 +686,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>ax.set_aspect(<span class="st">'equal'</span>)</span>
 <span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecea50ad90&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x28d985c30&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-28-output-2.png" width="442" height="431"></p>
@@ -718,13 +718,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>pp <span class="op">=</span> csr(as_window(state), <span class="dv">100</span>, <span class="dv">1</span>, asPP<span class="op">=</span><span class="va">True</span>).realizations[<span class="dv">0</span>]</span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>pp.plot(window<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="2023-10-23-centrography_files/figure-html/cell-30-output-1.png" width="579" height="309"></p>
+<p><img src="2023-10-23-centrography_files/figure-html/cell-30-output-1.png" width="579" height="269"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>pp.plot(window<span class="op">=</span><span class="va">True</span>, hull<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="2023-10-23-centrography_files/figure-html/cell-31-output-1.png" width="579" height="309"></p>
+<p><img src="2023-10-23-centrography_files/figure-html/cell-31-output-1.png" width="579" height="269"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="31">
@@ -737,7 +737,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="31">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecea255250&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x2878ade10&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-32-output-2.png" width="579" height="306"></p>
@@ -778,13 +778,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>pp <span class="op">=</span> csr(as_window(state), <span class="dv">500</span>, <span class="dv">1</span>, asPP<span class="op">=</span><span class="va">True</span>).realizations[<span class="dv">0</span>]</span>
 <span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>pp.plot(window<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="2023-10-23-centrography_files/figure-html/cell-34-output-1.png" width="579" height="311"></p>
+<p><img src="2023-10-23-centrography_files/figure-html/cell-34-output-1.png" width="583" height="308"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>pp.plot(window<span class="op">=</span><span class="va">True</span>, hull<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="2023-10-23-centrography_files/figure-html/cell-35-output-1.png" width="579" height="311"></p>
+<p><img src="2023-10-23-centrography_files/figure-html/cell-35-output-1.png" width="583" height="308"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="35">
@@ -797,7 +797,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a>plt.plot(em[<span class="dv">0</span>], em[<span class="dv">1</span>], <span class="st">'m+'</span>, label<span class="op">=</span><span class="st">'Euclidean Median'</span>)</span>
 <span id="cb63-8"><a href="#cb63-8" aria-hidden="true" tabindex="-1"></a>plt.legend(numpoints<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="35">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fecea0f7850&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x28785ee00&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="2023-10-23-centrography_files/figure-html/cell-36-output-2.png" width="579" height="306"></p>
@@ -837,8 +837,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dtot(em, pp.points))</span>
 <span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dtot(mc, pp.points) <span class="op">&gt;</span> dtot(em, pp.points))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>74106647.10292242
-73832191.9945508
+<pre><code>74615546.38932559
+74108332.17636907
 True</code></pre>
 </div>
 </div>
