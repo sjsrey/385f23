@@ -83,6 +83,7 @@ format:
 - Week 15
 
   - [11-27 Spatial Disparities Studio: Overview](week-15/2023-11-27-studio-disparities-overview.qmd)
+  - [11-27 LA Times Data](week-15/2023-11-27-latimes.ipynb)
   - [11-29 Spatial Disparities Studio: Geoprocessing for Measuring Spatial Disparities
     Research](week-15/2023-11-29-disparities_studio-geoprocessing.ipynb)
   
