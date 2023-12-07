@@ -90,8 +90,8 @@ format:
 - Week 16
   - [12-04 Spatial Disparities Studio: Areal Interpolation for Spatial
   Disparities Research](week-16/2023-12-04-disparities_studio-interpolation.ipynb)
-  - 12-06 Spatial Disparities Studio: Integration Geoprocessing and Statistical
-    Analysis of Disparities 
+  - [12-06 Spatial Disparities Studio: Integration Geoprocessing and Statistical
+    Analysis of Disparities](week-16/2023-12-06-statistical-disparities.ipynb)
 - Week 17
   - 12-11 Final Review
 
